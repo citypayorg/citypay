@@ -15,13 +15,11 @@
 #include "netaddress.h"
 #include "protocol.h"
 #include "random.h"
-#include "saltedhasher.h"
 #include "streams.h"
 #include "sync.h"
 #include "uint256.h"
 #include "util.h"
 #include "threadinterrupt.h"
-#include "consensus/params.h"
 
 #include <atomic>
 #include <deque>
@@ -29,7 +27,6 @@
 #include <thread>
 #include <memory>
 #include <condition_variable>
-#include <unordered_set>
 
 #ifndef WIN32
 #include <arpa/inet.h>
@@ -38,19 +35,6 @@
 #include <boost/filesystem/path.hpp>
 #include <boost/foreach.hpp>
 #include <boost/signals2/signal.hpp>
-
-// "Optimistic send" was introduced in the beginning of the Bitcoin project. I assume this was done because it was
-// thought that "send" would be very cheap when the send buffer is empty. This is not true, as shown by profiling.
-// When a lot of load is seen on the network, the "send" call done in the message handler thread can easily use up 20%
-// of time, effectively blocking things that could be done in parallel. We have introduced a way to wake up the select()
-// call in the network thread, which allows us to disable optimistic send without introducing an artificial latency/delay
-// when sending data. This however only works on non-WIN32 platforms for now. When we add support for WIN32 platforms,
-// we can completely remove optimistic send.
-#ifdef WIN32
-#define DEFAULT_ALLOW_OPTIMISTIC_SEND true
-#else
-#define DEFAULT_ALLOW_OPTIMISTIC_SEND false
-#endif
 
 class CAddrMan;
 class CScheduler;
@@ -82,9 +66,6 @@ static const int MAX_OUTBOUND_CONNECTIONS = 8;
 static const int MAX_ADDNODE_CONNECTIONS = 8;
 /** Maximum number if outgoing masternodes */
 static const int MAX_OUTBOUND_MASTERNODE_CONNECTIONS = 30;
-static const int MAX_OUTBOUND_MASTERNODE_CONNECTIONS_ON_MN = 250;
-/** Eviction protection time for incoming connections  */
-static const int INBOUND_EVICTION_PROTECTION_TIME = 1;
 /** -listen default */
 static const bool DEFAULT_LISTEN = true;
 /** -upnp default */
@@ -219,7 +200,7 @@ public:
 
     bool IsMasternodeOrDisconnectRequested(const CService& addr);
 
-    void PushMessage(CNode* pnode, CSerializedNetMsg&& msg, bool allowOptimisticSend = DEFAULT_ALLOW_OPTIMISTIC_SEND);
+    void PushMessage(CNode* pnode, CSerializedNetMsg&& msg);
 
     template<typename Condition, typename Callable>
     bool ForEachNodeContinueIf(const Condition& cond, Callable&& func)
@@ -326,10 +307,9 @@ public:
     void ReleaseNodeVector(const std::vector<CNode*>& vecNodes);
 
     void RelayTransaction(const CTransaction& tx);
+    void RelayTransaction(const CTransaction& tx, const CDataStream& ss);
     void RelayInv(CInv &inv, const int minProtoVersion = MIN_PEER_PROTO_VERSION);
     void RelayInvFiltered(CInv &inv, const CTransaction &relatedTx, const int minProtoVersion = MIN_PEER_PROTO_VERSION);
-    // This overload will not update node filters,  so use it only for the cases when other messages will update related transaction data in filters
-    void RelayInvFiltered(CInv &inv, const uint256 &relatedTxHash, const int minProtoVersion = MIN_PEER_PROTO_VERSION);
     void RemoveAskFor(const uint256& hash);
 
     // Addrman functions
@@ -339,6 +319,7 @@ public:
     void AddNewAddress(const CAddress& addr, const CAddress& addrFrom, int64_t nTimePenalty = 0);
     void AddNewAddresses(const std::vector<CAddress>& vAddr, const CAddress& addrFrom, int64_t nTimePenalty = 0);
     std::vector<CAddress> GetAddresses();
+    void AddressCurrentlyConnected(const CService& addr);
 
     // Denial-of-service detection/prevention
     // The idea is to detect peers that are behaving
@@ -368,16 +349,8 @@ public:
 
     bool AddNode(const std::string& node);
     bool RemoveAddedNode(const std::string& node);
-    std::vector<AddedNodeInfo> GetAddedNodeInfo();
-
     bool AddPendingMasternode(const CService& addr);
-    bool AddMasternodeQuorumNodes(Consensus::LLMQType llmqType, const uint256& quorumHash, const std::set<uint256>& proTxHashes);
-    bool HasMasternodeQuorumNodes(Consensus::LLMQType llmqType, const uint256& quorumHash);
-    std::set<uint256> GetMasternodeQuorums(Consensus::LLMQType llmqType);
-    // also returns QWATCH nodes
-    std::set<NodeId> GetMasternodeQuorumNodes(Consensus::LLMQType llmqType, const uint256& quorumHash) const;
-    void RemoveMasternodeQuorumNodes(Consensus::LLMQType llmqType, const uint256& quorumHash);
-    bool IsMasternodeQuorumNode(const CNode* pnode);
+    std::vector<AddedNodeInfo> GetAddedNodeInfo();
 
     size_t GetNodeCount(NumConnections num);
     void GetNodeStats(std::vector<CNodeStats>& vstats);
@@ -423,8 +396,6 @@ public:
     unsigned int GetReceiveFloodSize() const;
 
     void WakeMessageHandler();
-    void WakeSelect();
-
 private:
     struct ListenSocket {
         SOCKET socket;
@@ -507,8 +478,7 @@ private:
     std::vector<std::string> vAddedNodes;
     CCriticalSection cs_vAddedNodes;
     std::vector<CService> vPendingMasternodes;
-    std::map<std::pair<Consensus::LLMQType, uint256>, std::set<uint256>> masternodeQuorumNodes; // protected by cs_vPendingMasternodes
-    mutable CCriticalSection cs_vPendingMasternodes;
+    CCriticalSection cs_vPendingMasternodes;
     std::vector<CNode*> vNodes;
     std::list<CNode*> vNodesDisconnected;
     mutable CCriticalSection cs_vNodes;
@@ -541,12 +511,6 @@ private:
     std::atomic<bool> flagInterruptMsgProc;
 
     CThreadInterrupt interruptNet;
-
-#ifndef WIN32
-    /** a pipe which is added to select() calls to wakeup before the timeout */
-    int wakeupPipe[2]{-1,-1};
-#endif
-    std::atomic<bool> wakeupSelectNeeded{false};
 
     std::thread threadDNSAddressSeed;
     std::thread threadSocketHandler;
@@ -620,7 +584,7 @@ extern bool fDiscover;
 extern bool fListen;
 extern bool fRelayTxes;
 
-extern unordered_limitedmap<uint256, int64_t, StaticSaltedHasher> mapAlreadyAskedFor;
+extern limitedmap<uint256, int64_t> mapAlreadyAskedFor;
 
 /** Subversion as sent to the P2P network in `version` messages */
 extern std::string strSubVersion;
@@ -741,8 +705,6 @@ public:
     const int64_t nTimeConnected;
     std::atomic<int64_t> nTimeOffset;
     std::atomic<int64_t> nLastWarningTime;
-    std::atomic<int64_t> nTimeFirstMessageReceived;
-    std::atomic<bool> fFirstMessageIsMNAUTH;
     const CAddress addr;
     std::atomic<int> nNumWarningsSkipped;
     std::atomic<int> nVersion;
@@ -808,8 +770,8 @@ public:
     // List of non-tx/non-block inventory items
     std::vector<CInv> vInventoryOtherToSend;
     CCriticalSection cs_inventory;
-    std::unordered_set<uint256, StaticSaltedHasher> setAskFor;
-    std::vector<std::pair<int64_t, CInv>> vecAskFor;
+    std::set<uint256> setAskFor;
+    std::multimap<int64_t, CInv> mapAskFor;
     int64_t nNextInvSend;
     // Used for headers announcements - unfiltered blocks to relay
     // Also protected by cs_inventory
@@ -834,21 +796,6 @@ public:
     std::atomic<int64_t> nMinPingUsecTime;
     // Whether a ping is requested.
     std::atomic<bool> fPingQueued;
-
-    // If true, we will send him PrivateSend queue messages
-    std::atomic<bool> fSendDSQueue{false};
-
-    // Challenge sent in VERSION to be answered with MNAUTH (only happens between MNs)
-    mutable CCriticalSection cs_mnauth;
-    uint256 sentMNAuthChallenge;
-    uint256 receivedMNAuthChallenge;
-    uint256 verifiedProRegTxHash;
-    uint256 verifiedPubKeyHash;
-
-    // If true, we will announce/send him plain recovered sigs (usually true for full nodes)
-    std::atomic<bool> fSendRecSigs{false};
-    // If true, we will send him all quorum related messages, even if he is not a member of our quorums
-    std::atomic<bool> qwatch{false};
 
     CNode(NodeId id, ServiceFlags nLocalServicesIn, int nMyStartingHeightIn, SOCKET hSocketIn, const CAddress &addrIn, uint64_t nKeyedNetGroupIn, uint64_t nLocalHostNonceIn, const std::string &addrNameIn = "", bool fInboundIn = false);
     ~CNode();
@@ -982,7 +929,7 @@ public:
         vBlockHashesToAnnounce.push_back(hash);
     }
 
-    void AskFor(const CInv& inv, int64_t doubleRequestDelay = 2 * 60 * 1000000);
+    void AskFor(const CInv& inv);
     void RemoveAskFor(const uint256& hash);
 
     void CloseSocketDisconnect();

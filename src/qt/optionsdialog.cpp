@@ -92,14 +92,14 @@ OptionsDialog::OptionsDialog(QWidget *parent, bool enableWallet) :
     }
     
     /* Theme selector */
-    ui->theme->addItem(QString("Light"), QVariant("light"));
-    ui->theme->addItem(QString("Light-HiRes"), QVariant("light-hires"));
-    ui->theme->addItem(QString("Light-Retro"), QVariant("light-retro"));
-    ui->theme->addItem(QString("Light-HiRes-Retro"), QVariant("light-hires-retro"));
-    ui->theme->addItem(QString("Blue"), QVariant("drkblue"));
-    ui->theme->addItem(QString("Crownium"), QVariant("crownium"));
-    ui->theme->addItem(QString("Traditional"), QVariant("trad"));
-
+    ui->theme->addItem(QString("CTP-light"), QVariant("light"));
+    ui->theme->addItem(QString("CTP-light-hires"), QVariant("light-hires"));
+    ui->theme->addItem(QString("CTP-light-retro"), QVariant("light-retro"));
+    ui->theme->addItem(QString("CTP-light-hires-retro"), QVariant("light-hires-retro"));
+    ui->theme->addItem(QString("CTP-blue"), QVariant("drkblue"));
+    ui->theme->addItem(QString("CTP-Crownium"), QVariant("crownium"));
+    ui->theme->addItem(QString("CTP-traditional"), QVariant("trad"));
+    
     /* Language selector */
     QDir translations(":translations");
 

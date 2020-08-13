@@ -1,5 +1,5 @@
 // Copyright (c) 2011-2015 The Bitcoin Core developers
-// Copyright (c) 2014-2018 The Ctp Core developers
+// Copyright (c) 2014-2017 The Ctp Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -11,6 +11,7 @@
 #include "timedata.h"
 #include "wallet/wallet.h"
 
+#include "instantx.h"
 #include "privatesend.h"
 
 #include <stdint.h>
@@ -251,7 +252,7 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet *
     return parts;
 }
 
-void TransactionRecord::updateStatus(const CWalletTx &wtx, int numISLocks, int chainLockHeight)
+void TransactionRecord::updateStatus(const CWalletTx &wtx)
 {
     AssertLockHeld(cs_main);
     // Determine transaction status
@@ -271,8 +272,7 @@ void TransactionRecord::updateStatus(const CWalletTx &wtx, int numISLocks, int c
     status.countsForBalance = wtx.IsTrusted() && !(wtx.GetBlocksToMaturity() > 0);
     status.depth = wtx.GetDepthInMainChain();
     status.cur_num_blocks = chainActive.Height();
-    status.cachedNumISLocks = numISLocks;
-    status.cachedChainLockHeight = chainLockHeight;
+    status.cur_num_ix_locks = nCompleteTXLocks;
 
     if (!CheckFinalTx(wtx))
     {
@@ -329,7 +329,7 @@ void TransactionRecord::updateStatus(const CWalletTx &wtx, int numISLocks, int c
             if (wtx.isAbandoned())
                 status.status = TransactionStatus::Abandoned;
         }
-        else if (status.depth < RecommendedNumConfirmations && !wtx.IsChainLocked())
+        else if (status.depth < RecommendedNumConfirmations)
         {
             status.status = TransactionStatus::Confirming;
         }
@@ -341,12 +341,10 @@ void TransactionRecord::updateStatus(const CWalletTx &wtx, int numISLocks, int c
 
 }
 
-bool TransactionRecord::statusUpdateNeeded(int numISLocks, int chainLockHeight)
+bool TransactionRecord::statusUpdateNeeded()
 {
     AssertLockHeld(cs_main);
-    return status.cur_num_blocks != chainActive.Height()
-        || status.cachedNumISLocks != numISLocks
-        || status.cachedChainLockHeight != chainLockHeight;
+    return status.cur_num_blocks != chainActive.Height() || status.cur_num_ix_locks != nCompleteTXLocks;
 }
 
 QString TransactionRecord::getTxID() const

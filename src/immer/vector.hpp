@@ -111,12 +111,10 @@ public:
 
     /*!
      * Constructs a vector containing the elements in the range
-     * defined by the input iterator `first` and range sentinel `last`.
+     * defined by the input iterators `first` and `last`.
      */
-    template <typename Iter, typename Sent,
-              std::enable_if_t
-              <detail::compatible_sentinel_v<Iter, Sent>, bool> = true>
-    vector(Iter first, Sent last)
+    template <typename Iter>
+    vector(Iter first, Iter last)
         : impl_{impl_t::from_range(first, last)}
     {}
 
@@ -308,8 +306,8 @@ public:
     const impl_t& impl() const { return impl_; }
 
 #if IMMER_DEBUG_PRINT
-    void debug_print(std::ostream& out=std::cerr) const
-    { flex_t{*this}.debug_print(out); }
+    void debug_print() const
+    { flex_t{*this}.debug_print(); }
 #endif
 
 private:
@@ -348,7 +346,7 @@ private:
     vector take_move(std::false_type, size_type elems)
     { return impl_.take(elems); }
 
-    impl_t impl_ = impl_t::empty();
+    impl_t impl_ = impl_t::empty;
 };
 
 } // namespace immer

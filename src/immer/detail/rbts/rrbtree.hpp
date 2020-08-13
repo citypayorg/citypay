@@ -13,8 +13,6 @@
 #include <immer/detail/rbts/position.hpp>
 #include <immer/detail/rbts/operations.hpp>
 
-#include <immer/detail/type_traits.hpp>
-
 #include <cassert>
 #include <memory>
 #include <numeric>
@@ -44,34 +42,23 @@ struct rrbtree
     node_t* root;
     node_t* tail;
 
-    static const rrbtree& empty()
-    {
-        static const rrbtree empty_ {
-            0,
-            BL,
-            node_t::make_inner_n(0u),
-            node_t::make_leaf_n(0u)
-        };
-        return empty_;
-    }
+    static const rrbtree empty;
 
     template <typename U>
     static auto from_initializer_list(std::initializer_list<U> values)
     {
         auto e = owner_t{};
-        auto result = rrbtree{empty()};
+        auto result = rrbtree{empty};
         for (auto&& v : values)
             result.push_back_mut(e, v);
         return result;
     }
 
-    template <typename Iter, typename Sent,
-              std::enable_if_t
-              <compatible_sentinel_v<Iter, Sent>, bool> = true>
-    static auto from_range(Iter first, Sent last)
+    template <typename Iter>
+    static auto from_range(Iter first, Iter last)
     {
         auto e = owner_t{};
-        auto result = rrbtree{empty()};
+        auto result = rrbtree{empty};
         for (; first != last; ++first)
             result.push_back_mut(e, *first);
         return result;
@@ -80,7 +67,7 @@ struct rrbtree
     static auto from_fill(size_t n, T v)
     {
         auto e = owner_t{};
-        auto result = rrbtree{empty()};
+        auto result = rrbtree{empty};
         while (n --> 0)
             result.push_back_mut(e, v);
         return result;
@@ -99,7 +86,7 @@ struct rrbtree
     }
 
     rrbtree(rrbtree&& other)
-        : rrbtree{empty()}
+        : rrbtree{empty}
     {
         swap(*this, other);
     }
@@ -532,7 +519,7 @@ struct rrbtree
     {
         auto tail_off = tail_offset();
         if (new_size == 0) {
-            *this = empty();
+            *this = empty;
         } else if (new_size >= size) {
             return;
         } else if (new_size > tail_off) {
@@ -559,7 +546,7 @@ struct rrbtree
                 root  = new_root;
                 shift = new_shift;
             } else {
-                root  = empty().root->inc();
+                root  = empty.root->inc();
                 shift = BL;
             }
             dec_leaf(tail, size - tail_off);
@@ -573,7 +560,7 @@ struct rrbtree
     {
         auto tail_off = tail_offset();
         if (new_size == 0) {
-            return empty();
+            return empty;
         } else if (new_size >= size) {
             return *this;
         } else if (new_size > tail_off) {
@@ -592,7 +579,7 @@ struct rrbtree
                 assert(new_root->check(new_shift, new_size - get<2>(r)));
                 return { new_size, new_shift, new_root, new_tail };
             } else {
-                return { new_size, BL, empty().root->inc(), new_tail };
+                return { new_size, BL, empty.root->inc(), new_tail };
             }
         }
     }
@@ -604,21 +591,21 @@ struct rrbtree
         if (elems == 0) {
             return;
         } else if (elems >= size) {
-            *this = empty();
+            *this = empty;
         } else if (elems == tail_off) {
             dec_inner(root, shift, tail_off);
             shift = BL;
-            root  = empty().root->inc();
+            root  = empty.root->inc();
             size -= elems;
             return;
         } else if (elems > tail_off) {
             auto v = slice_left_mut_visitor<node_t>();
             tail = get<1>(make_leaf_sub_pos(tail, size - tail_off).visit(
                               v, elems - tail_off, e));
-            if (root != empty().root) {
+            if (root != empty.root) {
                 dec_inner(root, shift, tail_off);
                 shift = BL;
-                root  = empty().root->inc();
+                root  = empty.root->inc();
             }
             size -= elems;
             return;
@@ -637,14 +624,14 @@ struct rrbtree
         if (elems == 0) {
             return *this;
         } else if (elems >= size) {
-            return empty();
+            return empty;
         } else if (elems == tail_offset()) {
-            return { size - elems, BL, empty().root->inc(), tail->inc() };
+            return { size - elems, BL, empty.root->inc(), tail->inc() };
         } else if (elems > tail_offset()) {
             auto tail_off = tail_offset();
             auto new_tail = node_t::copy_leaf(tail, elems - tail_off,
                                               size - tail_off);
-            return { size - elems, BL, empty().root->inc(), new_tail };
+            return { size - elems, BL, empty.root->inc(), new_tail };
         } else {
             using std::get;
             auto v = slice_left_visitor<node_t>();
@@ -960,9 +947,9 @@ struct rrbtree
             } else if (tail_size + r.size <= branches<BL>) {
                 l.ensure_mutable_tail(el, tail_size);
                 if (r.tail->can_mutate(er))
-                    detail::uninitialized_move(r.tail->leaf(),
-                                              r.tail->leaf() + r.size,
-                                              l.tail->leaf() + tail_size);
+                    uninitialized_move(r.tail->leaf(),
+                                       r.tail->leaf() + r.size,
+                                       l.tail->leaf() + tail_size);
                 else
                     std::uninitialized_copy(r.tail->leaf(),
                                             r.tail->leaf() + r.size,
@@ -973,9 +960,9 @@ struct rrbtree
                 auto remaining = branches<BL> - tail_size;
                 l.ensure_mutable_tail(el, tail_size);
                 if (r.tail->can_mutate(er))
-                    detail::uninitialized_move(r.tail->leaf(),
-                                              r.tail->leaf() + remaining,
-                                              l.tail->leaf() + tail_size);
+                    uninitialized_move(r.tail->leaf(),
+                                       r.tail->leaf() + remaining,
+                                       l.tail->leaf() + tail_size);
                 else
                     std::uninitialized_copy(r.tail->leaf(),
                                             r.tail->leaf() + remaining,
@@ -1163,11 +1150,10 @@ struct rrbtree
     void hard_reset()
     {
         assert(supports_transient_concat);
-        auto&& empty_ = empty();
-        size = empty_.size;
-        shift = empty_.shift;
-        root = empty_.root;
-        tail = empty_.tail;
+        size = empty.size;
+        shift = empty.shift;
+        root = empty.root;
+        tail = empty.tail;
     }
 
     bool check_tree() const
@@ -1206,28 +1192,27 @@ struct rrbtree
     }
 
 #if IMMER_DEBUG_PRINT
-    void debug_print(std::ostream& out) const
+    void debug_print() const
     {
-        out
+        std::cerr
             << "--" << std::endl
             << "{" << std::endl
             << "  size  = " << size << std::endl
             << "  shift = " << shift << std::endl
             << "  root  = " << std::endl;
-        debug_print_node(out, root, shift, tail_offset());
-        out << "  tail  = " << std::endl;
-        debug_print_node(out, tail, endshift<B, BL>, tail_size());
-        out << "}" << std::endl;
+        debug_print_node(root, shift, tail_offset());
+        std::cerr << "  tail  = " << std::endl;
+        debug_print_node(tail, endshift<B, BL>, tail_size());
+        std::cerr << "}" << std::endl;
     }
 
-    void debug_print_indent(std::ostream& out, unsigned indent) const
+    void debug_print_indent(unsigned indent) const
     {
         while (indent --> 0)
-            out << ' ';
+            std::cerr << ' ';
     }
 
-    void debug_print_node(std::ostream& out,
-                          node_t* node,
+    void debug_print_node(node_t* node,
                           shift_t shift,
                           size_t size,
                           unsigned indent = 8) const
@@ -1235,39 +1220,36 @@ struct rrbtree
         const auto indent_step = 4;
 
         if (shift == endshift<B, BL>) {
-            debug_print_indent(out, indent);
-            out << "- {" << size << "} "
-                << pretty_print_array(node->leaf(), size)
-                << std::endl;
+            debug_print_indent(indent);
+            std::cerr << "- {" << size << "} "
+                      << pretty_print_array(node->leaf(), size)
+                      << std::endl;
         } else if (auto r = node->relaxed()) {
             auto count = r->d.count;
-            debug_print_indent(out, indent);
-            out << "# {" << size << "} "
-                << pretty_print_array(r->d.sizes, r->d.count)
-                << std::endl;
+            debug_print_indent(indent);
+            std::cerr << "# {" << size << "} "
+                      << pretty_print_array(r->d.sizes, r->d.count)
+                      << std::endl;
             auto last_size = size_t{};
-            for (auto i = count_t{}; i < count; ++i) {
-                debug_print_node(out,
-                                 node->inner()[i],
+            for (auto i = 0; i < count; ++i) {
+                debug_print_node(node->inner()[i],
                                  shift - B,
                                  r->d.sizes[i] - last_size,
                                  indent + indent_step);
                 last_size = r->d.sizes[i];
             }
         } else {
-            debug_print_indent(out, indent);
-            out << "+ {" << size << "}" << std::endl;
+            debug_print_indent(indent);
+            std::cerr << "+ {" << size << "}" << std::endl;
             auto count = (size >> shift)
                 + (size - ((size >> shift) << shift) > 0);
             if (count) {
-                for (auto i = count_t{}; i < count - 1; ++i)
-                    debug_print_node(out,
-                                     node->inner()[i],
+                for (auto i = 0; i < count - 1; ++i)
+                    debug_print_node(node->inner()[i],
                                      shift - B,
                                      1 << shift,
                                      indent + indent_step);
-                debug_print_node(out,
-                                 node->inner()[count - 1],
+                debug_print_node(node->inner()[count - 1],
                                  shift - B,
                                  size - ((count - 1) << shift),
                                  indent + indent_step);
@@ -1275,6 +1257,14 @@ struct rrbtree
         }
     }
 #endif // IMMER_DEBUG_PRINT
+};
+
+template <typename T, typename MP, bits_t B, bits_t BL>
+const rrbtree<T, MP, B, BL> rrbtree<T, MP, B, BL>::empty = {
+    0,
+    BL,
+    node_t::make_inner_n(0u),
+    node_t::make_leaf_n(0u)
 };
 
 } // namespace rbts

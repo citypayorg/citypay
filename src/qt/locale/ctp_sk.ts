@@ -22,14 +22,6 @@
         <translation>&amp;Kopírovať</translation>
     </message>
     <message>
-        <source>Show QR code for the currently selected address</source>
-        <translation>&amp;Zobraziť QR kód pre zrovna vybrané adresy</translation>
-    </message>
-    <message>
-        <source>&amp;Show QR code</source>
-        <translation>&amp;Zobraziť QR kód</translation>
-    </message>
-    <message>
         <source>Delete the currently selected address from the list</source>
         <translation>Odstrániť vybranú adresu zo zoznamu</translation>
     </message>
@@ -71,11 +63,11 @@
     </message>
     <message>
         <source>These are your Ctp addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Toto sú vaše Ctp adresy pre posielanie platieb. Pred poslaním mincí vždy overte sumu a doručovaciu adresu.</translation>
+        <translation>Toto sú Vaše Ctp adresy pre posielanie platieb. Pred poslaním mincí vždy overte sumu a doručovaciu adresu.</translation>
     </message>
     <message>
         <source>These are your Ctp addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Toto sú vaše Ctp adresy pre posielanie platieb. Pre každú transakciu sa doporučuje použiť novú doručovaciu adresu.</translation>
+        <translation>Toto sú Vaše Ctp adresy pre posielanie platieb. Pre každú transakciu sa doporučuje použiť novú doručovaciu adresu.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -88,14 +80,6 @@
     <message>
         <source>&amp;Edit</source>
         <translation>&amp;Upraviť</translation>
-    </message>
-    <message>
-        <source>&amp;Show address QR code</source>
-        <translation>&amp;Zobraziť adresový QR kód</translation>
-    </message>
-    <message>
-        <source>QR code</source>
-        <translation>QR kód</translation>
     </message>
     <message>
         <source>Export Address List</source>
@@ -201,7 +185,7 @@
     </message>
     <message>
         <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your funds from being stolen by malware infecting your computer.</source>
-        <translation>%1 sa teraz ukončí, aby dokončil proces šifrovania. Nezabudnite, že zašifrovanie vašej peňaženky nemôže plne chrániť vaše finančné prostriedky pred krádežou škodlivým softvérom, ktorý napadol váš počítač.</translation>
+        <translation>%1 sa teraz ukončí, aby dokončil proces šifrovania. Nezabudnite, že zašifrovanie vašej peňaženky nemôže plne chrániť Vaše finančné prostriedky pred krádežou škodlivým softvérom, ktorý napadol váš počítač.</translation>
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. Previous backups of the unencrypted wallet file contain the same HD seed and still have full access to all your funds just like the new, encrypted wallet.</source>
@@ -307,11 +291,11 @@
     </message>
     <message>
         <source>&amp;Masternodes</source>
-        <translation>&amp;Masternódy</translation>
+        <translation>&amp;Masternodes</translation>
     </message>
     <message>
         <source>Browse masternodes</source>
-        <translation>Prechádzať masternódy</translation>
+        <translation>Prechádzať masternodes</translation>
     </message>
     <message>
         <source>E&amp;xit</source>
@@ -395,7 +379,7 @@
     </message>
     <message>
         <source>Sign messages with your Ctp addresses to prove you own them</source>
-        <translation>Podpísať správy s vašimi Ctp adresami ako dôkaz že ich vlastníte</translation>
+        <translation>Podpísať správy s Vašimi Ctp adresami ako dôkaz že ich vlastníte</translation>
     </message>
     <message>
         <source>&amp;Verify message...</source>
@@ -452,6 +436,14 @@
     <message>
         <source>Open configuration file</source>
         <translation>Otvoriť konfiguračný súbor </translation>
+    </message>
+    <message>
+        <source>Open &amp;Masternode Configuration File</source>
+        <translation>Otvoriť konfiguračný súbor &amp;Masternode</translation>
+    </message>
+    <message>
+        <source>Open Masternode configuration file</source>
+        <translation>Otvoriť konfiguračný súbor Masternode</translation>
     </message>
     <message>
         <source>Show Automatic &amp;Backups</source>
@@ -659,6 +651,10 @@
 <context>
     <name>ClientModel</name>
     <message>
+        <source>Total: %1 (PS compatible: %2 / Enabled: %3)</source>
+        <translation>Celkovo: %1 (Kompatibilné s PS: %2 / Zapnuté: %3)</translation>
+    </message>
+    <message>
         <source>Network Alert</source>
         <translation>Výstraha siete</translation>
     </message>
@@ -796,10 +792,6 @@
     <message>
         <source>Please switch to "List mode" to use this function.</source>
         <translation>Pre použitie tejto funkcie prepnite na "Zoznamový mód".</translation>
-    </message>
-    <message>
-        <source>Non-anonymized input selected. &lt;b&gt;PrivateSend will be disabled.&lt;/b&gt;&lt;br&gt;&lt;br&gt;If you still want to use PrivateSend, please deselect all non-anonymized inputs first and then check the PrivateSend checkbox again.</source>
-        <translation>Vybratý ne-anonymizovaný vstup. &lt;b&gt;PrivateSend bude vypnutý.&lt;/b&gt;&lt;br&gt;&lt;br&gt;Ak si stále želáte použiť PrivateSend, najskôr odznačte všetky ne-anonymizované vstupy a potom znova zaškrtnite PrivateSend políčko.</translation>
     </message>
     <message>
         <source>(%1 locked)</source>
@@ -974,11 +966,7 @@
         <source>PrivateSend information</source>
         <translation>Informácie o PrivateSend</translation>
     </message>
-    <message>
-        <source>&lt;h3&gt;PrivateSend Basics&lt;/h3&gt; PrivateSend gives you true financial privacy by obscuring the origins of your funds. All the Ctp in your wallet is comprised of different "inputs" which you can think of as separate, discrete coins.&lt;br&gt; PrivateSend uses an innovative process to mix your inputs with the inputs of two other people, without having your coins ever leave your wallet. You retain control of your money at all times.&lt;hr&gt; &lt;b&gt;The PrivateSend process works like this:&lt;/b&gt;&lt;ol type="1"&gt; &lt;li&gt;PrivateSend begins by breaking your transaction inputs down into standard denominations. These denominations are 0.001 CTP, 0.01 CTP, 0.1 CTP, 1 CTP and 10 CTP -- sort of like the paper money you use every day.&lt;/li&gt; &lt;li&gt;Your wallet then sends requests to specially configured software nodes on the network, called "masternodes." These masternodes are informed then that you are interested in mixing a certain denomination. No identifiable information is sent to the masternodes, so they never know "who" you are.&lt;/li&gt; &lt;li&gt;When two other people send similar messages, indicating that they wish to mix the same denomination, a mixing session begins. The masternode mixes up the inputs and instructs all three users' wallets to pay the now-transformed input back to themselves. Your wallet pays that denomination directly to itself, but in a different address (called a change address).&lt;/li&gt; &lt;li&gt;In order to fully obscure your funds, your wallet must repeat this process a number of times with each denomination. Each time the process is completed, it's called a "round." Each round of PrivateSend makes it exponentially more difficult to determine where your funds originated.&lt;/li&gt; &lt;li&gt;This mixing process happens in the background without any intervention on your part. When you wish to make a transaction, your funds will already be anonymized. No additional waiting is required.&lt;/li&gt; &lt;/ol&gt; &lt;hr&gt;&lt;b&gt;IMPORTANT:&lt;/b&gt; Your wallet only contains 1000 of these "change addresses." Every time a mixing event happens, up to 9 of your addresses are used up. This means those 1000 addresses last for about 100 mixing events. When 900 of them are used, your wallet must create more addresses. It can only do this, however, if you have automatic backups enabled.&lt;br&gt; Consequently, users who have backups disabled will also have PrivateSend disabled. &lt;hr&gt;For more information, see the &lt;a href="https://docs.citypay.org/en/latest/wallets/ctpcore/privatesend-instantsend.html"&gt;PrivateSend documentation&lt;/a&gt;.</source>
-        <translation>&lt;h3&gt;Základy PrivateSend&lt;/h3&gt; PrivateSend Vám poskytuje skutočné finančné súkromie skrývaním pôvodu vašich zdrojov. Všetky Ctp vo vašej peňaženke pozostávajú z rôznych "vstupov", ktoré si môžete predstaviť ako rozdelené, which you can think of as separate, diskrétne mince.&lt;br&gt; PrivateSend používa zdokonalený proces pre miešanie Vašich vstupov so vstupmi iných ľudí bez toho. aby vaše mince museli opustiť Vašu peňaženku. Počas cele doby máte kontrolu nad Vašimi peniazmi.&lt;hr&gt; &lt;b&gt;Proces PrivateSend funguje nasledovne:&lt;/b&gt;&lt;ol type="1"&gt; &lt;li&gt;PrivateSend začne rozdelením vašich transakčných vstupov na štandardné časti, takzvané denominácie. Tieto denominácie sú 0.001 CTP, 0.01 CTP, 0.1 CTP, 1 CTP a 10 CTP -- v podstate niečo ako papierové peniaze, ktoré používate každý deň.&lt;/li&gt; &lt;li&gt;Vaša peňaženka potom pošle požiadavok špeciálne nastavenému softvérovému uzlu nazvaného "Masternode". Tieto masternódy sú potom informované, že máte záujem miešať určité denominácie. Masternode neobdrží žiadne informácie ktoré by Vás identifikovali, takže nikdy nevedia kto ste.&lt;/li&gt; &lt;li&gt;Keď ďalší dvaja ľudia pošlú podobnú správu hovoriacu o tom že chcú miešať rovnakú denomináciu, začne sa samotné miešanie. Masternode zamieša vstupy a povie peňaženkám všetkých troch používateľov, aby zaplatili teraz už zmiešané vstupy sami sebe. Vaša peňaženka zaplatí tieto denominácie priamo sebe, ale už na inú adresu (nazývanú "meniaca adresa").&lt;/li&gt; &lt;li&gt;Aby boli vaše zdroje plne ukryté, vaša peňaženka musí zopakovať tento proces niekoľko krát s každou denomináciou.  Vždy keď je tento proces dokončený, je nazvaný "kolo". Každé kolo PrivateSend exponenciálne sťažuje určiť odkiaľ pochádzajú vaše zdroje.&lt;/li&gt; &lt;li&gt;Toto miešanie sa deje na pozadí bez nutnosti zásahov z vašej strany. Keď si prajete uskutočniť transakciu, vaše zdroje budú už anonymné. Nie je nutné na nič čakať.&lt;/li&gt; &lt;/ol&gt; &lt;hr&gt; &lt;b&gt;DÔLEŽITÉ:&lt;/b&gt; Vaša peňaženka obsahuje iba 1000 týchto "meniacich adries". Vždy keď prebehne miešanie, použije sa maximálne až 9 vašich adries. To znamená, že týchto 1000 adries vystačí zhruba na 100 miešaní. Keď sa použije 900 adries, vaša peňaženka musí vytvoriť viac adries. Toto je však možné iba vtedy, keď máte zapnuté automatické zálohovanie.&lt;br&gt; V dôsledku toho, používatelia ktorí majú zálohovanie vypnuté, budú mať vypnutý aj PrivateSend. &lt;hr&gt;&lt;a href="https://docs.citypay.org/en/latest/wallets/ctpcore/privatesend-instantsend.html"&gt;Viac informácií nájdete v dokumentácii PrivateSend&lt;/a&gt;.</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>Intro</name>
     <message>
@@ -994,16 +982,8 @@
         <translation>Keďže toto je prvé spustenie programu, môžete si vybrať, kam %1 bude ukladať vaše údaje.</translation>
     </message>
     <message>
-        <source>When you click OK, %1 will begin to download and process the full %4 block chain (%2GB) starting with the earliest transactions in %3 when %4 initially launched.</source>
-        <translation>Keď kliknete na OK tak %1 začne sťahovanie a spracuje celý %4 blockchain (%2GB) počnúc najmladšími transakciami v %3 keď sa %4 prvý krát spustil.</translation>
-    </message>
-    <message>
-        <source>This initial synchronisation is very demanding, and may expose hardware problems with your computer that had previously gone unnoticed. Each time you run %1, it will continue downloading where it left off.</source>
-        <translation>Počiatočná synchronizácia je veľmi náročná a môže odhaliť hardvérové problémy vo vašom počítači o ktorých ste do teraz nevedeli. Vždy keď zapnete %1 tak sa sťahovanie začne presne tam kde bolo pred vypnutím.</translation>
-    </message>
-    <message>
-        <source>If you have chosen to limit block chain storage (pruning), the historical data must still be downloaded and processed, but will be deleted afterward to keep your disk usage low.</source>
-        <translation>Keď ste si vybrali limit na uloženie blockchainu (zmenšenie) tak sa historické dáta budú musieť aj tak stiahnuť a spracovať, ale potom budú zmazané aby sa používanie disku znížilo.</translation>
+        <source>%1 will download and store a copy of the Ctp block chain. At least %2GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>%1 stiahne a uloží kópiu reťazca blokov Ctp. V tomto adresári bude uložené aspoň %2GB dát a bude časom rásť. Peňaženka bude tiež uložená v tomto adresári.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1012,22 +992,6 @@
     <message>
         <source>Use a custom data directory:</source>
         <translation>Použiť vlastný dátový adresár:</translation>
-    </message>
-    <message>
-        <source>At least %1 GB of data will be stored in this directory, and it will grow over time.</source>
-        <translation>V tomto adresári bude uložené minimálne %1 GB dát, časom sa využité dáta zvýšia.</translation>
-    </message>
-    <message>
-        <source>Approximately %1 GB of data will be stored in this directory.</source>
-        <translation>V tomto adresári bude uložených približne %1 GB dát.</translation>
-    </message>
-    <message>
-        <source>%1 will download and store a copy of the Ctp block chain.</source>
-        <translation>%1 stiahne a bude uchovávať kópiu Ctp blockchainu.</translation>
-    </message>
-    <message>
-        <source>The wallet will also be stored in this directory.</source>
-        <translation>Peňaženka bude tiež uložená v tomto adresári.</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1053,20 +1017,76 @@
         <translation>Od</translation>
     </message>
     <message>
+        <source>My Masternodes</source>
+        <translation>Moje Masternodes</translation>
+    </message>
+    <message>
+        <source>Note: Status of your masternodes in local wallet can potentially be slightly incorrect.&lt;br /&gt;Always wait for wallet to sync additional data and then double check from another node&lt;br /&gt;if your masternode should be running but you still do not see "ENABLED" in "Status" field.</source>
+        <translation>Poznámka: Stav Vášho Masternode v lokálnej peňaženke môže byť potencionálne trochu nepresný.&lt;br /&gt;Vždy počkajte na peňaženku pokým nestiahne dodatočné dáta a opätovne neoverí y druhého uzlu,&lt;br /&gt;ak by Váš Maternode mal bežať, ale stále nevidíte "Zapnuté" v poli "Stav".</translation>
+    </message>
+    <message>
+        <source>Alias</source>
+        <translation>Alias</translation>
+    </message>
+    <message>
         <source>Address</source>
         <translation>Adresa</translation>
+    </message>
+    <message>
+        <source>Protocol</source>
+        <translation>Protokol</translation>
     </message>
     <message>
         <source>Status</source>
         <translation>Stav</translation>
     </message>
     <message>
+        <source>Active</source>
+        <translation>Aktívne</translation>
+    </message>
+    <message>
+        <source>Last Seen</source>
+        <translation>Naposledy videné</translation>
+    </message>
+    <message>
         <source>Payee</source>
         <translation>Príjemca</translation>
     </message>
     <message>
+        <source>S&amp;tart alias</source>
+        <translation>&amp;Začať alias</translation>
+    </message>
+    <message>
+        <source>Start &amp;all</source>
+        <translation>Začať &amp;všetko</translation>
+    </message>
+    <message>
+        <source>Start &amp;MISSING</source>
+        <translation>Začať &amp;CHÝBAJÚCE</translation>
+    </message>
+    <message>
+        <source>&amp;Update status</source>
+        <translation>&amp;Aktualizovať stav</translation>
+    </message>
+    <message>
+        <source>Show additional Masternode information</source>
+        <translation>Zobraziť ďalšie informácie o Masternode</translation>
+    </message>
+    <message>
+        <source>Show &amp;Info...</source>
+        <translation>Zobraziť &amp;informácie...</translation>
+    </message>
+    <message>
+        <source>Status will be updated automatically in (sec):</source>
+        <translation>Stav bude automaticky aktualizovaný za (sekúnd):</translation>
+    </message>
+    <message>
         <source>0</source>
         <translation>0</translation>
+    </message>
+    <message>
+        <source>All Masternodes</source>
+        <translation>Všetky  Masternode</translation>
     </message>
     <message>
         <source>Filter List:</source>
@@ -1074,83 +1094,79 @@
     </message>
     <message>
         <source>Filter masternode list</source>
-        <translation>Filtrovať zoznam masternódov</translation>
+        <translation>Filtrovať zoznam Masternode.</translation>
     </message>
     <message>
         <source>Node Count:</source>
         <translation>Počet uzlov:</translation>
     </message>
     <message>
-        <source>DIP3 Masternodes</source>
-        <translation>DIP3 Masternódy</translation>
+        <source>Start alias</source>
+        <translation>Začať alias</translation>
     </message>
     <message>
-        <source>Show only masternodes this wallet has keys for.</source>
-        <translation>Zobraziť len masternódy, pre ktoré má táto peňaženka kľúče.</translation>
+        <source>Confirm masternode start</source>
+        <translation>Potvrdiť spustenie Masternode</translation>
     </message>
     <message>
-        <source>My masternodes only</source>
-        <translation>Iba moje masternódy</translation>
+        <source>Are you sure you want to start masternode %1?</source>
+        <translation>Ste si istý, že chcete spustiť Masternode %1?</translation>
     </message>
     <message>
-        <source>PoSe Score</source>
-        <translation>PoSe skóre</translation>
+        <source>Confirm all masternodes start</source>
+        <translation>Potvrdiť spustenie všetkých Masternode</translation>
     </message>
     <message>
-        <source>Registered</source>
-        <translation>Zaregistrované</translation>
+        <source>Are you sure you want to start ALL masternodes?</source>
+        <translation>Ste si istý, že chcete spustiť VŠETKY masternodes?</translation>
     </message>
     <message>
-        <source>Last Paid</source>
-        <translation>Posledná platba</translation>
+        <source>Command is not available right now</source>
+        <translation>Príkaz je momentálne nedostupný</translation>
     </message>
     <message>
-        <source>Next Payment</source>
-        <translation>Ďalšia platba</translation>
+        <source>You can't use this command until masternode list is synced</source>
+        <translation>Tento príkaz nemôžete použiť pokým sa nesynchronizuje zoznam Masternode</translation>
     </message>
     <message>
-        <source>Operator Reward</source>
-        <translation>Odmena operátora</translation>
+        <source>Confirm missing masternodes start</source>
+        <translation>Potvrdiť spustenie chýbajúcich Masternode</translation>
     </message>
     <message>
-        <source>Copy ProTx Hash</source>
-        <translation>Skopírovať ProTx hash</translation>
+        <source>Are you sure you want to start MISSING masternodes?</source>
+        <translation>Ste si istý, že chcete spustiť CHÝBAJÚCE Masternodes?</translation>
     </message>
     <message>
-        <source>Copy Collateral Outpoint</source>
-        <translation>Kopírovať zábezpeku Outpoint</translation>
+        <source>Additional information for Masternode %1</source>
+        <translation>Ďalšie informácie o Masternode %1</translation>
     </message>
     <message>
-        <source>ENABLED</source>
-        <translation>AKTÍVNE</translation>
+        <source>Masternode Private Key</source>
+        <translation>Súkromný kľúč Masternode </translation>
     </message>
     <message>
-        <source>POSE_BANNED</source>
-        <translation>POSE_ZAKÁZANÉ</translation>
+        <source>Private Key</source>
+        <translation>Súkromný kľúč</translation>
     </message>
     <message>
-        <source>UNKNOWN</source>
-        <translation>NEZNÁME</translation>
+        <source>Collateral</source>
+        <translation>Zaistenie</translation>
     </message>
     <message>
-        <source>to %1</source>
-        <translation>do %1</translation>
+        <source>IP</source>
+        <translation>IP</translation>
     </message>
     <message>
-        <source>to UNKNOWN</source>
-        <translation>do NEZNÁME</translation>
+        <source>Version</source>
+        <translation>Verzia</translation>
     </message>
     <message>
-        <source>but not claimed</source>
-        <translation>ale nie nárokované</translation>
+        <source>Unknown</source>
+        <translation>Neznáme</translation>
     </message>
     <message>
-        <source>NONE</source>
-        <translation>ŽIADNE</translation>
-    </message>
-    <message>
-        <source>Additional information for DIP3 Masternode %1</source>
-        <translation>Ďalšie informácie pre DIP3 Masternode %1</translation>
+        <source>Sentinel</source>
+        <translation>Strážca</translation>
     </message>
 </context>
 <context>
@@ -1161,7 +1177,7 @@
     </message>
     <message>
         <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the Ctp network, as detailed below.</source>
-        <translation>Nedávne transakcie ešte nemusia byť viditeľné, a preto stav vašej peňaženky môže byť nesprávny. Informácia bude správna hneď ako vaša peňaženka dokončí synchronizáciu so sieťou Ctp. Viac detailov nájdete nižšie.</translation>
+        <translation>Nedávne transakcie ešte nemusia byť viditeľné, a preto stav Vašej peňaženky nože byť nesprávny. Informácia bude správna hneď ako Vaša peňaženka dokončí synchronizáciu so sieťou Ctp. Viac detailov nájdete nižšie.</translation>
     </message>
     <message>
         <source>Attempting to spend Ctp that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
@@ -1263,11 +1279,11 @@
     </message>
     <message>
         <source>Show additional tab listing all your masternodes in first sub-tab&lt;br/&gt;and all masternodes on the network in second sub-tab.</source>
-        <translation>Zobraziť dodatočnú záložku, ktorá vypíše všetky vaše masternódy v prvej pod-zložke&lt;br/&gt;- a všetky masternódy v druhej pod-zložke. </translation>
+        <translation>Zobraziť dodatočnú záložku, ktorá vypíše všetky Vaše Masternode v prvej pod-zložke&lt;br/&gt;- a všetky Masternode v druhej pod-zložke. </translation>
     </message>
     <message>
         <source>Show Masternodes Tab</source>
-        <translation>Ukázať záložku masternódov</translation>
+        <translation>Ukázať záložku Masternodes</translation>
     </message>
     <message>
         <source>Show additional information and buttons for PrivateSend on overview screen.</source>
@@ -1279,7 +1295,7 @@
     </message>
     <message>
         <source>Show warning dialog when PrivateSend detects that wallet has very low number of keys left.</source>
-        <translation>Zobraziť dialóg s upozornením ak PrivateSend zistí, že vaša peňaženka má veľmi málo zostávajúcich kľúčov.</translation>
+        <translation>Zobraziť dialóg s upozornením ak PrivateSend zistí, že Vaša peňaženka má veľmi málo zostávajúcich kľúčov.</translation>
     </message>
     <message>
         <source>Warn if PrivateSend is running out of keys</source>
@@ -1307,7 +1323,7 @@
     </message>
     <message>
         <source>Automatically open the Ctp Core client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automaticky otvoriť na smerovači port pre Ctp Core klient. Toto funguje iba ak váš smerovač  podporuje UPnP a je povolené</translation>
+        <translation>Automaticky otvoriť na smerovači port pre Ctp Core klient. Toto funguje iba ak Váš smerovač  podporuje UPnP a je povolené</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1339,7 +1355,7 @@
     </message>
     <message>
         <source>This setting determines the amount of individual masternodes that an input will be anonymized through.&lt;br/&gt;More rounds of anonymization gives a higher degree of privacy, but also costs more in fees.</source>
-        <translation>Toto nastavenie určuje množstvo jednotlivých masternódov cez ktoré sa bude anonymizovať vstup.&lt;br/&gt; Viac kôl anonymizácie dáva väčšiu úroveň súkromia, ale tiež stojí viac na poplatkoch.</translation>
+        <translation>Toto nastavenie určuje množstvo rozličných masternode cez ktoré sa bude anonymizovať vstup.&lt;br/&gt; Viac kôl anonymizácie dáva väčšiu úroveň súkromia, ale tiež stojí viac na poplatkoch.</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1356,14 +1372,6 @@
     <message>
         <source>Enable coin &amp;control features</source>
         <translation>Povoliť možnosti "&amp;coin control"</translation>
-    </message>
-    <message>
-        <source>Show system popups for PrivateSend mixing transactions&lt;br/&gt;just like for all other transaction types.</source>
-        <translation>Zobraziť vyskakovacie okná pre miešacie PrivateSend transakcie,&lt;br/&gt; tak ako pre ostatné typy transakcií.</translation>
-    </message>
-    <message>
-        <source>Show popups for PrivateSend transactions</source>
-        <translation>Zobraziť vyskakovacie okná pre PrivateSend transakcie </translation>
     </message>
     <message>
         <source>&amp;Spend unconfirmed change</source>
@@ -1747,10 +1755,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Chystáme sa pre Vás vytvoriť automatickú zálohu, avšak &lt;span style='color:red;'&gt;mali by ste sa uistiť, že máte zálohy uložené na bezpečnom mieste&lt;/span&gt;!</translation>
     </message>
     <message>
-        <source>Note: You can turn this message off in options.</source>
-        <translation>Poznámka: Túto správu môžete vypnúť v nastaveniach.</translation>
-    </message>
-    <message>
         <source>WARNING! Something went wrong on automatic backup</source>
         <translation>UPOZORNENIE: S automatickými zálohami nie je niečo v poriadku</translation>
     </message>
@@ -1760,7 +1764,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
     </message>
     <message>
         <source>Mixing is disabled, please close your wallet and fix the issue!</source>
-        <translation>Miešanie je vypnuté. Zatvorte prosím vašu peňaženku a opravte problém.</translation>
+        <translation>Miešanie je vypnuté. Zatvorte prosím Vašu peňaženku a opravte problém.</translation>
     </message>
     <message>
         <source>Enabled</source>
@@ -1772,7 +1776,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
     </message>
     <message>
         <source>WARNING! Failed to replenish keypool, please unlock your wallet to do so.</source>
-        <translation>UPOZORNENIE! Chyba pri doplňovaní zásobníku kľúčov. Pre doplnenie musíte odomknúť vašu peňaženku.</translation>
+        <translation>UPOZORNENIE! Chyba pri doplňovaní zásobníku kľúčov. Pre doplnenie musíte odomknúť Vašu peňaženku.</translation>
     </message>
     <message>
         <source>Last PrivateSend message:
@@ -1780,6 +1784,10 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Posledná PrivateSend správa:
 
 </translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>nie je k dispozícii</translation>
     </message>
     <message>
         <source>PrivateSend was successfully reset.</source>
@@ -1911,8 +1919,16 @@ https://www.transifex.com/projects/p/ctp/</translation>
 <context>
     <name>QObject</name>
     <message>
+        <source>Ctp Core</source>
+        <translation>Ctp Core</translation>
+    </message>
+    <message>
         <source>%1 didn't yet exit safely...</source>
         <translation>%1 nebol ešte bezpečne ukončený...</translation>
+    </message>
+    <message>
+        <source>Error reading masternode configuration file: %1</source>
+        <translation>Chyba pri načítaní konfiguračného súboru Masternode: %1</translation>
     </message>
     <message>
         <source>Amount</source>
@@ -2119,7 +2135,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
-        <translation>Počet masternódov</translation>
+        <translation>Počet Mastenode</translation>
     </message>
     <message>
         <source>Memory Pool</source>
@@ -2127,7 +2143,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
     </message>
     <message>
         <source>Current number of transactions</source>
-        <translation>Aktuálny počet transakcií</translation>
+        <translation>Aktuálny počet tranzakcií</translation>
     </message>
     <message>
         <source>Memory usage</source>
@@ -2376,10 +2392,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
     <message>
         <source>Network activity disabled</source>
         <translation>Sieťová aktivita zakázaná</translation>
-    </message>
-    <message>
-        <source>Total: %1 (Enabled: %2)</source>
-        <translation>Celkovo: %1 (Povolené: %2)</translation>
     </message>
     <message>
         <source>%1 B</source>
@@ -2871,11 +2883,11 @@ https://www.transifex.com/projects/p/ctp/</translation>
     </message>
     <message>
         <source>The amount exceeds your balance.</source>
-        <translation>Suma je vyššia ako váš zostatok.</translation>
+        <translation>Suma je vyššia ako Váš zostatok.</translation>
     </message>
     <message>
         <source>The total exceeds your balance when the %1 transaction fee is included.</source>
-        <translation>Celková suma prevyšuje váš zostatok ak sú započítané %1 transakčné poplatky.</translation>
+        <translation>Celková suma prevyšuje Váš zostatok ak sú započítané %1 transakčné poplatky.</translation>
     </message>
     <message>
         <source>Duplicate address found: addresses should only be used once each.</source>
@@ -2990,7 +3002,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
     </message>
     <message>
         <source>A message that was attached to the ctp: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Ctp network.</source>
-        <translation>Správa ktorá bola pripojená ku ctp: URI ktorá sa uchová spolu s transakciou pre vašu referenciu. Poznámka: Táto správa nebude poslaná cez sieť Ctp.</translation>
+        <translation>Správa ktorá bola pripojená ku ctp: URI ktorá sa uchová spolu s transakciou pre Vašu referenciu. Poznámka: Táto správa nebude poslaná cez sieť Ctp.</translation>
     </message>
     <message>
         <source>This is an unauthenticated payment request.</source>
@@ -3043,7 +3055,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
     </message>
     <message>
         <source>You can sign messages/agreements with your addresses to prove you can receive Ctp sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>Môžete podpísať správy/dohody svojou adresou aby ste dokázali, že na ňu prijať Ctp. Buďte opatrní a nepodpisuje nič vágne alebo náhodné, nakoľko útoky typu "phishing" vás môžu lákať k ich podpísaniu vašej identity. Podpisujte iba vyhlásenia s úplnými detailami s ktorými súhlasíte.</translation>
+        <translation>Môžete podpísať správy/dohody svojou adresou aby ste dokázali, že na ňu prijať Ctp. Buďte opatrní a nepodpisuje nič vágne alebo náhodné, nakoľko útoky typu "phishing" Vás môžu lákať k ich podpísaniu Vašej identity. Podpisujte iba vyhlásenia s úplnými detailami s ktorými súhlasíte.</translation>
     </message>
     <message>
         <source>The Ctp address to sign the message with</source>
@@ -3229,14 +3241,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
     <message>
         <source>%1 confirmations</source>
         <translation>%1 potvrdení</translation>
-    </message>
-    <message>
-        <source>locked via LLMQ based ChainLocks</source>
-        <translation>zamknuté pomocou LLMQ ChainLocks</translation>
-    </message>
-    <message>
-        <source>verified via LLMQ based InstantSend</source>
-        <translation>overené pomocou LLMQ InstantSend</translation>
     </message>
     <message>
         <source>verified via InstantSend</source>
@@ -3525,10 +3529,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Či sú ale nie sú, adresy iba na sledovanie zahrnuté v tejto transakcii.</translation>
     </message>
     <message>
-        <source>Whether or not this transaction was locked by InstantSend.</source>
-        <translation>Či bola, alebo nebola táto transakcia uzamknutá pomocou InstantSend.</translation>
-    </message>
-    <message>
         <source>User-defined intent/purpose of the transaction.</source>
         <translation>Užívateľsky určený účel transakcie.</translation>
     </message>
@@ -3542,14 +3542,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
     <message>
         <source>All</source>
         <translation>Všetko</translation>
-    </message>
-    <message>
-        <source>Locked by InstantSend</source>
-        <translation>Uzamknuté cez InstantSend</translation>
-    </message>
-    <message>
-        <source>Not locked by InstantSend</source>
-        <translation>Neuzamknuté cez InstantSend</translation>
     </message>
     <message>
         <source>Today</source>
@@ -3625,7 +3617,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
     </message>
     <message>
         <source>Min amount</source>
-        <translation>Minimálna suma</translation>
+        <translation>Min množstvo</translation>
     </message>
     <message>
         <source>Abandon transaction</source>
@@ -3662,10 +3654,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
     <message>
         <source>Show transaction details</source>
         <translation>Zobraziť podrobnosti transakcie</translation>
-    </message>
-    <message>
-        <source>Show address QR code</source>
-        <translation>Zobraziť adresový QR kód</translation>
     </message>
     <message>
         <source>Export Transaction History</source>
@@ -3718,10 +3706,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
     <message>
         <source>The transaction history was successfully saved to %1.</source>
         <translation>História transakciá bola úspešne uložená do %1.</translation>
-    </message>
-    <message>
-        <source>QR code</source>
-        <translation>QR kód</translation>
     </message>
     <message>
         <source>Range:</source>
@@ -3847,6 +3831,10 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Upozornenie: Zjavne sa úplne nezhodujeme s našimi peer-mi! Možno potrebujete prejsť na novšiu verziu alebo ostatné uzly potrebujú vyššiu verziu.</translation>
     </message>
     <message>
+        <source>You must specify a masternodeprivkey in the configuration. Please see documentation for help.</source>
+        <translation>V konfigurácii musíte špecifikovať masternodeprivkey. Pre pomoc sa prosím pozrite do dokumentácie.</translation>
+    </message>
+    <message>
         <source>Accept command line and JSON-RPC commands</source>
         <translation>Prijímať príkazy z príkazového riadku a JSON-RPC</translation>
     </message>
@@ -3967,20 +3955,16 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Spojiť s danou adresou a povolenými partnerskými zariadeniami ktoré sa tam pripájajú. Použite zápis [host]:port pre IPv6</translation>
     </message>
     <message>
+        <source>Bind to given address to listen for JSON-RPC connections. Use [host]:port notation for IPv6. This option can be specified multiple times (default: bind to all interfaces)</source>
+        <translation>Spojiť s danou adresou pre počúvanie JSON-RPC spojení. Použite zápis [host]:port pre IPv6. Táto možnosť môže byt zadaná niekoľko krát (predvolené: spojiť so všetkými rozhraniami)</translation>
+    </message>
+    <message>
         <source>Create new files with system default permissions, instead of umask 077 (only effective with disabled wallet functionality)</source>
         <translation>Vytvoriť nové súbory z predvolenými systémovými právami, namiesto umask 077 (funguje iba z vypnutou funkcionalitou peňaženky)</translation>
     </message>
     <message>
         <source>Delete all wallet transactions and only recover those parts of the blockchain through -rescan on startup</source>
         <translation>Vymazať všetky transakcie z peňaženky a pri spustení znova získať z blockchainu iba tie získané pomocou -rescan</translation>
-    </message>
-    <message>
-        <source>Enable publish raw transactions of attempted InstantSend double spend in &lt;address&gt;</source>
-        <translation>Povoliť publikovanie nespracovaných transakcií, ktoré sa pokúsili o dvojité minutie InstantSend v &lt;address&gt;</translation>
-    </message>
-    <message>
-        <source>Enable publish transaction hashes of attempted InstantSend double spend in &lt;address&gt;</source>
-        <translation>Povoliť publikovanie transakčných hashov, ktoré sa pokúsili o dvojité minutie InstantSend v &lt;address&gt;</translation>
     </message>
     <message>
         <source>Error loading %s: You can't enable HD on a already existing non-HD wallet</source>
@@ -4012,7 +3996,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
     </message>
     <message>
         <source>Make sure to encrypt your wallet and delete all non-encrypted backups after you verified that wallet works!</source>
-        <translation>Uistite sa, že máte´vašu peňaženku zašifrovanú a zmazané všetky nezašifrované zálohy potom, ako overíte, že peňaženka funguje! </translation>
+        <translation>Uistite sa, že máte´Vašu peňaženku zašifrovanú a zmazané všetky nezašifrované zálohy potom, ako overíte, že peňaženka funguje! </translation>
     </message>
     <message>
         <source>Maximum size of data in data carrier transactions we relay and mine (default: %u)</source>
@@ -4025,14 +4009,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
     <message>
         <source>Output debugging information (default: %u, supplying &lt;category&gt; is optional)</source>
         <translation>Výstupné ladiace informácie (predvolené: %u, dodanie &lt;category&gt; je voliteľné)</translation>
-    </message>
-    <message>
-        <source>Overrides minimum spork signers to change spork value. Only useful for regtest and devnet. Using this on mainnet or testnet will ban you.</source>
-        <translation>Nahrádza minimálny počet spork podpisovateľov pre zmenu spork hodnoty. Použiteľné iba pre regtest a devnet. Použitie tejto funkcie na hlavnej alebo testovacej vás zablokuje.</translation>
-    </message>
-    <message>
-        <source>Use N separate masternodes in parallel to mix funds (%u-%u, default: %u)</source>
-        <translation>Použiť N oddelených masternódov súčasne pre zmiešanie prostriedkov (%u-%u, predvolené: %u)</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -4055,16 +4031,8 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Potrebujete prebudovať databázu použitím -reindex-chainstate pre zmenu -txindex</translation>
     </message>
     <message>
-        <source>You should specify a masternodeblsprivkey in the configuration. Please see documentation for help.</source>
-        <translation>V konfigurácii by ste mali špecifikovať masternodeblsprivkey. Pre pomoc sa pozrite do dokumentácie.</translation>
-    </message>
-    <message>
         <source>(default: %s)</source>
         <translation>(predvolené: %s)</translation>
-    </message>
-    <message>
-        <source>-wallet parameter must only specify a filename (not a path)</source>
-        <translation>-wallet parameter musí špecifikovať len názov súboru (nie cestu)</translation>
     </message>
     <message>
         <source>Accept public REST requests (default: %u)</source>
@@ -4112,7 +4080,11 @@ https://www.transifex.com/projects/p/ctp/</translation>
     </message>
     <message>
         <source>Failed to load masternode cache from</source>
-        <translation>Chyba pri načítaní vyrovnávajúcej pamäti masternode z</translation>
+        <translation>Chyba pri načítaní vyrovnávajúcej pamäti Masternode z</translation>
+    </message>
+    <message>
+        <source>Failed to load masternode payments cache from</source>
+        <translation>Chyba pri načítaní vyrovnávajúcej pamäti platieb Masternode z</translation>
     </message>
     <message>
         <source>Found enough users, signing ( waiting %s )</source>
@@ -4159,16 +4131,16 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Nedostatok prostriedkov.</translation>
     </message>
     <message>
+        <source>Invalid -onion address: '%s'</source>
+        <translation>Neplatná -onion adresa: '%s'</translation>
+    </message>
+    <message>
+        <source>Invalid -proxy address: '%s'</source>
+        <translation>Neplatná -proxy adresa: '%s'</translation>
+    </message>
+    <message>
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s' (must be at least %s)</source>
         <translation>Neplatná suma pre -paytxfee=&lt;amount&gt;: '%s' (musí byť aspoň %s)</translation>
-    </message>
-    <message>
-        <source>Invalid masternodeblsprivkey. Please see documenation.</source>
-        <translation>Neplatný masternodeblsprivkey. Pozrite si dokumentáciu.</translation>
-    </message>
-    <message>
-        <source>Invalid minimum number of spork signers specified with -minsporkkeys</source>
-        <translation>Neplatný minimálny počet spork podpisovateľov určených pomocou -minsporkkeys</translation>
     </message>
     <message>
         <source>Keypool ran out, please call keypoolrefill first</source>
@@ -4195,8 +4167,16 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Načíta sa vyrovnávacia pamäť masternode...</translation>
     </message>
     <message>
+        <source>Loading masternode payment cache...</source>
+        <translation>Načíta sa vyrovnávacia pamäť platieb masternode...</translation>
+    </message>
+    <message>
         <source>Lock is already in place.</source>
         <translation>Zámok je už na mieste.</translation>
+    </message>
+    <message>
+        <source>Lock masternodes from masternode configuration file (default: %u)</source>
+        <translation>Zamknúť masternody z konfiguračného súboru masternode (predvolené: %u)</translation>
     </message>
     <message>
         <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: %u)</source>
@@ -4235,6 +4215,10 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Pripojiť iba k uzlom v sieti &lt;net&gt; (ipv4, ipv6, alebo onion)</translation>
     </message>
     <message>
+        <source>Port: %d</source>
+        <translation>Port: %d</translation>
+    </message>
+    <message>
         <source>Prepend debug output with timestamp (default: %u)</source>
         <translation>Na začiatok pripojiť časovú známku k ladiacemu výstupu (predvolené: %u)</translation>
     </message>
@@ -4259,10 +4243,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Nastaviť veľkosť kľúča fronty na &lt;n&gt; (predvolené: %u)</translation>
     </message>
     <message>
-        <source>Set the masternode BLS private key</source>
-        <translation>Nastaviť súkromný kľúč masternode BLS</translation>
-    </message>
-    <message>
         <source>Set the number of threads to service RPC calls (default: %d)</source>
         <translation>Nastaviť počet vlákien na obsluhu RPC volaní (predvolené: %d)</translation>
     </message>
@@ -4275,6 +4255,10 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Zadajte časový limit pripojenia v milisekundách (minimum: 1, predvolené: %d)</translation>
     </message>
     <message>
+        <source>Specify masternode configuration file (default: %s)</source>
+        <translation>Zadať konfiguračný súbor masternode (predvolené: %s)</translation>
+    </message>
+    <message>
         <source>Specify pid file (default: %s)</source>
         <translation>Zadať pid súbor (predvolené: %s)</translation>
     </message>
@@ -4283,8 +4267,20 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Minúť nepotvrdené zmenu pri posielaní transakcií (predvolené: %u)</translation>
     </message>
     <message>
+        <source>Submitted following entries to masternode: %u / %d</source>
+        <translation>Položky odoslané na masternode: %u / %d</translation>
+    </message>
+    <message>
+        <source>Submitted to masternode, waiting for more entries ( %u / %d ) %s</source>
+        <translation>Odoslané na masternode, čaká na viac položiek ( %u / %d ) %s</translation>
+    </message>
+    <message>
         <source>Submitted to masternode, waiting in queue %s</source>
         <translation>Odoslané na masternode, čaká vo fronte %s</translation>
+    </message>
+    <message>
+        <source>Synchroning blockchain...</source>
+        <translation>Synchronizuje sa blockchain...</translation>
     </message>
     <message>
         <source>Synchronization failed</source>
@@ -4293,6 +4289,10 @@ https://www.transifex.com/projects/p/ctp/</translation>
     <message>
         <source>Synchronization finished</source>
         <translation>Synchronizácia dokončená</translation>
+    </message>
+    <message>
+        <source>Synchronizing masternodes...</source>
+        <translation>Synchronizujú sa masternode...</translation>
     </message>
     <message>
         <source>This is not a Masternode.</source>
@@ -4305,10 +4305,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
     <message>
         <source>Too many %f denominations, removing.</source>
         <translation>Príliš mnoho %f denominácií, maže sa.</translation>
-    </message>
-    <message>
-        <source>Too many %f denominations, skipping.</source>
-        <translation>Príliš mnoho %f denominácií, preskakuje sa.</translation>
     </message>
     <message>
         <source>Tor control port password (default: empty)</source>
@@ -4363,6 +4359,10 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Skúsime znovu...</translation>
     </message>
     <message>
+        <source>Invalid masternodeprivkey. Please see documenation.</source>
+        <translation>Neplatný masternodeprivkey. Prosím pozrite do dokumentácie.</translation>
+    </message>
+    <message>
         <source>Can't find random Masternode.</source>
         <translation>Nedá sa nájsť náhodný Masternode.</translation>
     </message>
@@ -4371,8 +4371,16 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Miešanie nefunguje počas synchronizácie.</translation>
     </message>
     <message>
+        <source>Could not parse masternode.conf</source>
+        <translation>Nedá sa analyzovať masternode.conf</translation>
+    </message>
+    <message>
         <source>Invalid netmask specified in -whitelist: '%s'</source>
         <translation>Nadaná neplatná netmask vo -whitelist: '%s'</translation>
+    </message>
+    <message>
+        <source>Invalid port detected in masternode.conf</source>
+        <translation>Zistený neplatný port v masternode.conf</translation>
     </message>
     <message>
         <source>Invalid script detected.</source>
@@ -4392,15 +4400,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
     </message>
     <message>
         <source>Disable all Ctp specific functionality (Masternodes, PrivateSend, InstantSend, Governance) (0-1, default: %u)</source>
-        <translation>Vypnúť všetky funkcie špecifické pre Ctp (Masternódy, PrivateSend, InstantSend, Správu) (0-1, predvolené: %u)</translation>
-    </message>
-    <message>
-        <source>%s file contains all private keys from this wallet. Do not share it with anyone!</source>
-        <translation>Súbor %s obsahuje všetky súkromné kľúče z tejto peňaženky. Nezdieľajte s nikým!</translation>
-    </message>
-    <message>
-        <source>Bind to given address to listen for JSON-RPC connections. This option is ignored unless -rpcallowip is also passed. Port is optional and overrides -rpcport. Use [host]:port notation for IPv6. This option can be specified multiple times (default: 127.0.0.1 and ::1 i.e., localhost, or if -rpcallowip has been specified, 0.0.0.0 and :: i.e., all addresses)</source>
-        <translation>Pripojte na zadanú adresu pre počúvanie spojenia JSON-RPC. Táto voľba sa ignoruje, pokiaľ nie je úspešne zadané -rpcallowip. Port je voliteľný a prepisuje -rpcport. Pre IPv6 použite zápis [host]:port. Táto možnosť môže byť zadaná viackrát (predvolené: 127.0.0.1 a ::1, t.j. localhost, alebo ak bolo zadané -rpcallowip, 0.0.0.0 a :: t.j. všetky adresy)</translation>
+        <translation>Vypnúť všetky funkcie špecifické pre Ctp (Masternodes, PrivateSend, InstantSend, Vláda) (0-1, predvolené: %u)</translation>
     </message>
     <message>
         <source>Discover own IP addresses (default: 1 when listening and no -externalip or -proxy)</source>
@@ -4425,10 +4425,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
     <message>
         <source>Execute command when a wallet InstantSend transaction is successfully locked (%s in cmd is replaced by TxID)</source>
         <translation>Spustiť príkaz keď je InstantSend zmení úspešne zamknutá (%s v cmd sa nahrádza TxID)</translation>
-    </message>
-    <message>
-        <source>Extra transactions to keep in memory for compact block reconstructions (default: %u)</source>
-        <translation>Extra transakcie na uchovanie v pamäti, určené pre rekonštrukciu kompaktného bloku (predvolené: %u)</translation>
     </message>
     <message>
         <source>Failed to create backup, file already exists! This could happen if you restarted wallet in less than 60 seconds. You can continue if you are ok with this.</source>
@@ -4504,15 +4500,11 @@ https://www.transifex.com/projects/p/ctp/</translation>
     </message>
     <message>
         <source>The transaction amount is too small to send after the fee has been deducted</source>
-        <translation>Po odpočítaní poplatku je suma transakcie príliš malá pre odoslanie</translation>
+        <translation>Suma je príliš malá pre odoslanie tranzakcie</translation>
     </message>
     <message>
         <source>Total length of network version string (%i) exceeds maximum length (%i). Reduce the number or size of uacomments.</source>
         <translation>Celková dĺžka verzie sieťového reťazca (%i) prekračuje maximálnu dĺžku (%i). Znížte počet a veľkosť parametra  uacomments.</translation>
-    </message>
-    <message>
-        <source>Transaction index can't be disabled in full mode. Either start with -litemode command line switch or enable transaction index.</source>
-        <translation>Index transakcií nie je možné deaktivovať v plnom režime. Buď začnite s prepínačom príkazového riadka -litemode alebo aktivujte index transakcií.</translation>
     </message>
     <message>
         <source>Tries to keep outbound traffic under the given target (in MiB per 24h), 0 = no limit (default: %d)</source>
@@ -4536,27 +4528,31 @@ https://www.transifex.com/projects/p/ctp/</translation>
     </message>
     <message>
         <source>WARNING! Failed to replenish keypool, please unlock your wallet to do so.</source>
-        <translation>UPOZORNENIE! Chyba pri doplňovaní zásobníku kľúčov. Pre doplnenie musíte odomknúť vašu peňaženku.</translation>
+        <translation>UPOZORNENIE! Chyba pri doplňovaní zásobníku kľúčov. Pre doplnenie musíte odomknúť Vašu peňaženku.</translation>
     </message>
     <message>
         <source>Wallet is locked, can't replenish keypool! Automatic backups and mixing are disabled, please unlock your wallet to replenish keypool.</source>
-        <translation>Peňaženka je zamknutá takže sa nedá doplniť zásobník kľúčov. Automatické zálohy a miešanie sú vypnuté. Pre doplnenie musíte odomknúť vašu peňaženku.</translation>
+        <translation>Peňaženka je zamknutá takže sa nedá doplniť zásobník kľúčov. Automatické zálohy a miešanie sú vypnuté. Pre doplnenie musíte odomknúť Vašu peňaženku.</translation>
     </message>
     <message>
         <source>Warning: Unknown block versions being mined! It's possible unknown rules are in effect</source>
         <translation>Upozornenie: Ťaží sa neznáma verzia blokov! Je možné, že sú v platnosti neznáme pravidlá</translation>
     </message>
     <message>
-        <source>You are starting in lite mode, all Ctp-specific functionality is disabled.</source>
-        <translation>Začínate v režime Lite, všetky funkcie špecifické pre Ctp sú deaktivované.</translation>
-    </message>
-    <message>
         <source>You need to rebuild the database using -reindex to go back to unpruned mode.  This will redownload the entire blockchain</source>
         <translation>K návratu k neorezanému režimu je treba prestavať databázu použitím -reindex. Tiež sa znova stiahne celý blockchain</translation>
     </message>
     <message>
+        <source>(%d could be used only on mainnet)</source>
+        <translation>(%d môže byť použité iba pre hlavnú sieť)</translation>
+    </message>
+    <message>
         <source>(default: %u)</source>
         <translation>(predvolené: %u)</translation>
+    </message>
+    <message>
+        <source>(must be %d for mainnet)</source>
+        <translation>(pre hlavnú sieť musí byť %d)</translation>
     </message>
     <message>
         <source>-maxmempool must be at least %d MB</source>
@@ -4587,20 +4583,12 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Povoliť zverejneneie hash blokov pre &lt;address&gt;</translation>
     </message>
     <message>
-        <source>Enable publish hash of governance objects (like proposals) in &lt;address&gt;</source>
-        <translation>Povoliť zverejnenie hash objektov správy (ako napr. návrhy) pre &lt;address&gt;</translation>
-    </message>
-    <message>
-        <source>Enable publish hash of governance votes in &lt;address&gt;</source>
-        <translation>Povoliť zverejnenie hash hlasovania správy pre &lt;address&gt;</translation>
-    </message>
-    <message>
         <source>Enable publish hash transaction (locked via InstantSend) in &lt;address&gt;</source>
         <translation>Povoliť publikovanie transformačných transakcií (zamknutých cez InstantSend) v &lt;address&gt;</translation>
     </message>
     <message>
         <source>Enable publish hash transaction in &lt;address&gt;</source>
-        <translation>Povoliť zverejnenie hash transakcií pre &lt;address&gt;</translation>
+        <translation>Povoliť zverejnenie hash tranzakcií pre &lt;address&gt;</translation>
     </message>
     <message>
         <source>Enable publish raw block in &lt;address&gt;</source>
@@ -4613,6 +4601,10 @@ https://www.transifex.com/projects/p/ctp/</translation>
     <message>
         <source>Enable publish raw transaction in &lt;address&gt;</source>
         <translation>Povoliť publikovať hrubý prevod v &lt;address&gt;</translation>
+    </message>
+    <message>
+        <source>Enable transaction replacement in the memory pool (default: %u)</source>
+        <translation>Povoliť výmenu transakcií v transakčnom zásobníku (predvolené: %u)</translation>
     </message>
     <message>
         <source>Error: A fatal internal error occurred, see debug.log for details</source>
@@ -4631,16 +4623,12 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Nepodarilo sa vymazať zálohu, chyba: %s</translation>
     </message>
     <message>
-        <source>Failed to load InstantSend data cache from</source>
-        <translation>Chyba pri načítaní vyrovnávajúcej pamäti InstantSend dát z</translation>
-    </message>
-    <message>
-        <source>Failed to load sporks cache from</source>
-        <translation>Chyba pri načítaní vyrovnávajúcej pamäti sporks z</translation>
+        <source>Failed to parse host:port string</source>
+        <translation>Chyba pri načítaní reťazca host:port</translation>
     </message>
     <message>
         <source>Fee (in %s/kB) to add to transactions you send (default: %s)</source>
-        <translation>Poplatok (v %s/kB) pridaný do transakcie, ktorú posielate (predvolené: %s)</translation>
+        <translation>Poplatok (za %s/kB) pridaný do tranzakcie, ktorú posielate (predvolené: %s)</translation>
     </message>
     <message>
         <source>Imports blocks from external blk000??.dat file on startup</source>
@@ -4667,8 +4655,12 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Posledná úspešná PrivateSend akcia bola uskutočnená pred príliš krátkou chvíľou.</translation>
     </message>
     <message>
-        <source>Loading InstantSend data cache...</source>
-        <translation>Načíta sa vyrovnávacia pamäť InstantSend dát...</translation>
+        <source>Line: %d</source>
+        <translation>Riadok: %d</translation>
+    </message>
+    <message>
+        <source>Loading addresses...</source>
+        <translation>Načítavanie adries...</translation>
     </message>
     <message>
         <source>Loading block index...</source>
@@ -4677,10 +4669,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
     <message>
         <source>Loading governance cache...</source>
         <translation>Načíta sa vyrovnávacia pamäť správy...</translation>
-    </message>
-    <message>
-        <source>Loading sporks cache...</source>
-        <translation>Načíta sa vyrovnávacia pamäť sporks...</translation>
     </message>
     <message>
         <source>Loading wallet... (%3.2f %%)</source>
@@ -4697,6 +4685,10 @@ https://www.transifex.com/projects/p/ctp/</translation>
     <message>
         <source>Make the wallet broadcast transactions</source>
         <translation>Vysielať transakcie z peňaženky</translation>
+    </message>
+    <message>
+        <source>Masternode cache is empty, skipping payments and governance cache...</source>
+        <translation>Vyrovnávacia pamäť Masternode je prázdna, vynechávajú sa platby a vyrovnávacia pamäť správy...</translation>
     </message>
     <message>
         <source>Masternode options:</source>
@@ -4795,18 +4787,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Pri spustení skontrolovať reťaz blokov pre chýbajúce transakcie peňaženky</translation>
     </message>
     <message>
-        <source>Submitted following entries to masternode: %u</source>
-        <translation>Odoslané nasledujúce záznamy na masternód :%u</translation>
-    </message>
-    <message>
-        <source>Submitted to masternode, waiting for more entries ( %u ) %s</source>
-        <translation>Odoslané na masternód, čaká sa na viac vstupov ( %u ) %s</translation>
-    </message>
-    <message>
-        <source>Synchronizing blockchain...</source>
-        <translation>Synchronizuje sa blockchain...</translation>
-    </message>
-    <message>
         <source>The wallet will avoid paying less than the minimum relay fee.</source>
         <translation>Peňaženka zabráni zaplateniu menšej sumy ako je minimálny poplatok.</translation>
     </message>
@@ -4831,10 +4811,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Transakcia musí mať aspoň jedného príjemcu</translation>
     </message>
     <message>
-        <source>Transaction too large</source>
-        <translation>Transakcia je príliš veľká</translation>
-    </message>
-    <message>
         <source>Trying to connect...</source>
         <translation>Pokúšame sa pripojiť...</translation>
     </message>
@@ -4855,10 +4831,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Ladiace / testovacie možnosti peňaženky.</translation>
     </message>
     <message>
-        <source>Wallet is not initialized</source>
-        <translation>Peňaženka nie je inicializovaná</translation>
-    </message>
-    <message>
         <source>Wallet needed to be rewritten: restart %s to complete</source>
         <translation>Peňaženka musí byť prepísaná: pre dokončenie reštartujte %s</translation>
     </message>
@@ -4873,10 +4845,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
     <message>
         <source>Whether to operate in a blocks only mode (default: %u)</source>
         <translation>Či fungovat iba v čistom blokovom režime (predvolené: %u)</translation>
-    </message>
-    <message>
-        <source>You can not start a masternode in lite mode.</source>
-        <translation>V režime Lite nemôžete spustiť masternode.</translation>
     </message>
     <message>
         <source>ZeroMQ notification options:</source>
@@ -4980,7 +4948,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
     </message>
     <message>
         <source>Use N separate masternodes for each denominated input to mix funds (%u-%u, default: %u)</source>
-        <translation>Použiť N oddelených masternódov pre každý denominovaný vstup na zmiešanie prostriedkov (%u-%u, predvolené: %u)</translation>
+        <translation>Použiť N oddelených masternode pre každý denominovaný vstup na zmiešanie prostriedkov (%u-%u, predvolené: %u)</translation>
     </message>
     <message>
         <source>Use hierarchical deterministic key generation (HD) after BIP39/BIP44. Only has effect during wallet creation/first start</source>
@@ -4997,6 +4965,14 @@ https://www.transifex.com/projects/p/ctp/</translation>
     <message>
         <source>Wallet will not create transactions that violate mempool chain limits (default: %u)</source>
         <translation>Peňaženka nebude vytvárať transakcie, ktoré by porušovali limity transakčného zásobníku reťazcov (predvolené: %u)</translation>
+    </message>
+    <message>
+        <source>Warning: At least %d of %d masternodes are running on a newer software version. Please check latest releases, you might need to update too.</source>
+        <translation>Upozornenie: Aspoň %d z %d masternode beží na novšej verzii softvéru. Skontrolujte najnovšie verzie, možno budete musieť tiež aktualizovať.</translation>
+    </message>
+    <message>
+        <source>Warning: Every masternode (out of %d known ones) is running on a newer software version. Please check latest releases, it's very likely that you missed a major/critical update.</source>
+        <translation>Upozornenie: Každý masternode (z %d známych) beží na novšej verzii softvéru. Skontrolujte najnovšie verzie, je veľmi pravdepodobné, že ste vynechali hlavnú/kritickú aktualizáciu.</translation>
     </message>
     <message>
         <source>Warning: Wallet file corrupt, data salvaged! Original %s saved as %s in %s; if your balance or transactions are incorrect you should restore from a backup.</source>
@@ -5083,20 +5059,8 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Kontrola čistoty pri inicializácií zlyhala. %s sa vypína.</translation>
     </message>
     <message>
-        <source>Invalid -onion address or hostname: '%s'</source>
-        <translation>Neplatná -onion adresa alebo hostiteľ: '%s'</translation>
-    </message>
-    <message>
-        <source>Invalid -proxy address or hostname: '%s'</source>
-        <translation>Neplatná -proxy adresa alebo hostiteľ: '%s'</translation>
-    </message>
-    <message>
         <source>Invalid amount for -%s=&lt;amount&gt;: '%s'</source>
         <translation>Neplatná suma pre -%s=&lt;amount&gt;: '%s'</translation>
-    </message>
-    <message>
-        <source>Invalid characters in -wallet filename</source>
-        <translation>Neplatné znaky v názve súboru -wallet</translation>
     </message>
     <message>
         <source>Invalid spork address specified with -sporkaddr</source>
@@ -5105,10 +5069,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
     <message>
         <source>Keep N CTP anonymized (%u-%u, default: %u)</source>
         <translation>Udržujte N CTP anonymizovaných (%u-%u, predvolené: %u)</translation>
-    </message>
-    <message>
-        <source>Loading P2P addresses...</source>
-        <translation>Načítavam P2P adresy…</translation>
     </message>
     <message>
         <source>Print this help message and exit</source>
@@ -5159,6 +5119,10 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Nastaviť maximálnu veľkosť v bajtoch (predvolené: %d)</translation>
     </message>
     <message>
+        <source>Set the masternode private key</source>
+        <translation>Nastaviť súkromný kľúč masternode</translation>
+    </message>
+    <message>
         <source>Show all debugging options (usage: --help -help-debug)</source>
         <translation>Zobraziť všetky možnosti ladenia (použitie: --help --help-debug)</translation>
     </message>
@@ -5180,7 +5144,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
     </message>
     <message>
         <source>Specify your own public address</source>
-        <translation>Zadajte vašu vlastnú verejnú adresu</translation>
+        <translation>Zadajte Vašu vlastnú verejnú adresu</translation>
     </message>
     <message>
         <source>Starting network threads...</source>
@@ -5193,6 +5157,10 @@ https://www.transifex.com/projects/p/ctp/</translation>
     <message>
         <source>Synchronizing governance objects...</source>
         <translation>Synchronizujú sa objekty správy...</translation>
+    </message>
+    <message>
+        <source>Synchronizing masternode payments...</source>
+        <translation>Synchronizujú sa masternode platby...</translation>
     </message>
     <message>
         <source>The source code is available from %s.</source>

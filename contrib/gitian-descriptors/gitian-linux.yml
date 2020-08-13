@@ -1,5 +1,5 @@
 ---
-name: "ctp-linux-0.14"
+name: "ctp-linux-0.13"
 enable_cache: true
 suites:
 - "bionic"
@@ -29,7 +29,6 @@ packages:
 - "ca-certificates"
 - "python"
 - "python3"
-- "libxkbcommon0"
 remotes:
 - "url": "https://github.com/ctppay/ctp.git"
   "dir": "ctp"
@@ -61,15 +60,12 @@ script: |
     export CCACHE_DIR=${GBUILD_PACKAGE_CACHE}/ccache
     # As we later wrap the gcc binaries, this is fast
     export CCACHE_COMPILERCHECK="content"
-    if [ -f ${GBUILD_PACKAGE_CACHE}/ccache.tar ]; then
+    if [ -f ${GBUILD_PACKAGE_CACHE}/ccache.tar.gz ]; then
       pushd ${GBUILD_PACKAGE_CACHE}
-      tar xf ccache.tar
-      rm ccache.tar
+      tar xzf ccache.tar.gz
+      rm ccache.tar.gz
       popd
     fi
-    # instead of compressing ccache.tar, we let ccache handle it by itself
-    # Otherwise we end up uncompressing/compressing a lot of cache files which we actually never use
-    export CCACHE_COMPRESS=1
   else
     CONFIGFLAGS="${CONFIGFLAGS} --disable-ccache"
   fi
@@ -215,7 +211,7 @@ script: |
   # Compress ccache (otherwise the assert file will get too huge)
   if [ "$CCACHE_DIR" != "" ]; then
     pushd ${GBUILD_PACKAGE_CACHE}
-    tar cf ccache.tar ccache
+    tar czf ccache.tar.gz ccache
     rm -rf ccache
     popd
   fi

@@ -117,6 +117,9 @@ namespace GUIUtil
     // Open ctp.conf
     void openConfigfile();	
 
+    // Open masternode.conf
+    void openMNConfigfile();	
+
     // Browse backup folder
     void showBackups();
 

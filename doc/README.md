@@ -1,4 +1,4 @@
-Ctp Core 0.14.0
+Ctp Core 0.13.0
 =====================
 
 This is the official reference wallet for Ctp digital currency and comprises the backbone of the Ctp peer-to-peer network. You can [download Ctp Core](https://www.citypay.org/downloads/) or [build it yourself](#building) using the guides below.
@@ -26,8 +26,6 @@ Drag Ctp-Qt to your applications folder, and then run Ctp-Qt.
 
 * See the [Ctp documentation](https://docs.citypay.org)
 for help and more information.
-* See the [Ctp Developer Documentation](https://ctp-docs.github.io/) 
-for technical specifications and implementation details.
 * Ask for help on [Ctp Nation Discord](http://ctpchat.org)
 * Ask for help on the [Ctp Forum](https://citypay.org/forum)
 

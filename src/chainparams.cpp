@@ -388,8 +388,8 @@ public:
         // assert(consensus.hashGenesisBlock == uint256S("0x00000ffd590b1485b3caadc19b22e6379c733355108f107a430458cdf3407ab6"));
         // assert(genesis.hashMerkleRoot == uint256S("0xe0028eb9648db56b1ac77cf090b99048a8007e2bb64b68f092c03c7f56a662c7"));
 
-        // vSeeds.push_back(CDNSSeedData("dash.org", "dnsseed.dash.org"));
-        // vSeeds.push_back(CDNSSeedData("dashdot.io", "dnsseed.dashdot.io"));
+        // vSeeds.push_back(CDNSSeedData("citypay.org", "dnsseed.citypay.org"));
+        // vSeeds.push_back(CDNSSeedData("ctpdot.io", "dnsseed.ctpdot.io"));
         // vSeeds.push_back(CDNSSeedData("masternode.io", "dnsseed.masternode.io"));
         genesis = CreateGenesisBlock(1580655600, 30196654, 0x1e0ffff0, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
@@ -715,7 +715,7 @@ public:
         pchMessageStart[2] = 0xff;
         pchMessageStart[3] = 0xce;
         vAlertPubKey = ParseHex("04517d8a699cb43d3938d7b24faaff7cda448ca4ea267723ba614784de661949bf632d6304316b244646dea079735b9a6fc4af804efb4752075b9fe2245e14e412");
-        nDefaultPort = 9999;
+        nDefaultPort = 39999;
         nPruneAfterHeight = 1000;
 
         genesis = CreateGenesisBlock(1580482800, 1096447, 0x207fffff, 1, 50 * COIN);
@@ -732,7 +732,7 @@ LogPrintf("########### CDevNetParams() main end ##############\n");
 
         vFixedSeeds.clear();
         vSeeds.clear();
-        //vSeeds.push_back(CDNSSeedData("dashevo.org",  "devnet-seed.dashevo.org"));
+        //vSeeds.push_back(CDNSSeedData("ctpevo.org",  "devnet-seed.ctpevo.org"));
 
         // Testnet Dash addresses start with 'y'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,140);

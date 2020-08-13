@@ -7,83 +7,56 @@
 
 #include "dbwrapper.h"
 #include "sync.h"
-#include "uint256.h"
-
-// "b_b" was used in the initial version of deterministic MN storage
-// "b_b2" was used after compact diffs were introduced
-static const std::string EVODB_BEST_BLOCK = "b_b2";
 
 class CEvoDB
 {
 private:
     CCriticalSection cs;
     CDBWrapper db;
-
-    typedef CDBTransaction<CDBWrapper, CDBBatch> RootTransaction;
-    typedef CDBTransaction<RootTransaction, RootTransaction> CurTransaction;
-    typedef CScopedDBTransaction<RootTransaction, RootTransaction> ScopedTransaction;
-
-    CDBBatch rootBatch;
-    RootTransaction rootDBTransaction;
-    CurTransaction curDBTransaction;
+    CDBTransaction dbTransaction;
 
 public:
     CEvoDB(size_t nCacheSize, bool fMemory = false, bool fWipe = false);
 
-    std::unique_ptr<ScopedTransaction> BeginTransaction()
+    std::unique_ptr<CScopedDBTransaction> BeginTransaction()
     {
         LOCK(cs);
-        auto t = ScopedTransaction::Begin(curDBTransaction);
+        auto t = CScopedDBTransaction::Begin(dbTransaction);
         return t;
-    }
-
-    CurTransaction& GetCurTransaction()
-    {
-        return curDBTransaction;
     }
 
     template <typename K, typename V>
     bool Read(const K& key, V& value)
     {
         LOCK(cs);
-        return curDBTransaction.Read(key, value);
+        return dbTransaction.Read(key, value);
     }
 
     template <typename K, typename V>
     void Write(const K& key, const V& value)
     {
         LOCK(cs);
-        curDBTransaction.Write(key, value);
+        dbTransaction.Write(key, value);
     }
 
     template <typename K>
     bool Exists(const K& key)
     {
         LOCK(cs);
-        return curDBTransaction.Exists(key);
+        return dbTransaction.Exists(key);
     }
 
     template <typename K>
     void Erase(const K& key)
     {
         LOCK(cs);
-        curDBTransaction.Erase(key);
+        dbTransaction.Erase(key);
     }
 
     CDBWrapper& GetRawDB()
     {
         return db;
     }
-
-    size_t GetMemoryUsage()
-    {
-        return rootDBTransaction.GetMemoryUsage();
-    }
-
-    bool CommitRootTransaction();
-
-    bool VerifyBestBlock(const uint256& hash);
-    void WriteBestBlock(const uint256& hash);
 };
 
 extern CEvoDB* evoDb;

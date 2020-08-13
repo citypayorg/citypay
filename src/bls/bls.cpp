@@ -462,11 +462,3 @@ static void secure_free(void* p)
     return get_secure_allocator().deallocate(ptr, n);
 }
 #endif
-
-bool BLSInit()
-{
-#ifndef BUILD_BITCOIN_INTERNAL
-    bls::BLS::SetSecureAllocator(secure_allocate, secure_free);
-#endif
-    return true;
-}

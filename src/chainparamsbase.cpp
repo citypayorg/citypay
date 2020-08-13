@@ -143,7 +143,6 @@ std::string GetDevNetName()
     assert(IsArgSet("-devnet"));
     std::string devNetName = GetArg("-devnet", "");
     return "devnet" + (devNetName.empty() ? "" : "-" + devNetName);
-    //return "so hard...but CityPay.org make for more crypto banking Service";
 }
 
 bool AreBaseParamsConfigured()

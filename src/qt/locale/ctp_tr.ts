@@ -438,6 +438,14 @@
         <translation>Yapılandırma Dosyasını Aç</translation>
     </message>
     <message>
+        <source>Open &amp;Masternode Configuration File</source>
+        <translation>&amp;Ana Düğüm Ayar Dosyasını Aç</translation>
+    </message>
+    <message>
+        <source>Open Masternode configuration file</source>
+        <translation>Ana düğüm ayar dosyasını aç</translation>
+    </message>
+    <message>
         <source>Show Automatic &amp;Backups</source>
         <translation>Otomatik &amp;Yedekleri Göster</translation>
     </message>
@@ -642,6 +650,10 @@
 </context>
 <context>
     <name>ClientModel</name>
+    <message>
+        <source>Total: %1 (PS compatible: %2 / Enabled: %3)</source>
+        <translation>Toplam %1 (ÖG uyumlu: %2 / Etkin: %3)</translation>
+    </message>
     <message>
         <source>Network Alert</source>
         <translation>Ağ Uyarısı</translation>
@@ -959,8 +971,8 @@
         <translation>Özel Gönder bilgisi</translation>
     </message>
     <message>
-        <source>&lt;h3&gt;PrivateSend Basics&lt;/h3&gt; PrivateSend gives you true financial privacy by obscuring the origins of your funds. All the Ctp in your wallet is comprised of different "inputs" which you can think of as separate, discrete coins.&lt;br&gt; PrivateSend uses an innovative process to mix your inputs with the inputs of two other people, without having your coins ever leave your wallet. You retain control of your money at all times.&lt;hr&gt; &lt;b&gt;The PrivateSend process works like this:&lt;/b&gt;&lt;ol type="1"&gt; &lt;li&gt;PrivateSend begins by breaking your transaction inputs down into standard denominations. These denominations are 0.001 CTP, 0.01 CTP, 0.1 CTP, 1 CTP and 10 CTP -- sort of like the paper money you use every day.&lt;/li&gt; &lt;li&gt;Your wallet then sends requests to specially configured software nodes on the network, called "masternodes." These masternodes are informed then that you are interested in mixing a certain denomination. No identifiable information is sent to the masternodes, so they never know "who" you are.&lt;/li&gt; &lt;li&gt;When two other people send similar messages, indicating that they wish to mix the same denomination, a mixing session begins. The masternode mixes up the inputs and instructs all three users' wallets to pay the now-transformed input back to themselves. Your wallet pays that denomination directly to itself, but in a different address (called a change address).&lt;/li&gt; &lt;li&gt;In order to fully obscure your funds, your wallet must repeat this process a number of times with each denomination. Each time the process is completed, it's called a "round." Each round of PrivateSend makes it exponentially more difficult to determine where your funds originated.&lt;/li&gt; &lt;li&gt;This mixing process happens in the background without any intervention on your part. When you wish to make a transaction, your funds will already be anonymized. No additional waiting is required.&lt;/li&gt; &lt;/ol&gt; &lt;hr&gt;&lt;b&gt;IMPORTANT:&lt;/b&gt; Your wallet only contains 1000 of these "change addresses." Every time a mixing event happens, up to 9 of your addresses are used up. This means those 1000 addresses last for about 100 mixing events. When 900 of them are used, your wallet must create more addresses. It can only do this, however, if you have automatic backups enabled.&lt;br&gt; Consequently, users who have backups disabled will also have PrivateSend disabled. &lt;hr&gt;For more information, see the &lt;a href="https://docs.citypay.org/en/latest/wallets/ctpcore/privatesend-instantsend.html"&gt;PrivateSend documentation&lt;/a&gt;.</source>
-        <translation>&lt;h3&gt;Özel Gönder Temel Bilgiler&lt;/h3&gt; Özel Gönder size paranızın gerçek kaynağını gizleyerek tam bir gizlilik imkanı sağlar. Cüzdanınızdaki Ctp farklı "girdiler"den oluşur, bunu ayrı gizli paralar olarak düşünebilirsiniz.&lt;br&gt; Özel Gönder sizin girdilerinizi başka iki kişinin girdileri ile karıştırmak için yenilikçi bir işlem kullanır ve bu sırada paranın cüzdanınızdan çıkmasına gerek kalmaz. Her an paranızın kontrolü sizdedir.&lt;hr&gt; &lt;b&gt;Özel Gönder işlemi şöyle işler:&lt;/b&gt;&lt;ol type="1"&gt; &lt;li&gt;Özel Gönder işlem girdilerinizi standart birimlere bölerek başlar. Bu birimler 0.001 CTP, 0.01 CTP, 0.1 CTP, 1 CTP ve 10 CTP'dir -- her gün kullandığınız kağıt para gibi düşünebilirsiniz.&lt;/li&gt; &lt;li&gt;Sonra cüzdanınız ağdaki özel ayarlanmış yazılım düğümlerine talepler gönderir, bunşara "ana düğümler" denir. Bu ana düğümlere sizin belli bir miktar birimi karıştırmak istediğiniz bilgisi gider. Ana düğümlere kimliğinizi açık edecek bir bilgi gönderilmez, bu yüzden "kim" olduğunuzu bilmezler.&lt;/li&gt; &lt;li&gt;Aynı birimleri karıştırmak istediğini belirten iki başka kişi daha benzer mesajlar gönderince, karıştırma işlemi başlar. Ana düğüm giridleri karıştırır ve üç kullanıcının da cüzdanına şimdi dönüştürülmüş olan girdiyi kendilerne ödemelerini emreder. Cüzdanınız bu birimleri doğrudan kendisine öder ama farklı bir adres kullanır (buna değişim adresi denir).&lt;/li&gt; &lt;li&gt;Paranızı tamamen gizlemek için cüzdanınız bu işlemi her birim için birkaç defa tekrar etmelidir. Her işlem tamamlandığına buna bir "tur" denir. Her bir Özel Gönder turu paranızın kaynağının bulunmasını üstel olarak zorlaştırır.&lt;/li&gt; &lt;li&gt;Bu karışım işlemi arkaplanda sizin tarafınızdan bir müdahale olmadan gerçekleşir. Bir işlem yapmak istediğinizde bakiyeniz zaten anonimleştirilmiş olacaktır. Ek bir beklemeye gerek kalmaz.&lt;/li&gt; &lt;/ol&gt; &lt;hr&gt;&lt;b&gt;ÖNEMLİ:&lt;/b&gt; Cüzdanınızda bu "değişim adreslerinden" sadece 1000 tane vardır. Her bir karışım işleminde bu adreslerden 9 taneye kadar kullanılır. Bu da 1000 adresin yaklaşık 100 karışım işlemine yeteceği anlamına gelir. 900 tanesi kullanıldığı zaman, cüzdanınızın daha fazla adres oluşturması gerekir. Yalnız bunu ancak otomatik yedekleme etkinse yapabilir.&lt;br&gt; Sonuç olarak yedeklemeyi kapatan kullanıcılar aynı zamanda Özel Gönderi de kapatmış olurlar. &lt;hr&gt;Daha fazla bilgi için lütfen &lt;a href="https://docs.citypay.org/en/latest/wallets/ctpcore/privatesend-instantsend.html"&gt;Özel Gönder dökümantasyonuna&lt;/a&gt; göz atın.         </translation>
+        <source>&lt;h3&gt;PrivateSend Basics&lt;/h3&gt; PrivateSend gives you true financial privacy by obscuring the origins of your funds. All the Ctp in your wallet is comprised of different "inputs" which you can think of as separate, discrete coins.&lt;br&gt; PrivateSend uses an innovative process to mix your inputs with the inputs of two other people, without having your coins ever leave your wallet. You retain control of your money at all times.&lt;hr&gt; &lt;b&gt;The PrivateSend process works like this:&lt;/b&gt;&lt;ol type="1"&gt; &lt;li&gt;PrivateSend begins by breaking your transaction inputs down into standard denominations. These denominations are 0.01 CTP, 0.1 CTP, 1 CTP and 10 CTP -- sort of like the paper money you use every day.&lt;/li&gt; &lt;li&gt;Your wallet then sends requests to specially configured software nodes on the network, called "masternodes." These masternodes are informed then that you are interested in mixing a certain denomination. No identifiable information is sent to the masternodes, so they never know "who" you are.&lt;/li&gt; &lt;li&gt;When two other people send similar messages, indicating that they wish to mix the same denomination, a mixing session begins. The masternode mixes up the inputs and instructs all three users' wallets to pay the now-transformed input back to themselves. Your wallet pays that denomination directly to itself, but in a different address (called a change address).&lt;/li&gt; &lt;li&gt;In order to fully obscure your funds, your wallet must repeat this process a number of times with each denomination. Each time the process is completed, it's called a "round." Each round of PrivateSend makes it exponentially more difficult to determine where your funds originated.&lt;/li&gt; &lt;li&gt;This mixing process happens in the background without any intervention on your part. When you wish to make a transaction, your funds will already be anonymized. No additional waiting is required.&lt;/li&gt; &lt;/ol&gt; &lt;hr&gt;&lt;b&gt;IMPORTANT:&lt;/b&gt; Your wallet only contains 1000 of these "change addresses." Every time a mixing event happens, up to 9 of your addresses are used up. This means those 1000 addresses last for about 100 mixing events. When 900 of them are used, your wallet must create more addresses. It can only do this, however, if you have automatic backups enabled.&lt;br&gt; Consequently, users who have backups disabled will also have PrivateSend disabled. &lt;hr&gt;For more information, see the &lt;a href="https://docs.citypay.org/en/latest/wallets/ctpcore/privatesend-instantsend.html"&gt;PrivateSend documentation&lt;/a&gt;.         </source>
+        <translation>&lt;h3&gt;Özel Gönder Temel Bilgiler&lt;/h3&gt; Özel Gönder size paranızın gerçek kaynağını gizleyerek tam bir gizlilik imkanı sağlar. Cüzdanınızdaki Ctp farklı "girdiler"den oluşur, bunu ayrı gizli paralar olarak düşünebilirsiniz.&lt;br&gt; Özel Gönder sizin girdilerinizi başka iki kişinin girdileri ile karıştırmak için yenilikçi bir işlem kullanır ve bu sırada paranın cüzdanınızdan çıkmasına gerek kalmaz. Her an paranızın kontrolü sizdedir.&lt;hr&gt; &lt;b&gt;Özel Gönder işlemi şöyle işler:&lt;/b&gt;&lt;ol type="1"&gt; &lt;li&gt;Özel Gönder işlem girdilerinizi standart birimlere bölerek başlar. Bu birimler 0.01 CTP, 0.1 CTP, 1 CTP ve 10 CTP'dir -- her gün kullandığınız kağıt para gibi düşünebilirsiniz.&lt;/li&gt; &lt;li&gt;Sonra cüzdanınız ağdaki özel ayarlanmış yazılım düğümlerine talepler gönderir, bunşara "ana düğümler" denir. Bu ana düğümlere sizin belli bir miktar birimi karıştırmak istediğiniz bilgisi gider. Ana düğümlere kimliğinizi açık edecek bir bilgi gönderilmez, bu yüzden "kim" olduğunuzu bilmezler.&lt;/li&gt; &lt;li&gt;Aynı birimleri karıştırmak istediğini belirten iki başka kişi daha benzer mesajlar gönderince, karıştırma işlemi başlar. Ana düğüm giridleri karıştırır ve üç kullanıcının da cüzdanına şimdi dönüştürülmüş olan girdiyi kendilerne ödemelerini emreder. Cüzdanınız bu birimleri doğrudan kendisine öder ama farklı bir adres kullanır (buna değişim adresi denir).&lt;/li&gt; &lt;li&gt;Paranızı tamamen gizlemek için cüzdanınız bu işlemi her birim için birkaç defa tekrar etmelidir. Her işlem tamamlandığına buna bir "tur" denir. Her bir Özel Gönder turu paranızın kaynağının bulunmasını üstel olarak zorlaştırır.&lt;/li&gt; &lt;li&gt;Bu karışım işlemi arkaplanda sizin tarafınızdan bir müdahale olmadan gerçekleşir. Bir işlem yapmak istediğinizde bakiyeniz zaten anonimleştirilmiş olacaktır. Ek bir beklemeye gerek kalmaz.&lt;/li&gt; &lt;/ol&gt; &lt;hr&gt;&lt;b&gt;ÖNEMLİ:&lt;/b&gt; Cüzdanınızda bu "değişim adreslerinden" sadece 1000 tane vardır. Her bir karışım işleminde bu adreslerden 9 taneye kadar kullanılır. Bu da 1000 adresin yaklaşık 100 karışım işlemine yeteceği anlamına gelir. 900 tanesi kullanıldığı zaman, cüzdanınızın daha fazla adres oluşturması gerekir. Yalnız bunu ancak otomatik yedekleme etkinse yapabilir.&lt;br&gt; Sonuç olarak yedeklemeyi kapatan kullanıcılar aynı zamanda Özel Gönderi de kapatmış olurlar. &lt;hr&gt;Daha fazla bilgi için lütfen &lt;a href="https://docs.citypay.org/en/latest/wallets/ctpcore/privatesend-instantsend.html"&gt;Özel Gönder dökümantasyonuna&lt;/a&gt; göz atın.         </translation>
     </message>
 </context>
 <context>
@@ -978,12 +990,8 @@
         <translation>Bu programın ilk kez başlatılmasından dolayı %1 yazılımının verilerini nerede saklayacağını seçebilirsiniz.</translation>
     </message>
     <message>
-        <source>This initial synchronisation is very demanding, and may expose hardware problems with your computer that had previously gone unnoticed. Each time you run %1, it will continue downloading where it left off.</source>
-        <translation>Bu başlangıç senkronizasyonu çok zorlayıcıdır ve bilgisayarınızdaki daha önce fark edilmemiş olan donanım sorunlarını ortaya çıkarabilir. %1'i her çalıştırdığınızda, kaldığı yerden devam edecektir.</translation>
-    </message>
-    <message>
-        <source>If you have chosen to limit block chain storage (pruning), the historical data must still be downloaded and processed, but will be deleted afterward to keep your disk usage low.</source>
-        <translation>Blok zinciri saklamayı sınırlamayı seçtiyseniz (budama), geçmiş veriler yine de indirilmeli ve işlenmelidir, ancak disk kullanımınızı düşük tutmak için daha sonra silinmelidir.</translation>
+        <source>%1 will download and store a copy of the Ctp block chain. At least %2GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>%1 Ctp blok zincirinin bir kopyasını indirecek ve depolayacak. En az %2GB veri bu klasörde depolanacak ve zaman içinde büyüyecek. Cüzdan da aynı zamanda bu klasörde depolanacak.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -992,22 +1000,6 @@
     <message>
         <source>Use a custom data directory:</source>
         <translation>Özel bir veri klasörü kullan:</translation>
-    </message>
-    <message>
-        <source>At least %1 GB of data will be stored in this directory, and it will grow over time.</source>
-        <translation>Bu dizinde en az %1 GB lık veri depolanacak ve zamanla büyüyecek.</translation>
-    </message>
-    <message>
-        <source>Approximately %1 GB of data will be stored in this directory.</source>
-        <translation>Yaklaşık %1 GB veri bu dizinde depolanacak.</translation>
-    </message>
-    <message>
-        <source>%1 will download and store a copy of the Ctp block chain.</source>
-        <translation>%1 lik Ctp blok zinciri nin bir kopyasını indirecek ve depolayacak.</translation>
-    </message>
-    <message>
-        <source>The wallet will also be stored in this directory.</source>
-        <translation>Cüzdan da bu dizinde depolanacaktır.</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1033,20 +1025,76 @@
         <translation>Form</translation>
     </message>
     <message>
+        <source>My Masternodes</source>
+        <translation>Ana Düğümlerim</translation>
+    </message>
+    <message>
+        <source>Note: Status of your masternodes in local wallet can potentially be slightly incorrect.&lt;br /&gt;Always wait for wallet to sync additional data and then double check from another node&lt;br /&gt;if your masternode should be running but you still do not see "ENABLED" in "Status" field.</source>
+        <translation>Not: Yerel cüzdanınızdaki ana düğüm durumları biraz yanlış olabilir.&lt;br /&gt;Eğer ana düğümünüz çalışıyor durumda olmalı ama "Durum" alanında "ETKİN" olarak görünmüyorsa&lt;br /&gt;her zaman cüzdanın ek bilgiyi eşleştirmesini bekleyip başka bir düğümü kontrol edin.</translation>
+    </message>
+    <message>
+        <source>Alias</source>
+        <translation>Adlar</translation>
+    </message>
+    <message>
         <source>Address</source>
         <translation>Adres</translation>
+    </message>
+    <message>
+        <source>Protocol</source>
+        <translation>Protokol</translation>
     </message>
     <message>
         <source>Status</source>
         <translation>Durum</translation>
     </message>
     <message>
+        <source>Active</source>
+        <translation>Etkin</translation>
+    </message>
+    <message>
+        <source>Last Seen</source>
+        <translation>Son Görülme</translation>
+    </message>
+    <message>
         <source>Payee</source>
         <translation>Alacaklı</translation>
     </message>
     <message>
+        <source>S&amp;tart alias</source>
+        <translation>A&amp;d Başlat</translation>
+    </message>
+    <message>
+        <source>Start &amp;all</source>
+        <translation>&amp;Hepsini başlat</translation>
+    </message>
+    <message>
+        <source>Start &amp;MISSING</source>
+        <translation>&amp;KAYIP başlat</translation>
+    </message>
+    <message>
+        <source>&amp;Update status</source>
+        <translation>&amp;Güncelleme durumu</translation>
+    </message>
+    <message>
+        <source>Show additional Masternode information</source>
+        <translation>Ek Ana düğüm bilgisi göster</translation>
+    </message>
+    <message>
+        <source>Show &amp;Info...</source>
+        <translation>&amp;Bilgi göster...</translation>
+    </message>
+    <message>
+        <source>Status will be updated automatically in (sec):</source>
+        <translation>Şu kadar (san) içinde durum güncellenecek:</translation>
+    </message>
+    <message>
         <source>0</source>
         <translation>0</translation>
+    </message>
+    <message>
+        <source>All Masternodes</source>
+        <translation>Tüm Ana Düğümler</translation>
     </message>
     <message>
         <source>Filter List:</source>
@@ -1061,68 +1109,72 @@
         <translation>Düğüm Sayısı:</translation>
     </message>
     <message>
-        <source>DIP3 Masternodes</source>
-        <translation>DIP3 Ana Düğümleri</translation>
+        <source>Start alias</source>
+        <translation>Ad başlat</translation>
     </message>
     <message>
-        <source>PoSe Score</source>
-        <translation>PoSe Puanı</translation>
+        <source>Confirm masternode start</source>
+        <translation>Ana düğüm başlangıcını onayla</translation>
     </message>
     <message>
-        <source>Registered</source>
-        <translation>Kayıtlı</translation>
+        <source>Are you sure you want to start masternode %1?</source>
+        <translation>Ana düğüm %1 başlatmak istediğinize emin misiniz?</translation>
     </message>
     <message>
-        <source>Last Paid</source>
-        <translation>Son Ödeme</translation>
+        <source>Confirm all masternodes start</source>
+        <translation>Tüm ana düğüm başlatmalarını onayla</translation>
     </message>
     <message>
-        <source>Next Payment</source>
-        <translation>Gelecek Ödeme</translation>
+        <source>Are you sure you want to start ALL masternodes?</source>
+        <translation>TÜM ana düğümleri başlatmak istediğinize emin misiniz?</translation>
     </message>
     <message>
-        <source>Operator Reward</source>
-        <translation>Operatör Ödülü</translation>
+        <source>Command is not available right now</source>
+        <translation>Komut şu an mevcut değil</translation>
     </message>
     <message>
-        <source>Copy ProTx Hash</source>
-        <translation>ProTx Hashini kopyala</translation>
+        <source>You can't use this command until masternode list is synced</source>
+        <translation>Ana düğüm listesi eşleşene kadar bu komutu kullanamazsınız</translation>
     </message>
     <message>
-        <source>Copy Collateral Outpoint</source>
-        <translation>Teminat Çıkış Noktasını Kopyala</translation>
+        <source>Confirm missing masternodes start</source>
+        <translation>Kayıp ana düğümleri başlatmayı onayla</translation>
     </message>
     <message>
-        <source>ENABLED</source>
-        <translation>ETKİN</translation>
+        <source>Are you sure you want to start MISSING masternodes?</source>
+        <translation>KAYIP ana düğümleri başlatmak istediğinize emin misiniz?</translation>
     </message>
     <message>
-        <source>POSE_BANNED</source>
-        <translation>POSE_BANNED</translation>
+        <source>Additional information for Masternode %1</source>
+        <translation>Ana Düğüm %1 için ek bilgi</translation>
     </message>
     <message>
-        <source>UNKNOWN</source>
-        <translation>BİLİNMİYOR</translation>
+        <source>Masternode Private Key</source>
+        <translation>Ana  Düğüm Özel Anahtarı</translation>
     </message>
     <message>
-        <source>to %1</source>
-        <translation>şuna: %1</translation>
+        <source>Private Key</source>
+        <translation>Özel Anahtar</translation>
     </message>
     <message>
-        <source>to UNKNOWN</source>
-        <translation>şuna: BİLİNMİYOR</translation>
+        <source>Collateral</source>
+        <translation>Teminat</translation>
     </message>
     <message>
-        <source>but not claimed</source>
-        <translation>ama alınmadı</translation>
+        <source>IP</source>
+        <translation>IP</translation>
     </message>
     <message>
-        <source>NONE</source>
-        <translation>YOK</translation>
+        <source>Version</source>
+        <translation>Sürüm</translation>
     </message>
     <message>
-        <source>Additional information for DIP3 Masternode %1</source>
-        <translation>DIP3 Ana Düğümü %1 için ek bilgi</translation>
+        <source>Unknown</source>
+        <translation>Bilinmiyor</translation>
+    </message>
+    <message>
+        <source>Sentinel</source>
+        <translation>Sentinel</translation>
     </message>
 </context>
 <context>
@@ -1328,14 +1380,6 @@
     <message>
         <source>Enable coin &amp;control features</source>
         <translation>Para &amp;kontrolü özelliklerini etkinleştir</translation>
-    </message>
-    <message>
-        <source>Show system popups for PrivateSend mixing transactions&lt;br/&gt;just like for all other transaction types.</source>
-        <translation>Özel Gönder karışım işlemleri için tıpkı diğer işlemler&lt;br/&gt;için olduğu gibi sistem popuplarını göster.</translation>
-    </message>
-    <message>
-        <source>Show popups for PrivateSend transactions</source>
-        <translation>Özel Gönder işlemleri için popup göster.</translation>
     </message>
     <message>
         <source>&amp;Spend unconfirmed change</source>
@@ -1753,6 +1797,10 @@ https://www.transifex.com/projects/p/ctp/</translation>
 </translation>
     </message>
     <message>
+        <source>N/A</source>
+        <translation>Mevcut değil</translation>
+    </message>
+    <message>
         <source>PrivateSend was successfully reset.</source>
         <translation>Özel Gönder başarıyla sıfırlandı.</translation>
     </message>
@@ -1882,8 +1930,16 @@ https://www.transifex.com/projects/p/ctp/</translation>
 <context>
     <name>QObject</name>
     <message>
+        <source>Ctp Core</source>
+        <translation>Ctp Core</translation>
+    </message>
+    <message>
         <source>%1 didn't yet exit safely...</source>
         <translation>%1  henüz güvenli bir şekilde çıkış yapmamıştır...</translation>
+    </message>
+    <message>
+        <source>Error reading masternode configuration file: %1</source>
+        <translation>Ana düğüm ayar dosyası okuma hatası: %1</translation>
     </message>
     <message>
         <source>Amount</source>
@@ -3484,10 +3540,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Bu işleme sadece-izlenen bir adresin dahil edilip, edilmediği.</translation>
     </message>
     <message>
-        <source>Whether or not this transaction was locked by InstantSend.</source>
-        <translation>Bu işlem Anında Gönder ile kilitlendi mi gösterir.</translation>
-    </message>
-    <message>
         <source>User-defined intent/purpose of the transaction.</source>
         <translation>İşlemin kullanıcı tanımlı amacı.</translation>
     </message>
@@ -3501,14 +3553,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
     <message>
         <source>All</source>
         <translation>Hepsi</translation>
-    </message>
-    <message>
-        <source>Locked by InstantSend</source>
-        <translation>Anında Gönder ile kilitlendi</translation>
-    </message>
-    <message>
-        <source>Not locked by InstantSend</source>
-        <translation>Anında Gönder ile kilitlenmedi</translation>
     </message>
     <message>
         <source>Today</source>
@@ -3798,6 +3842,10 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Uyarı: eşlerimizle tamamen mutabık değiliz gibi görünüyor! Güncelleme yapmanız gerekebilir ya da diğer düğümlerin güncelleme yapmaları gerekebilir.</translation>
     </message>
     <message>
+        <source>You must specify a masternodeprivkey in the configuration. Please see documentation for help.</source>
+        <translation>Ayarlarda bir masternodeprivkey belirtmelisiniz. Lütfen yardım almak için dökümantasyona göz atın.</translation>
+    </message>
+    <message>
         <source>Accept command line and JSON-RPC commands</source>
         <translation>Komut satırı ve JSON-RPC komutlarını kabul et</translation>
     </message>
@@ -3918,20 +3966,16 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Belirtilen adrese bağlan ve ona bağlanan eşleri beyaz listeye al. IPv6 için [makine]:port imlasını kullanınız</translation>
     </message>
     <message>
+        <source>Bind to given address to listen for JSON-RPC connections. Use [host]:port notation for IPv6. This option can be specified multiple times (default: bind to all interfaces)</source>
+        <translation>JSON-RPC bağlantılarını dinlemek için verilen adrese bağla. IPv6 için [host]:port formatını kullanın. Bu seçenek birden fazla defa belirtilebilir (varsayılan: tüm arayüzlere bağla)</translation>
+    </message>
+    <message>
         <source>Create new files with system default permissions, instead of umask 077 (only effective with disabled wallet functionality)</source>
         <translation>Yeni dosyaları umask 077 yerine varsayılan izinlerle oluştur (sadece devre dışı cüzdan işlevselliği ile etkilidir)</translation>
     </message>
     <message>
         <source>Delete all wallet transactions and only recover those parts of the blockchain through -rescan on startup</source>
         <translation>Tüm cüzdan işlemlerini sil ve başlangıçta -rescan ile sadece blok zincirinin parçası olanları geri getir</translation>
-    </message>
-    <message>
-        <source>Enable publish raw transactions of attempted InstantSend double spend in &lt;address&gt;</source>
-        <translation>&lt;address&gt; adresindeki Anında Gönder çift harcama girişimleri için ham işlem yayınını etkinleştir.</translation>
-    </message>
-    <message>
-        <source>Enable publish transaction hashes of attempted InstantSend double spend in &lt;address&gt;</source>
-        <translation>&lt;address&gt; adresindeki Anında Gönder çift harcama girişimleri için işlem hash yayınını etkinleştir.</translation>
     </message>
     <message>
         <source>Error loading %s: You can't enable HD on a already existing non-HD wallet</source>
@@ -3978,14 +4022,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Hata ayıklama bilgisini dök (varsayılan: %u, &lt;category&gt; sağlanması seçime dayalıdır)</translation>
     </message>
     <message>
-        <source>Overrides minimum spork signers to change spork value. Only useful for regtest and devnet. Using this on mainnet or testnet will ban you.</source>
-        <translation>Spork değerini değiştirmek için ereken spork imzacısı sayısını değiştirir. Sadece regtest ve devnet için kullanılır. Bunu mainnet veya testnette kullanırsanız atılırsınız.</translation>
-    </message>
-    <message>
-        <source>Use N separate masternodes in parallel to mix funds (%u-%u, default: %u)</source>
-        <translation>Meblağı karıştırmak için N tane farklı ana düğüm kullan (%u-%u, varsayılan: %u)</translation>
-    </message>
-    <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
         <translation>Eşlere gizli Tor servisleri ile ulaşmak için ayrı SOCKS5 vekil sunucusu kullan (varsayılan: %s)</translation>
     </message>
@@ -4004,10 +4040,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
     <message>
         <source>You need to rebuild the database using -reindex-chainstate to change -txindex</source>
         <translation>-txindex'i değiştirmek için -reindex-chainstate kullanarak veritabanını baştan kurmalısınız</translation>
-    </message>
-    <message>
-        <source>You should specify a masternodeblsprivkey in the configuration. Please see documentation for help.</source>
-        <translation>Ayarlarda bir masternodeblsprivkey belirtmelisiniz. Yardım için dökümanlara göz atın.</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -4062,6 +4094,10 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Şuradan ana düğüm önbelleği yüklemesi başarısız:</translation>
     </message>
     <message>
+        <source>Failed to load masternode payments cache from</source>
+        <translation>Şuradan ana düğüm ödemeleri önbelleği yüklemesi başarısız:</translation>
+    </message>
+    <message>
         <source>Found enough users, signing ( waiting %s )</source>
         <translation>Yeterli kullanıcı bulundu, imzalanıyor ( %s bekleniyor )</translation>
     </message>
@@ -4106,16 +4142,16 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Yetersiz bakiye.</translation>
     </message>
     <message>
+        <source>Invalid -onion address: '%s'</source>
+        <translation>Geçersiz -onion adresi: '%s'</translation>
+    </message>
+    <message>
+        <source>Invalid -proxy address: '%s'</source>
+        <translation>Geçersiz -proxy adresi: '%s'</translation>
+    </message>
+    <message>
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s' (must be at least %s)</source>
         <translation>-paytxfee=&lt;tutar&gt;:'%s' unsurunda geçersiz tutar (asgari %s olması lazımdır)</translation>
-    </message>
-    <message>
-        <source>Invalid masternodeblsprivkey. Please see documenation.</source>
-        <translation>Geçersiz masternodeblsprivkey. Lütfen dökümanlara göz atın.</translation>
-    </message>
-    <message>
-        <source>Invalid minimum number of spork signers specified with -minsporkkeys</source>
-        <translation>-minsporkkeys ile belirtilmiş geçersiz minimum spork imzacısı sayısı</translation>
     </message>
     <message>
         <source>Keypool ran out, please call keypoolrefill first</source>
@@ -4142,8 +4178,16 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Ana düğüm önbelleği yükleniyor...</translation>
     </message>
     <message>
+        <source>Loading masternode payment cache...</source>
+        <translation>Ana düğüm ödeme önbelleği yükleniyor...</translation>
+    </message>
+    <message>
         <source>Lock is already in place.</source>
         <translation>Kilit zaten yerinde.</translation>
+    </message>
+    <message>
+        <source>Lock masternodes from masternode configuration file (default: %u)</source>
+        <translation>Ana düğüm ayar dosyasından ana düğümleri kilitle (varsayılan: %u)</translation>
     </message>
     <message>
         <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: %u)</source>
@@ -4182,6 +4226,10 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Sadece &lt;net&gt; ağındaki düğümlere bağlan (ipv4, ipv6 veya onion)</translation>
     </message>
     <message>
+        <source>Port: %d</source>
+        <translation>Port: %d</translation>
+    </message>
+    <message>
         <source>Prepend debug output with timestamp (default: %u)</source>
         <translation>Hata ayıklama verilerinin önüne zaman damgası ekle (varsayılan: %u)</translation>
     </message>
@@ -4206,10 +4254,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Anahtar alan boyutunu &lt;n&gt; değerine ayarla (varsayılan: %u)</translation>
     </message>
     <message>
-        <source>Set the masternode BLS private key</source>
-        <translation>Ana düğüm BLS özel anahtarını belirle</translation>
-    </message>
-    <message>
         <source>Set the number of threads to service RPC calls (default: %d)</source>
         <translation>Hizmet RCP aramaları iş parçacığı sayısını belirle (varsayılan: %d)</translation>
     </message>
@@ -4222,6 +4266,10 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Bağlantı zaman aşım süresini milisaniye olarak belirt (en düşüki: 1, varsayılan: %d)</translation>
     </message>
     <message>
+        <source>Specify masternode configuration file (default: %s)</source>
+        <translation>Ana düğüm ayar dosyasını belirt (varsayılan: %s)</translation>
+    </message>
+    <message>
         <source>Specify pid file (default: %s)</source>
         <translation>Pid dosyası belirtiniz (varsayılan: %s)</translation>
     </message>
@@ -4230,8 +4278,20 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Gönderme işlemlerinde doğrulanmamış para üstünü harca (varsayılan: %u)</translation>
     </message>
     <message>
+        <source>Submitted following entries to masternode: %u / %d</source>
+        <translation>Ana düğüme şu girdiler gönderildi: %u / %d</translation>
+    </message>
+    <message>
+        <source>Submitted to masternode, waiting for more entries ( %u / %d ) %s</source>
+        <translation>Ana düğüme gönderildi, daha fazla girdi bekleniyor ( %u / %d ) %s</translation>
+    </message>
+    <message>
         <source>Submitted to masternode, waiting in queue %s</source>
         <translation>Ana düğüme gönderildi, kuyrukta bekleniyor %s</translation>
+    </message>
+    <message>
+        <source>Synchroning blockchain...</source>
+        <translation>Blok zinciri eşleniyor...</translation>
     </message>
     <message>
         <source>Synchronization failed</source>
@@ -4240,6 +4300,10 @@ https://www.transifex.com/projects/p/ctp/</translation>
     <message>
         <source>Synchronization finished</source>
         <translation>Eşleme bitti</translation>
+    </message>
+    <message>
+        <source>Synchronizing masternodes...</source>
+        <translation>Ana düğümler eşleniyor...</translation>
     </message>
     <message>
         <source>This is not a Masternode.</source>
@@ -4252,10 +4316,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
     <message>
         <source>Too many %f denominations, removing.</source>
         <translation>Çok fazla %f birimi, siliniyor.</translation>
-    </message>
-    <message>
-        <source>Too many %f denominations, skipping.</source>
-        <translation>Çok fazla %f birimi, geçiliyor.</translation>
     </message>
     <message>
         <source>Tor control port password (default: empty)</source>
@@ -4310,6 +4370,10 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Tekrar denenecek...</translation>
     </message>
     <message>
+        <source>Invalid masternodeprivkey. Please see documenation.</source>
+        <translation>Geçersiz anadüğümözelanahtarı. Lütfen dökümantasyona göz atın.</translation>
+    </message>
+    <message>
         <source>Can't find random Masternode.</source>
         <translation>Rastgele Ana düğüm bulunamıyor.</translation>
     </message>
@@ -4318,8 +4382,16 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Eşleme sürerken karıştırılamaz.</translation>
     </message>
     <message>
+        <source>Could not parse masternode.conf</source>
+        <translation>masternode.conf okunamıyor</translation>
+    </message>
+    <message>
         <source>Invalid netmask specified in -whitelist: '%s'</source>
         <translation>-whitelist: '%s' unsurunda geçersiz bir ağ maskesi belirtildi</translation>
+    </message>
+    <message>
+        <source>Invalid port detected in masternode.conf</source>
+        <translation>masternode.conf dosyasında geçersiz port tespit edildi</translation>
     </message>
     <message>
         <source>Invalid script detected.</source>
@@ -4498,8 +4570,16 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Budama olmayan kipe dönmek için veritabanını -reindex ile tekrar derlemeniz gerekir. Bu, tüm blok zincirini tekrar indirecektir</translation>
     </message>
     <message>
+        <source>(%d could be used only on mainnet)</source>
+        <translation>(%d sadece mainnet'te kullanılabilir)</translation>
+    </message>
+    <message>
         <source>(default: %u)</source>
         <translation>(varsayılan: %u)</translation>
+    </message>
+    <message>
+        <source>(must be %d for mainnet)</source>
+        <translation>(mainnet için %d olmalı)</translation>
     </message>
     <message>
         <source>-maxmempool must be at least %d MB</source>
@@ -4558,6 +4638,10 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Ham işlemin &lt;adres&gt;te yayınlanmasını etkinleştir</translation>
     </message>
     <message>
+        <source>Enable transaction replacement in the memory pool (default: %u)</source>
+        <translation>Bellek alanında işlem değiştirmeyi etkinleştir (varsayılan: %u)</translation>
+    </message>
+    <message>
         <source>Error: A fatal internal error occurred, see debug.log for details</source>
         <translation>Hata: Ölümcül dahili bir hata meydana geldi, ayrıntılar için debug.log dosyasına bakınız</translation>
     </message>
@@ -4582,6 +4666,10 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Şuradan spork önbelleği yüklemesi başarısız:</translation>
     </message>
     <message>
+        <source>Failed to parse host:port string</source>
+        <translation>host:port metni okunamıyor</translation>
+    </message>
+    <message>
         <source>Fee (in %s/kB) to add to transactions you send (default: %s)</source>
         <translation>Yolladığınız işlemlere eklenecek ücret (%s/kB olarak) (varsayılan: %s)</translation>
     </message>
@@ -4598,6 +4686,10 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation> -fallbackfee=&lt;tutar&gt; için geçersiz tutar: '%s'</translation>
     </message>
     <message>
+        <source>Invalid input count.</source>
+        <translation>Girdi sayısı geçersiz.</translation>
+    </message>
+    <message>
         <source>Keep the transaction memory pool below &lt;n&gt; megabytes (default: %u)</source>
         <translation>İşlem bellek alanını &lt;n&gt; megabayttan düşük tut (varsayılan: %u)</translation>
     </message>
@@ -4610,8 +4702,16 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Son başarılı Özel Gönder eylemi çok yakında yapıldı.</translation>
     </message>
     <message>
+        <source>Line: %d</source>
+        <translation>Hat: %d</translation>
+    </message>
+    <message>
         <source>Loading InstantSend data cache...</source>
         <translation>Anında Gönder verisi önbelleği yükleniyor...</translation>
+    </message>
+    <message>
+        <source>Loading addresses...</source>
+        <translation>Adresler yükleniyor...</translation>
     </message>
     <message>
         <source>Loading block index...</source>
@@ -4640,6 +4740,10 @@ https://www.transifex.com/projects/p/ctp/</translation>
     <message>
         <source>Make the wallet broadcast transactions</source>
         <translation>Cüzdanın işlemleri yayınlamasını sağla</translation>
+    </message>
+    <message>
+        <source>Masternode cache is empty, skipping payments and governance cache...</source>
+        <translation>Ana düğüm önbelleği boş, ödeme ve yönetim önbellekleri atlanıyor...</translation>
     </message>
     <message>
         <source>Masternode options:</source>
@@ -4930,6 +5034,14 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Cüzdan, zincir bellek alanı limitlerini ihlal eden işlem oluşturmayacak. (varsayılan: %u)</translation>
     </message>
     <message>
+        <source>Warning: At least %d of %d masternodes are running on a newer software version. Please check latest releases, you might need to update too.</source>
+        <translation>Uyarı: En az %d / %d ana düğüm yeni bir yazılım sürümüyle çalışıyor. Lütfen son sürümleri kontrol edin, sizin de güncellemeye ihtiyacınız olabilir.</translation>
+    </message>
+    <message>
+        <source>Warning: Every masternode (out of %d known ones) is running on a newer software version. Please check latest releases, it's very likely that you missed a major/critical update.</source>
+        <translation>Uyarı her ana düğüm (%d bilinen arasında) daha yeni bir yazılım sürümüyle çalışıyor. Lütfen son sürümleri kontrol edin, büyük/kritik bir güncellemeyi atlamış olmanız yüksek ihtimal dahilinde.</translation>
+    </message>
+    <message>
         <source>Warning: Wallet file corrupt, data salvaged! Original %s saved as %s in %s; if your balance or transactions are incorrect you should restore from a backup.</source>
         <translation>Uyarı: wallet.dat bozuk, veriler geri kazanıldı! Özgün %s, %s olarak %s klasörüne kaydedildi; bakiyeniz ya da işlemleriniz yanlışsa bir yedeklemeden tekrar yüklemeniz gerekir.</translation>
     </message>
@@ -5014,14 +5126,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Başlatma sınaması başarısız oldu. %s kapatılıyor.</translation>
     </message>
     <message>
-        <source>Invalid -onion address or hostname: '%s'</source>
-        <translation>Geçersiz -onion adresi veya ana makine adı: '%s'</translation>
-    </message>
-    <message>
-        <source>Invalid -proxy address or hostname: '%s'</source>
-        <translation>Geçersiz -proxy adresi veya ana makine adı: '%s'</translation>
-    </message>
-    <message>
         <source>Invalid amount for -%s=&lt;amount&gt;: '%s'</source>
         <translation>-%s=&lt;tutar&gt; için geçersiz tutar: '%s'</translation>
     </message>
@@ -5032,10 +5136,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
     <message>
         <source>Keep N CTP anonymized (%u-%u, default: %u)</source>
         <translation>N CTP'i anonim tut (%u-%u, varsayılan: %u)</translation>
-    </message>
-    <message>
-        <source>Loading P2P addresses...</source>
-        <translation>P2P adresleri yükleniyor...</translation>
     </message>
     <message>
         <source>Print this help message and exit</source>
@@ -5086,6 +5186,10 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Azami blok boyutunu bayt olarak ayarla (varsayılan: %d)</translation>
     </message>
     <message>
+        <source>Set the masternode private key</source>
+        <translation>Ana düğüm özel anahtarubu belirle</translation>
+    </message>
+    <message>
         <source>Show all debugging options (usage: --help -help-debug)</source>
         <translation>Tüm hata ayıklama seçeneklerini göster (kullanımı: --help -help-debug)</translation>
     </message>
@@ -5120,6 +5224,10 @@ https://www.transifex.com/projects/p/ctp/</translation>
     <message>
         <source>Synchronizing governance objects...</source>
         <translation>Yönetim nesneleri eşleniyor...</translation>
+    </message>
+    <message>
+        <source>Synchronizing masternode payments...</source>
+        <translation>Ana düğüm ödemeleri eşleniyor...</translation>
     </message>
     <message>
         <source>The source code is available from %s.</source>

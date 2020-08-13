@@ -63,11 +63,11 @@
     </message>
     <message>
         <source>These are your Ctp addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>송금을 위한 CTP 주소입니다. 코인을 보내기 전에 항상 금액과 받는 주소를 확인하세요.</translation>
+        <translation>송금을 위한 대시 주소입니다. 코인을 보내기 전에 항상 금액과 받는 주소를 확인하세요.</translation>
     </message>
     <message>
         <source>These are your Ctp addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>CTP를 송금 받기 위한 주소입니다. 매 거래시 새로운 주소를 사용할 것을 권장합니다.</translation>
+        <translation>대시를 송금 받기 위한 주소입니다. 매 거래시 새로운 주소를 사용할 것을 권장합니다.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -173,7 +173,7 @@
     </message>
     <message>
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CTP&lt;/b&gt;!</source>
-        <translation>경고: 지갑을 암호화하고 암호문을 잃어버리는 경우 당신은 &lt;b&gt;모든 CTP를 잃게 됩니다&lt;/b&gt;!</translation>
+        <translation>경고: 지갑을 암호화하고 암호문을 잃어버리는 경우 당신은 &lt;b&gt;모든 대시를 잃게 됩니다&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -243,11 +243,11 @@
     <name>BitcoinGUI</name>
     <message>
         <source>A fatal error occurred. Ctp Core can no longer continue safely and will quit.</source>
-        <translation>치명적인 오류가 발생하였습니다. 더 이상 CTP 코어가 안전하지 않을 가능성이 있으며 CTP 코어는 곧 종료될 예정입니다.</translation>
+        <translation>치명적인 오류가 발생하였습니다. 더 이상 대시 코어가 안전하지 않을 가능성이 있으며 대시 코어는 곧 종료될 예정입니다.</translation>
     </message>
     <message>
         <source>Ctp Core</source>
-        <translation>CTP 코어</translation>
+        <translation>대시 코어</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -271,7 +271,7 @@
     </message>
     <message>
         <source>Send coins to a Ctp address</source>
-        <translation>CTP 주소로 코인 전송</translation>
+        <translation>대시 주소로 코인 전송</translation>
     </message>
     <message>
         <source>&amp;Receive</source>
@@ -279,7 +279,7 @@
     </message>
     <message>
         <source>Request payments (generates QR codes and ctp: URIs)</source>
-        <translation>지불 요청하기 (QR코드와 CTP URI가 생성됩니다.)</translation>
+        <translation>지불 요청하기 (QR코드와 대시 URI가 생성됩니다.)</translation>
     </message>
     <message>
         <source>&amp;Transactions</source>
@@ -307,7 +307,7 @@
     </message>
     <message>
         <source>Show information about Ctp Core</source>
-        <translation>CTP 코어에 관한 정보를 표시합니다.</translation>
+        <translation>대시 코어에 관한 정보를 표시합니다.</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -379,7 +379,7 @@
     </message>
     <message>
         <source>Sign messages with your Ctp addresses to prove you own them</source>
-        <translation>본인의 CTP 주소임을 증명하기 위하여 메시지에 서명합니다.</translation>
+        <translation>본인의 대시 주소임을 증명하기 위하여 메시지에 서명합니다.</translation>
     </message>
     <message>
         <source>&amp;Verify message...</source>
@@ -387,7 +387,7 @@
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Ctp addresses</source>
-        <translation>특정 CTP 주소에 서명된 것인지 확인하기 위하여 메시지를 검증합니다.</translation>
+        <translation>특정 대시 주소에 서명된 것인지 확인하기 위하여 메시지를 검증합니다.</translation>
     </message>
     <message>
         <source>&amp;Information</source>
@@ -438,6 +438,14 @@
         <translation>설정 파일을 엽니다.</translation>
     </message>
     <message>
+        <source>Open &amp;Masternode Configuration File</source>
+        <translation>마스터노드 설정 파일 열기(&amp;M)</translation>
+    </message>
+    <message>
+        <source>Open Masternode configuration file</source>
+        <translation>마스터노드 설정 파일을 엽니다.</translation>
+    </message>
+    <message>
         <source>Show Automatic &amp;Backups</source>
         <translation>자동 백업 표시(&amp;B)</translation>
     </message>
@@ -475,7 +483,7 @@
     </message>
     <message>
         <source>Show the %1 help message to get a list with possible Ctp command-line options</source>
-        <translation>사용 가능한 CTP 명령줄 옵션 목록을 가져오기 위해 %1 도움말 메시지를 표시합니다.</translation>
+        <translation>사용 가능한 대시 명령줄 옵션 목록을 가져오기 위해 %1 도움말 메시지를 표시합니다.</translation>
     </message>
     <message>
         <source>%1 client</source>
@@ -511,7 +519,7 @@
     </message>
     <message numerus="yes">
         <source>%n active connection(s) to Ctp network</source>
-        <translation><numerusform>CTP 네트워크의 활성 연결 수는 %n 입니다.</numerusform></translation>
+        <translation><numerusform>대시 네트워크의 활성 연결 수는 %n 입니다.</numerusform></translation>
     </message>
     <message>
         <source>Network activity disabled</source>
@@ -642,6 +650,10 @@
 </context>
 <context>
     <name>ClientModel</name>
+    <message>
+        <source>Total: %1 (PS compatible: %2 / Enabled: %3)</source>
+        <translation>전체: %1 (PS 호환: %2 / 가능: %3)</translation>
+    </message>
     <message>
         <source>Network Alert</source>
         <translation>네트워크 경고</translation>
@@ -862,7 +874,7 @@
     </message>
     <message>
         <source>The entered address "%1" is not a valid Ctp address.</source>
-        <translation>입력한 주소 "%1" 는 올바른 CTP 주소가 아닙니다.</translation>
+        <translation>입력한 주소 "%1" 는 올바른 대시 주소가 아닙니다.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -959,8 +971,8 @@
         <translation>프라이빗샌드 정보</translation>
     </message>
     <message>
-        <source>&lt;h3&gt;PrivateSend Basics&lt;/h3&gt; PrivateSend gives you true financial privacy by obscuring the origins of your funds. All the Ctp in your wallet is comprised of different "inputs" which you can think of as separate, discrete coins.&lt;br&gt; PrivateSend uses an innovative process to mix your inputs with the inputs of two other people, without having your coins ever leave your wallet. You retain control of your money at all times.&lt;hr&gt; &lt;b&gt;The PrivateSend process works like this:&lt;/b&gt;&lt;ol type="1"&gt; &lt;li&gt;PrivateSend begins by breaking your transaction inputs down into standard denominations. These denominations are 0.001 CTP, 0.01 CTP, 0.1 CTP, 1 CTP and 10 CTP -- sort of like the paper money you use every day.&lt;/li&gt; &lt;li&gt;Your wallet then sends requests to specially configured software nodes on the network, called "masternodes." These masternodes are informed then that you are interested in mixing a certain denomination. No identifiable information is sent to the masternodes, so they never know "who" you are.&lt;/li&gt; &lt;li&gt;When two other people send similar messages, indicating that they wish to mix the same denomination, a mixing session begins. The masternode mixes up the inputs and instructs all three users' wallets to pay the now-transformed input back to themselves. Your wallet pays that denomination directly to itself, but in a different address (called a change address).&lt;/li&gt; &lt;li&gt;In order to fully obscure your funds, your wallet must repeat this process a number of times with each denomination. Each time the process is completed, it's called a "round." Each round of PrivateSend makes it exponentially more difficult to determine where your funds originated.&lt;/li&gt; &lt;li&gt;This mixing process happens in the background without any intervention on your part. When you wish to make a transaction, your funds will already be anonymized. No additional waiting is required.&lt;/li&gt; &lt;/ol&gt; &lt;hr&gt;&lt;b&gt;IMPORTANT:&lt;/b&gt; Your wallet only contains 1000 of these "change addresses." Every time a mixing event happens, up to 9 of your addresses are used up. This means those 1000 addresses last for about 100 mixing events. When 900 of them are used, your wallet must create more addresses. It can only do this, however, if you have automatic backups enabled.&lt;br&gt; Consequently, users who have backups disabled will also have PrivateSend disabled. &lt;hr&gt;For more information, see the &lt;a href="https://docs.citypay.org/en/latest/wallets/ctpcore/privatesend-instantsend.html"&gt;PrivateSend documentation&lt;/a&gt;.</source>
-        <translation>&lt;h3&gt;프라이빗샌드에 관한 기본 정보&lt;/h3&gt; 프라이빗 샌드는 당신의 자금 출처를 가려 진정한 재정적 프라이버시를 보장합니다. 당신의 지갑에 보관된 모든 CTP는 각기 다른 ‘입력값’으로 구성되어 있습니다. 쉽게 생각하면 별도의 분리된 동전으로 구성되어 있다고 볼 수 있습니다.&lt;br&gt; 프라이빗샌드는 당신의 코인이 지갑을 떠나지 않고도 그 입력값을 다른 두 사람의 입력값과 섞는 혁신적인 방식을 사용합니다. 이로써 당신의 자금은 언제나 당신의 통제 하에 있습니다.&lt;hr&gt;&lt;b&gt; 프라이빗샌드는 다음과 같은 방식으로 작동합니다.&lt;/b&gt;&lt;ol type="1"&gt;&lt;li&gt; 프라이빗샌드는 당신의 거래 입력값을 표준 단위로 쪼개는 것으로 시작합니다. 이렇게 분할하는 단위는 0.001CTP, 0.01CTP, 0.1CTP, 1CTP 혹은 10CTP 입니다 - 귀하가 일상적으로 사용하는 지폐와 비슷하다고 생각하셔도 좋습니다. &lt;/li&gt;&lt;li&gt;이후 당신의 지갑은 ‘마스터노드’라고 불리는 네트워크의 특수 구성 소프트웨어 노드에 요청을 전송합니다. 이로써 이들 마스터노드는 당신이 특정 금액을 믹싱하고자 한다는 정보를 수신합니다. 마스터노드에는 당신의 개인 정보를 식별할 수 있는 어떤 내용도 전송되지 않습니다. 즉 당신이 ‘누구’인지 알 수 있는 방법은 없습니다.&lt;/li&gt;&lt;li&gt; 두 명의 다른 사람이 비슷한 메시지를 보내어 그들 역시 같은 단위의 금액을 믹싱하고 싶다는 정보를 표시하면 믹싱 세션이 시작됩니다. 마스터노드는 이들 입력값을 믹싱하여 세 사용자의 지갑에 변환된 입력을 지불하도록 지시합니다. 당신의 지갑은 해당 입력값을 지불하지만, 지불되는 주소는 '변경 주소'라고 불리는 다른 주소로 보내집니다.&lt;/li&gt;&lt;li&gt; 당신의 자금을 완전히 가리기 위해서, 당신의 지갑은 이 과정을 각 CTP 분할 단위만큼 여러번 반복합니다. 이러한 반복을 ‘라운드’라고 부릅니다. 프라이빗샌드의 각 라운드가 진행됨에 따라 당신이 송금하고자 하는 자금의 출처는 기하급수적으로 높은 수준으로 가려집니다.&lt;/li&gt;&lt;li&gt; 이 믹싱 과정은 당신이 개입할 필요 없이 백그라운드에서 진행됩니다. 당신이 거래를 원하시는 경우, 당신의 자금은 이미 익명화가 진행되는 중입니다. 추가적으로 대기할 필요 역시 없습니다. &lt;/li&gt;&lt;/ol&gt;&lt;hr&gt;&lt;b&gt;중요:&lt;/b&gt; 당신의 지갑은 1,000개의 ‘변경 주소’만을 가지고 있습니다. 믹싱을 실행할 때마다 최대 9개의 주소가 사용됩니다. 이는 곧 이들 1000개의 주소가 약 100개의 믹싱 작업을 위해 사용될 수 있다는 것을 의미합니다. 전체 1,000개의 주소 중 900개가 사용된 경우 당신의 지갑은 더 많은 주소를 만들어야 합니다. 그러나 이 작업은 당신이 자동 백업을 설정한 경우에만 수행됩니다. &lt;br&gt;따라서 백업이 비활성화된 사용자는 프라이빗샌드 역시 비활성화 됩니다. &lt;hr&gt;더 많은 정보를 위해서는 다음을 참조하세요 &lt;a href="https://docs.citypay.org/en/latest/wallets/ctpcore/privatesend-instantsend.html"&gt;프라이빗샌드 설명서&lt;/a&gt;. </translation>
+        <source>&lt;h3&gt;PrivateSend Basics&lt;/h3&gt; PrivateSend gives you true financial privacy by obscuring the origins of your funds. All the Ctp in your wallet is comprised of different "inputs" which you can think of as separate, discrete coins.&lt;br&gt; PrivateSend uses an innovative process to mix your inputs with the inputs of two other people, without having your coins ever leave your wallet. You retain control of your money at all times.&lt;hr&gt; &lt;b&gt;The PrivateSend process works like this:&lt;/b&gt;&lt;ol type="1"&gt; &lt;li&gt;PrivateSend begins by breaking your transaction inputs down into standard denominations. These denominations are 0.01 CTP, 0.1 CTP, 1 CTP and 10 CTP -- sort of like the paper money you use every day.&lt;/li&gt; &lt;li&gt;Your wallet then sends requests to specially configured software nodes on the network, called "masternodes." These masternodes are informed then that you are interested in mixing a certain denomination. No identifiable information is sent to the masternodes, so they never know "who" you are.&lt;/li&gt; &lt;li&gt;When two other people send similar messages, indicating that they wish to mix the same denomination, a mixing session begins. The masternode mixes up the inputs and instructs all three users' wallets to pay the now-transformed input back to themselves. Your wallet pays that denomination directly to itself, but in a different address (called a change address).&lt;/li&gt; &lt;li&gt;In order to fully obscure your funds, your wallet must repeat this process a number of times with each denomination. Each time the process is completed, it's called a "round." Each round of PrivateSend makes it exponentially more difficult to determine where your funds originated.&lt;/li&gt; &lt;li&gt;This mixing process happens in the background without any intervention on your part. When you wish to make a transaction, your funds will already be anonymized. No additional waiting is required.&lt;/li&gt; &lt;/ol&gt; &lt;hr&gt;&lt;b&gt;IMPORTANT:&lt;/b&gt; Your wallet only contains 1000 of these "change addresses." Every time a mixing event happens, up to 9 of your addresses are used up. This means those 1000 addresses last for about 100 mixing events. When 900 of them are used, your wallet must create more addresses. It can only do this, however, if you have automatic backups enabled.&lt;br&gt; Consequently, users who have backups disabled will also have PrivateSend disabled. &lt;hr&gt;For more information, see the &lt;a href="https://docs.citypay.org/en/latest/wallets/ctpcore/privatesend-instantsend.html"&gt;PrivateSend documentation&lt;/a&gt;.         </source>
+        <translation>&lt;h3&gt;프라이빗샌드에 관한 기본 정보&lt;/h3&gt; 프라이빗 샌드는 당신의 자금 출처를 가려 진정한 재정적 프라이버시를 보장합니다. 당신의 지갑에 보관된 모든 대시는 각기 다른 ‘입력값’으로 구성되어 있습니다. 쉽게 생각하면 별도의 분리된 동전으로 구성되어 있다고 볼 수 있습니다.&lt;br&gt; 프라이빗샌드는 당신의 코인이 지갑을 떠나지 않고도 그 입력값을 다른 두 사람의 입력값과 섞는 혁신적인 방식을 사용합니다. 이로써 당신의 자금은 언제나 당신의 통제 하에 있습니다.&lt;hr&gt;&lt;b&gt; 프라이빗샌드는 다음과 같은 방식으로 작동합니다.&lt;/b&gt;&lt;ol type="1"&gt;&lt;li&gt; 프라이빗샌드는 당신의 거래 입력값을 표준 단위로 쪼개는 것으로 시작합니다. 이렇게 분할하는 단위는 0.01대시, 0.1대시, 1대시 혹은 10대시 입니다 - 귀하가 일상적으로 사용하는 지폐와 비슷하다고 생각하셔도 좋습니다. &lt;/li&gt;&lt;li&gt;이후 당신의 지갑은 ‘마스터노드’라고 불리는 네트워크의 특수 구성 소프트웨어 노드에 요청을 전송합니다. 이로써 이들 마스터노드는 당신이 특정 금액을 믹싱하고자 한다는 정보를 수신합니다. 마스터노드에는 당신의 개인 정보를 식별할 수 있는 어떤 내용도 전송되지 않습니다. 즉 당신이 ‘누구’인지 알 수 있는 방법은 없습니다.&lt;/li&gt;&lt;li&gt; 두 명의 다른 사람이 비슷한 메시지를 보내어 그들 역시 같은 단위의 금액을 믹싱하고 싶다는 정보를 표시하면 믹싱 세션이 시작됩니다. 마스터노드는 이들 입력값을 믹싱하여 세 사용자의 지갑에 변환된 입력을 지불하도록 지시합니다. 당신의 지갑은 해당 입력값을 지불하지만, 지불되는 주소는 '변경 주소'라고 불리는 다른 주소로 보내집니다.&lt;/li&gt;&lt;li&gt; 당신의 자금을 완전히 가리기 위해서, 당신의 지갑은 이 과정을 각 대시 분할 단위만큼 여러번 반복합니다. 이러한 반복을 ‘라운드’라고 부릅니다. 프라이빗샌드의 각 라운드가 진행됨에 따라 당신이 송금하고자 하는 자금의 출처는 기하급수적으로 높은 수준으로 가려집니다.&lt;/li&gt;&lt;li&gt; 이 믹싱 과정은 당신이 개입할 필요 없이 백그라운드에서 진행됩니다. 당신이 거래를 원하시는 경우, 당신의 자금은 이미 익명화가 진행되는 중입니다. 추가적으로 대기할 필요 역시 없습니다. &lt;/li&gt;&lt;/ol&gt;&lt;hr&gt;&lt;b&gt;중요:&lt;/b&gt; 당신의 지갑은 1,000개의 ‘변경 주소’만을 가지고 있습니다. 믹싱을 실행할 때마다 최대 9개의 주소가 사용됩니다. 이는 곧 이들 1000개의 주소가 약 100개의 믹싱 작업을 위해 사용될 수 있다는 것을 의미합니다. 전체 1,000개의 주소 중 900개가 사용된 경우 당신의 지갑은 더 많은 주소를 만들어야 합니다. 그러나 이 작업은 당신이 자동 백업을 설정한 경우에만 수행됩니다. &lt;br&gt;따라서 백업이 비활성화된 사용자는 프라이빗샌드 역시 비활성화 됩니다. &lt;hr&gt;더 많은 정보를 위해서는 다음을 참조하세요 &lt;a href="https://docs.citypay.org/en/latest/wallets/ctpcore/privatesend-instantsend.html"&gt;프라이빗샌드 설명서&lt;/a&gt;. </translation>
     </message>
 </context>
 <context>
@@ -978,16 +990,8 @@
         <translation>프로그램을 처음으로 실행합니다. 어디에 %1 데이터를 저장 할 지 선택할 수 있습니다. </translation>
     </message>
     <message>
-        <source>When you click OK, %1 will begin to download and process the full %4 block chain (%2GB) starting with the earliest transactions in %3 when %4 initially launched.</source>
-        <translation>확인을 클릭하면 %1은 모든 %4블록 체인 (%2GB) 장부를 %3 안에 다운로드하고 처리하기 시작합니다.  이는 %4가 시작될 때 생성된 가장 오래된 트랜잭션부터 시작합니다.</translation>
-    </message>
-    <message>
-        <source>This initial synchronisation is very demanding, and may expose hardware problems with your computer that had previously gone unnoticed. Each time you run %1, it will continue downloading where it left off.</source>
-        <translation>초기 동기화는 매우 오래 걸리며 이전에는 본 적 없는  하드웨어 문제가 발생할 수 있습니다. %1을 실행할 때마다 중단 된 곳에서 다시 계속 다운로드 됩니다.</translation>
-    </message>
-    <message>
-        <source>If you have chosen to limit block chain storage (pruning), the historical data must still be downloaded and processed, but will be deleted afterward to keep your disk usage low.</source>
-        <translation>블록 체인 저장 영역 (블록축소)을 제한하도록 선택한 경우, 이력 데이터는 계속해서 다운로드 및 처리 되어야 하지만 차후 디스크 용량을 줄이기 위해 삭제됩니다.</translation>
+        <source>%1 will download and store a copy of the Ctp block chain. At least %2GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>%1이/가 다운로드 되며 사본이 대시 블록체인 상에 저장됩니다. 이 디렉토리에 최소 %2GB의 데이터가 저장되며, 저장되는 데이터의 양은 시간이 지남에 따라 증가합니다. 지갑 역시 이 디렉토리에 저장될 예정입니다.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -996,22 +1000,6 @@
     <message>
         <source>Use a custom data directory:</source>
         <translation>사용자 설정 데이터 디렉토리 사용하기</translation>
-    </message>
-    <message>
-        <source>At least %1 GB of data will be stored in this directory, and it will grow over time.</source>
-        <translation>최소 %1 GB의 데이터가 이 디렉토리에 저장되며 시간이 지남에 따라 증가할 것입니다.</translation>
-    </message>
-    <message>
-        <source>Approximately %1 GB of data will be stored in this directory.</source>
-        <translation>약 %1 GB의 데이터가 이 디렉토리에 저장됩니다.</translation>
-    </message>
-    <message>
-        <source>%1 will download and store a copy of the Ctp block chain.</source>
-        <translation>%1은 비트코인 블록체인의 사본을 다운로드하여 저장합니다.</translation>
-    </message>
-    <message>
-        <source>The wallet will also be stored in this directory.</source>
-        <translation>지갑도 이 디렉토리에 저장됩니다.</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1037,20 +1025,76 @@
         <translation>유형</translation>
     </message>
     <message>
+        <source>My Masternodes</source>
+        <translation>나의 마스터노드</translation>
+    </message>
+    <message>
+        <source>Note: Status of your masternodes in local wallet can potentially be slightly incorrect.&lt;br /&gt;Always wait for wallet to sync additional data and then double check from another node&lt;br /&gt;if your masternode should be running but you still do not see "ENABLED" in "Status" field.</source>
+        <translation>주의: 로컬 지갑의 마스터노드 상태가 약간 다를 수 있습니다. 만일 당신의 마스터노드가 작동하고 있으나 여전히 '상태' 란에서 '활성화'가 표시되지 않은 경우 &lt;br /&gt;지갑이 추가적인 데이터와 동기화를 마치도록 기다리고 다른 노드로부터 이중 검증하세요.&lt;br /&gt;</translation>
+    </message>
+    <message>
+        <source>Alias</source>
+        <translation>에일리어스</translation>
+    </message>
+    <message>
         <source>Address</source>
         <translation>주소</translation>
+    </message>
+    <message>
+        <source>Protocol</source>
+        <translation>프로토콜</translation>
     </message>
     <message>
         <source>Status</source>
         <translation>상태</translation>
     </message>
     <message>
+        <source>Active</source>
+        <translation>활동 중</translation>
+    </message>
+    <message>
+        <source>Last Seen</source>
+        <translation>마지막 확인</translation>
+    </message>
+    <message>
         <source>Payee</source>
         <translation>수취인</translation>
     </message>
     <message>
+        <source>S&amp;tart alias</source>
+        <translation>에일리어스 시작(&amp;S)</translation>
+    </message>
+    <message>
+        <source>Start &amp;all</source>
+        <translation>모두 시작(&amp;A)</translation>
+    </message>
+    <message>
+        <source>Start &amp;MISSING</source>
+        <translation>미싱 시작(&amp;M)</translation>
+    </message>
+    <message>
+        <source>&amp;Update status</source>
+        <translation>업데이트 상태(&amp;U)</translation>
+    </message>
+    <message>
+        <source>Show additional Masternode information</source>
+        <translation>마스터노드 추가 정보를 보여줍니다.</translation>
+    </message>
+    <message>
+        <source>Show &amp;Info...</source>
+        <translation>정보 보기...(&amp;I)</translation>
+    </message>
+    <message>
+        <source>Status will be updated automatically in (sec):</source>
+        <translation>상태가 (초)안에 자동으로 업데이트 됩니다:</translation>
+    </message>
+    <message>
         <source>0</source>
         <translation>0</translation>
+    </message>
+    <message>
+        <source>All Masternodes</source>
+        <translation>모든 마스터노드</translation>
     </message>
     <message>
         <source>Filter List:</source>
@@ -1065,68 +1109,72 @@
         <translation>노드 개수:</translation>
     </message>
     <message>
-        <source>DIP3 Masternodes</source>
-        <translation>DIP3 마스터노드</translation>
+        <source>Start alias</source>
+        <translation>에일리어스 시작</translation>
     </message>
     <message>
-        <source>PoSe Score</source>
-        <translation>PoSe 스코어</translation>
+        <source>Confirm masternode start</source>
+        <translation>마스터노드 실행 확인</translation>
     </message>
     <message>
-        <source>Registered</source>
-        <translation>등록됨</translation>
+        <source>Are you sure you want to start masternode %1?</source>
+        <translation>정말로 마스터노드 %1를 실행하시겠습니까?</translation>
     </message>
     <message>
-        <source>Last Paid</source>
-        <translation>지난 지불</translation>
+        <source>Confirm all masternodes start</source>
+        <translation>모든 마스터노드 실행 확인</translation>
     </message>
     <message>
-        <source>Next Payment</source>
-        <translation>다음 지불</translation>
+        <source>Are you sure you want to start ALL masternodes?</source>
+        <translation>정말로 모든 마스터노드를 실행하시겠습니까?</translation>
     </message>
     <message>
-        <source>Operator Reward</source>
-        <translation>운영 보상</translation>
+        <source>Command is not available right now</source>
+        <translation>현재 이 명령을 실행할 수 없습니다.</translation>
     </message>
     <message>
-        <source>Copy ProTx Hash</source>
-        <translation>ProTx 해시 복사</translation>
+        <source>You can't use this command until masternode list is synced</source>
+        <translation>마스터노드 리스트가 동기화 될 때까지 이 명령을 실행할 수 없습니다.</translation>
     </message>
     <message>
-        <source>Copy Collateral Outpoint</source>
-        <translation>콜래트럴 아웃포인트 복사</translation>
+        <source>Confirm missing masternodes start</source>
+        <translation>미싱 마스터노드 시작 확인</translation>
     </message>
     <message>
-        <source>ENABLED</source>
-        <translation>활성화됨</translation>
+        <source>Are you sure you want to start MISSING masternodes?</source>
+        <translation>정말로 미싱 마스터노드를 시작하시겠습니까?</translation>
     </message>
     <message>
-        <source>POSE_BANNED</source>
-        <translation>POSE_금지됨</translation>
+        <source>Additional information for Masternode %1</source>
+        <translation>마스터노드 %1에 대한 추가 정보</translation>
     </message>
     <message>
-        <source>UNKNOWN</source>
+        <source>Masternode Private Key</source>
+        <translation>마스터노드 개인 키</translation>
+    </message>
+    <message>
+        <source>Private Key</source>
+        <translation>개인 키</translation>
+    </message>
+    <message>
+        <source>Collateral</source>
+        <translation>콜래트럴</translation>
+    </message>
+    <message>
+        <source>IP</source>
+        <translation>IP</translation>
+    </message>
+    <message>
+        <source>Version</source>
+        <translation>버전</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
         <translation>알 수 없음</translation>
     </message>
     <message>
-        <source>to %1</source>
-        <translation>%1 까지</translation>
-    </message>
-    <message>
-        <source>to UNKNOWN</source>
-        <translation>알 수 없음 까지 </translation>
-    </message>
-    <message>
-        <source>but not claimed</source>
-        <translation>아직 나타나지 않았습니다.</translation>
-    </message>
-    <message>
-        <source>NONE</source>
-        <translation>없음</translation>
-    </message>
-    <message>
-        <source>Additional information for DIP3 Masternode %1</source>
-        <translation>DIP3 마스터노드 %1에 대한 추가 정보</translation>
+        <source>Sentinel</source>
+        <translation>센티넬</translation>
     </message>
 </context>
 <context>
@@ -1137,11 +1185,11 @@
     </message>
     <message>
         <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the Ctp network, as detailed below.</source>
-        <translation>최근 거래는 아직 표시되지 않을 수 있으며, 따라서 당신 지갑의 잔고 역시 실제와 다를 수 있습니다. 이는 당신의 지갑이 CTP 네트워크와 동기화를 마치는대로 아래의 세부 내용과 같이 정확히 표시될 예정입니다.</translation>
+        <translation>최근 거래는 아직 표시되지 않을 수 있으며, 따라서 당신 지갑의 잔고 역시 실제와 다를 수 있습니다. 이는 당신의 지갑이 대시 네트워크와 동기화를 마치는대로 아래의 세부 내용과 같이 정확히 표시될 예정입니다.</translation>
     </message>
     <message>
         <source>Attempting to spend Ctp that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation>'아직 표시 되지 않은 거래'의 영향을 받는 CTP를 사용하시려는 경우, 네트워크에 의해 승인되지 않습니다.</translation>
+        <translation>'아직 표시 되지 않은 거래'의 영향을 받는 대시를 사용하시려는 경우, 네트워크에 의해 승인되지 않습니다.</translation>
     </message>
     <message>
         <source>Number of blocks left</source>
@@ -1231,7 +1279,7 @@
     </message>
     <message>
         <source>Amount of Ctp to keep anonymized</source>
-        <translation>익명을 유지할 CTP의 개수</translation>
+        <translation>익명을 유지할 대시의 개수</translation>
     </message>
     <message>
         <source>W&amp;allet</source>
@@ -1283,7 +1331,7 @@
     </message>
     <message>
         <source>Automatically open the Ctp Core client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>라우터에서 CTP 코어 클라이언트를 자동으로 엽니다. 이 기능은 당신의 라우터가 UPnP를 지원하고 해당 기능이 작동하는 경우에만 가능합니다.</translation>
+        <translation>라우터에서 대시 코어 클라이언트를 자동으로 엽니다. 이 기능은 당신의 라우터가 UPnP를 지원하고 해당 기능이 작동하는 경우에만 가능합니다.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1295,7 +1343,7 @@
     </message>
     <message>
         <source>Connect to the Ctp network through a SOCKS5 proxy.</source>
-        <translation>SOCKS5 프록시를 통해 CTP 네트워크 연결</translation>
+        <translation>SOCKS5 프록시를 통해 대시 네트워크 연결</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1332,14 +1380,6 @@
     <message>
         <source>Enable coin &amp;control features</source>
         <translation>코인 제어 기능 활성화(&amp;C)</translation>
-    </message>
-    <message>
-        <source>Show system popups for PrivateSend mixing transactions&lt;br/&gt;just like for all other transaction types.</source>
-        <translation>다른 모든 거래 타입과 같이&lt;br/&gt;프라이빗샌드 믹싱 거래를 위한 시스템 팝업을 보여줍니다</translation>
-    </message>
-    <message>
-        <source>Show popups for PrivateSend transactions</source>
-        <translation>프라이빗샌드 거래를 위한 팝업을 보여줍니다.</translation>
     </message>
     <message>
         <source>&amp;Spend unconfirmed change</source>
@@ -1391,7 +1431,7 @@
     </message>
     <message>
         <source>Connect to the Ctp network through a separate SOCKS5 proxy for Tor hidden services.</source>
-        <translation>Tor 숨김 서비스를 위한 별도의 SOCKS5 프록시를 사용하여 CTP 네트워크에 연결</translation>
+        <translation>Tor 숨김 서비스를 위한 별도의 SOCKS5 프록시를 사용하여 대시 네트워크에 연결</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services:</source>
@@ -1516,7 +1556,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
     </message>
     <message>
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Ctp network after a connection is established, but this process has not completed yet.</source>
-        <translation>표시된 정보가 오래된 것으로 보입니다. 당신의 지갑은 CTP 네트워크에 연결되는 대로 동기화 될 예정입니다. 이 과정은 아직 종료되지 않았습니다.</translation>
+        <translation>표시된 정보가 오래된 것으로 보입니다. 당신의 지갑은 대시 네트워크에 연결되는 대로 동기화 될 예정입니다. 이 과정은 아직 종료되지 않았습니다.</translation>
     </message>
     <message>
         <source>Available:</source>
@@ -1616,7 +1656,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
     </message>
     <message>
         <source>0 CTP / 0 Rounds</source>
-        <translation>0 CTP / 0 라운드</translation>
+        <translation>0 대시 / 0 라운드</translation>
     </message>
     <message>
         <source>Submitted Denom:</source>
@@ -1757,6 +1797,10 @@ https://www.transifex.com/projects/p/ctp/</translation>
 </translation>
     </message>
     <message>
+        <source>N/A</source>
+        <translation>없음</translation>
+    </message>
+    <message>
         <source>PrivateSend was successfully reset.</source>
         <translation>프라이빗샌드가 성공적으로 재설정 되었습니다.</translation>
     </message>
@@ -1781,7 +1825,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
     </message>
     <message>
         <source>Cannot start ctp: click-to-pay handler</source>
-        <translation>CTP를 시작할 수 없습니다: 원클릭 지불 핸들러</translation>
+        <translation>대시를 시작할 수 없습니다: 원클릭 지불 핸들러</translation>
     </message>
     <message>
         <source>URI handling</source>
@@ -1797,7 +1841,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid Ctp address or malformed URI parameters.</source>
-        <translation>URI를 분석할 수 없습니다! CTP 주소가 유효하지 않거나 URI 파라미터 구성에 오류가 존재할 수 있습니다.</translation>
+        <translation>URI를 분석할 수 없습니다! 대시 주소가 유효하지 않거나 URI 파라미터 구성에 오류가 존재할 수 있습니다.</translation>
     </message>
     <message>
         <source>Payment request file handling</source>
@@ -1886,8 +1930,16 @@ https://www.transifex.com/projects/p/ctp/</translation>
 <context>
     <name>QObject</name>
     <message>
+        <source>Ctp Core</source>
+        <translation>대시 코어</translation>
+    </message>
+    <message>
         <source>%1 didn't yet exit safely...</source>
         <translation>%1가 아직 안전하게 종료되지 않았습니다...</translation>
+    </message>
+    <message>
+        <source>Error reading masternode configuration file: %1</source>
+        <translation>마스터노드 설정을 읽는 과정에서 에러가 발생하였습니다: %1</translation>
     </message>
     <message>
         <source>Amount</source>
@@ -1895,7 +1947,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
     </message>
     <message>
         <source>Enter a Ctp address (e.g. %1)</source>
-        <translation>CTP 주소 입력 (예: %1)</translation>
+        <translation>대시 주소 입력 (예: %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2413,7 +2465,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
     </message>
     <message>
         <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Ctp network.</source>
-        <translation>지불 요청에 메시지를 첨부할 지 선택할 수 있습니다. 해당 메세지는 지불 요청이 열릴 때 표시될 것 입니다. 메모: 이 메시지는 CTP 네트워크로 전송되지 않습니다.</translation>
+        <translation>지불 요청에 메시지를 첨부할 지 선택할 수 있습니다. 해당 메세지는 지불 요청이 열릴 때 표시될 것 입니다. 메모: 이 메시지는 대시 네트워크로 전송되지 않습니다.</translation>
     </message>
     <message>
         <source>&amp;Message:</source>
@@ -2425,7 +2477,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
     </message>
     <message>
         <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Ctp network.</source>
-        <translation>지불 요청에 메시지를 첨부할 지 선택할 수 있습니다. 해당 메세지는 지불 요청이 열릴 때 표시될 것 입니다. 메모: 이 메시지는 CTP 네트워크로 전송되지 않습니다.</translation>
+        <translation>지불 요청에 메시지를 첨부할 지 선택할 수 있습니다. 해당 메세지는 지불 요청이 열릴 때 표시될 것 입니다. 메모: 이 메시지는 대시 네트워크로 전송되지 않습니다.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -2694,7 +2746,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for ctp transactions than the network can process.</source>
-        <translation>최소한의 수수료만 지불하기는 블록체인 내의 공간보다 적은 거래가 진행 중인 경우에만 제대로 작동합니다.&lt;br /&gt;이 옵션을 선택하면 CTP 네트워크가 처리할 수 있는 것 보다 많은 거래가 진행되는 경우 거래 확인이 이루어지지 않을 수도 있다는 점을 주의하세요.</translation>
+        <translation>최소한의 수수료만 지불하기는 블록체인 내의 공간보다 적은 거래가 진행 중인 경우에만 제대로 작동합니다.&lt;br /&gt;이 옵션을 선택하면 대시 네트워크가 처리할 수 있는 것 보다 많은 거래가 진행되는 경우 거래 확인이 이루어지지 않을 수도 있다는 점을 주의하세요.</translation>
     </message>
     <message>
         <source>per kilobyte</source>
@@ -2882,7 +2934,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
     </message>
     <message>
         <source>Warning: Invalid Ctp address</source>
-        <translation>경고: 잘못된 CTP 주소입니다</translation>
+        <translation>경고: 잘못된 대시 주소입니다</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -2913,7 +2965,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
     </message>
     <message>
         <source>The Ctp address to send the payment to</source>
-        <translation>이 CTP 주소로 송금합니다.</translation>
+        <translation>이 대시 주소로 송금합니다.</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2961,7 +3013,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
     </message>
     <message>
         <source>A message that was attached to the ctp: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Ctp network.</source>
-        <translation>CTP: URI에 첨부된 메시지는 거래와 함께 참고용으로 저장됩니다. 주의: 이 메시지는 CTP 네트워크로 전송되지 않습니다.</translation>
+        <translation>대시: URI에 첨부된 메시지는 거래와 함께 참고용으로 저장됩니다. 주의: 이 메시지는 대시 네트워크로 전송되지 않습니다.</translation>
     </message>
     <message>
         <source>This is an unauthenticated payment request.</source>
@@ -3014,11 +3066,11 @@ https://www.transifex.com/projects/p/ctp/</translation>
     </message>
     <message>
         <source>You can sign messages/agreements with your addresses to prove you can receive Ctp sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>당신의 주소로 CTP를 받을 수 있다는 점을 증명하기 위하여 메시지/계약서에 서명할 수 있습니다. 내용이 분명하지 않거나 무작위인 경우 서명하지 않도록 주의하세요. 피싱 공격이 당신의 서명을 얻기 위해 유도하는 것일 수 있습니다. 오직 완전한 세부 내용을 갖추고 당신이 동의하는 내용에만 서명하세요.</translation>
+        <translation>당신의 주소로 대시를 받을 수 있다는 점을 증명하기 위하여 메시지/계약서에 서명할 수 있습니다. 내용이 분명하지 않거나 무작위인 경우 서명하지 않도록 주의하세요. 피싱 공격이 당신의 서명을 얻기 위해 유도하는 것일 수 있습니다. 오직 완전한 세부 내용을 갖추고 당신이 동의하는 내용에만 서명하세요.</translation>
     </message>
     <message>
         <source>The Ctp address to sign the message with</source>
-        <translation>메시지에 서명하기 위한 CTP 주소</translation>
+        <translation>메시지에 서명하기 위한 대시 주소</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -3050,7 +3102,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
     </message>
     <message>
         <source>Sign the message to prove you own this Ctp address</source>
-        <translation>이 CTP 주소가 당신의 소유임을 증명하기 위해 메시지에 서명하세요.</translation>
+        <translation>이 대시 주소가 당신의 소유임을 증명하기 위해 메시지에 서명하세요.</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -3074,11 +3126,11 @@ https://www.transifex.com/projects/p/ctp/</translation>
     </message>
     <message>
         <source>The Ctp address the message was signed with</source>
-        <translation>메시지에 서명된 CTP 주소</translation>
+        <translation>메시지에 서명된 대시 주소</translation>
     </message>
     <message>
         <source>Verify the message to ensure it was signed with the specified Ctp address</source>
-        <translation>특정 CTP 주소에 서명된 것인지 확인하기 위하여 메시지를 검증합니다.</translation>
+        <translation>특정 대시 주소에 서명된 것인지 확인하기 위하여 메시지를 검증합니다.</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -3488,10 +3540,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>이 거래에 조회 전용 주소가 포함 되는지의 여부</translation>
     </message>
     <message>
-        <source>Whether or not this transaction was locked by InstantSend.</source>
-        <translation>이 거래가 인스턴트샌드를 통해 잠겼는 지의 여부</translation>
-    </message>
-    <message>
         <source>User-defined intent/purpose of the transaction.</source>
         <translation>거래의 의도/목적에 대한 사용자 정의</translation>
     </message>
@@ -3505,14 +3553,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
     <message>
         <source>All</source>
         <translation>전체</translation>
-    </message>
-    <message>
-        <source>Locked by InstantSend</source>
-        <translation>인스턴트샌드로 잠김</translation>
-    </message>
-    <message>
-        <source>Not locked by InstantSend</source>
-        <translation>인스턴트샌드로 잠기지 않음</translation>
     </message>
     <message>
         <source>Today</source>
@@ -3802,6 +3842,10 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>경고: 피어와 완전히 일치하지 않는 것으로 보입니다! 당신 혹은 다른 노드들의 업그레이드가 필요합니다.</translation>
     </message>
     <message>
+        <source>You must specify a masternodeprivkey in the configuration. Please see documentation for help.</source>
+        <translation>마스터노드 설정에서 마스터노드 개인 키를 지정하십시오. 도움이 필요하신 경우 문서를 확인하십시오.</translation>
+    </message>
+    <message>
         <source>Accept command line and JSON-RPC commands</source>
         <translation>명령줄과 JSON-RPC 명령 수락</translation>
     </message>
@@ -3922,20 +3966,16 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>선택한 주소와 이에 연결된 화이트리스트 피어를 바인드 합니다. IPv6인 경우 [host]:port 명령어 표기법을 사용합니다.</translation>
     </message>
     <message>
+        <source>Bind to given address to listen for JSON-RPC connections. Use [host]:port notation for IPv6. This option can be specified multiple times (default: bind to all interfaces)</source>
+        <translation>JSON-RPC 연결을 수신하기 위해 선택한 주소를 바인드 합니다. IPv6인 경우 [host]:port 명령어 표기법을 사용합니다. 이 옵션은 복수로 설정할 수 있습니다. (디폴트: 모든 인터페이스를 바인드)</translation>
+    </message>
+    <message>
         <source>Create new files with system default permissions, instead of umask 077 (only effective with disabled wallet functionality)</source>
         <translation>umask 077 를 대신하여 시스템 기본 권한으로 새 파일을 만듭니다. (지갑 기능이 비활성화 상태에서만 유효합니다)</translation>
     </message>
     <message>
         <source>Delete all wallet transactions and only recover those parts of the blockchain through -rescan on startup</source>
         <translation>시작 시 모든 지갑 거래를 삭제하고 -rescan을 통해 블록체인의 특정 부분만을 복구합니다.</translation>
-    </message>
-    <message>
-        <source>Enable publish raw transactions of attempted InstantSend double spend in &lt;address&gt;</source>
-        <translation>&lt;address&gt;에서 시도된 인스턴트샌드 이중 지불의 원시 거래 공개를 활성화합니다.</translation>
-    </message>
-    <message>
-        <source>Enable publish transaction hashes of attempted InstantSend double spend in &lt;address&gt;</source>
-        <translation>&lt;address&gt;에서 시도된 인스턴트샌드 이중 지불의 거래 해시 공개를 활성화합니다.</translation>
     </message>
     <message>
         <source>Error loading %s: You can't enable HD on a already existing non-HD wallet</source>
@@ -3982,14 +4022,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>디버그 정보 출력 (디폴트: %u, &lt;category&gt; 제공 선택 가능)</translation>
     </message>
     <message>
-        <source>Overrides minimum spork signers to change spork value. Only useful for regtest and devnet. Using this on mainnet or testnet will ban you.</source>
-        <translation>최소 스포크 서명자를 무시하고 스포크 값을 변경합니다. 오직 회귀 테스트와 개발 네트워크에서만 유용합니다. 메인넷이나 테스트넷에서 사용하는 경우에는 금지당할 수 있습니다.</translation>
-    </message>
-    <message>
-        <source>Use N separate masternodes in parallel to mix funds (%u-%u, default: %u)</source>
-        <translation>병렬 관계에 있는 N개의 마스터노드를 사용하여 금액을 믹스합니다. (%u-%u, 디폴트: %u)</translation>
-    </message>
-    <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
         <translation>Tor 숨김 서비스로 피어에 접속하기 위해 별도의 SOCKS5 프록시를 사용하기 (디폴트: %s)</translation>
     </message>
@@ -4008,10 +4040,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
     <message>
         <source>You need to rebuild the database using -reindex-chainstate to change -txindex</source>
         <translation>-txindex를 변경하기 위해서는 -reindex- 체인 상태를 사용하여 데이터를 재구성해야 합니다.</translation>
-    </message>
-    <message>
-        <source>You should specify a masternodeblsprivkey in the configuration. Please see documentation for help.</source>
-        <translation>설정에서 masternodeblsprivkey를 지정하십시오. 도움이 필요하신 경우 문서를 확인하십시오.</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -4066,6 +4094,10 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>다음으로부터 마스터노드 캐시를 불러오는 데 실패하였습니다.</translation>
     </message>
     <message>
+        <source>Failed to load masternode payments cache from</source>
+        <translation>다음으로부터 마스터노드 지불 캐시를 불러오는 데 실패하였습니다.</translation>
+    </message>
+    <message>
         <source>Found enough users, signing ( waiting %s )</source>
         <translation>충분한 사용자를 감지하였습니다. 신호를 보내는 중입니다. ( %s 기다리기 )</translation>
     </message>
@@ -4110,16 +4142,16 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>잔고가 충분하지 않습니다.</translation>
     </message>
     <message>
+        <source>Invalid -onion address: '%s'</source>
+        <translation>잘못된 -onion 주소입니다: '%s'</translation>
+    </message>
+    <message>
+        <source>Invalid -proxy address: '%s'</source>
+        <translation>잘못된 -proxy 주소입니다: '%s'</translation>
+    </message>
+    <message>
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s' (must be at least %s)</source>
         <translation>유효하지 않은 금액입니다. -paytxfee=&lt;amount&gt;: '%s' (최소 %s 이상이어야 합니다)</translation>
-    </message>
-    <message>
-        <source>Invalid masternodeblsprivkey. Please see documenation.</source>
-        <translation>유효하지 않은 masternodeblsprivkey 입니다. 문서를 확인하세요.</translation>
-    </message>
-    <message>
-        <source>Invalid minimum number of spork signers specified with -minsporkkeys</source>
-        <translation>-minsporkkeys로 지정된 스포크 서명자의 최소 숫자가 유효하지 않습니다.</translation>
     </message>
     <message>
         <source>Keypool ran out, please call keypoolrefill first</source>
@@ -4146,8 +4178,16 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>마스터노드 캐시를 불러오는 중...</translation>
     </message>
     <message>
+        <source>Loading masternode payment cache...</source>
+        <translation>마스터노드 지불 캐시를 불러오는 중...</translation>
+    </message>
+    <message>
         <source>Lock is already in place.</source>
         <translation>이미 잠금 상태입니다.</translation>
+    </message>
+    <message>
+        <source>Lock masternodes from masternode configuration file (default: %u)</source>
+        <translation>마스터노드 설정 파일로부터 마스터노드를 잠급니다. (디폴트: %u)</translation>
     </message>
     <message>
         <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: %u)</source>
@@ -4186,6 +4226,10 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>오직 네트워크에서만 노드에 접속합니다. &lt;net&gt;(ipv4, ipv6 혹은 onion)</translation>
     </message>
     <message>
+        <source>Port: %d</source>
+        <translation>포트: %d</translation>
+    </message>
+    <message>
         <source>Prepend debug output with timestamp (default: %u)</source>
         <translation>디버그 출력 앞에 타임 스탬프를 추가합니다. (기본값: %u)</translation>
     </message>
@@ -4210,10 +4254,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>키풀 크기를 &lt;n&gt; 로 설정합니다. (기본값: %u)</translation>
     </message>
     <message>
-        <source>Set the masternode BLS private key</source>
-        <translation>마스터노드 BLS 개인 키를 설정합니다.</translation>
-    </message>
-    <message>
         <source>Set the number of threads to service RPC calls (default: %d)</source>
         <translation>RPC 호출 서비스를 위한 스레드의 개수 설정 (기본값: %d)</translation>
     </message>
@@ -4226,6 +4266,10 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>밀리세컨드 단위로 연결 제한 시간을 설정합니다. (최소값: 1, 기본값: %d)</translation>
     </message>
     <message>
+        <source>Specify masternode configuration file (default: %s)</source>
+        <translation>마스터노드 설정 파일을 지정합니다. (디폴트: %s)</translation>
+    </message>
+    <message>
         <source>Specify pid file (default: %s)</source>
         <translation>pid 파일을 지정합니다. (기본값: %s)</translation>
     </message>
@@ -4234,8 +4278,20 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>거래를 보낼 때 검증되지 않은 잔돈 쓰기 (기본값: %u)</translation>
     </message>
     <message>
+        <source>Submitted following entries to masternode: %u / %d</source>
+        <translation>다음의 입력값을 마스터노드에 제출하기: %u / %d</translation>
+    </message>
+    <message>
+        <source>Submitted to masternode, waiting for more entries ( %u / %d ) %s</source>
+        <translation>마스터노드에 제출, 더 많은 입력값을 기다리는 중 (%u / %d ) %s</translation>
+    </message>
+    <message>
         <source>Submitted to masternode, waiting in queue %s</source>
         <translation>마스터노드에 제출, 대기열에서 기다리는 중 %s</translation>
+    </message>
+    <message>
+        <source>Synchroning blockchain...</source>
+        <translation>블록체인 동기화 중...</translation>
     </message>
     <message>
         <source>Synchronization failed</source>
@@ -4244,6 +4300,10 @@ https://www.transifex.com/projects/p/ctp/</translation>
     <message>
         <source>Synchronization finished</source>
         <translation>동기화가 끝났습니다.</translation>
+    </message>
+    <message>
+        <source>Synchronizing masternodes...</source>
+        <translation>마스터노드 동기화 중...</translation>
     </message>
     <message>
         <source>This is not a Masternode.</source>
@@ -4256,10 +4316,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
     <message>
         <source>Too many %f denominations, removing.</source>
         <translation>%f 분할 단위가 너무 많습니다. 삭제합니다.</translation>
-    </message>
-    <message>
-        <source>Too many %f denominations, skipping.</source>
-        <translation>%f 분할 단위가 너무 많습니다. 건너뜁니다.</translation>
     </message>
     <message>
         <source>Tor control port password (default: empty)</source>
@@ -4314,6 +4370,10 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>다시 시도할 예정입니다...</translation>
     </message>
     <message>
+        <source>Invalid masternodeprivkey. Please see documenation.</source>
+        <translation>유효하지 않은 masternodeprivkey 입니다. 문서를 확인하세요.</translation>
+    </message>
+    <message>
         <source>Can't find random Masternode.</source>
         <translation>임의의 마스터노드를 찾을 수 없습니다.</translation>
     </message>
@@ -4322,8 +4382,16 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>동기화가 진행되는 동안 믹싱할 수 없습니다.</translation>
     </message>
     <message>
+        <source>Could not parse masternode.conf</source>
+        <translation>masternode.conf 를 분석할 수 없습니다.</translation>
+    </message>
+    <message>
         <source>Invalid netmask specified in -whitelist: '%s'</source>
         <translation>-whitelist: '%s'로 지정된 넷마스크가 유효하지 않습니다. </translation>
+    </message>
+    <message>
+        <source>Invalid port detected in masternode.conf</source>
+        <translation>masternode.conf 에서 유효하지 않은 포트가 감지되었습니다.</translation>
     </message>
     <message>
         <source>Invalid script detected.</source>
@@ -4343,7 +4411,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
     </message>
     <message>
         <source>Disable all Ctp specific functionality (Masternodes, PrivateSend, InstantSend, Governance) (0-1, default: %u)</source>
-        <translation>모든 CTP만의 기능(마스터노드, 프라이빗샌드, 인스턴트샌드, 거버넌스)을 비활성화 (0-1, 디폴트: %u)</translation>
+        <translation>모든 대시만의 기능(마스터노드, 프라이빗샌드, 인스턴트샌드, 거버넌스)을 비활성화 (0-1, 디폴트: %u)</translation>
     </message>
     <message>
         <source>%s file contains all private keys from this wallet. Do not share it with anyone!</source>
@@ -4495,15 +4563,23 @@ https://www.transifex.com/projects/p/ctp/</translation>
     </message>
     <message>
         <source>You are starting in lite mode, all Ctp-specific functionality is disabled.</source>
-        <translation>라이트 모드로 시작하면 모든 CTP 관련 기능이 비활성화됩니다.</translation>
+        <translation>라이트 모드로 시작하면 모든 대시 관련 기능이 비활성화됩니다.</translation>
     </message>
     <message>
         <source>You need to rebuild the database using -reindex to go back to unpruned mode.  This will redownload the entire blockchain</source>
         <translation>축소 모드를 해제하고 데이터베이스를 재구성 하기 위해 -reindex를 사용해야 합니다. 이 명령은 모든 블록체인을 다시 다운로드 할 것 입니다.</translation>
     </message>
     <message>
+        <source>(%d could be used only on mainnet)</source>
+        <translation>(%d 은/는 오직 메인넷에서만 이용할 수 있습니다)</translation>
+    </message>
+    <message>
         <source>(default: %u)</source>
         <translation>(기본값: %u)</translation>
+    </message>
+    <message>
+        <source>(must be %d for mainnet)</source>
+        <translation>(메인넷을 위해서는 %d여야 합니다)</translation>
     </message>
     <message>
         <source>-maxmempool must be at least %d MB</source>
@@ -4562,6 +4638,10 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>&lt;address&gt;에 대한 원시 거래 공개 활성화</translation>
     </message>
     <message>
+        <source>Enable transaction replacement in the memory pool (default: %u)</source>
+        <translation>메모리 풀 내의 거래 대체를 활성화합니다. (기본값: %u)</translation>
+    </message>
+    <message>
         <source>Error: A fatal internal error occurred, see debug.log for details</source>
         <translation>에러: 치명적인 내부 오류가 발생했습니다, 자세한 내용은 debug.log 를 확인해주세요.</translation>
     </message>
@@ -4586,6 +4666,10 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>스포크 캐시 로딩 실패</translation>
     </message>
     <message>
+        <source>Failed to parse host:port string</source>
+        <translation>host:post 문자열을 분석하는 데 실패하였습니다.</translation>
+    </message>
+    <message>
         <source>Fee (in %s/kB) to add to transactions you send (default: %s)</source>
         <translation>송금 시 추가되는 수수료 (%s/kB) (기본값: %s)</translation>
     </message>
@@ -4602,6 +4686,10 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>유효하지 않은 금액 -fallbackfee=&lt;amount&gt;: '%s'</translation>
     </message>
     <message>
+        <source>Invalid input count.</source>
+        <translation>잘못된 입력 횟수입니다.</translation>
+    </message>
+    <message>
         <source>Keep the transaction memory pool below &lt;n&gt; megabytes (default: %u)</source>
         <translation>거래 메모리 풀의 용량을 &lt;n&gt;메가바이트 아래로 유지하기 (기본값: %u)</translation>
     </message>
@@ -4614,8 +4702,16 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>지난 성공적 프라이빗샌드 활동이 너무 최신입니다.</translation>
     </message>
     <message>
+        <source>Line: %d</source>
+        <translation>라인: %d</translation>
+    </message>
+    <message>
         <source>Loading InstantSend data cache...</source>
         <translation>인스턴트샌드 데이터 캐시로드 중...</translation>
+    </message>
+    <message>
+        <source>Loading addresses...</source>
+        <translation>주소를 불러오는 중...</translation>
     </message>
     <message>
         <source>Loading block index...</source>
@@ -4644,6 +4740,10 @@ https://www.transifex.com/projects/p/ctp/</translation>
     <message>
         <source>Make the wallet broadcast transactions</source>
         <translation>지갑 브로드캐스트 거래 생성</translation>
+    </message>
+    <message>
+        <source>Masternode cache is empty, skipping payments and governance cache...</source>
+        <translation>마스터노드 캐시가 비어 있습니다. 지불 및 거버넌스 캐시를 건너뜁니다...</translation>
     </message>
     <message>
         <source>Masternode options:</source>
@@ -4831,7 +4931,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
     </message>
     <message>
         <source>Ctp Core</source>
-        <translation>CTP 코어</translation>
+        <translation>대시 코어</translation>
     </message>
     <message>
         <source>The %s developers</source>
@@ -4934,6 +5034,14 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>지갑은 멤풀 체인 한계값(기본값: %u)을 넘는 거래를 생성하지 않습니다.</translation>
     </message>
     <message>
+        <source>Warning: At least %d of %d masternodes are running on a newer software version. Please check latest releases, you might need to update too.</source>
+        <translation>경고: %d개의 마스터노드 중 최소 %d 개가 새로운 버전의 소프트웨어에서 구동 중입니다. 최신 버전을 확인하세요. 업데이트가 필요할 수 있습니다.</translation>
+    </message>
+    <message>
+        <source>Warning: Every masternode (out of %d known ones) is running on a newer software version. Please check latest releases, it's very likely that you missed a major/critical update.</source>
+        <translation>경고: (알려진 %d 중) 모든 마스터노드가 새로운 버전의 소프트웨어에서 구동 중입니다. 최신의 버전을 확인하세요. 중요한 업데이트가 실행되지 않은 것으로 보입니다.</translation>
+    </message>
+    <message>
         <source>Warning: Wallet file corrupt, data salvaged! Original %s saved as %s in %s; if your balance or transactions are incorrect you should restore from a backup.</source>
         <translation>경고: 지갑 파일이 손상, 데이터가 복구되었습니다! 기존의 %s 파일은 %s에 %s라는 이름으로 저장됩니다. 잔액과 거래 내역이 정확하지 않다면 백업 파일로 복원해야 합니다. </translation>
     </message>
@@ -5018,14 +5126,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>초기치 설정 정상 여부 검사에 실패하였습니다. %s가 종료됩니다.</translation>
     </message>
     <message>
-        <source>Invalid -onion address or hostname: '%s'</source>
-        <translation>올바르지 않은 -onion 주소 또는 호스트 이름: '%s'</translation>
-    </message>
-    <message>
-        <source>Invalid -proxy address or hostname: '%s'</source>
-        <translation>올바르지 않은 -proxy 주소 또는 호스트 이름: '%s'</translation>
-    </message>
-    <message>
         <source>Invalid amount for -%s=&lt;amount&gt;: '%s'</source>
         <translation>유효하지 않은 금액 -%s=&lt;amount&gt;: '%s'</translation>
     </message>
@@ -5035,11 +5135,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
     </message>
     <message>
         <source>Keep N CTP anonymized (%u-%u, default: %u)</source>
-        <translation>N CTP를 익명으로 유지합니다(%u-%u, 디폴트: %u).</translation>
-    </message>
-    <message>
-        <source>Loading P2P addresses...</source>
-        <translation>P2P 주소 불러오는 중...</translation>
+        <translation>N 대시를 익명으로 유지합니다(%u-%u, 디폴트: %u).</translation>
     </message>
     <message>
         <source>Print this help message and exit</source>
@@ -5090,6 +5186,10 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>최대 블록 사이즈를 바이트로 설정합니다(디폴트: %d).</translation>
     </message>
     <message>
+        <source>Set the masternode private key</source>
+        <translation>마스터노드 개인 키를 설정합니다.</translation>
+    </message>
+    <message>
         <source>Show all debugging options (usage: --help -help-debug)</source>
         <translation>모든 디버그 설정 보기(설정: --help -help-debug)</translation>
     </message>
@@ -5124,6 +5224,10 @@ https://www.transifex.com/projects/p/ctp/</translation>
     <message>
         <source>Synchronizing governance objects...</source>
         <translation>거버넌스 객체 동기화중...</translation>
+    </message>
+    <message>
+        <source>Synchronizing masternode payments...</source>
+        <translation>마스터노드 지불 동기화중...</translation>
     </message>
     <message>
         <source>The source code is available from %s.</source>

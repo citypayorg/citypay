@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2019 The Ctp Core developers
+// Copyright (c) 2014-2017 The Ctp Core developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 #ifndef INSTANTX_H
@@ -7,8 +7,6 @@
 #include "chain.h"
 #include "net.h"
 #include "primitives/transaction.h"
-
-#include "evo/deterministicmns.h"
 
 class CTxLockVote;
 class COutPointLock;
@@ -28,7 +26,7 @@ extern CInstantSend instantsend;
     (1000/2900.0)**5 = 0.004875397277841433
 */
 
-static const int MIN_INSTANTSEND_PROTO_VERSION      = 70213;
+static const int MIN_INSTANTSEND_PROTO_VERSION      = 70210;
 
 /// For how long we are going to accept votes/locks
 /// after we saw the first one for a specific transaction
@@ -38,18 +36,18 @@ static const int INSTANTSEND_LOCK_TIMEOUT_SECONDS   = 15;
 static const int INSTANTSEND_FAILED_TIMEOUT_SECONDS = 60;
 
 extern bool fEnableInstantSend;
+extern int nCompleteTXLocks;
 
 /**
  * Manages InstantSend. Processes lock requests, candidates, and votes.
  */
 class CInstantSend
 {
-public:
+private:
+    static const std::string SERIALIZATION_VERSION_STRING;
     /// Automatic locks of "simple" transactions are only allowed
     /// when mempool usage is lower than this threshold
     static const double AUTO_IX_MEMPOOL_THRESHOLD;
-private:
-    static const std::string SERIALIZATION_VERSION_STRING;
 
     // Keep track of current block height
     int nCachedBlockHeight;
@@ -233,10 +231,7 @@ class CTxLockVote
 private:
     uint256 txHash;
     COutPoint outpoint;
-    // TODO remove this member (not needed anymore after DIP3 has been deployed)
     COutPoint outpointMasternode;
-    uint256 quorumModifierHash;
-    uint256 masternodeProTxHash;
     std::vector<unsigned char> vchMasternodeSignature;
     // local memory only
     int nConfirmedHeight; ///< When corresponding tx is 0-confirmed or conflicted, nConfirmedHeight is -1
@@ -247,19 +242,15 @@ public:
         txHash(),
         outpoint(),
         outpointMasternode(),
-        quorumModifierHash(),
-        masternodeProTxHash(),
         vchMasternodeSignature(),
         nConfirmedHeight(-1),
         nTimeCreated(GetTime())
         {}
 
-    CTxLockVote(const uint256& txHashIn, const COutPoint& outpointIn, const COutPoint& outpointMasternodeIn, const uint256& quorumModifierHashIn, const uint256& masternodeProTxHashIn) :
+    CTxLockVote(const uint256& txHashIn, const COutPoint& outpointIn, const COutPoint& outpointMasternodeIn) :
         txHash(txHashIn),
         outpoint(outpointIn),
         outpointMasternode(outpointMasternodeIn),
-        quorumModifierHash(quorumModifierHashIn),
-        masternodeProTxHash(masternodeProTxHashIn),
         vchMasternodeSignature(),
         nConfirmedHeight(-1),
         nTimeCreated(GetTime())
@@ -272,8 +263,6 @@ public:
         READWRITE(txHash);
         READWRITE(outpoint);
         READWRITE(outpointMasternode);
-        READWRITE(quorumModifierHash);
-        READWRITE(masternodeProTxHash);
         if (!(s.GetType() & SER_GETHASH)) {
             READWRITE(vchMasternodeSignature);
         }
@@ -309,6 +298,9 @@ private:
     bool fAttacked = false;
 
 public:
+    static const int SIGNATURES_REQUIRED        = 6;
+    static const int SIGNATURES_TOTAL           = 10;
+
     COutPointLock() {}
 
     COutPointLock(const COutPoint& outpointIn) :
@@ -331,7 +323,7 @@ public:
     std::vector<CTxLockVote> GetVotes() const;
     bool HasMasternodeVoted(const COutPoint& outpointMasternodeIn) const;
     int CountVotes() const { return fAttacked ? 0 : mapMasternodeVotes.size(); }
-    bool IsReady() const;
+    bool IsReady() const { return !fAttacked && CountVotes() >= SIGNATURES_REQUIRED; }
     void MarkAsAttacked() { fAttacked = true; }
 
     void Relay(CConnman& connman) const;

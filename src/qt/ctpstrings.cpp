@@ -40,11 +40,9 @@ QT_TRANSLATE_NOOP("ctp-core", ""
 "Bind to given address and whitelist peers connecting to it. Use [host]:port "
 "notation for IPv6"),
 QT_TRANSLATE_NOOP("ctp-core", ""
-"Bind to given address to listen for JSON-RPC connections. This option is "
-"ignored unless -rpcallowip is also passed. Port is optional and overrides -"
-"rpcport. Use [host]:port notation for IPv6. This option can be specified "
-"multiple times (default: 127.0.0.1 and ::1 i.e., localhost, or if -"
-"rpcallowip has been specified, 0.0.0.0 and :: i.e., all addresses)"),
+"Bind to given address to listen for JSON-RPC connections. Use [host]:port "
+"notation for IPv6. This option can be specified multiple times (default: "
+"bind to all interfaces)"),
 QT_TRANSLATE_NOOP("ctp-core", ""
 "Cannot obtain a lock on data directory %s. %s is probably already running."),
 QT_TRANSLATE_NOOP("ctp-core", ""
@@ -73,12 +71,6 @@ QT_TRANSLATE_NOOP("ctp-core", ""
 QT_TRANSLATE_NOOP("ctp-core", ""
 "Enable multiple PrivateSend mixing sessions per block, experimental (0-1, "
 "default: %u)"),
-QT_TRANSLATE_NOOP("ctp-core", ""
-"Enable publish raw transactions of attempted InstantSend double spend in "
-"<address>"),
-QT_TRANSLATE_NOOP("ctp-core", ""
-"Enable publish transaction hashes of attempted InstantSend double spend in "
-"<address>"),
 QT_TRANSLATE_NOOP("ctp-core", ""
 "Enable use of automated PrivateSend for funds stored in this wallet (0-1, "
 "default: %u)"),
@@ -182,9 +174,6 @@ QT_TRANSLATE_NOOP("ctp-core", ""
 "Override spork address. Only useful for regtest and devnet. Using this on "
 "mainnet or testnet will ban you."),
 QT_TRANSLATE_NOOP("ctp-core", ""
-"Overrides minimum spork signers to change spork value. Only useful for "
-"regtest and devnet. Using this on mainnet or testnet will ban you."),
-QT_TRANSLATE_NOOP("ctp-core", ""
 "Please check that your computer's date and time are correct! If your clock "
 "is wrong, %s will not work properly."),
 QT_TRANSLATE_NOOP("ctp-core", ""
@@ -272,8 +261,6 @@ QT_TRANSLATE_NOOP("ctp-core", ""
 "Use N separate masternodes for each denominated input to mix funds (%u-%u, "
 "default: %u)"),
 QT_TRANSLATE_NOOP("ctp-core", ""
-"Use N separate masternodes in parallel to mix funds (%u-%u, default: %u)"),
-QT_TRANSLATE_NOOP("ctp-core", ""
 "Use UPnP to map the listening port (default: 1 when listening and no -proxy)"),
 QT_TRANSLATE_NOOP("ctp-core", ""
 "Use hierarchical deterministic key generation (HD) after BIP39/BIP44. Only "
@@ -305,6 +292,13 @@ QT_TRANSLATE_NOOP("ctp-core", ""
 "Wallet will not create transactions that violate mempool chain limits "
 "(default: %u)"),
 QT_TRANSLATE_NOOP("ctp-core", ""
+"Warning: At least %d of %d masternodes are running on a newer software "
+"version. Please check latest releases, you might need to update too."),
+QT_TRANSLATE_NOOP("ctp-core", ""
+"Warning: Every masternode (out of %d known ones) is running on a newer "
+"software version. Please check latest releases, it's very likely that you "
+"missed a major/critical update."),
+QT_TRANSLATE_NOOP("ctp-core", ""
 "Warning: The network does not appear to fully agree! Some miners appear to "
 "be experiencing issues."),
 QT_TRANSLATE_NOOP("ctp-core", ""
@@ -326,24 +320,25 @@ QT_TRANSLATE_NOOP("ctp-core", ""
 QT_TRANSLATE_NOOP("ctp-core", ""
 "You are starting in lite mode, all Ctp-specific functionality is disabled."),
 QT_TRANSLATE_NOOP("ctp-core", ""
+"You must specify a masternodeprivkey in the configuration. Please see "
+"documentation for help."),
+QT_TRANSLATE_NOOP("ctp-core", ""
 "You need to rebuild the database using -reindex to go back to unpruned "
 "mode.  This will redownload the entire blockchain"),
 QT_TRANSLATE_NOOP("ctp-core", ""
 "You need to rebuild the database using -reindex-chainstate to change -txindex"),
-QT_TRANSLATE_NOOP("ctp-core", ""
-"You should specify a masternodeblsprivkey in the configuration. Please see "
-"documentation for help."),
 QT_TRANSLATE_NOOP("ctp-core", "%s corrupt, salvage failed"),
 QT_TRANSLATE_NOOP("ctp-core", "%s is not a valid backup folder!"),
 QT_TRANSLATE_NOOP("ctp-core", "%s is set very high!"),
+QT_TRANSLATE_NOOP("ctp-core", "(%d could be used only on mainnet)"),
 QT_TRANSLATE_NOOP("ctp-core", "(default: %s)"),
 QT_TRANSLATE_NOOP("ctp-core", "(default: %u)"),
+QT_TRANSLATE_NOOP("ctp-core", "(must be %d for mainnet)"),
 QT_TRANSLATE_NOOP("ctp-core", "(press q to shutdown and continue later)"),
 QT_TRANSLATE_NOOP("ctp-core", "-devnet can only be specified once"),
 QT_TRANSLATE_NOOP("ctp-core", "-maxmempool must be at least %d MB"),
 QT_TRANSLATE_NOOP("ctp-core", "-port must be specified when -devnet and -listen are specified"),
 QT_TRANSLATE_NOOP("ctp-core", "-rpcport must be specified when -devnet and -server are specified"),
-QT_TRANSLATE_NOOP("ctp-core", "-wallet parameter must only specify a filename (not a path)"),
 QT_TRANSLATE_NOOP("ctp-core", "<category> can be:"),
 QT_TRANSLATE_NOOP("ctp-core", "Accept command line and JSON-RPC commands"),
 QT_TRANSLATE_NOOP("ctp-core", "Accept public REST requests (default: %u)"),
@@ -372,6 +367,7 @@ QT_TRANSLATE_NOOP("ctp-core", "Connect to a node to retrieve peer addresses, and
 QT_TRANSLATE_NOOP("ctp-core", "Connection options:"),
 QT_TRANSLATE_NOOP("ctp-core", "Copyright (C)"),
 QT_TRANSLATE_NOOP("ctp-core", "Corrupted block database detected"),
+QT_TRANSLATE_NOOP("ctp-core", "Could not parse masternode.conf"),
 QT_TRANSLATE_NOOP("ctp-core", "Debugging/Testing options:"),
 QT_TRANSLATE_NOOP("ctp-core", "Do not load the wallet and disable wallet RPC calls"),
 QT_TRANSLATE_NOOP("ctp-core", "Do you want to rebuild the block database now?"),
@@ -386,6 +382,7 @@ QT_TRANSLATE_NOOP("ctp-core", "Enable publish raw block in <address>"),
 QT_TRANSLATE_NOOP("ctp-core", "Enable publish raw transaction (locked via InstantSend) in <address>"),
 QT_TRANSLATE_NOOP("ctp-core", "Enable publish raw transaction in <address>"),
 QT_TRANSLATE_NOOP("ctp-core", "Enable the client to act as a masternode (0-1, default: %u)"),
+QT_TRANSLATE_NOOP("ctp-core", "Enable transaction replacement in the memory pool (default: %u)"),
 QT_TRANSLATE_NOOP("ctp-core", "Entries are full."),
 QT_TRANSLATE_NOOP("ctp-core", "Entry exceeds maximum size."),
 QT_TRANSLATE_NOOP("ctp-core", "Error initializing block database"),
@@ -410,7 +407,9 @@ QT_TRANSLATE_NOOP("ctp-core", "Failed to load InstantSend data cache from"),
 QT_TRANSLATE_NOOP("ctp-core", "Failed to load fulfilled requests cache from"),
 QT_TRANSLATE_NOOP("ctp-core", "Failed to load governance cache from"),
 QT_TRANSLATE_NOOP("ctp-core", "Failed to load masternode cache from"),
+QT_TRANSLATE_NOOP("ctp-core", "Failed to load masternode payments cache from"),
 QT_TRANSLATE_NOOP("ctp-core", "Failed to load sporks cache from"),
+QT_TRANSLATE_NOOP("ctp-core", "Failed to parse host:port string"),
 QT_TRANSLATE_NOOP("ctp-core", "Failed to start a new mixing queue"),
 QT_TRANSLATE_NOOP("ctp-core", "Fee (in %s/kB) to add to transactions you send (default: %s)"),
 QT_TRANSLATE_NOOP("ctp-core", "Found enough users, signing ( waiting %s )"),
@@ -427,15 +426,15 @@ QT_TRANSLATE_NOOP("ctp-core", "Initialization sanity check failed. %s is shuttin
 QT_TRANSLATE_NOOP("ctp-core", "Input is not valid."),
 QT_TRANSLATE_NOOP("ctp-core", "InstantSend options:"),
 QT_TRANSLATE_NOOP("ctp-core", "Insufficient funds."),
-QT_TRANSLATE_NOOP("ctp-core", "Invalid -onion address or hostname: '%s'"),
-QT_TRANSLATE_NOOP("ctp-core", "Invalid -proxy address or hostname: '%s'"),
+QT_TRANSLATE_NOOP("ctp-core", "Invalid -onion address: '%s'"),
+QT_TRANSLATE_NOOP("ctp-core", "Invalid -proxy address: '%s'"),
 QT_TRANSLATE_NOOP("ctp-core", "Invalid amount for -%s=<amount>: '%s'"),
 QT_TRANSLATE_NOOP("ctp-core", "Invalid amount for -fallbackfee=<amount>: '%s'"),
 QT_TRANSLATE_NOOP("ctp-core", "Invalid amount for -paytxfee=<amount>: '%s' (must be at least %s)"),
-QT_TRANSLATE_NOOP("ctp-core", "Invalid characters in -wallet filename"),
-QT_TRANSLATE_NOOP("ctp-core", "Invalid masternodeblsprivkey. Please see documenation."),
-QT_TRANSLATE_NOOP("ctp-core", "Invalid minimum number of spork signers specified with -minsporkkeys"),
+QT_TRANSLATE_NOOP("ctp-core", "Invalid input count."),
+QT_TRANSLATE_NOOP("ctp-core", "Invalid masternodeprivkey. Please see documenation."),
 QT_TRANSLATE_NOOP("ctp-core", "Invalid netmask specified in -whitelist: '%s'"),
+QT_TRANSLATE_NOOP("ctp-core", "Invalid port detected in masternode.conf"),
 QT_TRANSLATE_NOOP("ctp-core", "Invalid script detected."),
 QT_TRANSLATE_NOOP("ctp-core", "Invalid spork address specified with -sporkaddr"),
 QT_TRANSLATE_NOOP("ctp-core", "KeePassHttp id for the established association"),
@@ -446,21 +445,25 @@ QT_TRANSLATE_NOOP("ctp-core", "Keep the transaction memory pool below <n> megaby
 QT_TRANSLATE_NOOP("ctp-core", "Keypool ran out, please call keypoolrefill first"),
 QT_TRANSLATE_NOOP("ctp-core", "Last PrivateSend was too recent."),
 QT_TRANSLATE_NOOP("ctp-core", "Last successful PrivateSend action was too recent."),
+QT_TRANSLATE_NOOP("ctp-core", "Line: %d"),
 QT_TRANSLATE_NOOP("ctp-core", "Listen for JSON-RPC connections on <port> (default: %u or testnet: %u)"),
 QT_TRANSLATE_NOOP("ctp-core", "Listen for connections on <port> (default: %u or testnet: %u)"),
 QT_TRANSLATE_NOOP("ctp-core", "Loading InstantSend data cache..."),
-QT_TRANSLATE_NOOP("ctp-core", "Loading P2P addresses..."),
+QT_TRANSLATE_NOOP("ctp-core", "Loading addresses..."),
 QT_TRANSLATE_NOOP("ctp-core", "Loading banlist..."),
 QT_TRANSLATE_NOOP("ctp-core", "Loading block index..."),
 QT_TRANSLATE_NOOP("ctp-core", "Loading fulfilled requests cache..."),
 QT_TRANSLATE_NOOP("ctp-core", "Loading governance cache..."),
 QT_TRANSLATE_NOOP("ctp-core", "Loading masternode cache..."),
+QT_TRANSLATE_NOOP("ctp-core", "Loading masternode payment cache..."),
 QT_TRANSLATE_NOOP("ctp-core", "Loading sporks cache..."),
 QT_TRANSLATE_NOOP("ctp-core", "Loading wallet... (%3.2f %%)"),
 QT_TRANSLATE_NOOP("ctp-core", "Loading wallet..."),
 QT_TRANSLATE_NOOP("ctp-core", "Location of the auth cookie (default: data dir)"),
 QT_TRANSLATE_NOOP("ctp-core", "Lock is already in place."),
+QT_TRANSLATE_NOOP("ctp-core", "Lock masternodes from masternode configuration file (default: %u)"),
 QT_TRANSLATE_NOOP("ctp-core", "Make the wallet broadcast transactions"),
+QT_TRANSLATE_NOOP("ctp-core", "Masternode cache is empty, skipping payments and governance cache..."),
 QT_TRANSLATE_NOOP("ctp-core", "Masternode options:"),
 QT_TRANSLATE_NOOP("ctp-core", "Masternode queue is full."),
 QT_TRANSLATE_NOOP("ctp-core", "Masternode:"),
@@ -485,6 +488,7 @@ QT_TRANSLATE_NOOP("ctp-core", "Number of automatic wallet backups (default: %u)"
 QT_TRANSLATE_NOOP("ctp-core", "Only connect to nodes in network <net> (ipv4, ipv6 or onion)"),
 QT_TRANSLATE_NOOP("ctp-core", "Options:"),
 QT_TRANSLATE_NOOP("ctp-core", "Password for JSON-RPC connections"),
+QT_TRANSLATE_NOOP("ctp-core", "Port: %d"),
 QT_TRANSLATE_NOOP("ctp-core", "Prepend debug output with timestamp (default: %u)"),
 QT_TRANSLATE_NOOP("ctp-core", "Print this help message and exit"),
 QT_TRANSLATE_NOOP("ctp-core", "Print version and exit"),
@@ -513,7 +517,7 @@ QT_TRANSLATE_NOOP("ctp-core", "Session timed out."),
 QT_TRANSLATE_NOOP("ctp-core", "Set database cache size in megabytes (%d to %d, default: %d)"),
 QT_TRANSLATE_NOOP("ctp-core", "Set key pool size to <n> (default: %u)"),
 QT_TRANSLATE_NOOP("ctp-core", "Set maximum block size in bytes (default: %d)"),
-QT_TRANSLATE_NOOP("ctp-core", "Set the masternode BLS private key"),
+QT_TRANSLATE_NOOP("ctp-core", "Set the masternode private key"),
 QT_TRANSLATE_NOOP("ctp-core", "Set the number of threads to service RPC calls (default: %d)"),
 QT_TRANSLATE_NOOP("ctp-core", "Show all debugging options (usage: --help -help-debug)"),
 QT_TRANSLATE_NOOP("ctp-core", "Shrink debug.log file on client startup (default: 1 when no -debug)"),
@@ -521,19 +525,22 @@ QT_TRANSLATE_NOOP("ctp-core", "Signing transaction failed"),
 QT_TRANSLATE_NOOP("ctp-core", "Specify configuration file (default: %s)"),
 QT_TRANSLATE_NOOP("ctp-core", "Specify connection timeout in milliseconds (minimum: 1, default: %d)"),
 QT_TRANSLATE_NOOP("ctp-core", "Specify data directory"),
+QT_TRANSLATE_NOOP("ctp-core", "Specify masternode configuration file (default: %s)"),
 QT_TRANSLATE_NOOP("ctp-core", "Specify pid file (default: %s)"),
 QT_TRANSLATE_NOOP("ctp-core", "Specify wallet file (within data directory)"),
 QT_TRANSLATE_NOOP("ctp-core", "Specify your own public address"),
 QT_TRANSLATE_NOOP("ctp-core", "Spend unconfirmed change when sending transactions (default: %u)"),
 QT_TRANSLATE_NOOP("ctp-core", "Starting network threads..."),
-QT_TRANSLATE_NOOP("ctp-core", "Submitted following entries to masternode: %u"),
-QT_TRANSLATE_NOOP("ctp-core", "Submitted to masternode, waiting for more entries ( %u ) %s"),
+QT_TRANSLATE_NOOP("ctp-core", "Submitted following entries to masternode: %u / %d"),
+QT_TRANSLATE_NOOP("ctp-core", "Submitted to masternode, waiting for more entries ( %u / %d ) %s"),
 QT_TRANSLATE_NOOP("ctp-core", "Submitted to masternode, waiting in queue %s"),
+QT_TRANSLATE_NOOP("ctp-core", "Synchroning blockchain..."),
 QT_TRANSLATE_NOOP("ctp-core", "Synchronization failed"),
 QT_TRANSLATE_NOOP("ctp-core", "Synchronization finished"),
 QT_TRANSLATE_NOOP("ctp-core", "Synchronization pending..."),
-QT_TRANSLATE_NOOP("ctp-core", "Synchronizing blockchain..."),
 QT_TRANSLATE_NOOP("ctp-core", "Synchronizing governance objects..."),
+QT_TRANSLATE_NOOP("ctp-core", "Synchronizing masternode payments..."),
+QT_TRANSLATE_NOOP("ctp-core", "Synchronizing masternodes..."),
 QT_TRANSLATE_NOOP("ctp-core", "The source code is available from %s."),
 QT_TRANSLATE_NOOP("ctp-core", "The transaction amount is too small to pay the fee"),
 QT_TRANSLATE_NOOP("ctp-core", "The wallet will avoid paying less than the minimum relay fee."),
@@ -543,7 +550,6 @@ QT_TRANSLATE_NOOP("ctp-core", "This is the minimum transaction fee you pay on ev
 QT_TRANSLATE_NOOP("ctp-core", "This is the transaction fee you will pay if you send a transaction."),
 QT_TRANSLATE_NOOP("ctp-core", "Threshold for disconnecting misbehaving peers (default: %u)"),
 QT_TRANSLATE_NOOP("ctp-core", "Too many %f denominations, removing."),
-QT_TRANSLATE_NOOP("ctp-core", "Too many %f denominations, skipping."),
 QT_TRANSLATE_NOOP("ctp-core", "Tor control port password (default: empty)"),
 QT_TRANSLATE_NOOP("ctp-core", "Tor control port to use if onion listening enabled (default: %s)"),
 QT_TRANSLATE_NOOP("ctp-core", "Transaction amount too small"),

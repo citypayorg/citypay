@@ -1,5 +1,7 @@
-Ctp Core staging tree 0.14.0
+Ctp Core staging tree 0.13.0
 ===============================
+
+`master:` [![Build Status](https://travis-ci.org/ctppay/ctp.svg?branch=master)](https://travis-ci.org/ctppay/ctp) `develop:` [![Build Status](https://travis-ci.org/ctppay/ctp.svg?branch=develop)](https://travis-ci.org/ctppay/ctp/branches)
 
 https://www.citypay.org
 
@@ -14,7 +16,7 @@ are carried out collectively by the network. Ctp Core is the name of the open
 source software which enables the use of this currency.
 
 For more information, as well as an immediately useable, binary version of
-the Ctp Core software, see https://www.citypay.org/.
+the Ctp Core software, see https://www.citypay.org/get-ctp/.
 
 
 License
@@ -27,7 +29,7 @@ Development Process
 -------------------
 
 The `master` branch is meant to be stable. Development is normally done in separate branches.
-[Tags](https://github.com/citypayorg/citypay/tags) are created to indicate new official,
+[Tags](https://github.com/ctppay/ctp/tags) are created to indicate new official,
 stable release versions of Ctp Core.
 
 The contribution workflow is described in [CONTRIBUTING.md](CONTRIBUTING.md).
@@ -60,4 +62,16 @@ code. This is especially important for large or high-risk changes. It is useful
 to add a test plan to the pull request description if testing the changes is
 not straightforward.
 
+Translations
+------------
 
+Changes to translations as well as new translations can be submitted to
+[Ctp Core's Transifex page](https://www.transifex.com/projects/p/ctp/).
+
+Translations are periodically pulled from Transifex and merged into the git repository. See the
+[translation process](doc/translation_process.md) for details on how this works.
+
+**Important**: We do not accept translation changes as GitHub pull requests because the next
+pull from Transifex would automatically overwrite them again.
+
+Translators should also follow the [forum](https://www.citypay.org/forum/topic/ctp-worldwide-collaboration.88/).

@@ -27,15 +27,7 @@ struct with_capacity
     size_t  size;
     size_t  capacity;
 
-    static const with_capacity& empty()
-    {
-        static const with_capacity empty_ {
-            node_t::make_n(1),
-            0,
-            1
-        };
-        return empty_;
-    }
+    static const with_capacity empty;
 
     with_capacity(node_t* p, size_t s, size_t c)
         : ptr{p}, size{s}, capacity{c}
@@ -54,7 +46,7 @@ struct with_capacity
     }
 
     with_capacity(with_capacity&& other)
-        : with_capacity{empty()}
+        : with_capacity{empty}
     {
         swap(*this, other);
     }
@@ -111,13 +103,10 @@ struct with_capacity
         }
     }
 
-    template <typename Iter, typename Sent,
-              std::enable_if_t
-              <is_forward_iterator_v<Iter>
-               && compatible_sentinel_v<Iter, Sent>, bool> = true>
-    static with_capacity from_range(Iter first, Sent last)
+    template <typename Iter>
+    static with_capacity from_range(Iter first, Iter last)
     {
-        auto count = static_cast<size_t>(distance(first, last));
+        auto count = static_cast<size_t>(std::distance(first, last));
         return {
             node_t::copy_n(count, first, last),
             count,
@@ -294,6 +283,13 @@ struct with_capacity
             *this = { p, sz, cap };
         }
     }
+};
+
+template <typename T, typename MP>
+const with_capacity<T, MP> with_capacity<T, MP>::empty = {
+    node_t::make_n(1),
+    0,
+    1,
 };
 
 } // namespace arrays

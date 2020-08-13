@@ -41,7 +41,6 @@ struct node
     using ownee_t     = typename transience::ownee;
     using edit_t      = typename transience::edit;
     using value_t     = T;
-    using bitmap_t    = typename get_bitmap_type<B>::type;
 
     enum class kind_t
     {
@@ -118,14 +117,12 @@ struct node
     auto values()
     {
         assert(kind() == kind_t::inner);
-        assert(impl.d.data.inner.values);
         return (T*) &impl.d.data.inner.values->d.buffer;
     }
 
     auto values() const
     {
         assert(kind() == kind_t::inner);
-        assert(impl.d.data.inner.values);
         return (const T*) &impl.d.data.inner.values->d.buffer;
     }
 
@@ -223,7 +220,7 @@ struct node
     {
         assert(n >= 1);
         auto p = make_inner_n(n);
-        p->impl.d.data.inner.nodemap = bitmap_t{1u} << idx;
+        p->impl.d.data.inner.nodemap = 1 << idx;
         p->children()[0] = child;
         return p;
     }
@@ -249,7 +246,7 @@ struct node
     {
         assert(idx1 != idx2);
         auto p = make_inner_n(n, 2);
-        p->impl.d.data.inner.datamap = (bitmap_t{1u} << idx1) | (bitmap_t{1u} << idx2);
+        p->impl.d.data.inner.datamap = (1 << idx1) | (1 << idx2);
         auto assign = [&] (auto&& x1, auto&& x2) {
             auto vp = p->values();
             try {
@@ -441,23 +438,21 @@ struct node
         auto noffset = popcount(src->nodemap() & (bit - 1));
         dst->impl.d.data.inner.datamap = src->datamap() & ~bit;
         dst->impl.d.data.inner.nodemap = src->nodemap() | bit;
-        if (nv > 1) {
-            try {
-                std::uninitialized_copy(
+        try {
+            std::uninitialized_copy(
                     src->values(), src->values() + voffset,
                     dst->values());
-                try {
-                    std::uninitialized_copy(
-                        src->values() + voffset + 1, src->values() + nv,
-                        dst->values() + voffset);
-                } catch (...) {
-                    destroy_n(dst->values(), voffset);
-                    throw;
-                }
+            try {
+                std::uninitialized_copy(
+                    src->values() + voffset + 1, src->values() + nv,
+                    dst->values() + voffset);
             } catch (...) {
-                deallocate_inner(dst, n + 1, nv - 1);
+                destroy_n(dst->values(), voffset);
                 throw;
             }
+        } catch (...) {
+            deallocate_inner(dst, n + 1, nv - 1);
+            throw;
         }
         inc_nodes(src->children(), n);
         std::uninitialized_copy(
@@ -484,17 +479,15 @@ struct node
         dst->impl.d.data.inner.nodemap = src->nodemap() & ~bit;
         dst->impl.d.data.inner.datamap = src->datamap() | bit;
         try {
-            if (nv)
-                std::uninitialized_copy(
-                    src->values(), src->values() + voffset,
-                    dst->values());
+            std::uninitialized_copy(
+                src->values(), src->values() + voffset,
+                dst->values());
             try {
                 new (dst->values() + voffset) T{std::move(value)};
                 try {
-                    if (nv)
-                        std::uninitialized_copy(
-                            src->values() + voffset, src->values() + nv,
-                            dst->values() + voffset + 1);
+                    std::uninitialized_copy(
+                        src->values() + voffset, src->values() + nv,
+                        dst->values() + voffset + 1);
                 } catch (...) {
                     dst->values()[voffset].~T();
                     throw;
@@ -530,23 +523,21 @@ struct node
         auto dst     = make_inner_n(n, nv - 1);
         dst->impl.d.data.inner.datamap = src->datamap() & ~bit;
         dst->impl.d.data.inner.nodemap = src->nodemap();
-        if (nv > 1) {
+        try {
+            std::uninitialized_copy(
+                src->values(), src->values() + voffset,
+                dst->values());
             try {
                 std::uninitialized_copy(
-                    src->values(), src->values() + voffset,
-                    dst->values());
-                try {
-                    std::uninitialized_copy(
-                        src->values() + voffset + 1, src->values() + nv,
-                        dst->values() + voffset);
-                } catch (...) {
-                    destroy_n(dst->values(), voffset);
-                    throw;
-                }
+                    src->values() + voffset + 1, src->values() + nv,
+                    dst->values() + voffset);
             } catch (...) {
-                deallocate_inner(dst, n, nv - 1);
+                destroy_n(dst->values(), voffset);
                 throw;
             }
+        } catch (...) {
+            deallocate_inner(dst, n, nv - 1);
+            throw;
         }
         inc_nodes(src->children(), n);
         std::uninitialized_copy(
@@ -564,16 +555,14 @@ struct node
         dst->impl.d.data.inner.datamap = src->datamap() | bit;
         dst->impl.d.data.inner.nodemap = src->nodemap();
         try {
-            if (nv)
-                std::uninitialized_copy(
-                    src->values(), src->values() + offset, dst->values());
+            std::uninitialized_copy(
+                src->values(), src->values() + offset, dst->values());
             try {
                 new (dst->values() + offset) T{std::move(v)};
                 try {
-                    if (nv)
-                        std::uninitialized_copy(
-                            src->values() + offset, src->values() + nv,
-                            dst->values() + offset + 1);
+                    std::uninitialized_copy(
+                        src->values() + offset, src->values() + nv,
+                        dst->values() + offset + 1);
                 } catch (...) {
                     dst->values()[offset].~T();
                     throw;
@@ -643,6 +632,7 @@ struct node
     static void delete_values(values_t* p, count_t n)
     {
         assert(p);
+        destroy_n(&p->d.buffer, n);
         deallocate_values(p, n);
     }
 
@@ -661,6 +651,7 @@ struct node
         assert(p);
         assert(p->kind() == kind_t::collision);
         auto n = p->collision_count();
+        destroy_n(p->collisions(), n);
         deallocate_collision(p, n);
     }
 
@@ -711,8 +702,7 @@ struct node
 
     static void deallocate_inner(node_t* p, count_t n, count_t nv)
     {
-        assert(nv);
-        heap::deallocate(node_t::sizeof_values_n(nv), p->impl.d.data.inner.values);
+        deallocate_values(p->impl.d.data.inner.values, nv);
         heap::deallocate(node_t::sizeof_inner_n(n), p);
     }
 };

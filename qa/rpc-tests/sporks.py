@@ -19,12 +19,13 @@ class SporkTest(BitcoinTestFramework):
         self.is_network_split = False
 
     def setup_network(self):
-        disable_mocktime()
         self.nodes = []
         self.nodes.append(start_node(0, self.options.tmpdir,
-                                     ["-sporkkey=cP4EKFyJsHT39LDqgdcB43Y3YXjNyjb5Fuas1GQSeAtjnZWmZEQK"]))
-        self.nodes.append(start_node(1, self.options.tmpdir))
-        self.nodes.append(start_node(2, self.options.tmpdir))
+                                     ["-debug", "-sporkkey=cP4EKFyJsHT39LDqgdcB43Y3YXjNyjb5Fuas1GQSeAtjnZWmZEQK"]))
+        self.nodes.append(start_node(1, self.options.tmpdir,
+                                     ["-debug"]))
+        self.nodes.append(start_node(2, self.options.tmpdir,
+                                     ["-debug"]))
         # connect only 2 first nodes at start
         connect_nodes(self.nodes[0], 1)
 
@@ -63,16 +64,10 @@ class SporkTest(BitcoinTestFramework):
         # restart nodes to check spork persistence
         stop_node(self.nodes[0], 0)
         stop_node(self.nodes[1], 1)
-        self.nodes[0] = start_node(0, self.options.tmpdir)
-        self.nodes[1] = start_node(1, self.options.tmpdir)
+        self.nodes[0] = start_node(0, self.options.tmpdir, ["-debug"])
+        self.nodes[1] = start_node(1, self.options.tmpdir, ["-debug"])
         assert(not self.get_test_spork_state(self.nodes[0]))
         assert(not self.get_test_spork_state(self.nodes[1]))
-
-        # Force finish mnsync node as otherwise it will never send out headers to other peers
-        wait_to_sync(self.nodes[1], fast_mnsync=True)
-
-        # Generate one block to kick off masternode sync, which also starts sporks syncing for node2
-        self.nodes[1].generate(1)
 
         # connect new node and check spork propagation after restoring from cache
         connect_nodes(self.nodes[1], 2)

@@ -35,6 +35,10 @@ class array_transient;
  *    of doubt, measure.  For basic types, using an `array` when
  *    :math:`n < 100` is a good heuristic.
  *
+ * .. warning:: The current implementation depends on
+ *    ``boost::intrusive_ptr`` and does not support :doc:`memory
+ *    policies<memory>`.  This will be fixed soon.
+ *
  * @endrst
  */
 template <typename T, typename MemoryPolicy = default_memory_policy>
@@ -69,26 +73,23 @@ public:
     array() = default;
 
     /*!
-     * Constructs an array containing the elements in `values`.
+     * Constructs a vector containing the elements in `values`.
      */
     array(std::initializer_list<T> values)
         : impl_{impl_t::from_initializer_list(values)}
     {}
 
     /*!
-     * Constructs a array containing the elements in the range
-     * defined by the forward iterator `first` and range sentinel `last`.
+     * Constructs a vector containing the elements in the range
+     * defined by the input iterators `first` and `last`.
      */
-    template <typename Iter, typename Sent,
-              std::enable_if_t
-              <detail::compatible_sentinel_v<Iter, Sent>
-               && detail::is_forward_iterator_v<Iter>, bool> = true>
-    array(Iter first, Sent last)
+    template <typename Iter>
+    array(Iter first, Iter last)
         : impl_{impl_t::from_range(first, last)}
     {}
 
     /*!
-     * Constructs a array containing the element `val` repeated `n`
+     * Constructs a vector containing the element `val` repeated `n`
      * times.
      */
     array(size_type n, T v = {})
@@ -304,7 +305,7 @@ private:
     array take_move(std::false_type, size_type elems)
     { return impl_.take(elems); }
 
-    impl_t impl_ = impl_t::empty();
+    impl_t impl_ = impl_t::empty;
 };
 
 } /* namespace immer */
