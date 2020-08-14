@@ -28,7 +28,6 @@ void CGovernanceObjectVoteFile::AddVote(const CGovernanceVote& vote)
     listVotes.push_front(vote);
     mapVoteIndex.emplace(nHash, listVotes.begin());
     ++nMemoryVotes;
-    RemoveOldVotes(vote);
 }
 
 bool CGovernanceObjectVoteFile::HasVote(const uint256& nHash) const
@@ -60,46 +59,6 @@ void CGovernanceObjectVoteFile::RemoveVotesFromMasternode(const COutPoint& outpo
     vote_l_it it = listVotes.begin();
     while (it != listVotes.end()) {
         if (it->GetMasternodeOutpoint() == outpointMasternode) {
-            --nMemoryVotes;
-            mapVoteIndex.erase(it->GetHash());
-            listVotes.erase(it++);
-        } else {
-            ++it;
-        }
-    }
-}
-
-std::set<uint256> CGovernanceObjectVoteFile::RemoveInvalidVotes(const COutPoint& outpointMasternode, bool fProposal)
-{
-    std::set<uint256> removedVotes;
-
-    vote_l_it it = listVotes.begin();
-    while (it != listVotes.end()) {
-        if (it->GetMasternodeOutpoint() == outpointMasternode) {
-            bool useVotingKey = fProposal && (it->GetSignal() == VOTE_SIGNAL_FUNDING);
-            if (!it->IsValid(useVotingKey)) {
-                removedVotes.emplace(it->GetHash());
-                --nMemoryVotes;
-                mapVoteIndex.erase(it->GetHash());
-                listVotes.erase(it++);
-                continue;
-            }
-        }
-        ++it;
-    }
-
-    return removedVotes;
-}
-
-void CGovernanceObjectVoteFile::RemoveOldVotes(const CGovernanceVote& vote)
-{
-    vote_l_it it = listVotes.begin();
-    while (it != listVotes.end()) {
-        if (it->GetMasternodeOutpoint() == vote.GetMasternodeOutpoint() // same masternode
-            && it->GetParentHash() == vote.GetParentHash() // same governance object (e.g. same proposal)
-            && it->GetSignal() == vote.GetSignal() // same signal (e.g. "funding", "delete", etc.)
-            && it->GetTimestamp() < vote.GetTimestamp()) // older than new vote
-        {
             --nMemoryVotes;
             mapVoteIndex.erase(it->GetHash());
             listVotes.erase(it++);

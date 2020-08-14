@@ -4,8 +4,6 @@
 
 set -e
 
-PASS_ARGS="$@"
-
 source ./ci/matrix.sh
 
 if [ "$RUN_TESTS" != "true" ]; then
@@ -17,4 +15,4 @@ export LD_LIBRARY_PATH=$BUILD_DIR/depends/$HOST/lib
 
 cd build-ci/ctpcore-$BUILD_TARGET
 
-./qa/pull-tester/rpc-tests.py --coverage $PASS_ARGS
+./qa/pull-tester/rpc-tests.py --coverage

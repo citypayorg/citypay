@@ -438,6 +438,14 @@
         <translation>เปิดไฟล์การกำหนดค่า</translation>
     </message>
     <message>
+        <source>Open &amp;Masternode Configuration File</source>
+        <translation>เปิดไฟล์การกำหนดค่า Masternode</translation>
+    </message>
+    <message>
+        <source>Open Masternode configuration file</source>
+        <translation>เปิดไฟล์การกำหนดค่า Masternode</translation>
+    </message>
+    <message>
         <source>Show Automatic &amp;Backups</source>
         <translation>แสดงการสำรองข้อมูลอัตโนมัติ</translation>
     </message>
@@ -642,6 +650,10 @@
 </context>
 <context>
     <name>ClientModel</name>
+    <message>
+        <source>Total: %1 (PS compatible: %2 / Enabled: %3)</source>
+        <translation>ทั้งหมด: %1 (รองรับ PS: %2 / เปิดใช้งาน: %3)</translation>
+    </message>
     <message>
         <source>Network Alert</source>
         <translation>การแจ้งเตือนเครือข่าย</translation>
@@ -959,8 +971,8 @@
         <translation>ข้อมูล PrivateSend</translation>
     </message>
     <message>
-        <source>&lt;h3&gt;PrivateSend Basics&lt;/h3&gt; PrivateSend gives you true financial privacy by obscuring the origins of your funds. All the Ctp in your wallet is comprised of different "inputs" which you can think of as separate, discrete coins.&lt;br&gt; PrivateSend uses an innovative process to mix your inputs with the inputs of two other people, without having your coins ever leave your wallet. You retain control of your money at all times.&lt;hr&gt; &lt;b&gt;The PrivateSend process works like this:&lt;/b&gt;&lt;ol type="1"&gt; &lt;li&gt;PrivateSend begins by breaking your transaction inputs down into standard denominations. These denominations are 0.001 CTP, 0.01 CTP, 0.1 CTP, 1 CTP and 10 CTP -- sort of like the paper money you use every day.&lt;/li&gt; &lt;li&gt;Your wallet then sends requests to specially configured software nodes on the network, called "masternodes." These masternodes are informed then that you are interested in mixing a certain denomination. No identifiable information is sent to the masternodes, so they never know "who" you are.&lt;/li&gt; &lt;li&gt;When two other people send similar messages, indicating that they wish to mix the same denomination, a mixing session begins. The masternode mixes up the inputs and instructs all three users' wallets to pay the now-transformed input back to themselves. Your wallet pays that denomination directly to itself, but in a different address (called a change address).&lt;/li&gt; &lt;li&gt;In order to fully obscure your funds, your wallet must repeat this process a number of times with each denomination. Each time the process is completed, it's called a "round." Each round of PrivateSend makes it exponentially more difficult to determine where your funds originated.&lt;/li&gt; &lt;li&gt;This mixing process happens in the background without any intervention on your part. When you wish to make a transaction, your funds will already be anonymized. No additional waiting is required.&lt;/li&gt; &lt;/ol&gt; &lt;hr&gt;&lt;b&gt;IMPORTANT:&lt;/b&gt; Your wallet only contains 1000 of these "change addresses." Every time a mixing event happens, up to 9 of your addresses are used up. This means those 1000 addresses last for about 100 mixing events. When 900 of them are used, your wallet must create more addresses. It can only do this, however, if you have automatic backups enabled.&lt;br&gt; Consequently, users who have backups disabled will also have PrivateSend disabled. &lt;hr&gt;For more information, see the &lt;a href="https://docs.citypay.org/en/latest/wallets/ctpcore/privatesend-instantsend.html"&gt;PrivateSend documentation&lt;/a&gt;.</source>
-        <translation>&lt;h3&gt;ข้อมูลพื้นฐานเกี่ยวกับ PrivateSend PrivateSend ช่วยให้คุณมีความเป็นส่วนตัวทางการเงินอย่างแท้จริงโดยปิดบังแหล่งที่มาของเงินทุนของคุณ  Ctp ทั้งหมดใน wallet ของคุณประกอบด้วย "อินพุต" ที่แตกต่างกันซึ่งคุณสามารถแยกเหรียญกันได้ &lt;br&gt;  PrivateSend ใช้กระบวนการใหม่ในการผสมผสานอินพุตของคุณเข้ากับอินพุตของคนอื่นอีกสองคนโดยไม่ต้องมีเหรียญออกจาก wallet  คุณสามารถควบคุมเงินได้ตลอดเวลา&lt;hr&gt;&lt;b&gt;กระบวนการ PrivateSend ทำงานได้ดังนี้:&lt;/b&gt;&lt;ol type="1"&gt;&lt;li&gt;PrivateSend เริ่มต้นด้วยการทำลายอินพุตการทำธุรกรรมของคุณลงไปเป็นหน่วยเงินมาตรฐาน หน่วยเงินเหล่านี้คือ 0.001 CTP, 0.01 CTP, 0.1 CTP, 1 CTP และ 10 CTP - เหมือนกับเงินกระดาษที่คุณใช้ทุกวัน&lt;/li&gt;&lt;li&gt; Wallet ของคุณจะส่งคำขอไปยังโหนดซอฟต์แวร์ที่กำหนดค่าไว้เป็นพิเศษในเครือข่ายที่ เรียกว่า "masternodes"  โดย masternodes เหล่านี้จะแจ้งให้ทราบแล้วว่าคุณสนใจที่จะผสมหน่วยเงินนั้นๆ  ไม่มีข้อมูลที่สามารถระบุตัวได้ถูกส่งไปยัง masternodes ดังนั้นพวกเขาจึงไม่เคยรู้จักว่าคุณเป็นใคร &lt;/li&gt;&lt;li&gt;เมื่อมีคนอีกสองคนส่งข้อความที่คล้ายกันแสดงว่าพวกเขาต้องการที่จะผสมผสานหน่วยเงินเดียวกันเซสชันการผสมจะเริ่มขึ้น  Masternode จะผสมผสานอินพุตเข้าด้วยกันและสั่งให้ wallet ของผู้ใช้ทั้ง 3 รายชำระค่าป้อนข้อมูลที่เปลี่ยนไปแล้วกลับคืนสู่ตัวเอง Wallet ของคุณจ่ายเงินให้กับตัวเองโดยตรง แต่ในที่อยู่อื่น (เรียกว่าที่อยู่เปลี่ยน)&lt;/li&gt;&lt;li&gt;เพื่อเป็นการปิดบังเงินทุนของคุณ   wallet ของคุณจะต้องทำซ้ำขั้นตอนนี้ซ้ำหลายครั้งโดยใช้แต่ละหน่วยเงิน ทุกครั้งที่ดำเนินการเสร็จสิ้นระบบจะเรียกว่า "รอบ ๆ "  รอบ PrivateSend ในแต่ละครั้งทำให้การระบุแหล่งเงินทุนของคุณเกิดขึ้นยากขึ้นอย่างมาก&lt;/li&gt;&lt;li&gt;กระบวนการผสมนี้เกิดขึ้นโดยไม่มีการก้าวก่ายในส่วนของคุณ  เมื่อคุณต้องการทำธุรกรรม เงินของคุณจะถูกซ่อนไว้  ไม่ต้องการเพิ่มเติม &lt;/li&gt;&lt;/ol&gt;&lt;hr&gt;&lt;b&gt;สำคัญ:&lt;/b&gt;Wallet ของคุณมีเพียง 1,000 ที่อยู่ในการเปลี่ยนแปลงเท่านั้น ทุกครั้งที่เกิดเหตุการณ์ผสมเกิดขึ้น 9 ที่อยู่ของคุณจะถูกนำมาใช้  ซึ่งหมายความว่า 1000 ที่อยู่ล่าสุดสำหรับการผสมประมาณ 100 เหตุการณ์ เมื่อมีการใช้ 900 ราย Wallet ของคุณต้องสร้างที่อยู่เพิ่มเติม  สามารถทำเช่นนี้ได้หากคุณเปิดใช้งานการสำรองข้อมูลอัตโนมัติไว้&lt;br&gt;ดังนั้นผู้ใช้ที่มีการสำรองข้อมูลถูกปิดใช้งานจะมีการปิดใช้ PrivateSend &lt;hr&gt;สำหรับข้อมูลเพิ่มเติม&lt;a href="https://docs.citypay.org/en/latest/wallets/ctpcore/privatesend-instantsend.html"&gt;โปรดดูที่เอกสาร PrivateSend &lt;/a&gt;</translation>
+        <source>&lt;h3&gt;PrivateSend Basics&lt;/h3&gt; PrivateSend gives you true financial privacy by obscuring the origins of your funds. All the Ctp in your wallet is comprised of different "inputs" which you can think of as separate, discrete coins.&lt;br&gt; PrivateSend uses an innovative process to mix your inputs with the inputs of two other people, without having your coins ever leave your wallet. You retain control of your money at all times.&lt;hr&gt; &lt;b&gt;The PrivateSend process works like this:&lt;/b&gt;&lt;ol type="1"&gt; &lt;li&gt;PrivateSend begins by breaking your transaction inputs down into standard denominations. These denominations are 0.01 CTP, 0.1 CTP, 1 CTP and 10 CTP -- sort of like the paper money you use every day.&lt;/li&gt; &lt;li&gt;Your wallet then sends requests to specially configured software nodes on the network, called "masternodes." These masternodes are informed then that you are interested in mixing a certain denomination. No identifiable information is sent to the masternodes, so they never know "who" you are.&lt;/li&gt; &lt;li&gt;When two other people send similar messages, indicating that they wish to mix the same denomination, a mixing session begins. The masternode mixes up the inputs and instructs all three users' wallets to pay the now-transformed input back to themselves. Your wallet pays that denomination directly to itself, but in a different address (called a change address).&lt;/li&gt; &lt;li&gt;In order to fully obscure your funds, your wallet must repeat this process a number of times with each denomination. Each time the process is completed, it's called a "round." Each round of PrivateSend makes it exponentially more difficult to determine where your funds originated.&lt;/li&gt; &lt;li&gt;This mixing process happens in the background without any intervention on your part. When you wish to make a transaction, your funds will already be anonymized. No additional waiting is required.&lt;/li&gt; &lt;/ol&gt; &lt;hr&gt;&lt;b&gt;IMPORTANT:&lt;/b&gt; Your wallet only contains 1000 of these "change addresses." Every time a mixing event happens, up to 9 of your addresses are used up. This means those 1000 addresses last for about 100 mixing events. When 900 of them are used, your wallet must create more addresses. It can only do this, however, if you have automatic backups enabled.&lt;br&gt; Consequently, users who have backups disabled will also have PrivateSend disabled. &lt;hr&gt;For more information, see the &lt;a href="https://docs.citypay.org/en/latest/wallets/ctpcore/privatesend-instantsend.html"&gt;PrivateSend documentation&lt;/a&gt;.         </source>
+        <translation>&lt;h3&gt;ข้อมูลพื้นฐานเกี่ยวกับ PrivateSend PrivateSend ช่วยให้คุณมีความเป็นส่วนตัวทางการเงินอย่างแท้จริงโดยปิดบังแหล่งที่มาของเงินทุนของคุณ  Ctp ทั้งหมดใน wallet ของคุณประกอบด้วย "อินพุต" ที่แตกต่างกันซึ่งคุณสามารถแยกเหรียญกันได้ &lt;br&gt;  PrivateSend ใช้กระบวนการใหม่ในการผสมผสานอินพุตของคุณเข้ากับอินพุตของคนอื่นอีกสองคนโดยไม่ต้องมีเหรียญออกจาก wallet  คุณสามารถควบคุมเงินได้ตลอดเวลา&lt;hr&gt;&lt;b&gt;กระบวนการ PrivateSend ทำงานได้ดังนี้:&lt;/b&gt;&lt;ol type="1"&gt;&lt;li&gt;PrivateSend เริ่มต้นด้วยการทำลายอินพุตการทำธุรกรรมของคุณลงไปเป็นหน่วยเงินมาตรฐาน หน่วยเงินเหล่านี้คือ 0.01 CTP, 0.1 CTP, 1 CTP และ 10 CTP - เหมือนกับเงินกระดาษที่คุณใช้ทุกวัน&lt;/li&gt;&lt;li&gt; Wallet ของคุณจะส่งคำขอไปยังโหนดซอฟต์แวร์ที่กำหนดค่าไว้เป็นพิเศษในเครือข่ายที่ เรียกว่า "masternodes"  โดย masternodes เหล่านี้จะแจ้งให้ทราบแล้วว่าคุณสนใจที่จะผสมหน่วยเงินนั้นๆ  ไม่มีข้อมูลที่สามารถระบุตัวได้ถูกส่งไปยัง masternodes ดังนั้นพวกเขาจึงไม่เคยรู้จักว่าคุณเป็นใคร &lt;/li&gt;&lt;li&gt;เมื่อมีคนอีกสองคนส่งข้อความที่คล้ายกันแสดงว่าพวกเขาต้องการที่จะผสมผสานหน่วยเงินเดียวกันเซสชันการผสมจะเริ่มขึ้น  Masternode จะผสมผสานอินพุตเข้าด้วยกันและสั่งให้ wallet ของผู้ใช้ทั้ง 3 รายชำระค่าป้อนข้อมูลที่เปลี่ยนไปแล้วกลับคืนสู่ตัวเอง Wallet ของคุณจ่ายเงินให้กับตัวเองโดยตรง แต่ในที่อยู่อื่น (เรียกว่าที่อยู่เปลี่ยน)&lt;/li&gt;&lt;li&gt;เพื่อเป็นการปิดบังเงินทุนของคุณ   wallet ของคุณจะต้องทำซ้ำขั้นตอนนี้ซ้ำหลายครั้งโดยใช้แต่ละหน่วยเงิน ทุกครั้งที่ดำเนินการเสร็จสิ้นระบบจะเรียกว่า "รอบ ๆ "  รอบ PrivateSend ในแต่ละครั้งทำให้การระบุแหล่งเงินทุนของคุณเกิดขึ้นยากขึ้นอย่างมาก&lt;/li&gt;&lt;li&gt;กระบวนการผสมนี้เกิดขึ้นโดยไม่มีการก้าวก่ายในส่วนของคุณ  เมื่อคุณต้องการทำธุรกรรม เงินของคุณจะถูกซ่อนไว้  ไม่ต้องการเพิ่มเติม &lt;/li&gt;&lt;/ol&gt;&lt;hr&gt;&lt;b&gt;สำคัญ:&lt;/b&gt;Wallet ของคุณมีเพียง 1,000 ที่อยู่ในการเปลี่ยนแปลงเท่านั้น ทุกครั้งที่เกิดเหตุการณ์ผสมเกิดขึ้น 9 ที่อยู่ของคุณจะถูกนำมาใช้  ซึ่งหมายความว่า 1000 ที่อยู่ล่าสุดสำหรับการผสมประมาณ 100 เหตุการณ์ เมื่อมีการใช้ 900 ราย Wallet ของคุณต้องสร้างที่อยู่เพิ่มเติม  สามารถทำเช่นนี้ได้หากคุณเปิดใช้งานการสำรองข้อมูลอัตโนมัติไว้&lt;br&gt;ดังนั้นผู้ใช้ที่มีการสำรองข้อมูลถูกปิดใช้งานจะมีการปิดใช้ PrivateSend &lt;hr&gt;สำหรับข้อมูลเพิ่มเติม&lt;a href="https://docs.citypay.org/en/latest/wallets/ctpcore/privatesend-instantsend.html"&gt;โปรดดูที่เอกสาร PrivateSend &lt;/a&gt;</translation>
     </message>
 </context>
 <context>
@@ -976,6 +988,10 @@
     <message>
         <source>As this is the first time the program is launched, you can choose where %1 will store its data.</source>
         <translation>นี่เป็นการรันโปรแกรมครั้งแรก ท่านสามารถเลือก ว่าจะเก็บข้อมูลไว้ที่ %1</translation>
+    </message>
+    <message>
+        <source>%1 will download and store a copy of the Ctp block chain. At least %2GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>%1 จะดาวน์โหลดและเก็บสำเนาของ Ctp block chain อย่างน้อย %2GB ของข้อมูลจะถูกเก็บไว้ในไดเรกทอรีนี้และจะเติบโตขึ้นเมื่อเวลาผ่านไป  Wallet จะถูกจัดเก็บไว้ในไดเรกทอรีนี้ </translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1009,20 +1025,76 @@
         <translation>รูป</translation>
     </message>
     <message>
+        <source>My Masternodes</source>
+        <translation>Masternodes ของฉัน</translation>
+    </message>
+    <message>
+        <source>Note: Status of your masternodes in local wallet can potentially be slightly incorrect.&lt;br /&gt;Always wait for wallet to sync additional data and then double check from another node&lt;br /&gt;if your masternode should be running but you still do not see "ENABLED" in "Status" field.</source>
+        <translation>หมายเหตุ: สถานะของ Masternodes ของคุณใน Wallet ภายในประเทศอาจไม่ถูกต้องเล็กน้อย&lt;br /&gt;ต้องรอทุกครั้งให้ Wallet ซิงค์ข้อมูลเพิ่มเติมจากนั้นตรวจสอบอีกครั้งจากโหนดอื่น &lt;br /&gt; คุณจะเห็น Masternode ของคุณควรทำงานอยู่ แต่คุณยังไม่เห็น "เปิดการใช้งาน" ใน"สถานะ"</translation>
+    </message>
+    <message>
+        <source>Alias</source>
+        <translation>นามแฝง</translation>
+    </message>
+    <message>
         <source>Address</source>
         <translation>ที่อยู่</translation>
+    </message>
+    <message>
+        <source>Protocol</source>
+        <translation>โปรโตคอล</translation>
     </message>
     <message>
         <source>Status</source>
         <translation>สถานะ</translation>
     </message>
     <message>
+        <source>Active</source>
+        <translation>กำลังใช้งาน</translation>
+    </message>
+    <message>
+        <source>Last Seen</source>
+        <translation>เห็นครั้งสุดท้าย</translation>
+    </message>
+    <message>
         <source>Payee</source>
         <translation>ผู้รับเงิน</translation>
     </message>
     <message>
+        <source>S&amp;tart alias</source>
+        <translation>เริ่มนามแฝง</translation>
+    </message>
+    <message>
+        <source>Start &amp;all</source>
+        <translation>เริ่มต้นทั้งหมด</translation>
+    </message>
+    <message>
+        <source>Start &amp;MISSING</source>
+        <translation>เริ่มต้น MISSING</translation>
+    </message>
+    <message>
+        <source>&amp;Update status</source>
+        <translation>อัพเดตสถานะ</translation>
+    </message>
+    <message>
+        <source>Show additional Masternode information</source>
+        <translation>แสดงข้อมูล Masternode เพิ่มเติม</translation>
+    </message>
+    <message>
+        <source>Show &amp;Info...</source>
+        <translation>แสดงข้อมูล</translation>
+    </message>
+    <message>
+        <source>Status will be updated automatically in (sec):</source>
+        <translation>สถานะจะอัพเดตอัตโนมัติภายใน (วินาที) :</translation>
+    </message>
+    <message>
         <source>0</source>
         <translation>0</translation>
+    </message>
+    <message>
+        <source>All Masternodes</source>
+        <translation>Masternodes ทั้งหมด</translation>
     </message>
     <message>
         <source>Filter List:</source>
@@ -1037,68 +1109,72 @@
         <translation>จำนวนโหนด:</translation>
     </message>
     <message>
-        <source>DIP3 Masternodes</source>
-        <translation>DIP3 Masternodes</translation>
+        <source>Start alias</source>
+        <translation>เริ่มนามแฝง</translation>
     </message>
     <message>
-        <source>PoSe Score</source>
-        <translation>คะแนน PoSe</translation>
+        <source>Confirm masternode start</source>
+        <translation>ยืนยันว่า Masternodes เริ่มทำงาน</translation>
     </message>
     <message>
-        <source>Registered</source>
-        <translation>ลงทะเบียน</translation>
+        <source>Are you sure you want to start masternode %1?</source>
+        <translation>คุณแน่ใจหรือไม่ว่าต้องการให้ masternode %1 เริ่มทำงาน?</translation>
     </message>
     <message>
-        <source>Last Paid</source>
-        <translation>ชำระครั้งล่าสุด</translation>
+        <source>Confirm all masternodes start</source>
+        <translation>ยืนยันว่า Masternodes ทั้งหมดเริ่มทำงาน</translation>
     </message>
     <message>
-        <source>Next Payment</source>
-        <translation>การชำระครั้งถัดไป</translation>
+        <source>Are you sure you want to start ALL masternodes?</source>
+        <translation>คุณแน่ใจหรือไม่ว่าต้องการให้ masternode ทั้งหมดเริ่มทำงาน?</translation>
     </message>
     <message>
-        <source>Operator Reward</source>
-        <translation>รางวัลผู้ดำเนินการ</translation>
+        <source>Command is not available right now</source>
+        <translation>คำสั่งไม่พร้อมใช้งานในขณะนี้</translation>
     </message>
     <message>
-        <source>Copy ProTx Hash</source>
-        <translation>คัดลอก ProTx Hash</translation>
+        <source>You can't use this command until masternode list is synced</source>
+        <translation>คุณไม่สามารถใช้คำสั่งนี้ได้จนกว่าจะมีการซิงค์รายการ masternode</translation>
     </message>
     <message>
-        <source>Copy Collateral Outpoint</source>
-        <translation>Copy Collateral Outpoint</translation>
+        <source>Confirm missing masternodes start</source>
+        <translation>ยืนยันการเริ่มต้น masternodes ที่หายไป</translation>
     </message>
     <message>
-        <source>ENABLED</source>
-        <translation>เปิดการใช้งาน</translation>
+        <source>Are you sure you want to start MISSING masternodes?</source>
+        <translation>คุณแน่ใจหรือไม่ว่าต้องการเริ่มต้น masternodes ที่หายไป?</translation>
     </message>
     <message>
-        <source>POSE_BANNED</source>
-        <translation>POSE_BANNED</translation>
+        <source>Additional information for Masternode %1</source>
+        <translation>ข้อมูลเพิ่มเติมสำหรับ Masternode %1</translation>
     </message>
     <message>
-        <source>UNKNOWN</source>
+        <source>Masternode Private Key</source>
+        <translation>Masternode Private Key</translation>
+    </message>
+    <message>
+        <source>Private Key</source>
+        <translation>Private Key</translation>
+    </message>
+    <message>
+        <source>Collateral</source>
+        <translation>ประกอบ</translation>
+    </message>
+    <message>
+        <source>IP</source>
+        <translation>IP</translation>
+    </message>
+    <message>
+        <source>Version</source>
+        <translation>เวอร์ชั่น</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
         <translation>ไม่ทราบ</translation>
     </message>
     <message>
-        <source>to %1</source>
-        <translation>ไปยัง %1</translation>
-    </message>
-    <message>
-        <source>to UNKNOWN</source>
-        <translation>ไม่ทราบ</translation>
-    </message>
-    <message>
-        <source>but not claimed</source>
-        <translation>แต่ไม่ได้ถูกเรียกร้อง</translation>
-    </message>
-    <message>
-        <source>NONE</source>
-        <translation>ไม่มี</translation>
-    </message>
-    <message>
-        <source>Additional information for DIP3 Masternode %1</source>
-        <translation>ข้อมูลเพิ่มเติมสำหรับ DIP3 Masternode %1</translation>
+        <source>Sentinel</source>
+        <translation>Sentinel</translation>
     </message>
 </context>
 <context>
@@ -1304,14 +1380,6 @@
     <message>
         <source>Enable coin &amp;control features</source>
         <translation>เปิดใช้ coin &amp; รูปแบบการควบคุม</translation>
-    </message>
-    <message>
-        <source>Show system popups for PrivateSend mixing transactions&lt;br/&gt;just like for all other transaction types.</source>
-        <translation>แสดงระบบป๊อปอัพสำหรับทำธุรกรรมผสม PrivateSend &lt;br/&gt; เช่นเดียวกับทำธุรกรรมแบบประเภทอื่นๆ</translation>
-    </message>
-    <message>
-        <source>Show popups for PrivateSend transactions</source>
-        <translation>แสดงป๊อปอัปสำหรับธุรกรรม PrivateSend</translation>
     </message>
     <message>
         <source>&amp;Spend unconfirmed change</source>
@@ -1729,6 +1797,10 @@ https://www.transifex.com/projects/p/ctp/</translation>
 </translation>
     </message>
     <message>
+        <source>N/A</source>
+        <translation>N/A</translation>
+    </message>
+    <message>
         <source>PrivateSend was successfully reset.</source>
         <translation>รีเซ็ต PrivateSend สำเร็จแล้ว</translation>
     </message>
@@ -1858,8 +1930,16 @@ https://www.transifex.com/projects/p/ctp/</translation>
 <context>
     <name>QObject</name>
     <message>
+        <source>Ctp Core</source>
+        <translation>Ctp Core</translation>
+    </message>
+    <message>
         <source>%1 didn't yet exit safely...</source>
         <translation>%1 ยังไม่สามารถออกจากระบบได้อย่างปลอดภัย ...</translation>
+    </message>
+    <message>
+        <source>Error reading masternode configuration file: %1</source>
+        <translation>เกิดข้อผิดพลาดในการอ่านไฟล์การกำหนดค่า masternode: %1</translation>
     </message>
     <message>
         <source>Amount</source>
@@ -3460,10 +3540,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>ไม่ว่าจะเป็นที่อยู่สำหรับดูอย่างเดียวหรือไม่ก็ตามก็เกี่ยวข้องกับธุรกรรมนี้</translation>
     </message>
     <message>
-        <source>Whether or not this transaction was locked by InstantSend.</source>
-        <translation>ไม่ว่าธุรกรรมนี้จะถูกล็อคโดย InstantSend หรือไม่</translation>
-    </message>
-    <message>
         <source>User-defined intent/purpose of the transaction.</source>
         <translation>เจตนา / วัตถุประสงค์ที่กำหนดโดยผู้ใช้ของธุรกรรม</translation>
     </message>
@@ -3477,14 +3553,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
     <message>
         <source>All</source>
         <translation>ทั้งหมด</translation>
-    </message>
-    <message>
-        <source>Locked by InstantSend</source>
-        <translation>ล็อคโดย InstantSend</translation>
-    </message>
-    <message>
-        <source>Not locked by InstantSend</source>
-        <translation>ไม่ได้ถูกล็อคโดย InstantSend</translation>
     </message>
     <message>
         <source>Today</source>
@@ -3774,6 +3842,10 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>คำเตือน: เราไม่ปรากฎกับ peer ของเรา! คุณอาจต้องอัพเกรดหรือโหนดอื่น ๆ อาจต้องอัพเกรด</translation>
     </message>
     <message>
+        <source>You must specify a masternodeprivkey in the configuration. Please see documentation for help.</source>
+        <translation>คุณต้องระบุ masternodeprivkey ในการกำหนดค่า โปรดดูเอกสารประกอบการช่วยเหลือ</translation>
+    </message>
+    <message>
         <source>Accept command line and JSON-RPC commands</source>
         <translation>ยอมรับ command line และคำสั่ง JSON-RPC</translation>
     </message>
@@ -3894,20 +3966,16 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>เชื่อมโยงไปยังที่อยู่ที่กำหนดและ whitelist peers ที่เชื่อมต่ออยู่  ใช้ [โฮสต์]: สัญลักษณ์พอร์ตสำหรับ IPv6</translation>
     </message>
     <message>
+        <source>Bind to given address to listen for JSON-RPC connections. Use [host]:port notation for IPv6. This option can be specified multiple times (default: bind to all interfaces)</source>
+        <translation>เชื่อมโยงไปยังที่อยู่ที่กำหนดเพื่อรับฟังการเชื่อมต่อ JSON-RPC  ใช้  [host]:port  พอร์ตสำหรับ IPv6 ตัวเลือกนี้สามารถระบุได้หลายครั้ง (ค่าดีฟอลต์: ผูกกับอินเทอร์เฟซทั้งหมด)</translation>
+    </message>
+    <message>
         <source>Create new files with system default permissions, instead of umask 077 (only effective with disabled wallet functionality)</source>
         <translation>สร้างไฟล์ใหม่ด้วยระบบสิทธิ์ดีฟอลต์แทนที่จะเป็น umask 077 (มีผลกับการทำงานของกระเป๋าสตางค์เท่านั้น)</translation>
     </message>
     <message>
         <source>Delete all wallet transactions and only recover those parts of the blockchain through -rescan on startup</source>
         <translation>ลบการทำธุรกรรมทั้งหมดของ wallet และกู้เฉพาะส่วนของ blockchain ผ่านการสแกนใหม่เมื่อเริ่มต้น</translation>
-    </message>
-    <message>
-        <source>Enable publish raw transactions of attempted InstantSend double spend in &lt;address&gt;</source>
-        <translation>เปิดใช้งาน raw transactions ของ InstantSend พยายามที่จะใช้จ่ายสองเท่าใน &lt;address&gt;</translation>
-    </message>
-    <message>
-        <source>Enable publish transaction hashes of attempted InstantSend double spend in &lt;address&gt;</source>
-        <translation>เปิดใช้งาน transaction hashes ของ InstantSend พยายามที่จะใช้จ่ายสองเท่าใน&lt;address&gt;</translation>
     </message>
     <message>
         <source>Error loading %s: You can't enable HD on a already existing non-HD wallet</source>
@@ -3954,14 +4022,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>ข้อมูลการแก้ไขจุดบกพร่องของ Output (ค่าดีฟอลต์: %u &lt;category&gt; เป็นตัวเลือกเพิ่มเติม)</translation>
     </message>
     <message>
-        <source>Overrides minimum spork signers to change spork value. Only useful for regtest and devnet. Using this on mainnet or testnet will ban you.</source>
-        <translation>ยกเลิกจำนวนขั้นต่ำ spork signers เพื่อเปลี่ยนจำนวน  มีประโยชน์สำหรับ regtest และ devnet เท่านั้น หากใช้สิ่งนี้บน mainnet หรือ testnet  คุณจะถูกแบน</translation>
-    </message>
-    <message>
-        <source>Use N separate masternodes in parallel to mix funds (%u-%u, default: %u)</source>
-        <translation>ใช้ N masternode ในการผสมเงินทุน (%u-%u, ค่าเริ่มต้น: %u)</translation>
-    </message>
-    <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
         <translation>ใช้พร็อกซี SOCKS5 แยกเพื่อเข้าถึงเพื่อนร่วมทางผ่านบริการที่ซ่อนไว้ของ Tor (ค่าดีฟอลต์: %s)</translation>
     </message>
@@ -3980,10 +4040,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
     <message>
         <source>You need to rebuild the database using -reindex-chainstate to change -txindex</source>
         <translation>คุณจำเป็นต้องสร้างฐานข้อมูลโดยใช้ -reindex-chainstate เพื่อเปลี่ยน -txindex</translation>
-    </message>
-    <message>
-        <source>You should specify a masternodeblsprivkey in the configuration. Please see documentation for help.</source>
-        <translation>คุณควรระบุ masternodeblsprivkey ในการกำหนดค่า โปรดดูเอกสารประกอบสำหรับความช่วยเหลือเพิ่มเติม</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -4038,6 +4094,10 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>ไม่สามารถโหลดแคช masternode ได้</translation>
     </message>
     <message>
+        <source>Failed to load masternode payments cache from</source>
+        <translation>ไม่สามารถโหลดแคชการชำระเงิน masternode ได้จาก</translation>
+    </message>
+    <message>
         <source>Found enough users, signing ( waiting %s )</source>
         <translation>พบผู้ใช้เพียงพอ, กำลังลงนาม...  ( กำลังรอ %s )</translation>
     </message>
@@ -4082,16 +4142,16 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>เงินทุนไม่เพียงพอ</translation>
     </message>
     <message>
+        <source>Invalid -onion address: '%s'</source>
+        <translation>ที่อยู่ - onion ไม่ถูกต้อง: '%s'</translation>
+    </message>
+    <message>
+        <source>Invalid -proxy address: '%s'</source>
+        <translation>ที่อยู่ - proxy ไม่ถูกต้อง: '%s'</translation>
+    </message>
+    <message>
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s' (must be at least %s)</source>
         <translation>จำนวนที่ไม่ถูกต้องสำหรับ -paytxfee = &lt;amount&gt;: '%s' (ต้องมีอย่างน้อย %s)</translation>
-    </message>
-    <message>
-        <source>Invalid masternodeblsprivkey. Please see documenation.</source>
-        <translation>masternodeprivkey ไม่ถูกต้อง โปรดดูเอกสารประกอบ</translation>
-    </message>
-    <message>
-        <source>Invalid minimum number of spork signers specified with -minsporkkeys</source>
-        <translation>จำนวนขั้นต่ำ spork signers ไม่ถูกต้องระบุด้วย -minsporkkeys</translation>
     </message>
     <message>
         <source>Keypool ran out, please call keypoolrefill first</source>
@@ -4118,8 +4178,16 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>กำลังโหลดแคช masternode ...</translation>
     </message>
     <message>
+        <source>Loading masternode payment cache...</source>
+        <translation>กำลังโหลดแคชการชำระเงิน masternode ...</translation>
+    </message>
+    <message>
         <source>Lock is already in place.</source>
         <translation>ล็อกอยู่ในตำแหน่งแล้ว</translation>
+    </message>
+    <message>
+        <source>Lock masternodes from masternode configuration file (default: %u)</source>
+        <translation>ล็อค masternodes จากไฟล์การกำหนดค่า masternode (ค่าดีฟอลต์: %u)</translation>
     </message>
     <message>
         <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: %u)</source>
@@ -4158,6 +4226,10 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>เชื่อมต่อกับโหนดในเครือข่ายเท่านั้น &lt;net&gt; (ipv4, ipv6 หรือ onion)</translation>
     </message>
     <message>
+        <source>Port: %d</source>
+        <translation>พอร์ต: %d</translation>
+    </message>
+    <message>
         <source>Prepend debug output with timestamp (default: %u)</source>
         <translation>แสดงผลลัพธ์ดีบักด้วย timestamp (ค่าดีฟอลต์: %u) </translation>
     </message>
@@ -4182,10 +4254,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>ตั้งค่าขนาด key pool เป็น &lt;n&gt; (ค่าเริ่มต้น: %u)</translation>
     </message>
     <message>
-        <source>Set the masternode BLS private key</source>
-        <translation>ตั้งค่า The Masternode BLS private key</translation>
-    </message>
-    <message>
         <source>Set the number of threads to service RPC calls (default: %d)</source>
         <translation>กำหนดจำนวน threads เพื่อให้บริการการโทร RPC (ค่าเริ่มต้น: %d)</translation>
     </message>
@@ -4198,6 +4266,10 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>ระบุระยะหมดเวลาการเชื่อมต่อเป็นมิลลิวินาที (ต่ำสุด: 1 ค่าเริ่มต้น: %d)</translation>
     </message>
     <message>
+        <source>Specify masternode configuration file (default: %s)</source>
+        <translation>ระบุไฟล์การกำหนดค่า Masternode (ค่าดีฟอลต์: %s)</translation>
+    </message>
+    <message>
         <source>Specify pid file (default: %s)</source>
         <translation>ระบุไฟล์ pid (ค่าดีฟอลต์: %s)</translation>
     </message>
@@ -4206,8 +4278,20 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>ใช้การเปลี่ยนแปลงยกเลิกการยืนยันเมื่อกำลังส่งธุรกรรม (ค่าเริ่มต้น: %u)</translation>
     </message>
     <message>
+        <source>Submitted following entries to masternode: %u / %d</source>
+        <translation>ส่งรายการต่อไปนี้ไปยัง masternode: %u / %d</translation>
+    </message>
+    <message>
+        <source>Submitted to masternode, waiting for more entries ( %u / %d ) %s</source>
+        <translation>ส่งไปยัง Masternode รอรายการเพิ่มเติม (%u / %d) %s</translation>
+    </message>
+    <message>
         <source>Submitted to masternode, waiting in queue %s</source>
         <translation>ส่งไปยัง masternode กำลังรอคิว %s</translation>
+    </message>
+    <message>
+        <source>Synchroning blockchain...</source>
+        <translation>กำลังซิงโครไนซ์ Blockchain...</translation>
     </message>
     <message>
         <source>Synchronization failed</source>
@@ -4216,6 +4300,10 @@ https://www.transifex.com/projects/p/ctp/</translation>
     <message>
         <source>Synchronization finished</source>
         <translation>การซิงโครไนซ์สิ้นเสร็จ</translation>
+    </message>
+    <message>
+        <source>Synchronizing masternodes...</source>
+        <translation>กำลังซิงโครไนซ์  Masternodes...</translation>
     </message>
     <message>
         <source>This is not a Masternode.</source>
@@ -4228,10 +4316,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
     <message>
         <source>Too many %f denominations, removing.</source>
         <translation>จำนวนเงิน %f มากเกินไป, กำลังลบออก</translation>
-    </message>
-    <message>
-        <source>Too many %f denominations, skipping.</source>
-        <translation>จำนวน %f มากเกินไป , ข้าม</translation>
     </message>
     <message>
         <source>Tor control port password (default: empty)</source>
@@ -4286,6 +4370,10 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>จะลองใหม่ ...</translation>
     </message>
     <message>
+        <source>Invalid masternodeprivkey. Please see documenation.</source>
+        <translation>masternodeprivkey ไม่ถูกต้อง โปรดดูเอกสารประกอบ</translation>
+    </message>
+    <message>
         <source>Can't find random Masternode.</source>
         <translation>ไม่พบ Masternode </translation>
     </message>
@@ -4294,8 +4382,16 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>ไม่สามารถผสมระหว่างอยู่ในดำเนินการซิงค์ได้</translation>
     </message>
     <message>
+        <source>Could not parse masternode.conf</source>
+        <translation>ไม่สามารถวิเคราะห์ masternode.conf</translation>
+    </message>
+    <message>
         <source>Invalid netmask specified in -whitelist: '%s'</source>
         <translation>netmask ไม่ถูกต้องที่ระบุใน -whitelist: '%s'</translation>
+    </message>
+    <message>
+        <source>Invalid port detected in masternode.conf</source>
+        <translation>ตรวจพบพอร์ตที่ไม่ถูกต้องใน masternode.conf</translation>
     </message>
     <message>
         <source>Invalid script detected.</source>
@@ -4474,8 +4570,16 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>คุณจำเป็นต้องสร้างฐานข้อมูลโดยใช้ -reindex ที่จะกลับไปที่โหมด unpruned  และนี่จะดาวน์โหลด blockchain  ที่เหลือใหม่ทั้งหมด</translation>
     </message>
     <message>
+        <source>(%d could be used only on mainnet)</source>
+        <translation>(%d สามารถใช้ได้เฉพาะกับ mainnet)</translation>
+    </message>
+    <message>
         <source>(default: %u)</source>
         <translation>(ค่าเริ่มต้น: %u)</translation>
+    </message>
+    <message>
+        <source>(must be %d for mainnet)</source>
+        <translation>(ต้องเป็น %d สำหรับ mainnet)</translation>
     </message>
     <message>
         <source>-maxmempool must be at least %d MB</source>
@@ -4534,6 +4638,10 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>เปิดใช้งานการทำธุรกรรมดิบใหม่ใน &lt;address&gt;</translation>
     </message>
     <message>
+        <source>Enable transaction replacement in the memory pool (default: %u)</source>
+        <translation>เปิดใช้การแทนที่ธุรกรรมในหน่วยความจำ pool  (ค่าดีฟอลต์: %u)</translation>
+    </message>
+    <message>
         <source>Error: A fatal internal error occurred, see debug.log for details</source>
         <translation>ข้อผิดพลาด: มีข้อผิดพลาดร้ายแรงภายในเกิดขึ้น โปรดดูที่ debug.log เพื่อดูรายละเอียด</translation>
     </message>
@@ -4558,6 +4666,10 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>โหลดแคช sporks ล้มเหลว</translation>
     </message>
     <message>
+        <source>Failed to parse host:port string</source>
+        <translation>แยกวิเคราะห์ host:port  ล้มเหลว</translation>
+    </message>
+    <message>
         <source>Fee (in %s/kB) to add to transactions you send (default: %s)</source>
         <translation>ค่าธรรมเนียม (ใน %s / kB) เพื่อเพิ่มธุรกรรมที่คุณส่ง (ค่าเริ่มต้น: %s)</translation>
     </message>
@@ -4574,6 +4686,10 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>จำนวนเงินที่ไม่ถูกต้องสำหรับ -fallbackfee = 1: '%s'</translation>
     </message>
     <message>
+        <source>Invalid input count.</source>
+        <translation>จำนวนการป้อนข้อมูลไม่ถูกต้อง</translation>
+    </message>
+    <message>
         <source>Keep the transaction memory pool below &lt;n&gt; megabytes (default: %u)</source>
         <translation>เก็บหน่วยความจำธุรกรรมไว้ต่ำกว่า 1 เมกะไบต์ (ค่าเริ่มต้น: %u)</translation>
     </message>
@@ -4586,8 +4702,16 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>การกระทำ PrivateSend ที่ประสบความสำเร็จล่าสุดเป็นข้อมูลล่าสุด</translation>
     </message>
     <message>
+        <source>Line: %d</source>
+        <translation>Line: %d</translation>
+    </message>
+    <message>
         <source>Loading InstantSend data cache...</source>
         <translation>กำลังโหลดแคชข้อมูล InstantSend ...</translation>
+    </message>
+    <message>
+        <source>Loading addresses...</source>
+        <translation>กำลังโหลดที่อยู่ ...</translation>
     </message>
     <message>
         <source>Loading block index...</source>
@@ -4616,6 +4740,10 @@ https://www.transifex.com/projects/p/ctp/</translation>
     <message>
         <source>Make the wallet broadcast transactions</source>
         <translation>ดำเนินการในการเผยแพร่ธุรกรรม wallet</translation>
+    </message>
+    <message>
+        <source>Masternode cache is empty, skipping payments and governance cache...</source>
+        <translation>แคช Masternode ว่างเปล่า  ละเว้นการชำระเงินและแคชการจัดการ...</translation>
     </message>
     <message>
         <source>Masternode options:</source>
@@ -4906,6 +5034,14 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Wallet จะไม่สร้างธุรกรรมที่ละเมิดข้อจำกัดของ Mempool chain (ค่าเริ่มต้น: %u)</translation>
     </message>
     <message>
+        <source>Warning: At least %d of %d masternodes are running on a newer software version. Please check latest releases, you might need to update too.</source>
+        <translation>คำเตือน: อย่างน้อย %d จาก %d masternodes กำลังทำงานอยู่ในเวอร์ชันซอฟต์แวร์ใหม่กว่า โปรดตรวจสอบเวอร์ชันล่าสุดคุณอาจต้องอัปเดตด้วย</translation>
+    </message>
+    <message>
+        <source>Warning: Every masternode (out of %d known ones) is running on a newer software version. Please check latest releases, it's very likely that you missed a major/critical update.</source>
+        <translation>คำเตือน: ทุก masternode (จาก %d คนที่รู้จัก) กำลังทำงานในเวอร์ชั่นซอฟต์แวร์ที่ใหม่กว่า โปรดตรวจสอบเวอร์ชันล่าสุด เป็นไปได้ที่คุณพลาดการอัปเดตที่สำคัญ</translation>
+    </message>
+    <message>
         <source>Warning: Wallet file corrupt, data salvaged! Original %s saved as %s in %s; if your balance or transactions are incorrect you should restore from a backup.</source>
         <translation>คำเตือน: ไฟล์ Wallet เสียหาย, ข้อมูลได้ถูกกู้! %s จากเดิมถูกบันทึกเป็น %s ใน %s; หากยอดคงเหลือหรือธุรกรรมของคุณไม่ถูกต้องคุณควรเรียกคืนจากสำเนาสำรอง</translation>
     </message>
@@ -5050,6 +5186,10 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>กำหนดขนาดบล็อกสูงสุดเป็นไบต์ (ค่าดีฟอลต์: %d)</translation>
     </message>
     <message>
+        <source>Set the masternode private key</source>
+        <translation>ตั้งค่าคีย์ส่วนตัว Masternode</translation>
+    </message>
+    <message>
         <source>Show all debugging options (usage: --help -help-debug)</source>
         <translation>แสดงการแก้จุดบกพร่องทั้งหมด (การใช้งาน: --help - help-debug)</translation>
     </message>
@@ -5084,6 +5224,10 @@ https://www.transifex.com/projects/p/ctp/</translation>
     <message>
         <source>Synchronizing governance objects...</source>
         <translation>กำลังปรับเทียบออบเจคการกำกับ ...</translation>
+    </message>
+    <message>
+        <source>Synchronizing masternode payments...</source>
+        <translation>กำลังซิงค์การชำระเงิน Masternode ...</translation>
     </message>
     <message>
         <source>The source code is available from %s.</source>

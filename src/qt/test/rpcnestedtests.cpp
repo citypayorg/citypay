@@ -15,7 +15,6 @@
 #include "util.h"
 
 #include "evo/deterministicmns.h"
-#include "llmq/quorums_init.h"
 
 #include <QDir>
 #include <QtGlobal>
@@ -54,8 +53,6 @@ void RPCNestedTests::rpcNestedTests()
     pblocktree = new CBlockTreeDB(1 << 20, true);
     pcoinsdbview = new CCoinsViewDB(1 << 23, true);
     deterministicMNManager = new CDeterministicMNManager(*evoDb);
-    llmq::InitLLMQSystem(*evoDb, nullptr, true);
-
     pcoinsTip = new CCoinsViewCache(pcoinsdbview);
     InitBlockIndex(chainparams);
     {
@@ -156,11 +153,8 @@ void RPCNestedTests::rpcNestedTests()
 #endif
 
     delete pcoinsTip;
-    llmq::DestroyLLMQSystem();
-    delete deterministicMNManager;
     delete pcoinsdbview;
     delete pblocktree;
-    delete evoDb;
 
     boost::filesystem::remove_all(boost::filesystem::path(path));
 }

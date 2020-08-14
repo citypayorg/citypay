@@ -56,7 +56,7 @@ config file):
 	HiddenServicePort 29999 127.0.0.1:29999
 
 The directory can be different of course, but (both) port numbers should be equal to
-your ctpd's P2P listen port (9999 by default).
+your ctpd's P2P listen port (39999 by default).
 
 	-externalip=X   You can tell Ctp Core about its publicly reachable address using
 	                this option, and this can be a .onion address. Given the above

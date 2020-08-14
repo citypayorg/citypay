@@ -30,16 +30,6 @@
     </message>
     <message>
         <location line="+10"/>
-        <source>Show QR code for the currently selected address</source>
-        <translation>Show QR code for the currently selected address</translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>&amp;Show QR code</source>
-        <translation>&amp;Show QR code</translation>
-    </message>
-    <message>
-        <location line="+10"/>
         <source>Delete the currently selected address from the list</source>
         <translation>Delete the currently selected address from the list</translation>
     </message>
@@ -64,7 +54,7 @@
         <translation>C&amp;lose</translation>
     </message>
     <message>
-        <location filename="../addressbookpage.cpp" line="+54"/>
+        <location filename="../addressbookpage.cpp" line="+51"/>
         <source>Choose the address to send coins to</source>
         <translation>Choose the address to send coins to</translation>
     </message>
@@ -114,17 +104,7 @@
         <translation>&amp;Edit</translation>
     </message>
     <message>
-        <location line="+1"/>
-        <source>&amp;Show address QR code</source>
-        <translation>&amp;Show address QR code</translation>
-    </message>
-    <message>
-        <location line="+148"/>
-        <source>QR code</source>
-        <translation>QR code</translation>
-    </message>
-    <message>
-        <location line="+66"/>
+        <location line="+193"/>
         <source>Export Address List</source>
         <translation>Export Address List</translation>
     </message>
@@ -332,17 +312,17 @@
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <location filename="../ctp.cpp" line="+551"/>
+        <location filename="../ctp.cpp" line="+558"/>
         <source>A fatal error occurred. Ctp Core can no longer continue safely and will quit.</source>
         <translation>A fatal error occurred. Ctp Core can no longer continue safely and will quit.</translation>
     </message>
     <message>
-        <location filename="../bitcoingui.cpp" line="+1119"/>
+        <location filename="../bitcoingui.cpp" line="+1129"/>
         <source>Ctp Core</source>
         <translation>Ctp Core</translation>
     </message>
     <message>
-        <location line="-976"/>
+        <location line="-986"/>
         <source>Wallet</source>
         <translation>Wallet</translation>
     </message>
@@ -578,6 +558,16 @@
     </message>
     <message>
         <location line="+1"/>
+        <source>Open &amp;Masternode Configuration File</source>
+        <translation>Open &amp;Masternode Configuration File</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Open Masternode configuration file</source>
+        <translation>Open Masternode configuration file</translation>
+    </message>
+    <message>
+        <location line="+1"/>
         <source>Show Automatic &amp;Backups</source>
         <translation>Show Automatic &amp;Backups</translation>
     </message>
@@ -627,12 +617,12 @@
         <translation>Show the %1 help message to get a list with possible Ctp command-line options</translation>
     </message>
     <message>
-        <location line="+288"/>
+        <location line="+290"/>
         <source>%1 client</source>
         <translation>%1 client</translation>
     </message>
     <message>
-        <location line="-286"/>
+        <location line="-288"/>
         <source>&amp;PrivateSend information</source>
         <translation>&amp;PrivateSend information</translation>
     </message>
@@ -642,7 +632,7 @@
         <translation>Show the PrivateSend basic information</translation>
     </message>
     <message>
-        <location line="+61"/>
+        <location line="+62"/>
         <source>&amp;File</source>
         <translation>&amp;File</translation>
     </message>
@@ -657,7 +647,7 @@
         <translation>&amp;Tools</translation>
     </message>
     <message>
-        <location line="+11"/>
+        <location line="+12"/>
         <source>&amp;Help</source>
         <translation>&amp;Help</translation>
     </message>
@@ -667,7 +657,7 @@
         <translation>Tabs toolbar</translation>
     </message>
     <message numerus="yes">
-        <location line="+366"/>
+        <location line="+372"/>
         <source>%n active connection(s) to Ctp network</source>
         <translation>
             <numerusform>%n active connection to Ctp network</numerusform>
@@ -836,7 +826,12 @@
 <context>
     <name>ClientModel</name>
     <message>
-        <location filename="../clientmodel.cpp" line="+203"/>
+        <location filename="../clientmodel.cpp" line="+86"/>
+        <source>Total: %1 (PS compatible: %2 / Enabled: %3)</source>
+        <translation>Total: %1 (PS compatible: %2 / Enabled: %3)</translation>
+    </message>
+    <message>
+        <location line="+126"/>
         <source>Network Alert</source>
         <translation>Network Alert</translation>
     </message>
@@ -1012,7 +1007,7 @@
     <message>
         <location line="+196"/>
         <source>Non-anonymized input selected. &lt;b&gt;PrivateSend will be disabled.&lt;/b&gt;&lt;br&gt;&lt;br&gt;If you still want to use PrivateSend, please deselect all non-anonymized inputs first and then check the PrivateSend checkbox again.</source>
-        <translation>Non-anonymized input selected. &lt;b&gt;PrivateSend will be disabled.&lt;/b&gt;&lt;br&gt;&lt;br&gt;If you still want to use PrivateSend, please deselect all non-anonymized inputs first and then check the PrivateSend checkbox again.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1020,7 +1015,7 @@
         <translation>(%1 locked)</translation>
     </message>
     <message>
-        <location line="+159"/>
+        <location line="+177"/>
         <source>yes</source>
         <translation>yes</translation>
     </message>
@@ -1232,8 +1227,8 @@
     </message>
     <message>
         <location line="+4"/>
-        <source>&lt;h3&gt;PrivateSend Basics&lt;/h3&gt; PrivateSend gives you true financial privacy by obscuring the origins of your funds. All the Ctp in your wallet is comprised of different &quot;inputs&quot; which you can think of as separate, discrete coins.&lt;br&gt; PrivateSend uses an innovative process to mix your inputs with the inputs of two other people, without having your coins ever leave your wallet. You retain control of your money at all times.&lt;hr&gt; &lt;b&gt;The PrivateSend process works like this:&lt;/b&gt;&lt;ol type=&quot;1&quot;&gt; &lt;li&gt;PrivateSend begins by breaking your transaction inputs down into standard denominations. These denominations are 0.001 CTP, 0.01 CTP, 0.1 CTP, 1 CTP and 10 CTP -- sort of like the paper money you use every day.&lt;/li&gt; &lt;li&gt;Your wallet then sends requests to specially configured software nodes on the network, called &quot;masternodes.&quot; These masternodes are informed then that you are interested in mixing a certain denomination. No identifiable information is sent to the masternodes, so they never know &quot;who&quot; you are.&lt;/li&gt; &lt;li&gt;When two other people send similar messages, indicating that they wish to mix the same denomination, a mixing session begins. The masternode mixes up the inputs and instructs all three users&apos; wallets to pay the now-transformed input back to themselves. Your wallet pays that denomination directly to itself, but in a different address (called a change address).&lt;/li&gt; &lt;li&gt;In order to fully obscure your funds, your wallet must repeat this process a number of times with each denomination. Each time the process is completed, it&apos;s called a &quot;round.&quot; Each round of PrivateSend makes it exponentially more difficult to determine where your funds originated.&lt;/li&gt; &lt;li&gt;This mixing process happens in the background without any intervention on your part. When you wish to make a transaction, your funds will already be anonymized. No additional waiting is required.&lt;/li&gt; &lt;/ol&gt; &lt;hr&gt;&lt;b&gt;IMPORTANT:&lt;/b&gt; Your wallet only contains 1000 of these &quot;change addresses.&quot; Every time a mixing event happens, up to 9 of your addresses are used up. This means those 1000 addresses last for about 100 mixing events. When 900 of them are used, your wallet must create more addresses. It can only do this, however, if you have automatic backups enabled.&lt;br&gt; Consequently, users who have backups disabled will also have PrivateSend disabled. &lt;hr&gt;For more information, see the &lt;a href=&quot;https://docs.citypay.org/en/latest/wallets/ctpcore/privatesend-instantsend.html&quot;&gt;PrivateSend documentation&lt;/a&gt;.</source>
-        <translation>&lt;h3&gt;PrivateSend Basics&lt;/h3&gt; PrivateSend gives you true financial privacy by obscuring the origins of your funds. All the Ctp in your wallet is comprised of different &quot;inputs&quot; which you can think of as separate, discrete coins.&lt;br&gt; PrivateSend uses an innovative process to mix your inputs with the inputs of two other people, without having your coins ever leave your wallet. You retain control of your money at all times.&lt;hr&gt; &lt;b&gt;The PrivateSend process works like this:&lt;/b&gt;&lt;ol type=&quot;1&quot;&gt; &lt;li&gt;PrivateSend begins by breaking your transaction inputs down into standard denominations. These denominations are 0.001 CTP, 0.01 CTP, 0.1 CTP, 1 CTP and 10 CTP -- sort of like the paper money you use every day.&lt;/li&gt; &lt;li&gt;Your wallet then sends requests to specially configured software nodes on the network, called &quot;masternodes.&quot; These masternodes are informed then that you are interested in mixing a certain denomination. No identifiable information is sent to the masternodes, so they never know &quot;who&quot; you are.&lt;/li&gt; &lt;li&gt;When two other people send similar messages, indicating that they wish to mix the same denomination, a mixing session begins. The masternode mixes up the inputs and instructs all three users&apos; wallets to pay the now-transformed input back to themselves. Your wallet pays that denomination directly to itself, but in a different address (called a change address).&lt;/li&gt; &lt;li&gt;In order to fully obscure your funds, your wallet must repeat this process a number of times with each denomination. Each time the process is completed, it&apos;s called a &quot;round.&quot; Each round of PrivateSend makes it exponentially more difficult to determine where your funds originated.&lt;/li&gt; &lt;li&gt;This mixing process happens in the background without any intervention on your part. When you wish to make a transaction, your funds will already be anonymized. No additional waiting is required.&lt;/li&gt; &lt;/ol&gt; &lt;hr&gt;&lt;b&gt;IMPORTANT:&lt;/b&gt; Your wallet only contains 1000 of these &quot;change addresses.&quot; Every time a mixing event happens, up to 9 of your addresses are used up. This means those 1000 addresses last for about 100 mixing events. When 900 of them are used, your wallet must create more addresses. It can only do this, however, if you have automatic backups enabled.&lt;br&gt; Consequently, users who have backups disabled will also have PrivateSend disabled. &lt;hr&gt;For more information, see the &lt;a href=&quot;https://docs.citypay.org/en/latest/wallets/ctpcore/privatesend-instantsend.html&quot;&gt;PrivateSend documentation&lt;/a&gt;.</translation>
+        <source>&lt;h3&gt;PrivateSend Basics&lt;/h3&gt; PrivateSend gives you true financial privacy by obscuring the origins of your funds. All the Ctp in your wallet is comprised of different &quot;inputs&quot; which you can think of as separate, discrete coins.&lt;br&gt; PrivateSend uses an innovative process to mix your inputs with the inputs of two other people, without having your coins ever leave your wallet. You retain control of your money at all times.&lt;hr&gt; &lt;b&gt;The PrivateSend process works like this:&lt;/b&gt;&lt;ol type=&quot;1&quot;&gt; &lt;li&gt;PrivateSend begins by breaking your transaction inputs down into standard denominations. These denominations are 0.01 CTP, 0.1 CTP, 1 CTP and 10 CTP -- sort of like the paper money you use every day.&lt;/li&gt; &lt;li&gt;Your wallet then sends requests to specially configured software nodes on the network, called &quot;masternodes.&quot; These masternodes are informed then that you are interested in mixing a certain denomination. No identifiable information is sent to the masternodes, so they never know &quot;who&quot; you are.&lt;/li&gt; &lt;li&gt;When two other people send similar messages, indicating that they wish to mix the same denomination, a mixing session begins. The masternode mixes up the inputs and instructs all three users&apos; wallets to pay the now-transformed input back to themselves. Your wallet pays that denomination directly to itself, but in a different address (called a change address).&lt;/li&gt; &lt;li&gt;In order to fully obscure your funds, your wallet must repeat this process a number of times with each denomination. Each time the process is completed, it&apos;s called a &quot;round.&quot; Each round of PrivateSend makes it exponentially more difficult to determine where your funds originated.&lt;/li&gt; &lt;li&gt;This mixing process happens in the background without any intervention on your part. When you wish to make a transaction, your funds will already be anonymized. No additional waiting is required.&lt;/li&gt; &lt;/ol&gt; &lt;hr&gt;&lt;b&gt;IMPORTANT:&lt;/b&gt; Your wallet only contains 1000 of these &quot;change addresses.&quot; Every time a mixing event happens, up to 9 of your addresses are used up. This means those 1000 addresses last for about 100 mixing events. When 900 of them are used, your wallet must create more addresses. It can only do this, however, if you have automatic backups enabled.&lt;br&gt; Consequently, users who have backups disabled will also have PrivateSend disabled. &lt;hr&gt;For more information, see the &lt;a href=&quot;https://docs.citypay.org/en/latest/wallets/ctpcore/privatesend-instantsend.html&quot;&gt;PrivateSend documentation&lt;/a&gt;.         </source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1254,22 +1249,12 @@
         <translation>As this is the first time the program is launched, you can choose where %1 will store its data.</translation>
     </message>
     <message>
-        <location line="+157"/>
-        <source>When you click OK, %1 will begin to download and process the full %4 block chain (%2GB) starting with the earliest transactions in %3 when %4 initially launched.</source>
-        <translation>When you click OK, %1 will begin to download and process the full %4 block chain (%2GB) starting with the earliest transactions in %3 when %4 initially launched.</translation>
+        <location line="+10"/>
+        <source>%1 will download and store a copy of the Ctp block chain. At least %2GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>%1 will download and store a copy of the Ctp block chain. At least %2GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</translation>
     </message>
     <message>
         <location line="+10"/>
-        <source>This initial synchronisation is very demanding, and may expose hardware problems with your computer that had previously gone unnoticed. Each time you run %1, it will continue downloading where it left off.</source>
-        <translation>This initial synchronisation is very demanding, and may expose hardware problems with your computer that had previously gone unnoticed. Each time you run %1, it will continue downloading where it left off.</translation>
-    </message>
-    <message>
-        <location line="+10"/>
-        <source>If you have chosen to limit block chain storage (pruning), the historical data must still be downloaded and processed, but will be deleted afterward to keep your disk usage low.</source>
-        <translation>If you have chosen to limit block chain storage (pruning), the historical data must still be downloaded and processed, but will be deleted afterward to keep your disk usage low.</translation>
-    </message>
-    <message>
-        <location line="-160"/>
         <source>Use the default data directory</source>
         <translation>Use the default data directory</translation>
     </message>
@@ -1279,27 +1264,7 @@
         <translation>Use a custom data directory:</translation>
     </message>
     <message>
-        <location filename="../intro.cpp" line="+26"/>
-        <source>At least %1 GB of data will be stored in this directory, and it will grow over time.</source>
-        <translation>At least %1 GB of data will be stored in this directory, and it will grow over time.</translation>
-    </message>
-    <message>
-        <location line="+5"/>
-        <source>Approximately %1 GB of data will be stored in this directory.</source>
-        <translation>Approximately %1 GB of data will be stored in this directory.</translation>
-    </message>
-    <message>
-        <location line="+8"/>
-        <source>%1 will download and store a copy of the Ctp block chain.</source>
-        <translation>%1 will download and store a copy of the Ctp block chain.</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>The wallet will also be stored in this directory.</source>
-        <translation>The wallet will also be stored in this directory.</translation>
-    </message>
-    <message>
-        <location line="+73"/>
+        <location filename="../intro.cpp" line="+96"/>
         <source>Error: Specified data directory &quot;%1&quot; cannot be created.</source>
         <translation>Error: Specified data directory &quot;%1&quot; cannot be created.</translation>
     </message>
@@ -1327,27 +1292,110 @@
         <translation>Form</translation>
     </message>
     <message>
-        <location line="+123"/>
+        <location line="+40"/>
+        <source>My Masternodes</source>
+        <translation>My Masternodes</translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>Note: Status of your masternodes in local wallet can potentially be slightly incorrect.&lt;br /&gt;Always wait for wallet to sync additional data and then double check from another node&lt;br /&gt;if your masternode should be running but you still do not see &quot;ENABLED&quot; in &quot;Status&quot; field.</source>
+        <translation>Note: Status of your masternodes in local wallet can potentially be slightly incorrect.&lt;br /&gt;Always wait for wallet to sync additional data and then double check from another node&lt;br /&gt;if your masternode should be running but you still do not see &quot;ENABLED&quot; in &quot;Status&quot; field.</translation>
+    </message>
+    <message>
+        <location line="+34"/>
+        <location filename="../masternodelist.cpp" line="+497"/>
+        <source>Alias</source>
+        <translation>Alias</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <location line="+133"/>
         <source>Address</source>
         <translation>Address</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="-128"/>
+        <location line="+133"/>
+        <location filename="../masternodelist.cpp" line="+5"/>
+        <source>Protocol</source>
+        <translation>Protocol</translation>
+    </message>
+    <message>
+        <location line="-128"/>
+        <location line="+133"/>
+        <location filename="../masternodelist.cpp" line="+3"/>
         <source>Status</source>
         <translation>Status</translation>
     </message>
     <message>
-        <location line="+25"/>
+        <location line="-128"/>
+        <location line="+133"/>
+        <location filename="../masternodelist.cpp" line="+2"/>
+        <source>Active</source>
+        <translation>Active</translation>
+    </message>
+    <message>
+        <location line="-128"/>
+        <location line="+133"/>
+        <location filename="../masternodelist.cpp" line="+1"/>
+        <source>Last Seen</source>
+        <translation>Last Seen</translation>
+    </message>
+    <message>
+        <location line="-128"/>
+        <location line="+133"/>
+        <location filename="../masternodelist.cpp" line="-2"/>
         <source>Payee</source>
         <translation>Payee</translation>
     </message>
     <message>
-        <location line="-58"/>
+        <location line="-120"/>
+        <source>S&amp;tart alias</source>
+        <translation>S&amp;tart alias</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Start &amp;all</source>
+        <translation>Start &amp;all</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Start &amp;MISSING</source>
+        <translation>Start &amp;MISSING</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>&amp;Update status</source>
+        <translation>&amp;Update status</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Show additional Masternode information</source>
+        <translation>Show additional Masternode information</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Show &amp;Info...</source>
+        <translation>Show &amp;Info...</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Status will be updated automatically in (sec):</source>
+        <translation>Status will be updated automatically in (sec):</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <location line="+122"/>
         <source>0</source>
         <translation>0</translation>
     </message>
     <message>
-        <location line="-44"/>
+        <location line="-97"/>
+        <source>All Masternodes</source>
+        <translation>All Masternodes</translation>
+    </message>
+    <message>
+        <location line="+63"/>
         <source>Filter List:</source>
         <translation>Filter List:</translation>
     </message>
@@ -1357,101 +1405,95 @@
         <translation>Filter masternode list</translation>
     </message>
     <message>
-        <location line="+30"/>
+        <location line="+20"/>
         <source>Node Count:</source>
         <translation>Node Count:</translation>
     </message>
     <message>
-        <location line="-48"/>
-        <source>DIP3 Masternodes</source>
-        <translation>DIP3 Masternodes</translation>
+        <location filename="../masternodelist.cpp" line="-443"/>
+        <source>Start alias</source>
+        <translation>Start alias</translation>
     </message>
     <message>
-        <location line="+25"/>
-        <source>Show only masternodes this wallet has keys for.</source>
-        <translation>Show only masternodes this wallet has keys for.</translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>My masternodes only</source>
-        <translation>My masternodes only</translation>
-    </message>
-    <message>
-        <location line="+65"/>
-        <source>PoSe Score</source>
-        <translation>PoSe Score</translation>
-    </message>
-    <message>
-        <location line="+5"/>
-        <source>Registered</source>
-        <translation>Registered</translation>
-    </message>
-    <message>
-        <location line="+5"/>
-        <source>Last Paid</source>
-        <translation>Last Paid</translation>
-    </message>
-    <message>
-        <location line="+5"/>
-        <source>Next Payment</source>
-        <translation>Next Payment</translation>
-    </message>
-    <message>
-        <location line="+10"/>
-        <source>Operator Reward</source>
-        <translation>Operator Reward</translation>
-    </message>
-    <message>
-        <location filename="../masternodelist.cpp" line="+67"/>
-        <source>Copy ProTx Hash</source>
-        <translation>Copy ProTx Hash</translation>
+        <location line="+293"/>
+        <source>Confirm masternode start</source>
+        <translation>Confirm masternode start</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Copy Collateral Outpoint</source>
-        <translation>Copy Collateral Outpoint</translation>
+        <source>Are you sure you want to start masternode %1?</source>
+        <translation>Are you sure you want to start masternode %1?</translation>
     </message>
     <message>
-        <location line="+106"/>
-        <source>ENABLED</source>
-        <translation>ENABLED</translation>
+        <location line="+23"/>
+        <source>Confirm all masternodes start</source>
+        <translation>Confirm all masternodes start</translation>
     </message>
     <message>
-        <location line="+0"/>
-        <source>POSE_BANNED</source>
-        <translation>POSE_BANNED</translation>
+        <location line="+1"/>
+        <source>Are you sure you want to start ALL masternodes?</source>
+        <translation>Are you sure you want to start ALL masternodes?</translation>
     </message>
     <message>
-        <location line="+0"/>
-        <location line="+4"/>
-        <location line="+7"/>
-        <source>UNKNOWN</source>
-        <translation>UNKNOWN</translation>
+        <location line="+24"/>
+        <source>Command is not available right now</source>
+        <translation>Command is not available right now</translation>
     </message>
     <message>
-        <location line="+11"/>
-        <source>to %1</source>
-        <translation>to %1</translation>
+        <location line="+1"/>
+        <source>You can&apos;t use this command until masternode list is synced</source>
+        <translation>You can&apos;t use this command until masternode list is synced</translation>
     </message>
     <message>
-        <location line="+2"/>
-        <source>to UNKNOWN</source>
-        <translation>to UNKNOWN</translation>
+        <location line="+6"/>
+        <source>Confirm missing masternodes start</source>
+        <translation>Confirm missing masternodes start</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Are you sure you want to start MISSING masternodes?</source>
+        <translation>Are you sure you want to start MISSING masternodes?</translation>
+    </message>
+    <message>
+        <location line="+77"/>
+        <source>Additional information for Masternode %1</source>
+        <translation>Additional information for Masternode %1</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>but not claimed</source>
-        <translation>but not claimed</translation>
+        <source>Masternode Private Key</source>
+        <translation>Masternode Private Key</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Private Key</source>
+        <translation>Private Key</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Collateral</source>
+        <translation>Collateral</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>IP</source>
+        <translation>IP</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>NONE</source>
-        <translation>NONE</translation>
+        <source>Version</source>
+        <translation>Version</translation>
     </message>
     <message>
-        <location line="+87"/>
-        <source>Additional information for DIP3 Masternode %1</source>
-        <translation>Additional information for DIP3 Masternode %1</translation>
+        <location line="+0"/>
+        <location line="+1"/>
+        <source>Unknown</source>
+        <translation>Unknown</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Sentinel</source>
+        <translation>Sentinel</translation>
     </message>
 </context>
 <context>
@@ -1581,12 +1623,12 @@
         <translation>(0 = auto, &lt;0 = leave that many cores free)</translation>
     </message>
     <message>
-        <location line="+165"/>
+        <location line="+155"/>
         <source>Amount of Ctp to keep anonymized</source>
         <translation>Amount of Ctp to keep anonymized</translation>
     </message>
     <message>
-        <location line="-129"/>
+        <location line="-119"/>
         <source>W&amp;allet</source>
         <translation>W&amp;allet</translation>
     </message>
@@ -1611,7 +1653,7 @@
         <translation>Enable advanced PrivateSend interface</translation>
     </message>
     <message>
-        <location line="+17"/>
+        <location line="+7"/>
         <source>Show warning dialog when PrivateSend detects that wallet has very low number of keys left.</source>
         <translation>Show warning dialog when PrivateSend detects that wallet has very low number of keys left.</translation>
     </message>
@@ -1682,17 +1724,17 @@
         <translation>Third party URLs (e.g. a block explorer) that appear in the transactions tab as context menu items.&lt;br/&gt;%s in the URL is replaced by transaction hash. Multiple URLs are separated by vertical bar |.</translation>
     </message>
     <message>
-        <location line="-663"/>
+        <location line="-653"/>
         <source>Expert</source>
         <translation>Expert</translation>
     </message>
     <message>
-        <location line="+81"/>
+        <location line="+71"/>
         <source>This setting determines the amount of individual masternodes that an input will be anonymized through.&lt;br/&gt;More rounds of anonymization gives a higher degree of privacy, but also costs more in fees.</source>
         <translation>This setting determines the amount of individual masternodes that an input will be anonymized through.&lt;br/&gt;More rounds of anonymization gives a higher degree of privacy, but also costs more in fees.</translation>
     </message>
     <message>
-        <location line="-75"/>
+        <location line="-65"/>
         <source>Whether to show coin control features or not.</source>
         <translation>Whether to show coin control features or not.</translation>
     </message>
@@ -1712,17 +1754,7 @@
         <translation>Enable coin &amp;control features</translation>
     </message>
     <message>
-        <location line="+27"/>
-        <source>Show system popups for PrivateSend mixing transactions&lt;br/&gt;just like for all other transaction types.</source>
-        <translation>Show system popups for PrivateSend mixing transactions&lt;br/&gt;just like for all other transaction types.</translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>Show popups for PrivateSend transactions</source>
-        <translation>Show popups for PrivateSend transactions</translation>
-    </message>
-    <message>
-        <location line="+30"/>
+        <location line="+50"/>
         <source>&amp;Spend unconfirmed change</source>
         <translation>&amp;Spend unconfirmed change</translation>
     </message>
@@ -1910,7 +1942,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>none</translation>
     </message>
     <message>
-        <location line="+85"/>
+        <location line="+84"/>
         <source>Confirm options reset</source>
         <translation>Confirm options reset</translation>
     </message>
@@ -2030,7 +2062,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <location filename="../overviewpage.cpp" line="+511"/>
         <location line="+12"/>
         <location line="+8"/>
-        <location line="+55"/>
+        <location line="+61"/>
         <location line="+15"/>
         <location line="+9"/>
         <location line="+14"/>
@@ -2128,7 +2160,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Reset</translation>
     </message>
     <message>
-        <location filename="../overviewpage.cpp" line="-475"/>
+        <location filename="../overviewpage.cpp" line="-481"/>
         <location line="+1"/>
         <location line="+1"/>
         <source>out of sync</source>
@@ -2142,18 +2174,18 @@ https://www.transifex.com/projects/p/ctp/</translation>
     <message>
         <location line="+4"/>
         <location line="+318"/>
-        <location line="+149"/>
+        <location line="+155"/>
         <source>Start Mixing</source>
         <translation>Start Mixing</translation>
     </message>
     <message>
-        <location line="-465"/>
-        <location line="+468"/>
+        <location line="-471"/>
+        <location line="+474"/>
         <source>Stop Mixing</source>
         <translation>Stop Mixing</translation>
     </message>
     <message>
-        <location line="-289"/>
+        <location line="-295"/>
         <location line="+6"/>
         <source>No inputs detected</source>
         <translation>No inputs detected</translation>
@@ -2214,7 +2246,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
     <message>
         <location line="+15"/>
         <location line="+48"/>
-        <location line="+125"/>
+        <location line="+131"/>
         <location line="+1"/>
         <location line="+1"/>
         <location line="+3"/>
@@ -2222,7 +2254,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Disabled</translation>
     </message>
     <message>
-        <location line="-165"/>
+        <location line="-171"/>
         <source>Very low number of keys left since last automatic backup!</source>
         <translation>Very low number of keys left since last automatic backup!</translation>
     </message>
@@ -2276,7 +2308,12 @@ https://www.transifex.com/projects/p/ctp/</translation>
 </translation>
     </message>
     <message>
-        <location line="+18"/>
+        <location line="+8"/>
+        <source>N/A</source>
+        <translation>N/A</translation>
+    </message>
+    <message>
+        <location line="+16"/>
         <source>PrivateSend was successfully reset.</source>
         <translation>PrivateSend was successfully reset.</translation>
     </message>
@@ -2448,9 +2485,19 @@ https://www.transifex.com/projects/p/ctp/</translation>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../ctp.cpp" line="+176"/>
+        <location filename="../ctp.cpp" line="+132"/>
+        <source>Ctp Core</source>
+        <translation>Ctp Core</translation>
+    </message>
+    <message>
+        <location line="+49"/>
         <source>%1 didn&apos;t yet exit safely...</source>
         <translation>%1 didn&apos;t yet exit safely...</translation>
+    </message>
+    <message>
+        <location line="-48"/>
+        <source>Error reading masternode configuration file: %1</source>
+        <translation>Error reading masternode configuration file: %1</translation>
     </message>
     <message>
         <location filename="../bitcoinunits.cpp" line="+233"/>
@@ -2458,12 +2505,12 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Amount</translation>
     </message>
     <message>
-        <location filename="../guiutil.cpp" line="+133"/>
+        <location filename="../guiutil.cpp" line="+137"/>
         <source>Enter a Ctp address (e.g. %1)</source>
         <translation>Enter a Ctp address (e.g. %1)</translation>
     </message>
     <message>
-        <location line="+837"/>
+        <location line="+859"/>
         <source>%1 d</source>
         <translation>%1 d</translation>
     </message>
@@ -2561,7 +2608,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
 <context>
     <name>QObject::QObject</name>
     <message>
-        <location filename="../ctp.cpp" line="-81"/>
+        <location filename="../ctp.cpp" line="-41"/>
         <source>Error: Specified data directory &quot;%1&quot; does not exist.</source>
         <translation>Error: Specified data directory &quot;%1&quot; does not exist.</translation>
     </message>
@@ -2594,7 +2641,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>&amp;Save Image...</translation>
     </message>
     <message>
-        <location filename="../qrdialog.cpp" line="+153"/>
+        <location filename="../qrdialog.cpp" line="+149"/>
         <source>Error creating QR Code.</source>
         <translation>Error creating QR Code.</translation>
     </message>
@@ -2602,7 +2649,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
 <context>
     <name>QRGeneralImageWidget</name>
     <message>
-        <location line="-117"/>
+        <location line="-113"/>
         <source>&amp;Save Image...</source>
         <translation>&amp;Save Image...</translation>
     </message>
@@ -2821,7 +2868,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
     <message>
         <location line="+62"/>
         <location filename="../rpcconsole.cpp" line="+484"/>
-        <location line="+795"/>
+        <location line="+788"/>
         <source>Select a peer to view detailed information.</source>
         <translation>Select a peer to view detailed information.</translation>
     </message>
@@ -3012,7 +3059,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>-reindex: Rebuild block chain index from current blk000??.dat files.</translation>
     </message>
     <message>
-        <location filename="../rpcconsole.cpp" line="-699"/>
+        <location filename="../rpcconsole.cpp" line="-692"/>
         <source>&amp;Disconnect</source>
         <translation>&amp;Disconnect</translation>
     </message>
@@ -3085,12 +3132,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Network activity disabled</translation>
     </message>
     <message>
-        <location line="+33"/>
-        <source>Total: %1 (Enabled: %2)</source>
-        <translation>Total: %1 (Enabled: %2)</translation>
-    </message>
-    <message>
-        <location line="+127"/>
+        <location line="+153"/>
         <source>%1 B</source>
         <translation>%1 B</translation>
     </message>
@@ -3397,7 +3439,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
     <name>SendCoinsDialog</name>
     <message>
         <location filename="../forms/sendcoinsdialog.ui" line="+14"/>
-        <location filename="../sendcoinsdialog.cpp" line="+665"/>
+        <location filename="../sendcoinsdialog.cpp" line="+667"/>
         <source>Send Coins</source>
         <translation>Send Coins</translation>
     </message>
@@ -3603,7 +3645,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Balance:</translation>
     </message>
     <message>
-        <location filename="../sendcoinsdialog.cpp" line="-567"/>
+        <location filename="../sendcoinsdialog.cpp" line="-569"/>
         <source>Copy quantity</source>
         <translation>Copy quantity</translation>
     </message>
@@ -3639,14 +3681,14 @@ https://www.transifex.com/projects/p/ctp/</translation>
     </message>
     <message>
         <location line="+153"/>
-        <location line="+4"/>
-        <location line="+8"/>
+        <location line="+6"/>
+        <location line="+9"/>
         <source>using</source>
         <translation>using</translation>
     </message>
     <message>
-        <location line="-12"/>
-        <location line="+4"/>
+        <location line="-15"/>
+        <location line="+6"/>
         <source>anonymous funds</source>
         <translation>anonymous funds</translation>
     </message>
@@ -3656,17 +3698,17 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>(privatesend requires this amount to be rounded up to the nearest %1).</translation>
     </message>
     <message>
-        <location line="+4"/>
+        <location line="+5"/>
         <source>any available funds (not anonymous)</source>
         <translation>any available funds (not anonymous)</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+6"/>
         <source>and InstantSend</source>
         <translation>and InstantSend</translation>
     </message>
     <message>
-        <location line="+76"/>
+        <location line="+74"/>
         <location line="+5"/>
         <location line="+5"/>
         <location line="+4"/>
@@ -4145,7 +4187,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>conflicted</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+6"/>
         <source>%1/offline</source>
         <translation>%1/offline</translation>
     </message>
@@ -4180,17 +4222,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>%1 confirmations</translation>
     </message>
     <message>
-        <location line="+2"/>
-        <source>locked via LLMQ based ChainLocks</source>
-        <translation>locked via LLMQ based ChainLocks</translation>
-    </message>
-    <message>
-        <location line="+6"/>
-        <source>verified via LLMQ based InstantSend</source>
-        <translation>verified via LLMQ based InstantSend</translation>
-    </message>
-    <message>
-        <location line="+11"/>
+        <location line="+10"/>
         <source>verified via InstantSend</source>
         <translation>verified via InstantSend</translation>
     </message>
@@ -4406,7 +4438,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
 <context>
     <name>TransactionTableModel</name>
     <message>
-        <location filename="../transactiontablemodel.cpp" line="+247"/>
+        <location filename="../transactiontablemodel.cpp" line="+246"/>
         <source>Date</source>
         <translation>Date</translation>
     </message>
@@ -4534,7 +4566,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>PrivateSend</translation>
     </message>
     <message>
-        <location line="+32"/>
+        <location line="+31"/>
         <source>watch-only</source>
         <translation>watch-only</translation>
     </message>
@@ -4544,7 +4576,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>(n/a)</translation>
     </message>
     <message>
-        <location line="+240"/>
+        <location line="+243"/>
         <source>(no label)</source>
         <translation>(no label)</translation>
     </message>
@@ -4570,11 +4602,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Whether or not this transaction was locked by InstantSend.</source>
-        <translation>Whether or not this transaction was locked by InstantSend.</translation>
-    </message>
-    <message>
-        <location line="+2"/>
         <source>User-defined intent/purpose of the transaction.</source>
         <translation>User-defined intent/purpose of the transaction.</translation>
     </message>
@@ -4587,24 +4614,13 @@ https://www.transifex.com/projects/p/ctp/</translation>
 <context>
     <name>TransactionView</name>
     <message>
-        <location filename="../transactionview.cpp" line="+70"/>
-        <location line="+11"/>
+        <location filename="../transactionview.cpp" line="+73"/>
         <location line="+17"/>
         <source>All</source>
         <translation>All</translation>
     </message>
     <message>
-        <location line="-27"/>
-        <source>Locked by InstantSend</source>
-        <translation>Locked by InstantSend</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Not locked by InstantSend</source>
-        <translation>Not locked by InstantSend</translation>
-    </message>
-    <message>
-        <location line="+10"/>
+        <location line="-16"/>
         <source>Today</source>
         <translation>Today</translation>
     </message>
@@ -4744,12 +4760,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Show transaction details</translation>
     </message>
     <message>
-        <location line="+1"/>
-        <source>Show address QR code</source>
-        <translation>Show address QR code</translation>
-    </message>
-    <message>
-        <location line="+223"/>
+        <location line="+211"/>
         <source>Export Transaction History</source>
         <translation>Export Transaction History</translation>
     </message>
@@ -4814,12 +4825,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>The transaction history was successfully saved to %1.</translation>
     </message>
     <message>
-        <location line="+143"/>
-        <source>QR code</source>
-        <translation>QR code</translation>
-    </message>
-    <message>
-        <location line="+43"/>
+        <location line="+169"/>
         <source>Range:</source>
         <translation>Range:</translation>
     </message>
@@ -4848,16 +4854,16 @@ https://www.transifex.com/projects/p/ctp/</translation>
 <context>
     <name>WalletModel</name>
     <message>
-        <location filename="../walletmodel.cpp" line="+300"/>
-        <location line="+31"/>
+        <location filename="../walletmodel.cpp" line="+311"/>
+        <location line="+12"/>
         <location line="+5"/>
         <location line="+11"/>
         <source>Send Coins</source>
         <translation>Send Coins</translation>
     </message>
     <message>
-        <location line="-47"/>
-        <location line="+31"/>
+        <location line="-28"/>
+        <location line="+12"/>
         <source>InstantSend doesn&apos;t support sending values that high yet. Transactions are currently limited to %1 CTP.</source>
         <translation>InstantSend doesn&apos;t support sending values that high yet. Transactions are currently limited to %1 CTP.</translation>
     </message>
@@ -4885,7 +4891,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Selected amount:</translation>
     </message>
     <message>
-        <location line="+240"/>
+        <location line="+231"/>
         <source>Backup Wallet</source>
         <translation>Backup Wallet</translation>
     </message>
@@ -4923,7 +4929,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Bind to given address and always listen on it. Use [host]:port notation for IPv6</translation>
     </message>
     <message>
-        <location line="+54"/>
+        <location line="+46"/>
         <source>Error: Listening for incoming connections failed (listen returned error %s)</source>
         <translation>Error: Listening for incoming connections failed (listen returned error %s)</translation>
     </message>
@@ -4948,7 +4954,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Name to construct url for KeePass entry that stores the wallet passphrase</translation>
     </message>
     <message>
-        <location line="+51"/>
+        <location line="+48"/>
         <source>Set maximum size of high-priority/low-fee transactions in bytes (default: %d)</source>
         <translation>Set maximum size of high-priority/low-fee transactions in bytes (default: %d)</translation>
     </message>
@@ -4963,7 +4969,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>This is a pre-release test build - use at your own risk - do not use for mining or merchant applications</translation>
     </message>
     <message>
-        <location line="+65"/>
+        <location line="+70"/>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
         <translation>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</translation>
     </message>
@@ -4973,7 +4979,12 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Warning: We do not appear to fully agree with our peers! You may need to upgrade, or other nodes may need to upgrade.</translation>
     </message>
     <message>
-        <location line="+31"/>
+        <location line="+11"/>
+        <source>You must specify a masternodeprivkey in the configuration. Please see documentation for help.</source>
+        <translation>You must specify a masternodeprivkey in the configuration. Please see documentation for help.</translation>
+    </message>
+    <message>
+        <location line="+21"/>
         <source>Accept command line and JSON-RPC commands</source>
         <translation>Accept command line and JSON-RPC commands</translation>
     </message>
@@ -5028,7 +5039,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Corrupted block database detected</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+2"/>
         <source>Debugging/Testing options:</source>
         <translation>Debugging/Testing options:</translation>
     </message>
@@ -5048,7 +5059,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Done loading</translation>
     </message>
     <message>
-        <location line="+11"/>
+        <location line="+12"/>
         <source>Entries are full.</source>
         <translation>Entries are full.</translation>
     </message>
@@ -5093,7 +5104,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Failed to listen on any port. Use -listen=0 if you want this.</translation>
     </message>
     <message>
-        <location line="-391"/>
+        <location line="-388"/>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</translation>
     </message>
@@ -5123,7 +5134,12 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Bind to given address and whitelist peers connecting to it. Use [host]:port notation for IPv6</translation>
     </message>
     <message>
-        <location line="+14"/>
+        <location line="+3"/>
+        <source>Bind to given address to listen for JSON-RPC connections. Use [host]:port notation for IPv6. This option can be specified multiple times (default: bind to all interfaces)</source>
+        <translation>Bind to given address to listen for JSON-RPC connections. Use [host]:port notation for IPv6. This option can be specified multiple times (default: bind to all interfaces)</translation>
+    </message>
+    <message>
+        <location line="+9"/>
         <source>Create new files with system default permissions, instead of umask 077 (only effective with disabled wallet functionality)</source>
         <translation>Create new files with system default permissions, instead of umask 077 (only effective with disabled wallet functionality)</translation>
     </message>
@@ -5133,17 +5149,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Delete all wallet transactions and only recover those parts of the blockchain through -rescan on startup</translation>
     </message>
     <message>
-        <location line="+20"/>
-        <source>Enable publish raw transactions of attempted InstantSend double spend in &lt;address&gt;</source>
-        <translation>Enable publish raw transactions of attempted InstantSend double spend in &lt;address&gt;</translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>Enable publish transaction hashes of attempted InstantSend double spend in &lt;address&gt;</source>
-        <translation>Enable publish transaction hashes of attempted InstantSend double spend in &lt;address&gt;</translation>
-    </message>
-    <message>
-        <location line="+6"/>
+        <location line="+23"/>
         <source>Error loading %s: You can&apos;t enable HD on a already existing non-HD wallet</source>
         <translation>Error loading %s: You can&apos;t enable HD on a already existing non-HD wallet</translation>
     </message>
@@ -5198,17 +5204,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Output debugging information (default: %u, supplying &lt;category&gt; is optional)</translation>
     </message>
     <message>
-        <location line="+5"/>
-        <source>Overrides minimum spork signers to change spork value. Only useful for regtest and devnet. Using this on mainnet or testnet will ban you.</source>
-        <translation>Overrides minimum spork signers to change spork value. Only useful for regtest and devnet. Using this on mainnet or testnet will ban you.</translation>
-    </message>
-    <message>
-        <location line="+90"/>
-        <source>Use N separate masternodes in parallel to mix funds (%u-%u, default: %u)</source>
-        <translation>Use N separate masternodes in parallel to mix funds (%u-%u, default: %u)</translation>
-    </message>
-    <message>
-        <location line="+7"/>
+        <location line="+97"/>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
         <translation>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</translation>
     </message>
@@ -5223,19 +5219,14 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>User defined seed for HD wallet (should be in hex). Only has effect during wallet creation/first start (default: randomly generated)</translation>
     </message>
     <message>
-        <location line="+33"/>
+        <location line="+40"/>
         <source>Whitelisted peers cannot be DoS banned and their transactions are always relayed, even if they are already in the mempool, useful e.g. for a gateway</source>
         <translation>Whitelisted peers cannot be DoS banned and their transactions are always relayed, even if they are already in the mempool, useful e.g. for a gateway</translation>
     </message>
     <message>
-        <location line="+8"/>
+        <location line="+11"/>
         <source>You need to rebuild the database using -reindex-chainstate to change -txindex</source>
         <translation>You need to rebuild the database using -reindex-chainstate to change -txindex</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>You should specify a masternodeblsprivkey in the configuration. Please see documentation for help.</source>
-        <translation>You should specify a masternodeblsprivkey in the configuration. Please see documentation for help.</translation>
     </message>
     <message>
         <location line="+6"/>
@@ -5243,12 +5234,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>(default: %s)</translation>
     </message>
     <message>
-        <location line="+7"/>
-        <source>-wallet parameter must only specify a filename (not a path)</source>
-        <translation>-wallet parameter must only specify a filename (not a path)</translation>
-    </message>
-    <message>
-        <location line="+3"/>
+        <location line="+10"/>
         <source>Accept public REST requests (default: %u)</source>
         <translation>Accept public REST requests (default: %u)</translation>
     </message>
@@ -5278,12 +5264,12 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Connect to KeePassHttp on port &lt;port&gt; (default: %u)</translation>
     </message>
     <message>
-        <location line="+18"/>
+        <location line="+19"/>
         <source>Enable the client to act as a masternode (0-1, default: %u)</source>
         <translation>Enable the client to act as a masternode (0-1, default: %u)</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+3"/>
         <source>Entry exceeds maximum size.</source>
         <translation>Entry exceeds maximum size.</translation>
     </message>
@@ -5308,7 +5294,12 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Failed to load masternode cache from</translation>
     </message>
     <message>
-        <location line="+4"/>
+        <location line="+1"/>
+        <source>Failed to load masternode payments cache from</source>
+        <translation>Failed to load masternode payments cache from</translation>
+    </message>
+    <message>
+        <location line="+5"/>
         <source>Found enough users, signing ( waiting %s )</source>
         <translation>Found enough users, signing ( waiting %s )</translation>
     </message>
@@ -5363,27 +5354,27 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Insufficient funds.</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+1"/>
+        <source>Invalid -onion address: &apos;%s&apos;</source>
+        <translation>Invalid -onion address: &apos;%s&apos;</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Invalid -proxy address: &apos;%s&apos;</source>
+        <translation>Invalid -proxy address: &apos;%s&apos;</translation>
+    </message>
+    <message>
+        <location line="+3"/>
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: &apos;%s&apos; (must be at least %s)</source>
         <translation>Invalid amount for -paytxfee=&lt;amount&gt;: &apos;%s&apos; (must be at least %s)</translation>
     </message>
     <message>
-        <location line="+2"/>
-        <source>Invalid masternodeblsprivkey. Please see documenation.</source>
-        <translation>Invalid masternodeblsprivkey. Please see documenation.</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Invalid minimum number of spork signers specified with -minsporkkeys</source>
-        <translation>Invalid minimum number of spork signers specified with -minsporkkeys</translation>
-    </message>
-    <message>
-        <location line="+9"/>
+        <location line="+12"/>
         <source>Keypool ran out, please call keypoolrefill first</source>
         <translation>Keypool ran out, please call keypoolrefill first</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+4"/>
         <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or testnet: %u)</source>
         <translation>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or testnet: %u)</translation>
     </message>
@@ -5408,12 +5399,22 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Loading masternode cache...</translation>
     </message>
     <message>
+        <location line="+1"/>
+        <source>Loading masternode payment cache...</source>
+        <translation>Loading masternode payment cache...</translation>
+    </message>
+    <message>
         <location line="+5"/>
         <source>Lock is already in place.</source>
         <translation>Lock is already in place.</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+1"/>
+        <source>Lock masternodes from masternode configuration file (default: %u)</source>
+        <translation>Lock masternodes from masternode configuration file (default: %u)</translation>
+    </message>
+    <message>
+        <location line="+6"/>
         <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: %u)</source>
         <translation>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: %u)</translation>
     </message>
@@ -5459,6 +5460,11 @@ https://www.transifex.com/projects/p/ctp/</translation>
     </message>
     <message>
         <location line="+3"/>
+        <source>Port: %d</source>
+        <translation>Port: %d</translation>
+    </message>
+    <message>
+        <location line="+1"/>
         <source>Prepend debug output with timestamp (default: %u)</source>
         <translation>Prepend debug output with timestamp (default: %u)</translation>
     </message>
@@ -5488,12 +5494,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Set key pool size to &lt;n&gt; (default: %u)</translation>
     </message>
     <message>
-        <location line="+2"/>
-        <source>Set the masternode BLS private key</source>
-        <translation>Set the masternode BLS private key</translation>
-    </message>
-    <message>
-        <location line="+1"/>
+        <location line="+3"/>
         <source>Set the number of threads to service RPC calls (default: %d)</source>
         <translation>Set the number of threads to service RPC calls (default: %d)</translation>
     </message>
@@ -5509,6 +5510,11 @@ https://www.transifex.com/projects/p/ctp/</translation>
     </message>
     <message>
         <location line="+2"/>
+        <source>Specify masternode configuration file (default: %s)</source>
+        <translation>Specify masternode configuration file (default: %s)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
         <source>Specify pid file (default: %s)</source>
         <translation>Specify pid file (default: %s)</translation>
     </message>
@@ -5518,9 +5524,24 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Spend unconfirmed change when sending transactions (default: %u)</translation>
     </message>
     <message>
-        <location line="+4"/>
+        <location line="+2"/>
+        <source>Submitted following entries to masternode: %u / %d</source>
+        <translation>Submitted following entries to masternode: %u / %d</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Submitted to masternode, waiting for more entries ( %u / %d ) %s</source>
+        <translation>Submitted to masternode, waiting for more entries ( %u / %d ) %s</translation>
+    </message>
+    <message>
+        <location line="+1"/>
         <source>Submitted to masternode, waiting in queue %s</source>
         <translation>Submitted to masternode, waiting in queue %s</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Synchroning blockchain...</source>
+        <translation>Synchroning blockchain...</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -5533,7 +5554,12 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Synchronization finished</translation>
     </message>
     <message>
-        <location line="+8"/>
+        <location line="+4"/>
+        <source>Synchronizing masternodes...</source>
+        <translation>Synchronizing masternodes...</translation>
+    </message>
+    <message>
+        <location line="+5"/>
         <source>This is not a Masternode.</source>
         <translation>This is not a Masternode.</translation>
     </message>
@@ -5546,11 +5572,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <location line="+1"/>
         <source>Too many %f denominations, removing.</source>
         <translation>Too many %f denominations, removing.</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Too many %f denominations, skipping.</source>
-        <translation>Too many %f denominations, skipping.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -5618,7 +5639,12 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Will retry...</translation>
     </message>
     <message>
-        <location line="-231"/>
+        <location line="-162"/>
+        <source>Invalid masternodeprivkey. Please see documenation.</source>
+        <translation>Invalid masternodeprivkey. Please see documenation.</translation>
+    </message>
+    <message>
+        <location line="-80"/>
         <source>Can&apos;t find random Masternode.</source>
         <translation>Can&apos;t find random Masternode.</translation>
     </message>
@@ -5628,9 +5654,19 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Can&apos;t mix while sync in progress.</translation>
     </message>
     <message>
-        <location line="+77"/>
+        <location line="+14"/>
+        <source>Could not parse masternode.conf</source>
+        <translation>Could not parse masternode.conf</translation>
+    </message>
+    <message>
+        <location line="+66"/>
         <source>Invalid netmask specified in -whitelist: &apos;%s&apos;</source>
         <translation>Invalid netmask specified in -whitelist: &apos;%s&apos;</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Invalid port detected in masternode.conf</source>
+        <translation>Invalid port detected in masternode.conf</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -5653,22 +5689,17 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Keep at most &lt;n&gt; unconnectable transactions in memory (default: %u)</translation>
     </message>
     <message>
-        <location line="-385"/>
+        <location line="-386"/>
         <source>Disable all Ctp specific functionality (Masternodes, PrivateSend, InstantSend, Governance) (0-1, default: %u)</source>
         <translation>Disable all Ctp specific functionality (Masternodes, PrivateSend, InstantSend, Governance) (0-1, default: %u)</translation>
     </message>
     <message>
-        <location line="-45"/>
+        <location line="-43"/>
         <source>%s file contains all private keys from this wallet. Do not share it with anyone!</source>
-        <translation>%s file contains all private keys from this wallet. Do not share it with anyone!</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+28"/>
-        <source>Bind to given address to listen for JSON-RPC connections. This option is ignored unless -rpcallowip is also passed. Port is optional and overrides -rpcport. Use [host]:port notation for IPv6. This option can be specified multiple times (default: 127.0.0.1 and ::1 i.e., localhost, or if -rpcallowip has been specified, 0.0.0.0 and :: i.e., all addresses)</source>
-        <translation>Bind to given address to listen for JSON-RPC connections. This option is ignored unless -rpcallowip is also passed. Port is optional and overrides -rpcport. Use [host]:port notation for IPv6. This option can be specified multiple times (default: 127.0.0.1 and ::1 i.e., localhost, or if -rpcallowip has been specified, 0.0.0.0 and :: i.e., all addresses)</translation>
-    </message>
-    <message>
-        <location line="+20"/>
+        <location line="+46"/>
         <source>Discover own IP addresses (default: 1 when listening and no -externalip or -proxy)</source>
         <translation>Discover own IP addresses (default: 1 when listening and no -externalip or -proxy)</translation>
     </message>
@@ -5688,7 +5719,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Enable multiple PrivateSend mixing sessions per block, experimental (0-1, default: %u)</translation>
     </message>
     <message>
-        <location line="+9"/>
+        <location line="+3"/>
         <source>Enable use of automated PrivateSend for funds stored in this wallet (0-1, default: %u)</source>
         <translation>Enable use of automated PrivateSend for funds stored in this wallet (0-1, default: %u)</translation>
     </message>
@@ -5700,7 +5731,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
     <message>
         <location line="+9"/>
         <source>Extra transactions to keep in memory for compact block reconstructions (default: %u)</source>
-        <translation>Extra transactions to keep in memory for compact block reconstructions (default: %u)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
@@ -5753,7 +5784,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Maintain at most &lt;n&gt; connections to peers (temporary service connections excluded) (default: %u)</translation>
     </message>
     <message>
-        <location line="+34"/>
+        <location line="+31"/>
         <source>PrivateSend uses exact denominated amounts to send funds, you might simply need to anonymize some more coins.</source>
         <translation>PrivateSend uses exact denominated amounts to send funds, you might simply need to anonymize some more coins.</translation>
     </message>
@@ -5805,7 +5836,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
     <message>
         <location line="+3"/>
         <source>Transaction index can&apos;t be disabled in full mode. Either start with -litemode command line switch or enable transaction index.</source>
-        <translation>Transaction index can&apos;t be disabled in full mode. Either start with -litemode command line switch or enable transaction index.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
@@ -5828,7 +5859,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Unsupported argument -whitelistalwaysrelay ignored, use -whitelistrelay and/or -whitelistforcerelay.</translation>
     </message>
     <message>
-        <location line="+8"/>
+        <location line="+6"/>
         <source>Use UPnP to map the listening port (default: 1 when listening and no -proxy)</source>
         <translation>Use UPnP to map the listening port (default: 1 when listening and no -proxy)</translation>
     </message>
@@ -5843,24 +5874,34 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Wallet is locked, can&apos;t replenish keypool! Automatic backups and mixing are disabled, please unlock your wallet to replenish keypool.</translation>
     </message>
     <message>
-        <location line="+9"/>
+        <location line="+16"/>
         <source>Warning: Unknown block versions being mined! It&apos;s possible unknown rules are in effect</source>
         <translation>Warning: Unknown block versions being mined! It&apos;s possible unknown rules are in effect</translation>
     </message>
     <message>
         <location line="+16"/>
         <source>You are starting in lite mode, all Ctp-specific functionality is disabled.</source>
-        <translation>You are starting in lite mode, all Ctp-specific functionality is disabled.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+5"/>
         <source>You need to rebuild the database using -reindex to go back to unpruned mode.  This will redownload the entire blockchain</source>
         <translation>You need to rebuild the database using -reindex to go back to unpruned mode.  This will redownload the entire blockchain</translation>
     </message>
     <message>
-        <location line="+12"/>
+        <location line="+8"/>
+        <source>(%d could be used only on mainnet)</source>
+        <translation>(%d could be used only on mainnet)</translation>
+    </message>
+    <message>
+        <location line="+2"/>
         <source>(default: %u)</source>
         <translation>(default: %u)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>(must be %d for mainnet)</source>
+        <translation>(must be %d for mainnet)</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -5868,7 +5909,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>-maxmempool must be at least %d MB</translation>
     </message>
     <message>
-        <location line="+4"/>
+        <location line="+3"/>
         <source>&lt;category&gt; can be:</source>
         <translation>&lt;category&gt; can be:</translation>
     </message>
@@ -5888,7 +5929,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Automatically create Tor hidden service (default: %d)</translation>
     </message>
     <message>
-        <location line="+21"/>
+        <location line="+22"/>
         <source>ERROR! Failed to create automatic backup</source>
         <translation>ERROR! Failed to create automatic backup</translation>
     </message>
@@ -5900,12 +5941,12 @@ https://www.transifex.com/projects/p/ctp/</translation>
     <message>
         <location line="+1"/>
         <source>Enable publish hash of governance objects (like proposals) in &lt;address&gt;</source>
-        <translation>Enable publish hash of governance objects (like proposals) in &lt;address&gt;</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Enable publish hash of governance votes in &lt;address&gt;</source>
-        <translation>Enable publish hash of governance votes in &lt;address&gt;</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
@@ -5933,7 +5974,12 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Enable publish raw transaction in &lt;address&gt;</translation>
     </message>
     <message>
-        <location line="+15"/>
+        <location line="+2"/>
+        <source>Enable transaction replacement in the memory pool (default: %u)</source>
+        <translation>Enable transaction replacement in the memory pool (default: %u)</translation>
+    </message>
+    <message>
+        <location line="+14"/>
         <source>Error: A fatal internal error occurred, see debug.log for details</source>
         <translation>Error: A fatal internal error occurred, see debug.log for details</translation>
     </message>
@@ -5955,12 +6001,17 @@ https://www.transifex.com/projects/p/ctp/</translation>
     <message>
         <location line="+3"/>
         <source>Failed to load InstantSend data cache from</source>
-        <translation>Failed to load InstantSend data cache from</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+4"/>
+        <location line="+5"/>
         <source>Failed to load sporks cache from</source>
-        <translation>Failed to load sporks cache from</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Failed to parse host:port string</source>
+        <translation>Failed to parse host:port string</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -5983,7 +6034,12 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Invalid amount for -fallbackfee=&lt;amount&gt;: &apos;%s&apos;</translation>
     </message>
     <message>
-        <location line="+12"/>
+        <location line="+2"/>
+        <source>Invalid input count.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
         <source>Keep the transaction memory pool below &lt;n&gt; megabytes (default: %u)</source>
         <translation>Keep the transaction memory pool below &lt;n&gt; megabytes (default: %u)</translation>
     </message>
@@ -5998,12 +6054,22 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Last successful PrivateSend action was too recent.</translation>
     </message>
     <message>
-        <location line="+3"/>
-        <source>Loading InstantSend data cache...</source>
-        <translation>Loading InstantSend data cache...</translation>
+        <location line="+1"/>
+        <source>Line: %d</source>
+        <translation>Line: %d</translation>
     </message>
     <message>
         <location line="+3"/>
+        <source>Loading InstantSend data cache...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Loading addresses...</source>
+        <translation>Loading addresses...</translation>
+    </message>
+    <message>
+        <location line="+2"/>
         <source>Loading block index...</source>
         <translation>Loading block index...</translation>
     </message>
@@ -6013,9 +6079,9 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Loading governance cache...</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+3"/>
         <source>Loading sporks cache...</source>
-        <translation>Loading sporks cache...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
@@ -6033,9 +6099,14 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Location of the auth cookie (default: data dir)</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+3"/>
         <source>Make the wallet broadcast transactions</source>
         <translation>Make the wallet broadcast transactions</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Masternode cache is empty, skipping payments and governance cache...</source>
+        <translation>Masternode cache is empty, skipping payments and governance cache...</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -6113,7 +6184,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Password for JSON-RPC connections</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+4"/>
         <source>Print version and exit</source>
         <translation>Print version and exit</translation>
     </message>
@@ -6158,22 +6229,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Rescan the block chain for missing wallet transactions on startup</translation>
     </message>
     <message>
-        <location line="+24"/>
-        <source>Submitted following entries to masternode: %u</source>
-        <translation>Submitted following entries to masternode: %u</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Submitted to masternode, waiting for more entries ( %u ) %s</source>
-        <translation>Submitted to masternode, waiting for more entries ( %u ) %s</translation>
-    </message>
-    <message>
-        <location line="+5"/>
-        <source>Synchronizing blockchain...</source>
-        <translation>Synchronizing blockchain...</translation>
-    </message>
-    <message>
-        <location line="+4"/>
+        <location line="+37"/>
         <source>The wallet will avoid paying less than the minimum relay fee.</source>
         <translation>The wallet will avoid paying less than the minimum relay fee.</translation>
     </message>
@@ -6188,7 +6244,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>This is the transaction fee you will pay if you send a transaction.</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+6"/>
         <source>Transaction amounts must not be negative</source>
         <translation>Transaction amounts must not be negative</translation>
     </message>
@@ -6205,7 +6261,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
     <message>
         <location line="+3"/>
         <source>Transaction too large</source>
-        <translation>Transaction too large</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
@@ -6235,7 +6291,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
     <message>
         <location line="+2"/>
         <source>Wallet is not initialized</source>
-        <translation>Wallet is not initialized</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
@@ -6260,7 +6316,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
     <message>
         <location line="+2"/>
         <source>You can not start a masternode in lite mode.</source>
-        <translation>You can not start a masternode in lite mode.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+4"/>
@@ -6278,12 +6334,12 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>see debug.log for details.</translation>
     </message>
     <message>
-        <location line="-100"/>
+        <location line="-102"/>
         <source>RPC server options:</source>
         <translation>RPC server options:</translation>
     </message>
     <message>
-        <location line="-486"/>
+        <location line="-490"/>
         <source>Ctp Core</source>
         <translation>Ctp Core</translation>
     </message>
@@ -6298,7 +6354,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Accept connections from outside (default: 1 if no -proxy or -connect/-noconnect)</translation>
     </message>
     <message>
-        <location line="+22"/>
+        <location line="+20"/>
         <source>Cannot obtain a lock on data directory %s. %s is probably already running.</source>
         <translation>Cannot obtain a lock on data directory %s. %s is probably already running.</translation>
     </message>
@@ -6313,7 +6369,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Distributed under the MIT software license, see the accompanying file %s or %s</translation>
     </message>
     <message>
-        <location line="+22"/>
+        <location line="+16"/>
         <source>Error reading %s! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
         <translation>Error reading %s! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</translation>
     </message>
@@ -6343,7 +6399,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Override spork address. Only useful for regtest and devnet. Using this on mainnet or testnet will ban you.</translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+3"/>
         <source>Please check that your computer&apos;s date and time are correct! If your clock is wrong, %s will not work properly.</source>
         <translation>Please check that your computer&apos;s date and time are correct! If your clock is wrong, %s will not work properly.</translation>
     </message>
@@ -6393,7 +6449,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Use N separate masternodes for each denominated input to mix funds (%u-%u, default: %u)</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+5"/>
         <source>Use hierarchical deterministic key generation (HD) after BIP39/BIP44. Only has effect during wallet creation/first start</source>
         <translation>Use hierarchical deterministic key generation (HD) after BIP39/BIP44. Only has effect during wallet creation/first start</translation>
     </message>
@@ -6413,7 +6469,17 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Wallet will not create transactions that violate mempool chain limits (default: %u)</translation>
     </message>
     <message>
-        <location line="+9"/>
+        <location line="+3"/>
+        <source>Warning: At least %d of %d masternodes are running on a newer software version. Please check latest releases, you might need to update too.</source>
+        <translation>Warning: At least %d of %d masternodes are running on a newer software version. Please check latest releases, you might need to update too.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Warning: Every masternode (out of %d known ones) is running on a newer software version. Please check latest releases, it&apos;s very likely that you missed a major/critical update.</source>
+        <translation>Warning: Every masternode (out of %d known ones) is running on a newer software version. Please check latest releases, it&apos;s very likely that you missed a major/critical update.</translation>
+    </message>
+    <message>
+        <location line="+10"/>
         <source>Warning: Wallet file corrupt, data salvaged! Original %s saved as %s in %s; if your balance or transactions are incorrect you should restore from a backup.</source>
         <translation>Warning: Wallet file corrupt, data salvaged! Original %s saved as %s in %s; if your balance or transactions are incorrect you should restore from a backup.</translation>
     </message>
@@ -6438,7 +6504,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>%s is set very high!</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+5"/>
         <source>(press q to shutdown and continue later)</source>
         <translation>(press q to shutdown and continue later)</translation>
     </message>
@@ -6458,7 +6524,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>-rpcport must be specified when -devnet and -server are specified</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+6"/>
         <source>Allow RFC1918 addresses to be relayed and connected to (default: %u)</source>
         <translation>Allow RFC1918 addresses to be relayed and connected to (default: %u)</translation>
     </message>
@@ -6483,7 +6549,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Copyright (C)</translation>
     </message>
     <message>
-        <location line="+20"/>
+        <location line="+22"/>
         <source>Error loading %s</source>
         <translation>Error loading %s</translation>
     </message>
@@ -6508,7 +6574,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Failed to find mixing queue to join</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+9"/>
         <source>Failed to start a new mixing queue</source>
         <translation>Failed to start a new mixing queue</translation>
     </message>
@@ -6518,27 +6584,12 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Initialization sanity check failed. %s is shutting down.</translation>
     </message>
     <message>
-        <location line="+4"/>
-        <source>Invalid -onion address or hostname: &apos;%s&apos;</source>
-        <translation>Invalid -onion address or hostname: &apos;%s&apos;</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Invalid -proxy address or hostname: &apos;%s&apos;</source>
-        <translation>Invalid -proxy address or hostname: &apos;%s&apos;</translation>
-    </message>
-    <message>
-        <location line="+1"/>
+        <location line="+6"/>
         <source>Invalid amount for -%s=&lt;amount&gt;: &apos;%s&apos;</source>
         <translation>Invalid amount for -%s=&lt;amount&gt;: &apos;%s&apos;</translation>
     </message>
     <message>
-        <location line="+3"/>
-        <source>Invalid characters in -wallet filename</source>
-        <translation>Invalid characters in -wallet filename</translation>
-    </message>
-    <message>
-        <location line="+5"/>
+        <location line="+8"/>
         <source>Invalid spork address specified with -sporkaddr</source>
         <translation>Invalid spork address specified with -sporkaddr</translation>
     </message>
@@ -6548,12 +6599,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Keep N CTP anonymized (%u-%u, default: %u)</translation>
     </message>
     <message>
-        <location line="+9"/>
-        <source>Loading P2P addresses...</source>
-        <translation>Loading P2P addresses...</translation>
-    </message>
-    <message>
-        <location line="+37"/>
+        <location line="+51"/>
         <source>Print this help message and exit</source>
         <translation>Print this help message and exit</translation>
     </message>
@@ -6613,7 +6659,12 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Set maximum block size in bytes (default: %d)</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+1"/>
+        <source>Set the masternode private key</source>
+        <translation>Set the masternode private key</translation>
+    </message>
+    <message>
+        <location line="+2"/>
         <source>Show all debugging options (usage: --help -help-debug)</source>
         <translation>Show all debugging options (usage: --help -help-debug)</translation>
     </message>
@@ -6633,7 +6684,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Specify data directory</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+3"/>
         <source>Specify wallet file (within data directory)</source>
         <translation>Specify wallet file (within data directory)</translation>
     </message>
@@ -6648,17 +6699,22 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Starting network threads...</translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+7"/>
         <source>Synchronization pending...</source>
         <translation>Synchronization pending...</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+1"/>
         <source>Synchronizing governance objects...</source>
         <translation>Synchronizing governance objects...</translation>
     </message>
     <message>
         <location line="+1"/>
+        <source>Synchronizing masternode payments...</source>
+        <translation>Synchronizing masternode payments...</translation>
+    </message>
+    <message>
+        <location line="+2"/>
         <source>The source code is available from %s.</source>
         <translation>The source code is available from %s.</translation>
     </message>
@@ -6673,7 +6729,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>This is experimental software.</translation>
     </message>
     <message>
-        <location line="+9"/>
+        <location line="+8"/>
         <source>Transaction amount too small</source>
         <translation>Transaction amount too small</translation>
     </message>

@@ -9,7 +9,6 @@
 #pragma once
 
 #include <immer/detail/util.hpp>
-#include <immer/detail/type_traits.hpp>
 #include <immer/detail/combine_standard_layout.hpp>
 
 #include <limits>
@@ -93,14 +92,12 @@ struct node
         }
     }
 
-    template <typename Iter, typename Sent,
-            std::enable_if_t
-            <detail::compatible_sentinel_v<Iter,Sent>, bool> = true>
-    static node_t* copy_n(size_t n, Iter first, Sent last)
+    template <typename Iter>
+    static node_t* copy_n(size_t n, Iter first, Iter last)
     {
         auto p = make_n(n);
         try {
-            uninitialized_copy(first, last, p->data());
+            std::uninitialized_copy(first, last, p->data());
             return p;
         } catch (...) {
             heap::deallocate(sizeof_n(n), p);

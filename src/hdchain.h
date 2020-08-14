@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2018 The Ctp Core developers
+// Copyright (c) 2014-2017 The Ctp Core developers
 // Distributed under the MIT software license, see the accompanying
 #ifndef CTP_HDCHAIN_H
 #define CTP_HDCHAIN_H

@@ -1,9 +1,11 @@
-// Copyright (c) 2014-2019 The Ctp Core developers
+// Copyright (c) 2014-2018 The Ctp Core developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #ifndef GOVERNANCE_H
 #define GOVERNANCE_H
+
+//#define ENABLE_CTP_DEBUG
 
 #include "bloom.h"
 #include "cachemap.h"
@@ -16,8 +18,6 @@
 #include "sync.h"
 #include "timedata.h"
 #include "util.h"
-
-#include "evo/deterministicmns.h"
 
 #include <univalue.h>
 
@@ -261,9 +261,6 @@ private:
 
     bool fRateChecksEnabled;
 
-    // used to check for changed voting keys
-    CDeterministicMNList lastMNListForVotingKeys;
-
     class ScopedLockBool
     {
         bool& ref;
@@ -299,8 +296,8 @@ public:
      */
     bool ConfirmInventoryRequest(const CInv& inv);
 
-    void SyncSingleObjVotes(CNode* pnode, const uint256& nProp, const CBloomFilter& filter, CConnman& connman);
-    void SyncObjects(CNode* pnode, CConnman& connman) const;
+    void SyncSingleObjAndItsVotes(CNode* pnode, const uint256& nProp, const CBloomFilter& filter, CConnman& connman);
+    void SyncAll(CNode* pnode, CConnman& connman) const;
 
     void ProcessMessage(CNode* pfrom, const std::string& strCommand, CDataStream& vRecv, CConnman& connman);
 
@@ -309,6 +306,7 @@ public:
     CGovernanceObject* FindGovernanceObject(const uint256& nHash);
 
     // These commands are only used in RPC
+    std::vector<CGovernanceVote> GetMatchingVotes(const uint256& nParentHash) const;
     std::vector<CGovernanceVote> GetCurrentVotes(const uint256& nParentHash, const COutPoint& mnCollateralOutpointFilter) const;
     std::vector<const CGovernanceObject*> GetAllNewerThan(int64_t nMoreThanTime) const;
 
@@ -342,11 +340,7 @@ public:
         LOCK(cs);
         std::string strVersion;
         if (ser_action.ForRead()) {
-            Clear();
             READWRITE(strVersion);
-            if (strVersion != SERIALIZATION_VERSION_STRING) {
-                return;
-            }
         } else {
             strVersion = SERIALIZATION_VERSION_STRING;
             READWRITE(strVersion);
@@ -357,7 +351,10 @@ public:
         READWRITE(cmmapOrphanVotes);
         READWRITE(mapObjects);
         READWRITE(mapLastMasternodeObject);
-        READWRITE(lastMNListForVotingKeys);
+        if (ser_action.ForRead() && (strVersion != SERIALIZATION_VERSION_STRING)) {
+            Clear();
+            return;
+        }
     }
 
     void UpdatedBlockTip(const CBlockIndex* pindex, CConnman& connman);
@@ -451,9 +448,6 @@ private:
     void RequestOrphanObjects(CConnman& connman);
 
     void CleanOrphanObjects();
-
-    void RemoveInvalidVotes();
-
 };
 
 #endif

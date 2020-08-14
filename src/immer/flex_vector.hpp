@@ -89,20 +89,18 @@ public:
     flex_vector() = default;
 
     /*!
-     * Constructs a flex_vector containing the elements in `values`.
+     * Constructs a vector containing the elements in `values`.
      */
     flex_vector(std::initializer_list<T> values)
         : impl_{impl_t::from_initializer_list(values)}
     {}
 
     /*!
-     * Constructs a flex_vector containing the elements in the range
-     * defined by the input iterator `first` and range sentinel `last`.
+     * Constructs a vector containing the elements in the range
+     * defined by the input iterators `first` and `last`.
      */
-    template <typename Iter, typename Sent,
-              std::enable_if_t
-              <detail::compatible_sentinel_v<Iter, Sent>, bool> = true>
-    flex_vector(Iter first, Sent last)
+    template <typename Iter>
+    flex_vector(Iter first, Iter last)
         : impl_{impl_t::from_range(first, last)}
     {}
 
@@ -443,8 +441,8 @@ public:
     const impl_t& impl() const { return impl_; }
 
 #if IMMER_DEBUG_PRINT
-    void debug_print(std::ostream& out=std::cerr) const
-    { impl_.debug_print(out); }
+    void debug_print() const
+    { impl_.debug_print(); }
 #endif
 
 private:
@@ -496,7 +494,7 @@ private:
     static flex_vector concat_move(std::false_type, const flex_vector& l, const flex_vector& r)
     { return l.impl_.concat(r.impl_); }
 
-    impl_t impl_ = impl_t::empty();
+    impl_t impl_ = impl_t::empty;
 };
 
 } // namespace immer

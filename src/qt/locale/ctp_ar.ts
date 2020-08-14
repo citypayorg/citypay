@@ -3,7 +3,7 @@
     <name>AddressBookPage</name>
     <message>
         <source>Right-click to edit address or label</source>
-        <translation>انقر بالزر الايمن لتعديل العنوان</translation>
+        <translation>انقر بالزر الايمن لتعديل العنوان </translation>
     </message>
     <message>
         <source>Create a new address</source>
@@ -43,7 +43,7 @@
     </message>
     <message>
         <source>Choose the address to send coins to</source>
-        <translation>اختر العنوان الذي إرسال له العملات </translation>
+        <translation>اختر العنوان الذي سترسل له العملات </translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
@@ -55,7 +55,7 @@
     </message>
     <message>
         <source>Sending addresses</source>
-        <translation>عناوين إرسال </translation>
+        <translation>عناوين الإرسال </translation>
     </message>
     <message>
         <source>Receiving addresses</source>
@@ -79,7 +79,7 @@
     </message>
     <message>
         <source>&amp;Edit</source>
-        <translation>تعديل </translation>
+        <translation>تعديل</translation>
     </message>
     <message>
         <source>Export Address List</source>
@@ -189,7 +189,7 @@
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. Previous backups of the unencrypted wallet file contain the same HD seed and still have full access to all your funds just like the new, encrypted wallet.</source>
-        <translation>مهم:يجب استبدال أي نسخ احتياطية سابقة قمت بها من ملف المحفظة ملف المحفظة المشفر حديثًا. تحتوي النسخ الاحتياطية السابقة ملف المحفظة غير المشفرة على نفس البذرة عالية الدقة ، ولا تزال تتمتع بالوصول الكامل إلى جميع أموالك مثل المحفظة الجديدة المشفرة.</translation>
+        <translation>مهم:يجب استبدال أي نسخ احتياطية سابقة قمت بها من ملف المحفظة بملف المحفظة المشفر حديثًا. تحتوي النسخ الاحتياطية السابقة لملف المحفظة غير المشفرة على نفس البذرة عالية الدقة ، ولا تزال تتمتع بالوصول الكامل إلى جميع أموالك مثل المحفظة الجديدة المشفرة.</translation>
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
@@ -263,15 +263,15 @@
     </message>
     <message>
         <source>Show general overview of wallet</source>
-        <translation>إظهار نظرة عموما على المحفظة</translation>
+        <translation>إظهار نظرة عامة على المحفظة</translation>
     </message>
     <message>
         <source>&amp;Send</source>
-        <translation>إرسال</translation>
+        <translation>ارسل</translation>
     </message>
     <message>
         <source>Send coins to a Ctp address</source>
-        <translation>إرسال عملات الى عنوان داش</translation>
+        <translation>ارسل عملات الى عنوان داش</translation>
     </message>
     <message>
         <source>&amp;Receive</source>
@@ -438,6 +438,14 @@
         <translation>افتح ملف التهيئة</translation>
     </message>
     <message>
+        <source>Open &amp;Masternode Configuration File</source>
+        <translation>فتح ملف تكوين العقدة الرئيسية</translation>
+    </message>
+    <message>
+        <source>Open Masternode configuration file</source>
+        <translation>افتح ملف تهيئة العقدة الرئيسية</translation>
+    </message>
+    <message>
         <source>Show Automatic &amp;Backups</source>
         <translation>عرض النسخ الاحتياطية التلقائية</translation>
     </message>
@@ -475,7 +483,7 @@
     </message>
     <message>
         <source>Show the %1 help message to get a list with possible Ctp command-line options</source>
-        <translation>عرض رسالة مساعدة%1 للحصول على قائمة مع خيارات سطر أوامر داش المحتملة</translation>
+        <translation>عرض رسالة المساعدة%1 للحصول على قائمة مع خيارات سطر أوامر داش المحتملة</translation>
     </message>
     <message>
         <source>%1 client</source>
@@ -495,11 +503,11 @@
     </message>
     <message>
         <source>&amp;Settings</source>
-        <translation>الإعدادات</translation>
+        <translation>الاعدادات</translation>
     </message>
     <message>
         <source>&amp;Tools</source>
-        <translation>الأدوات</translation>
+        <translation>أدوات</translation>
     </message>
     <message>
         <source>&amp;Help</source>
@@ -523,7 +531,7 @@
     </message>
     <message>
         <source>Synchronizing with network...</source>
-        <translation>التزامن مع الشبكة...</translation>
+        <translation>جار المزامنة مع الشبكة ...</translation>
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
@@ -642,6 +650,10 @@
 </context>
 <context>
     <name>ClientModel</name>
+    <message>
+        <source>Total: %1 (PS compatible: %2 / Enabled: %3)</source>
+        <translation>الإجمالي: %1 (متوافق مع بس: %2 / ممكن: %3)</translation>
+    </message>
     <message>
         <source>Network Alert</source>
         <translation>تنبيه الشبكة</translation>
@@ -780,10 +792,6 @@
     <message>
         <source>Please switch to "List mode" to use this function.</source>
         <translation>يرجى التبديل إلى "وضع قائمة" لاستخدام هذه الوظيفة.</translation>
-    </message>
-    <message>
-        <source>Non-anonymized input selected. &lt;b&gt;PrivateSend will be disabled.&lt;/b&gt;&lt;br&gt;&lt;br&gt;If you still want to use PrivateSend, please deselect all non-anonymized inputs first and then check the PrivateSend checkbox again.</source>
-        <translation>الإدخال غير المجهول المحدد. &lt;b&gt;سيتم تعطيل الإرسال المخفي . &lt;/b&gt;&lt;br&gt;&lt;br&gt;إذا كنت لا تزال ترغب في استخدام الإرسال المخفي ، فيرجى إلغاء تحديد كافة مدخلات غير المجهولة أولاً ثم تحقق من خانة الاختيار الإرسال المخفي مرة أخرى.</translation>
     </message>
     <message>
         <source>(%1 locked)</source>
@@ -952,17 +960,13 @@
     </message>
     <message>
         <source>Reset all settings changed in the GUI</source>
-        <translation>اعد تعديل جميع الإعدادات المتغيرة في GUI</translation>
+        <translation>اعد تعديل جميع النظم المتغيرة في GUI</translation>
     </message>
     <message>
         <source>PrivateSend information</source>
         <translation>معلومات الإرسال المخفي</translation>
     </message>
-    <message>
-        <source>&lt;h3&gt;PrivateSend Basics&lt;/h3&gt; PrivateSend gives you true financial privacy by obscuring the origins of your funds. All the Ctp in your wallet is comprised of different "inputs" which you can think of as separate, discrete coins.&lt;br&gt; PrivateSend uses an innovative process to mix your inputs with the inputs of two other people, without having your coins ever leave your wallet. You retain control of your money at all times.&lt;hr&gt; &lt;b&gt;The PrivateSend process works like this:&lt;/b&gt;&lt;ol type="1"&gt; &lt;li&gt;PrivateSend begins by breaking your transaction inputs down into standard denominations. These denominations are 0.001 CTP, 0.01 CTP, 0.1 CTP, 1 CTP and 10 CTP -- sort of like the paper money you use every day.&lt;/li&gt; &lt;li&gt;Your wallet then sends requests to specially configured software nodes on the network, called "masternodes." These masternodes are informed then that you are interested in mixing a certain denomination. No identifiable information is sent to the masternodes, so they never know "who" you are.&lt;/li&gt; &lt;li&gt;When two other people send similar messages, indicating that they wish to mix the same denomination, a mixing session begins. The masternode mixes up the inputs and instructs all three users' wallets to pay the now-transformed input back to themselves. Your wallet pays that denomination directly to itself, but in a different address (called a change address).&lt;/li&gt; &lt;li&gt;In order to fully obscure your funds, your wallet must repeat this process a number of times with each denomination. Each time the process is completed, it's called a "round." Each round of PrivateSend makes it exponentially more difficult to determine where your funds originated.&lt;/li&gt; &lt;li&gt;This mixing process happens in the background without any intervention on your part. When you wish to make a transaction, your funds will already be anonymized. No additional waiting is required.&lt;/li&gt; &lt;/ol&gt; &lt;hr&gt;&lt;b&gt;IMPORTANT:&lt;/b&gt; Your wallet only contains 1000 of these "change addresses." Every time a mixing event happens, up to 9 of your addresses are used up. This means those 1000 addresses last for about 100 mixing events. When 900 of them are used, your wallet must create more addresses. It can only do this, however, if you have automatic backups enabled.&lt;br&gt; Consequently, users who have backups disabled will also have PrivateSend disabled. &lt;hr&gt;For more information, see the &lt;a href="https://docs.citypay.org/en/latest/wallets/ctpcore/privatesend-instantsend.html"&gt;PrivateSend documentation&lt;/a&gt;.</source>
-        <translation>&lt;h3&gt;أساسيات الإرسال المخفي &lt;/h3&gt; يمنحك الإرسال المخفي الخصوصية المالية الحقيقية عن طريق حجب أصول أموالك. تتألف جميع داش في محفظتك من "مدخلات" مختلفة يمكنك التفكير فيها على أنها عملات معدنية منفصلة ومنفصلة. &lt;br&gt;يستخدم الإرسال المخفي عملية مبتكرة لخلط مدخلات الخاصة بك مع مدخلات شخصين آخرين ، دون أن تترك العملات المعدنية الخاصة بك من أي وقت مضى محفظتك. أنت تحتفظ بالسيطرة على أموالك في جميع الأوقات.&lt;hr&gt;  &lt;b&gt; تعمل عملية الإرسال المخفي على النحو التالي: &lt;/b&gt;&lt;ol type="1"&gt;&lt;li&gt;يبدأ الإرسال المخفي عن طريق كسر مدخلات الخاصة بالمعاملات إلى فئات قياسية. هذه الفئات هي 0.001 داش ، 0.01 داش ، 0.1 داش ، 1 داش و 10 داش - نوع من مثل النقود الورقية التي تستخدمها كل يوم. &lt;/li&gt;  عندئذٍ ترسل محفظتك طلبات إلى عقد برامج تم تكوينها خصيصًا على الشبكة ، تُسمى "ماسترنود". يتم إخبار هذه الألفاظ بأنك مهتم بخلط فئة معينة. يتم إرسال أي معلومات يمكن تحديدها إلى جميع ماسترنود ، لذلك لا يعرفون أبدا "من" أنت&lt;li&gt;  &lt;li&gt;  عندما يرسل شخصان آخران رسائل مشابهة ، تشير إلى أنهما يرغبان في خلط نفس المذهب ، تبدأ جلسة الخلط. يمزج متاسترنود يصل مدخلات ويكلف محافظ المستخدمين الثلاثة لدفع مدخلات تحولت الآن إلى أنفسهم. تدفع محفظتك تلك التسمية مباشرة لنفسها ، ولكن في عنوان مختلف (يسمى عنوان التغيير). &lt;li&gt;&lt;/li&gt;  من أجل حجب أموالك بشكل كامل ، يجب أن تكرر محفظتك هذه العملية عدة مرات مع كل فئة. في كل مرة يتم الانتهاء من العملية ، يطلق عليها "جولة". كل جولة من الإرسال المخفي تجعل من الصعب بشكل كبير تحديد المكان الذي نشأت فيه أموالك.&lt;/li&gt;  &lt;li&gt; تحدث عملية الاختلاط هذه في الخلفية دون أي تدخل من جانبك. عندما ترغب في إجراء معاملة ، ستكون أموالك مجهولة المصدر بالفعل. مطلوب أي انتظار إضافي. &lt;/li&gt;&lt;/ol&gt;&lt;hr&gt;&lt;b&gt;مهم &lt;/b&gt; تحتوي محفظتك فقط على 1000 من "عناوين التغيير" هذه. في كل مرة يحدث فيها حدث خلط ، يتم استخدام ما يصل إلى 9 عناوين من عناوينك. هذا يعني أن 1000 عنوان تدوم لحوالي 100 حدث خلط. عند استخدام 900 منهم ، يجب أن تنشئ محفظتك المزيد من العناوين. يمكن فقط القيام بذلك ، ومع ذلك ، إذا قمت بتمكين النسخ الاحتياطي التلقائي.&lt;br&gt; وبالتالي ، سيتم تعطيل الإرسال المخفي أيضًا للمستخدمين الذين لديهم نسخ احتياطية معطلة.&lt;hr&gt; لمزيد من المعلومات ، راجع&lt;a href="https://docs.citypay.org/en/latest/wallets/ctpcore/privatesend-instantsend.html"&gt; وثائق الإرسال المخفي &lt;/a&gt;</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>Intro</name>
     <message>
@@ -978,16 +982,8 @@
         <translation>بما انه هذه اول مرة لانطلاق هذا البرنامج, فيمكنك ان تختار اين سيخزن %1 بياناته</translation>
     </message>
     <message>
-        <source>When you click OK, %1 will begin to download and process the full %4 block chain (%2GB) starting with the earliest transactions in %3 when %4 initially launched.</source>
-        <translation>عند النقر على "موافق" ، سيبدأ %1 في تنزيل ومعالجة سلسلة الكتل %4 الكاملة (%2 جيجابايت) بدءًا من المعاملات الأقدم في %3 عند تشغيل %4 في البداية.</translation>
-    </message>
-    <message>
-        <source>This initial synchronisation is very demanding, and may expose hardware problems with your computer that had previously gone unnoticed. Each time you run %1, it will continue downloading where it left off.</source>
-        <translation>تُعد هذه المزامنة الأولية أمرًا شاقًا للغاية، وقد تعرض جهاز الكمبيوتر الخاص بك للمشاكل الذي لم يلاحظها أحد سابقًا. في كل مرة تقوم فيها بتشغيل %1، سيتابع التحميل من حيث تم التوقف.</translation>
-    </message>
-    <message>
-        <source>If you have chosen to limit block chain storage (pruning), the historical data must still be downloaded and processed, but will be deleted afterward to keep your disk usage low.</source>
-        <translation>إذا كنت قد اخترت تقييد تخزين سلسلة الكتل (التجريد)، فيجب تحميل البيانات القديمة ومعالجتها، ولكن سيتم حذفها بعد ذلك للحفاظ على انخفاض استخدام القرص.</translation>
+        <source>%1 will download and store a copy of the Ctp block chain. At least %2GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>سيعمل%1 على تنزيل نسخة من سلسلة كتلة داش وتخزينها. سيتم تخزين ما لا يقل عن %2 جيغابايت من البيانات في هذا الدليل ، وسيزداد بمرور الوقت. سيتم أيضًا تخزين المحفظة في هذا الدليل.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -996,22 +992,6 @@
     <message>
         <source>Use a custom data directory:</source>
         <translation>استخدام دليل بيانات مخصص:</translation>
-    </message>
-    <message>
-        <source>At least %1 GB of data will be stored in this directory, and it will grow over time.</source>
-        <translation>سيتم تخزين %1 جيجابايت على الأقل من البيانات في هذا الدليل، وستنمو مع الوقت.</translation>
-    </message>
-    <message>
-        <source>Approximately %1 GB of data will be stored in this directory.</source>
-        <translation>سيتم تخزين %1 جيجابايت تقريباً من البيانات في هذا الدليل.</translation>
-    </message>
-    <message>
-        <source>%1 will download and store a copy of the Ctp block chain.</source>
-        <translation>سيقوم %1 بتنزيل نسخة من سلسلة كتل بتكوين وتخزينها.</translation>
-    </message>
-    <message>
-        <source>The wallet will also be stored in this directory.</source>
-        <translation>سوف يتم تخزين المحفظة في هذا الدليل.</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1023,13 +1003,9 @@
     </message>
     <message>
         <source>%1 GB of free space available</source>
-        <translation>يتوفر %1 جيغابايت من المساحة متاح</translation>
+        <translation>يتوفر %1 جيغابايت من المساحة المتاحة</translation>
     </message>
-    <message>
-        <source>(of %1 GB needed)</source>
-        <translation>(على %1 جيغابايت محتاجة)</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>MasternodeList</name>
     <message>
@@ -1037,20 +1013,76 @@
         <translation>نمودج</translation>
     </message>
     <message>
+        <source>My Masternodes</source>
+        <translation>ماسترنود حقي</translation>
+    </message>
+    <message>
+        <source>Note: Status of your masternodes in local wallet can potentially be slightly incorrect.&lt;br /&gt;Always wait for wallet to sync additional data and then double check from another node&lt;br /&gt;if your masternode should be running but you still do not see "ENABLED" in "Status" field.</source>
+        <translation>ملاحظة: من المحتمل أن تكون حالة رموزك في المحفظة المحلية غير صحيحة بعض الشيء.&lt;br /&gt;انتظر دائما للمحفظة لمزامنة بيانات إضافية ومن ثم تحقق مرة أخرى من عقدة أخرى&lt;br /&gt; إذا كان يجب تشغيل ماسترنود الخاص بك ولكنك لا تزال لا ترى "متاحة" في حقل "الحالة".</translation>
+    </message>
+    <message>
+        <source>Alias</source>
+        <translation>الاسم المستعار</translation>
+    </message>
+    <message>
         <source>Address</source>
         <translation>عنوان</translation>
+    </message>
+    <message>
+        <source>Protocol</source>
+        <translation>بروتوكول</translation>
     </message>
     <message>
         <source>Status</source>
         <translation>الحالة.</translation>
     </message>
     <message>
+        <source>Active</source>
+        <translation>نشيط</translation>
+    </message>
+    <message>
+        <source>Last Seen</source>
+        <translation>آخر زيارة</translation>
+    </message>
+    <message>
         <source>Payee</source>
         <translation>المستفيد</translation>
     </message>
     <message>
+        <source>S&amp;tart alias</source>
+        <translation>بدأ الإسم المستعار</translation>
+    </message>
+    <message>
+        <source>Start &amp;all</source>
+        <translation>بدأ الكل</translation>
+    </message>
+    <message>
+        <source>Start &amp;MISSING</source>
+        <translation>بدأ المفقود</translation>
+    </message>
+    <message>
+        <source>&amp;Update status</source>
+        <translation>تحديث الحالة</translation>
+    </message>
+    <message>
+        <source>Show additional Masternode information</source>
+        <translation>عرض معلومات ماسترنود إضافية</translation>
+    </message>
+    <message>
+        <source>Show &amp;Info...</source>
+        <translation>إظهار المعلومات</translation>
+    </message>
+    <message>
+        <source>Status will be updated automatically in (sec):</source>
+        <translation>سيتم تحديث الحالة تلقائيا خلال (تواني):</translation>
+    </message>
+    <message>
         <source>0</source>
         <translation>0</translation>
+    </message>
+    <message>
+        <source>All Masternodes</source>
+        <translation>جميع ماسترنود</translation>
     </message>
     <message>
         <source>Filter List:</source>
@@ -1065,68 +1097,72 @@
         <translation>عدد نود</translation>
     </message>
     <message>
-        <source>DIP3 Masternodes</source>
-        <translation>DIP3 ماسترنود</translation>
+        <source>Start alias</source>
+        <translation>بدأ الإسم المستعار</translation>
     </message>
     <message>
-        <source>PoSe Score</source>
-        <translation>نقاط PoSe</translation>
+        <source>Confirm masternode start</source>
+        <translation>تأكيد بداية ماسترنود</translation>
     </message>
     <message>
-        <source>Registered</source>
-        <translation>مسجل</translation>
+        <source>Are you sure you want to start masternode %1?</source>
+        <translation>هل أنت متأكد أنك تريد بدء ماسترنود %1؟</translation>
     </message>
     <message>
-        <source>Last Paid</source>
-        <translation>آخر دفع</translation>
+        <source>Confirm all masternodes start</source>
+        <translation>تأكيد لبدأ كل ماسترنود</translation>
     </message>
     <message>
-        <source>Next Payment</source>
-        <translation>الدفع المقبل</translation>
+        <source>Are you sure you want to start ALL masternodes?</source>
+        <translation>هل أنت متأكد أنك تريد أن تبدأ جميع ماسترنود؟</translation>
     </message>
     <message>
-        <source>Operator Reward</source>
-        <translation>مكافأة المشغل</translation>
+        <source>Command is not available right now</source>
+        <translation>الأمر غير متوفر الآن</translation>
     </message>
     <message>
-        <source>Copy ProTx Hash</source>
-        <translation>نسخ ProTx Hash</translation>
+        <source>You can't use this command until masternode list is synced</source>
+        <translation>لا يمكنك استخدام هذا الأمر حتى تتم مزامنة قائمة ماسترنود</translation>
     </message>
     <message>
-        <source>Copy Collateral Outpoint</source>
-        <translation>نسخ نقطة خارجية</translation>
+        <source>Confirm missing masternodes start</source>
+        <translation>تأكيد ماسترنود في عداد المفقودين تبدأ</translation>
     </message>
     <message>
-        <source>ENABLED</source>
-        <translation>مفعل</translation>
+        <source>Are you sure you want to start MISSING masternodes?</source>
+        <translation>هل أنت متأكد أنك تريد أن تبدأ ماسترنود مفقود؟</translation>
     </message>
     <message>
-        <source>POSE_BANNED</source>
-        <translation>POSE_BANNED</translation>
+        <source>Additional information for Masternode %1</source>
+        <translation>معلومات إضافية عن ماسترنود %1</translation>
     </message>
     <message>
-        <source>UNKNOWN</source>
-        <translation>غير مغروف</translation>
+        <source>Masternode Private Key</source>
+        <translation>مفتاح الخاص لماسترنود</translation>
     </message>
     <message>
-        <source>to %1</source>
-        <translation>%1 إلى </translation>
+        <source>Private Key</source>
+        <translation>مفتاح سري</translation>
     </message>
     <message>
-        <source>to UNKNOWN</source>
-        <translation>إلى غير معرف</translation>
+        <source>Collateral</source>
+        <translation>جانبية</translation>
     </message>
     <message>
-        <source>but not claimed</source>
-        <translation>ولكن لم تطالب</translation>
+        <source>IP</source>
+        <translation>IP</translation>
     </message>
     <message>
-        <source>NONE</source>
-        <translation>لا شيء</translation>
+        <source>Version</source>
+        <translation>الإصدار</translation>
     </message>
     <message>
-        <source>Additional information for DIP3 Masternode %1</source>
-        <translation>معلومات إضافية عن DIP3 ماسترنود %1</translation>
+        <source>Unknown</source>
+        <translation>غير معرف</translation>
+    </message>
+    <message>
+        <source>Sentinel</source>
+        <translation>الحارس</translation>
     </message>
 </context>
 <context>
@@ -1243,7 +1279,7 @@
     </message>
     <message>
         <source>Show Masternodes Tab</source>
-        <translation>إضهار شريط ماسترنود</translation>
+        <translation>إظهار جدول ماسترنود</translation>
     </message>
     <message>
         <source>Show additional information and buttons for PrivateSend on overview screen.</source>
@@ -1267,7 +1303,7 @@
     </message>
     <message>
         <source>Enable PrivateSend &amp;multi-session</source>
-        <translation>تمكين الإرسال المخفي متعددة الجلسة</translation>
+        <translation>تمكين الإرسال المخفي جلسة متعددة</translation>
     </message>
     <message>
         <source>If you disable the spending of unconfirmed change, the change from a transaction&lt;br/&gt;cannot be used until that transaction has at least one confirmation.&lt;br/&gt;This also affects how your balance is computed.</source>
@@ -1275,7 +1311,7 @@
     </message>
     <message>
         <source>PrivateSend rounds to use</source>
-        <translation>الإرسال المخفي و جولات للاستخدام</translation>
+        <translation>جولات لإستعمال الإرسال المخفي</translation>
     </message>
     <message>
         <source>This amount acts as a threshold to turn off PrivateSend once it's reached.</source>
@@ -1307,7 +1343,7 @@
     </message>
     <message>
         <source>Third party URLs (e.g. a block explorer) that appear in the transactions tab as context menu items.&lt;br/&gt;%s in the URL is replaced by transaction hash. Multiple URLs are separated by vertical bar |.</source>
-        <translation>عناوين التابعة لجهات خارجية (مثل مستكشف كتلة) التي تظهر في علامة شريط المعاملات كعناصر قائمة السياق &lt;br/&gt; يتم استبدال %s في عنوان بتجزئة المعاملة. عناوين متعددة مفصولة بشريط عمودي.</translation>
+        <translation>عناوين التابعة لجهات خارجية (مثل مستكشف كتلة) التي تظهر في علامة تبويب المعاملات كعناصر قائمة السياق &lt;br/&gt; يتم استبدال %s في عنوان بتجزئة المعاملة. عناوين متعددة مفصولة بشريط عمودي.</translation>
     </message>
     <message>
         <source>Expert</source>
@@ -1331,19 +1367,11 @@
     </message>
     <message>
         <source>Enable coin &amp;control features</source>
-        <translation>تمكين ميزات التحكم في العملة</translation>
-    </message>
-    <message>
-        <source>Show system popups for PrivateSend mixing transactions&lt;br/&gt;just like for all other transaction types.</source>
-        <translation>إظهار النوافذ المنبثقة للنظام لـ الإرسال المخفي معاملات المزج &lt;br/&gt; تمامًا مثل جميع أنواع المعاملات الأخرى.</translation>
-    </message>
-    <message>
-        <source>Show popups for PrivateSend transactions</source>
-        <translation>إظهار النوافذ المنبثقة لمعاملات الإرسال المخفي</translation>
+        <translation>تفعيل ميزات التحكم في العملة</translation>
     </message>
     <message>
         <source>&amp;Spend unconfirmed change</source>
-        <translation>اقضي على تغيير غير مؤكد</translation>
+        <translation>دفع الفكة غير المؤكدة</translation>
     </message>
     <message>
         <source>&amp;Network</source>
@@ -1351,7 +1379,7 @@
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
-        <translation>ميناء الخريطة باستخدام UPnP</translation>
+        <translation>ربط المنفذ باستخدام UPnP</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1403,11 +1431,11 @@
     </message>
     <message>
         <source>&amp;Hide the icon from the system tray.</source>
-        <translation>إإخفاء الأيقونة من علبة النظام</translation>
+        <translation>إخفاء الرمز من علبة النظام</translation>
     </message>
     <message>
         <source>Hide tray icon</source>
-        <translation>إخفاء الأيقونة</translation>
+        <translation>رمز علبة اخفاء</translation>
     </message>
     <message>
         <source>Show only a tray icon after minimizing the window.</source>
@@ -1427,21 +1455,21 @@
     </message>
     <message>
         <source>User Interface &amp;language:</source>
-        <translation>لغة واجهة المستخدم:</translation>
+        <translation>واجهة المستخدم &amp;اللغة:</translation>
     </message>
     <message>
         <source>The user interface language can be set here. This setting will take effect after restarting %1.</source>
-        <translation>يمكن تعيين لغة واجهة للمستخدم هنا. سيتم تفعيل هذا الإعداد بعد إعادة تشغيل%1.</translation>
+        <translation>يمكن تعيين لغة واجهة المستخدم هنا. سيتم تفعيل هذا الإعداد بعد إعادة تشغيل%1.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
 https://www.transifex.com/projects/p/ctp/</source>
-        <translation>لغة مفقودة أو ترجمة غير مكتملة؟ مساعدة في المساهمة بالترجمات هنا:
+        <translation>لغة مفقودة أو ترجمة غير مكتملة؟ ساعد في المساهمة بالترجمات هنا:
 https://www.transifex.com/projects/p/ctp/</translation>
     </message>
     <message>
         <source>User Interface Theme:</source>
-        <translation>موضوع جهة التعامل للمستخدم:</translation>
+        <translation>موضوع واجهة المستخدم:</translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
@@ -1449,7 +1477,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>اختر وحدة التقسيم الفرعية الافتراضية للعرض في جهة التعامل وعند إرسال العملات.</translation>
+        <translation>اختر وحدة التقسيم الفرعية الافتراضية للعرض في الواجهة وعند إرسال العملات.</translation>
     </message>
     <message>
         <source>Decimal digits</source>
@@ -1520,7 +1548,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
     </message>
     <message>
         <source>Available:</source>
-        <translation>متاح</translation>
+        <translation>متوفر</translation>
     </message>
     <message>
         <source>Your current spendable balance</source>
@@ -1528,15 +1556,15 @@ https://www.transifex.com/projects/p/ctp/</translation>
     </message>
     <message>
         <source>Pending:</source>
-        <translation>في طور الإنجاز</translation>
+        <translation>معلق:</translation>
     </message>
     <message>
         <source>Total of transactions that have yet to be confirmed, and do not yet count toward the spendable balance</source>
-        <translation>المجموع المعاملات التي لم يتم تأكيدها بعد ولا تحتسب ضمن الرصيد القابل للانفاق</translation>
+        <translation>إجمالي المعاملات التي لم يتم تأكيدها بعد ولا تحتسب ضمن الرصيد القابل للانفاق</translation>
     </message>
     <message>
         <source>Immature:</source>
-        <translation>غير متاح</translation>
+        <translation>غير ناضجة</translation>
     </message>
     <message>
         <source>Mined balance that has not yet matured</source>
@@ -1560,11 +1588,11 @@ https://www.transifex.com/projects/p/ctp/</translation>
     </message>
     <message>
         <source>Your current total balance</source>
-        <translation>مجموع رصيدك الحالي</translation>
+        <translation>رصيدك الكلي الحالي</translation>
     </message>
     <message>
         <source>Current total balance in watch-only addresses</source>
-        <translation>مجموع الرصيد الحالي في العناوين المشاهدة فقط</translation>
+        <translation>الرصيد الإجمالي الحالي في العناوين المشاهدة فقط</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -1704,7 +1732,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
     </message>
     <message numerus="yes">
         <source>Denominated inputs have %5 of %n rounds on average</source>
-        <translation><numerusform>تبلغ قيمة المدخلات المقومة %5 من %n من الجولات في المتوسط</numerusform><numerusform>تبلغ قيمة المدخلات المقومة %5 من %n من الجولات في المتوسط</numerusform><numerusform>تبلغ قيمة المدخلات المقومة %5 من %n من الجولات في المتوسط</numerusform><numerusform>تبلغ قيمة المدخلات المقومة %5 من %n من الجولات في المتوسط</numerusform><numerusform>تبلغ قيمة المدخلات المقومة %5 من %n من الجولات في المتوسط</numerusform><numerusform>تبلغ قيمة مدخلات المقومة %5 من %n من الجولات في المتوسط</numerusform></translation>
+        <translation><numerusform>تبلغ قيمة المدخلات المقومة %5 من %n من الجولات في المتوسط</numerusform><numerusform>تبلغ قيمة المدخلات المقومة %5 من %n من الجولات في المتوسط</numerusform><numerusform>تبلغ قيمة المدخلات المقومة %5 من %n من الجولات في المتوسط</numerusform><numerusform>تبلغ قيمة المدخلات المقومة %5 من %n من الجولات في المتوسط</numerusform><numerusform>تبلغ قيمة المدخلات المقومة %5 من %n من الجولات في المتوسط</numerusform><numerusform>تبلغ قيمة المدخلات المقومة %5 من %n من الجولات في المتوسط</numerusform></translation>
     </message>
     <message>
         <source>keys left: %1</source>
@@ -1721,10 +1749,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
     <message>
         <source>We are about to create a new automatic backup for you, however &lt;span style='color:red;'&gt; you should always make sure you have backups saved in some safe place&lt;/span&gt;!</source>
         <translation>نحن على وشك إنشاء نسخة احتياطية تلقائية جديدة لك &lt;span style='color:red;'&gt;يجب عليك دائمًا التأكد من الاحتفاظ بنسخ احتياطية في مكان آمن &lt;/span&gt;!</translation>
-    </message>
-    <message>
-        <source>Note: You can turn this message off in options.</source>
-        <translation>ملاحظة: يمكنك إيقاف تشغيل هذه الرسالة.</translation>
     </message>
     <message>
         <source>WARNING! Something went wrong on automatic backup</source>
@@ -1757,12 +1781,16 @@ https://www.transifex.com/projects/p/ctp/</translation>
 </translation>
     </message>
     <message>
+        <source>N/A</source>
+        <translation>غير معروف</translation>
+    </message>
+    <message>
         <source>PrivateSend was successfully reset.</source>
         <translation>تم اعادة ضبط الإرسال المخفي بنجاح ..</translation>
     </message>
     <message>
         <source>If you don't want to see internal PrivateSend fees/transactions select "Most Common" as Type on the "Transactions" tab.</source>
-        <translation>إذا كنت لا ترغب في رؤية رسوم / معاملات الإرسال المخفي الداخلي حدد "الأكثر شيوعًا" كأنواع في علامة شريط "المعاملات".</translation>
+        <translation>إذا كنت لا ترغب في رؤية رسوم / معاملات الإرسال المخفي الداخلي حدد "الأكثر شيوعًا" كأنواع في علامة التبويب "المعاملات".</translation>
     </message>
     <message>
         <source>PrivateSend requires at least %1 to use.</source>
@@ -1886,8 +1914,16 @@ https://www.transifex.com/projects/p/ctp/</translation>
 <context>
     <name>QObject</name>
     <message>
+        <source>Ctp Core</source>
+        <translation>جوهر الداش</translation>
+    </message>
+    <message>
         <source>%1 didn't yet exit safely...</source>
         <translation>%1 لم يخرج بعد بأمان...</translation>
+    </message>
+    <message>
+        <source>Error reading masternode configuration file: %1</source>
+        <translation>خطأ في قراءة ملف تهيئة ماسترنود :%1</translation>
     </message>
     <message>
         <source>Amount</source>
@@ -2042,7 +2078,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
     </message>
     <message>
         <source>General</source>
-        <translation>عموما</translation>
+        <translation>عام</translation>
     </message>
     <message>
         <source>Name</source>
@@ -2126,7 +2162,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
     </message>
     <message>
         <source>Totals</source>
-        <translation>المجموع</translation>
+        <translation>المجاميع</translation>
     </message>
     <message>
         <source>Received</source>
@@ -2334,7 +2370,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
     </message>
     <message>
         <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
-        <translation>نوع &lt;b&gt;مساعدة&lt;/b&gt;للحصول على نظرة عامة على الأوامر متاح.</translation>
+        <translation>نوع &lt;b&gt;مساعدة&lt;/b&gt;للحصول على نظرة عامة على الأوامر المتاحة.</translation>
     </message>
     <message>
         <source>WARNING: Scammers have been active, telling users to type commands here, stealing their wallet contents. Do not use this console without fully understanding the ramification of a command.</source>
@@ -2606,7 +2642,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
     </message>
     <message>
         <source>Inputs...</source>
-        <translation>مدخلات...</translation>
+        <translation>المدخلات...</translation>
     </message>
     <message>
         <source>automatically selected</source>
@@ -2670,7 +2706,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
     </message>
     <message>
         <source>collapse fee-settings</source>
-        <translation>خفض الإعدادات الرسوم</translation>
+        <translation>خفض اعدادات الرسوم</translation>
     </message>
     <message>
         <source>Confirmation time target:</source>
@@ -2690,7 +2726,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
     </message>
     <message>
         <source>If the custom fee is set to 1000 duffs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 duffs in fee,&lt;br /&gt;while "total at least" pays 1000 duffs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>إذا تم تعيين الرسوم الجمركية على 1000 دافع وكانت المعاملة 250 بايتًا فقط ، فإن "كل كيلوبايت" يدفع 250 جنيهًا فقط رسومًا ، &lt;br /&gt; بينما "المجموع على الأقل" يدفع 1000 دفين. لمعاملات أكبر من كيلوبايت تدفع كل من كيلوبايت.</translation>
+        <translation>إذا تم تعيين الرسوم الجمركية على 1000 دافع وكانت المعاملة 250 بايتًا فقط ، فإن "كل كيلوبايت" يدفع 250 جنيهًا فقط رسومًا ، &lt;br /&gt; بينما "الإجمالي على الأقل" يدفع 1000 دفين. لمعاملات أكبر من كيلوبايت تدفع كل من كيلوبايت.</translation>
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for ctp transactions than the network can process.</source>
@@ -2706,7 +2742,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
     </message>
     <message>
         <source>total at least</source>
-        <translation>المجموع على الأقل</translation>
+        <translation>مجموع على الأقل</translation>
     </message>
     <message>
         <source>(read the tooltip)</source>
@@ -2802,7 +2838,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
     </message>
     <message>
         <source>any available funds (not anonymous)</source>
-        <translation>أي أموال متاح (غير مجهولة)</translation>
+        <translation>أي أموال متاحة (غير مجهولة)</translation>
     </message>
     <message>
         <source>and InstantSend</source>
@@ -2822,7 +2858,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
     </message>
     <message>
         <source>Total Amount = &lt;b&gt;%1&lt;/b&gt;&lt;br /&gt;= %2</source>
-        <translation>المجموع المبلغ = &lt;b&gt; %1&lt;/b&gt; &lt;br /&gt; = %2</translation>
+        <translation>مجمود المبلغ = &lt;b&gt; %1&lt;/b&gt; &lt;br /&gt; = %2</translation>
     </message>
     <message>
         <source>&lt;b&gt;(%1 of %2 entries displayed)&lt;/b&gt;</source>
@@ -3110,7 +3146,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
     </message>
     <message>
         <source>Private key for the entered address is not available.</source>
-        <translation>المفتاح الخاص للعنوان المدخل غير متاح.</translation>
+        <translation>المفتاح الخاص للعنوان المدخل غير موجود.</translation>
     </message>
     <message>
         <source>Message signing failed.</source>
@@ -3279,11 +3315,11 @@ https://www.transifex.com/projects/p/ctp/</translation>
     </message>
     <message>
         <source>Total debit</source>
-        <translation>المجموع الخصم</translation>
+        <translation>إجمالي الخصم</translation>
     </message>
     <message>
         <source>Total credit</source>
-        <translation>المجموع الرصيد</translation>
+        <translation>إجمالي الرصيد</translation>
     </message>
     <message>
         <source>Transaction fee</source>
@@ -3311,7 +3347,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
     </message>
     <message>
         <source>Transaction total size</source>
-        <translation>المجموع الكلي للمعاملات</translation>
+        <translation>الحجم الكلي للمعاملات</translation>
     </message>
     <message>
         <source>Merchant</source>
@@ -3331,7 +3367,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
     </message>
     <message>
         <source>Inputs</source>
-        <translation>مدخلات</translation>
+        <translation>المدخلات</translation>
     </message>
     <message>
         <source>Amount</source>
@@ -3405,7 +3441,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
     </message>
     <message>
         <source>Immature (%1 confirmations, will be available after %2)</source>
-        <translation>غير متاح (تأكيدات %1 ، ستكون متوفرة بعد %2)</translation>
+        <translation>غير ناضجة (تأكيدات %1 ، ستكون متوفرة بعد %2)</translation>
     </message>
     <message>
         <source>This block was not received by any other nodes and will probably not be accepted!</source>
@@ -3449,7 +3485,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
     </message>
     <message>
         <source>PrivateSend Make Collateral Inputs</source>
-        <translation>الإرسال المخفي جعل مدخلات الجانبية</translation>
+        <translation>الإرسال المخفي جعل المدخلات الجانبية</translation>
     </message>
     <message>
         <source>PrivateSend Create Denominations</source>
@@ -3488,10 +3524,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>ما إذا كان العنوان المشاهدة فقط متضمنًا في هذه المعاملة أم لا.</translation>
     </message>
     <message>
-        <source>Whether or not this transaction was locked by InstantSend.</source>
-        <translation>ما إذا كانت هذه المعاملة مقفلة بواسطة الإرسال الفوري أم لا.</translation>
-    </message>
-    <message>
         <source>User-defined intent/purpose of the transaction.</source>
         <translation>هدف / غرض محدد من قبل المستخدم للمعاملات.</translation>
     </message>
@@ -3505,14 +3537,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
     <message>
         <source>All</source>
         <translation>الكل</translation>
-    </message>
-    <message>
-        <source>Locked by InstantSend</source>
-        <translation>مغلق من الإرسال الفوري</translation>
-    </message>
-    <message>
-        <source>Not locked by InstantSend</source>
-        <translation>غير مغلق من الإرسال الفوري</translation>
     </message>
     <message>
         <source>Today</source>
@@ -3556,7 +3580,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
     </message>
     <message>
         <source>PrivateSend Make Collateral Inputs</source>
-        <translation>الإرسال المخفي جعل مدخلات الجانبية</translation>
+        <translation>الإرسال المخفي جعل المدخلات الجانبية</translation>
     </message>
     <message>
         <source>PrivateSend Create Denominations</source>
@@ -3713,7 +3737,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
     </message>
     <message>
         <source>Used way too many inputs (&gt;%1) for this InstantSend transaction, fees could be huge.</source>
-        <translation>تستخدم طريقة إدخال مدخلات (&gt;%1) لهذه المعاملة الإرسال الفوري ، قد تكون الرسوم كبيرة</translation>
+        <translation>تستخدم طريقة إدخال كثيرة (&gt;%1) لهذه المعاملة الإرسال الفوري ، قد تكون الرسوم كبيرة</translation>
     </message>
 </context>
 <context>
@@ -3787,7 +3811,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
     </message>
     <message>
         <source>Set the number of script verification threads (%u to %d, 0 = auto, &lt;0 = leave that many cores free, default: %d)</source>
-        <translation>عدد مؤشرات التحقق من البرنامج النصي (%u إلى %d ، 0 = auto ، &lt;0 = ترك العديد من النوى خالية ، الافتراضي: %d)</translation>
+        <translation>تعيين عدد سلاسل عمليات التحقق من البرنامج النصي (%u إلى %d ، 0 = auto ، &lt;0 = ترك العديد من النوى خالية ، الافتراضي: %d)</translation>
     </message>
     <message>
         <source>This is a pre-release test build - use at your own risk - do not use for mining or merchant applications</source>
@@ -3800,6 +3824,10 @@ https://www.transifex.com/projects/p/ctp/</translation>
     <message>
         <source>Warning: We do not appear to fully agree with our peers! You may need to upgrade, or other nodes may need to upgrade.</source>
         <translation>تحذير: لا يبدو أننا نتفق تمامًا مع نظرائنا! قد تحتاج إلى الترقية ، أو قد تحتاج العقد الأخرى إلى الترقية.</translation>
+    </message>
+    <message>
+        <source>You must specify a masternodeprivkey in the configuration. Please see documentation for help.</source>
+        <translation>يجب عليك تحديد masternodeprivkey في التكوين. يرجى الاطلاع على الوثائق للمساعدة.</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>
@@ -3922,20 +3950,16 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>ربط العنوان المعطى وأقرانه في القائمة البيضاء بالاتصال به. استخدم [host]: تدوين المنفذ لـ IPv6</translation>
     </message>
     <message>
+        <source>Bind to given address to listen for JSON-RPC connections. Use [host]:port notation for IPv6. This option can be specified multiple times (default: bind to all interfaces)</source>
+        <translation>ربط عنوان معين للاستماع إلى اتصالات JSON-RPC. استخدم [host]: تدوين المنفذ لـ IPv6. يمكن تحديد هذا الخيار عدة مرات (افتراضي: ربط لجميع الواجهات)</translation>
+    </message>
+    <message>
         <source>Create new files with system default permissions, instead of umask 077 (only effective with disabled wallet functionality)</source>
         <translation>إنشاء ملفات جديدة بأذونات النظام الافتراضية ، بدلاً من umask 077 (فعال فقط مع وظيفة المحفظة المعطلة)</translation>
     </message>
     <message>
         <source>Delete all wallet transactions and only recover those parts of the blockchain through -rescan on startup</source>
         <translation>حذف جميع معاملات المحفظة واسترداد فقط تلك الأجزاء من سلسلة الكتل عبر -escan عند بدء التشغيل</translation>
-    </message>
-    <message>
-        <source>Enable publish raw transactions of attempted InstantSend double spend in &lt;address&gt;</source>
-        <translation>تمكين نشر المعاملات الأولية لمحاولات الإرسال الفوري للإنفاق الفوري في &lt;address&gt;</translation>
-    </message>
-    <message>
-        <source>Enable publish transaction hashes of attempted InstantSend double spend in &lt;address&gt;</source>
-        <translation>تمكين تجزئات عمليات النشر لمحاولة الإرسال الفوري ومضاعفة إنفاق فيها &lt;address&gt;</translation>
     </message>
     <message>
         <source>Error loading %s: You can't enable HD on a already existing non-HD wallet</source>
@@ -3978,14 +4002,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>عدد الثواني للاحتفاظ بسوء تصرف الأقران من إعادة الاتصال (الإعداد الافتراضي: %u)</translation>
     </message>
     <message>
-        <source>Overrides minimum spork signers to change spork value. Only useful for regtest and devnet. Using this on mainnet or testnet will ban you.</source>
-        <translation>يلغي الحد الأدنى من مواقع السبات لتغيير قيمة السِلك. مفيدة فقط ل regtest و devnet. استخدام هذا على mainnet أو testnet سيحظر لك.</translation>
-    </message>
-    <message>
-        <source>Use N separate masternodes in parallel to mix funds (%u-%u, default: %u)</source>
-        <translation>استخدم N ماسترنود منفصلة بالتوازي مع خلط الصناديق (%u-%u ، القيمة الافتراضية: %u)</translation>
-    </message>
-    <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
         <translation>استخدام وكيل SOCKS5 منفصل للوصول إلى الأقران عبر خدمات تور المخفية (القيمة الافتراضية: %s)</translation>
     </message>
@@ -4004,10 +4020,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
     <message>
         <source>You need to rebuild the database using -reindex-chainstate to change -txindex</source>
         <translation>تحتاج إلى إعادة بناء قاعدة البيانات باستخدام -reindex-chainstate لتغيير -txindex</translation>
-    </message>
-    <message>
-        <source>You should specify a masternodeblsprivkey in the configuration. Please see documentation for help.</source>
-        <translation>يجب عليك تحديد مفتاح ماسترنود في التكوين. يرجى الاطلاع على الوثائق للمساعدة.</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -4062,6 +4074,10 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>فشل تحميل ذاكرة التخزين المؤقتة من</translation>
     </message>
     <message>
+        <source>Failed to load masternode payments cache from</source>
+        <translation>أخفق تحميل ذاكرة التخزين المؤقت لمدفوعات ماسترنود من</translation>
+    </message>
+    <message>
         <source>Found enough users, signing ( waiting %s )</source>
         <translation>العثور على عدد كافٍ من المستخدمين ، والتوقيع (الانتظار %s)</translation>
     </message>
@@ -4106,16 +4122,16 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>رصيد غير كاف.</translation>
     </message>
     <message>
+        <source>Invalid -onion address: '%s'</source>
+        <translation>عنوان - صالح غير صالح: '%s'</translation>
+    </message>
+    <message>
+        <source>Invalid -proxy address: '%s'</source>
+        <translation>عنوان البروكسي غير صحيح : '%s'</translation>
+    </message>
+    <message>
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s' (must be at least %s)</source>
         <translation>مبلغ غير صالح لـ -paytxfee = : '%s' &lt;amount&gt; (يجب أن يكون على الأقل %s)</translation>
-    </message>
-    <message>
-        <source>Invalid masternodeblsprivkey. Please see documenation.</source>
-        <translation>غير صالحة ماسترنود. يرجى الاطلاع على الوثائق.</translation>
-    </message>
-    <message>
-        <source>Invalid minimum number of spork signers specified with -minsporkkeys</source>
-        <translation>الحد الأدنى لعدد مميّزي مواقع السبط المحدد </translation>
     </message>
     <message>
         <source>Keypool ran out, please call keypoolrefill first</source>
@@ -4142,8 +4158,16 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>جارٍ تحميل ذاكرة التخزين المؤقت في ماسترنود ...</translation>
     </message>
     <message>
+        <source>Loading masternode payment cache...</source>
+        <translation>جارٍ تحميل ذاكرة التخزين المؤقت للدفع ماسترنود ...</translation>
+    </message>
+    <message>
         <source>Lock is already in place.</source>
         <translation>قفل بالفعل في المكان.</translation>
+    </message>
+    <message>
+        <source>Lock masternodes from masternode configuration file (default: %u)</source>
+        <translation>قفل ماسترنود من ملف تهيئة ماسترنود (الإعداد الافتراضي: %u)</translation>
     </message>
     <message>
         <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: %u)</source>
@@ -4182,6 +4206,10 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>فقط الاتصال بالعقد في الشبكة &lt;net&gt;  (ipv4, ipv6 or onion)</translation>
     </message>
     <message>
+        <source>Port: %d</source>
+        <translation>Port: %d</translation>
+    </message>
+    <message>
         <source>Prepend debug output with timestamp (default: %u)</source>
         <translation>إعداد إخراج debug مع الطابع الزمني (الافتراضي: %u)</translation>
     </message>
@@ -4206,10 +4234,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>تعيين حجم تجمع مفتاح &lt;n&gt; (افتراضي: %u)</translation>
     </message>
     <message>
-        <source>Set the masternode BLS private key</source>
-        <translation>تعيين المفتاح الخاص ماسترنود الخاص</translation>
-    </message>
-    <message>
         <source>Set the number of threads to service RPC calls (default: %d)</source>
         <translation>تعيين عدد مؤشرات الترابط لخدمة المكالمات RPC (الافتراضي: %d)</translation>
     </message>
@@ -4222,6 +4246,10 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>تحديد مهلة الاتصال بالمللي ثانية (الحد الأدنى: 1 ، القيمة الافتراضية: %d)</translation>
     </message>
     <message>
+        <source>Specify masternode configuration file (default: %s)</source>
+        <translation>تحديد ملف تهيئة ماسترنود (الإعداد الافتراضي: %s)</translation>
+    </message>
+    <message>
         <source>Specify pid file (default: %s)</source>
         <translation>تحديد ملف pid (الافتراضي: %s)</translation>
     </message>
@@ -4230,8 +4258,20 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>اقضي على تغيير غير مؤكد عند إرسال المعاملات (القيمة الافتراضية: %u)</translation>
     </message>
     <message>
+        <source>Submitted following entries to masternode: %u / %d</source>
+        <translation>يتم إرسال الإدخالات التالية إلى ماسترنود : %u / %d</translation>
+    </message>
+    <message>
+        <source>Submitted to masternode, waiting for more entries ( %u / %d ) %s</source>
+        <translation>تم إرساله إلى ماسترنود ، في انتظار المزيد من الإدخالات ( %u / %d) %s</translation>
+    </message>
+    <message>
         <source>Submitted to masternode, waiting in queue %s</source>
         <translation>تم إرساله إلى ماسترنود ، في الانتظار في قائمة الانتظار %s</translation>
+    </message>
+    <message>
+        <source>Synchroning blockchain...</source>
+        <translation>تزامن بلوكشين ...</translation>
     </message>
     <message>
         <source>Synchronization failed</source>
@@ -4240,6 +4280,10 @@ https://www.transifex.com/projects/p/ctp/</translation>
     <message>
         <source>Synchronization finished</source>
         <translation>انتهى التزامن</translation>
+    </message>
+    <message>
+        <source>Synchronizing masternodes...</source>
+        <translation>تزامن ماسترنود...</translation>
     </message>
     <message>
         <source>This is not a Masternode.</source>
@@ -4252,10 +4296,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
     <message>
         <source>Too many %f denominations, removing.</source>
         <translation>عدد كبير جدًا من %f فئة ، إزالة.</translation>
-    </message>
-    <message>
-        <source>Too many %f denominations, skipping.</source>
-        <translation>عدد أكبر من %f من الطوائف ، تخطي.</translation>
     </message>
     <message>
         <source>Tor control port password (default: empty)</source>
@@ -4310,6 +4350,10 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>سيعيد المحاولة ...</translation>
     </message>
     <message>
+        <source>Invalid masternodeprivkey. Please see documenation.</source>
+        <translation>ماسترنود غير صحيح. يرجى الاطلاع على الوثائق</translation>
+    </message>
+    <message>
         <source>Can't find random Masternode.</source>
         <translation>لا يمكن العثور على ماسترنود عشوائي.</translation>
     </message>
@@ -4318,8 +4362,16 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>لا يمكن الدمج  أثناء المزامنة قيد التقدم.</translation>
     </message>
     <message>
+        <source>Could not parse masternode.conf</source>
+        <translation>لا يمكن تحليل masternode.conf</translation>
+    </message>
+    <message>
         <source>Invalid netmask specified in -whitelist: '%s'</source>
         <translation>قناع الشبكة غير صالح محدد في-القائمة البيضاء: '%s'</translation>
+    </message>
+    <message>
+        <source>Invalid port detected in masternode.conf</source>
+        <translation>تم اكتشاف منفذ غير صالح في masternode.conf</translation>
     </message>
     <message>
         <source>Invalid script detected.</source>
@@ -4340,10 +4392,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
     <message>
         <source>Disable all Ctp specific functionality (Masternodes, PrivateSend, InstantSend, Governance) (0-1, default: %u)</source>
         <translation>تعطيل جميع وظائف داش المحددة (ماسترنود ، الإرسال المخفي  ، الإرسال الفوري ، الحوكمة) (0-1 ، القيمة الافتراضية: %u)</translation>
-    </message>
-    <message>
-        <source>%s file contains all private keys from this wallet. Do not share it with anyone!</source>
-        <translation>يحتوي ملف %s على جميع المفاتيح الخاصة من هذه المحفظة. لا تشاركه مع أي شخص!</translation>
     </message>
     <message>
         <source>Discover own IP addresses (default: 1 when listening and no -externalip or -proxy)</source>
@@ -4368,10 +4416,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
     <message>
         <source>Execute command when a wallet InstantSend transaction is successfully locked (%s in cmd is replaced by TxID)</source>
         <translation>تنفيذ الأمر عند قفل معاملة الإرسال الفوري في المحفظة بنجاح (يتم استبدال %s في cmd بـ TxID)</translation>
-    </message>
-    <message>
-        <source>Extra transactions to keep in memory for compact block reconstructions (default: %u)</source>
-        <translation>معاملات إضافية للاحتفاظ بالذاكرة لإعادة إنشاء الكتل المضغوطة (الافتراضي: %u)</translation>
     </message>
     <message>
         <source>Failed to create backup, file already exists! This could happen if you restarted wallet in less than 60 seconds. You can continue if you are ok with this.</source>
@@ -4451,11 +4495,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
     </message>
     <message>
         <source>Total length of network version string (%i) exceeds maximum length (%i). Reduce the number or size of uacomments.</source>
-        <translation>المجموع طول سلسلة إصدار الشبكة (%i) يتجاوز الحد الأقصى للطول (%i). تقليل عدد أو حجم </translation>
-    </message>
-    <message>
-        <source>Transaction index can't be disabled in full mode. Either start with -litemode command line switch or enable transaction index.</source>
-        <translation>لا يمكن تعطيل فهرس المعاملات في الوضع الكامل. إما أن تبدأ مع مفتاح تبديل سطر الأوامر أو تمكين فهرس المعاملة.</translation>
+        <translation>إجمالي طول سلسلة إصدار الشبكة (%i) يتجاوز الحد الأقصى للطول (%i). تقليل عدد أو حجم </translation>
     </message>
     <message>
         <source>Tries to keep outbound traffic under the given target (in MiB per 24h), 0 = no limit (default: %d)</source>
@@ -4490,16 +4530,20 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>تحذير: يتم نسخ إصدارات الحظر غير المعروفة! من المحتمل أن تكون قواعد غير معروفة سارية المفعول</translation>
     </message>
     <message>
-        <source>You are starting in lite mode, all Ctp-specific functionality is disabled.</source>
-        <translation>أنت تبدأ في الوضع البسيط ، يتم تعطيل جميع وظائف داش المحددة.</translation>
-    </message>
-    <message>
         <source>You need to rebuild the database using -reindex to go back to unpruned mode.  This will redownload the entire blockchain</source>
         <translation>تحتاج إلى إعادة إنشاء قاعدة البيانات باستخدام -reindex للعودة إلى الوضعية الغير مجردة. هذا سوف يعيد تحميل سلسلة الكتل بأكملها</translation>
     </message>
     <message>
+        <source>(%d could be used only on mainnet)</source>
+        <translation>(%d يمكن استخدامها فقط على mainnet)</translation>
+    </message>
+    <message>
         <source>(default: %u)</source>
         <translation>(القيمة الافتراضية: %u)</translation>
+    </message>
+    <message>
+        <source>(must be %d for mainnet)</source>
+        <translation>(يجب أن يكون %d لـ mainnet)</translation>
     </message>
     <message>
         <source>-maxmempool must be at least %d MB</source>
@@ -4530,14 +4574,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>تمكين حظر التجزئة في &lt;address&gt;</translation>
     </message>
     <message>
-        <source>Enable publish hash of governance objects (like proposals) in &lt;address&gt;</source>
-        <translation>تمكين نشر التجزئة من كائنات الحوكمة (مثل المقترحات) في &lt;address&gt;</translation>
-    </message>
-    <message>
-        <source>Enable publish hash of governance votes in &lt;address&gt;</source>
-        <translation>تمكين نشر التجزئة من أصوات الحكم في &lt;address&gt;</translation>
-    </message>
-    <message>
         <source>Enable publish hash transaction (locked via InstantSend) in &lt;address&gt;</source>
         <translation>تمكين عملية التجزئة المنشورة (مؤمنة عبر الإرسال الفوري) في &lt;address&gt;</translation>
     </message>
@@ -4558,6 +4594,10 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>تمكين نشر المعاملة الأولية في &lt;address&gt;</translation>
     </message>
     <message>
+        <source>Enable transaction replacement in the memory pool (default: %u)</source>
+        <translation>تمكين استبدال المعاملة في تجمع الذاكرة (الافتراضي: %u)</translation>
+    </message>
+    <message>
         <source>Error: A fatal internal error occurred, see debug.log for details</source>
         <translation>خطأ: حدث خطأ داخلي فادح، راجع debug.log للحصول على التفاصيل</translation>
     </message>
@@ -4574,12 +4614,8 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>أخفق حذف النسخة الاحتياطية ، الخطأ: %s</translation>
     </message>
     <message>
-        <source>Failed to load InstantSend data cache from</source>
-        <translation>أخفق تحميل ذاكرة التخزين المؤقت لبيانات الإرسال الفوري</translation>
-    </message>
-    <message>
-        <source>Failed to load sporks cache from</source>
-        <translation>فشل تحميل ذاكرة التخزين المؤقت</translation>
+        <source>Failed to parse host:port string</source>
+        <translation>فشل تحليل المضيف: سلسلة المنفذ</translation>
     </message>
     <message>
         <source>Fee (in %s/kB) to add to transactions you send (default: %s)</source>
@@ -4610,8 +4646,12 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>آخر إجراء الإرسال المخفي ناجح كان حديث للغاية.</translation>
     </message>
     <message>
-        <source>Loading InstantSend data cache...</source>
-        <translation>جارٍ تحميل ذاكرة التخزين المؤقت لبيانات الإرسال الفوري ...</translation>
+        <source>Line: %d</source>
+        <translation>سطر: %d</translation>
+    </message>
+    <message>
+        <source>Loading addresses...</source>
+        <translation>تحميل العنوان</translation>
     </message>
     <message>
         <source>Loading block index...</source>
@@ -4620,10 +4660,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
     <message>
         <source>Loading governance cache...</source>
         <translation>جارٍ تحميل ذاكرة التخزين المؤقتة ...</translation>
-    </message>
-    <message>
-        <source>Loading sporks cache...</source>
-        <translation>جارٍ تحميل ذاكرة التخزين المؤقت ...</translation>
     </message>
     <message>
         <source>Loading wallet... (%3.2f %%)</source>
@@ -4640,6 +4676,10 @@ https://www.transifex.com/projects/p/ctp/</translation>
     <message>
         <source>Make the wallet broadcast transactions</source>
         <translation>إنتاج معاملات بث المحفظة</translation>
+    </message>
+    <message>
+        <source>Masternode cache is empty, skipping payments and governance cache...</source>
+        <translation>ذاكرة التخزين المؤقت ماسترنود فارغة ، وتخطي الدفعات وذاكرة التخزين المؤقت للحوكمة ...</translation>
     </message>
     <message>
         <source>Masternode options:</source>
@@ -4683,7 +4723,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
     </message>
     <message>
         <source>Not enough file descriptors available.</source>
-        <translation>لا تتوفر واصفات ملف متاح.</translation>
+        <translation>لا تتوفر واصفات ملفات كافية.</translation>
     </message>
     <message>
         <source>Not enough funds to anonymize.</source>
@@ -4762,10 +4802,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>يجب أن تحتوي المعاملة على مستلم واحد على الأقل</translation>
     </message>
     <message>
-        <source>Transaction too large</source>
-        <translation>الصفقة كبيرة جدا</translation>
-    </message>
-    <message>
         <source>Trying to connect...</source>
         <translation>تحاول الاتصال...</translation>
     </message>
@@ -4786,10 +4822,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>خيارات تصحيح / اختبار المحفظة:</translation>
     </message>
     <message>
-        <source>Wallet is not initialized</source>
-        <translation>لم تتم تهيئة المحفظة</translation>
-    </message>
-    <message>
         <source>Wallet needed to be rewritten: restart %s to complete</source>
         <translation>يلزم إعادة كتابة المحفظة: إعادة تشغيل %s لإكمال العملية</translation>
     </message>
@@ -4806,16 +4838,12 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>ما إذا كان سيتم العمل في وضع الكتل فقط (الإعداد الافتراضي: %u)</translation>
     </message>
     <message>
-        <source>You can not start a masternode in lite mode.</source>
-        <translation>لا يمكنك بدء تشغيل ماسترنود في الوضع البسيط.</translation>
-    </message>
-    <message>
         <source>ZeroMQ notification options:</source>
         <translation>خيارات إعلام ZeroMQ:</translation>
     </message>
     <message>
         <source>no mixing available.</source>
-        <translation>لا خلط متاح.</translation>
+        <translation>لا خلط المتاحة.</translation>
     </message>
     <message>
         <source>see debug.log for details.</source>
@@ -4847,7 +4875,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
     </message>
     <message>
         <source>Distributed under the MIT software license, see the accompanying file %s or %s</source>
-        <translation>موزعة تحت ترخيص برنامج MIT ، راجع ملف المرافق %s أو %s</translation>
+        <translation>موزعة تحت ترخيص برنامج MIT ، راجع الملف المرافق %s أو %s</translation>
     </message>
     <message>
         <source>Error reading %s! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
@@ -4867,7 +4895,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
     </message>
     <message>
         <source>Maximum total fees (in %s) to use in a single wallet transaction or raw transaction; setting this too low may abort large transactions (default: %s)</source>
-        <translation>المجموع الأقصى للرسوم (في %s) لاستخدامها في معاملة محفظة واحدة أو معاملة أولية ؛ قد يؤدي تعيين هذا منخفض جدًا إلى إحباط المعاملات الكبيرة (الإعداد الافتراضي: %s)</translation>
+        <translation>الحد الأقصى للرسوم الإجمالية (في %s) لاستخدامها في معاملة محفظة واحدة أو معاملة أولية ؛ قد يؤدي تعيين هذا منخفض جدًا إلى إحباط المعاملات الكبيرة (الإعداد الافتراضي: %s)</translation>
     </message>
     <message>
         <source>Override spork address. Only useful for regtest and devnet. Using this on mainnet or testnet will ban you.</source>
@@ -4899,7 +4927,7 @@ https://www.transifex.com/projects/p/ctp/</translation>
     </message>
     <message>
         <source>This is the transaction fee you may pay when fee estimates are not available.</source>
-        <translation>هذه هي رسوم المعاملة التي قد تدفعها عندما لا تكون تقديرات الرسوم متاح.</translation>
+        <translation>هذه هي رسوم المعاملة التي قد تدفعها عندما لا تكون تقديرات الرسوم متوفرة.</translation>
     </message>
     <message>
         <source>This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit %s and cryptographic software written by Eric Young and UPnP software written by Thomas Bernard.</source>
@@ -4928,6 +4956,14 @@ https://www.transifex.com/projects/p/ctp/</translation>
     <message>
         <source>Wallet will not create transactions that violate mempool chain limits (default: %u)</source>
         <translation>لن تنشئ المحفظة المعاملات التي تنتهك حدود سلسلة mempool (القيمة الافتراضية: %u)</translation>
+    </message>
+    <message>
+        <source>Warning: At least %d of %d masternodes are running on a newer software version. Please check latest releases, you might need to update too.</source>
+        <translation>تحذير: يتم تشغيل %d من %d ماسترنود على إصدار برنامج أحدث. يرجى التحقق من أحدث الإصدارات ، فقد تحتاج إلى التحديث أيضًا.</translation>
+    </message>
+    <message>
+        <source>Warning: Every masternode (out of %d known ones) is running on a newer software version. Please check latest releases, it's very likely that you missed a major/critical update.</source>
+        <translation>تحذير: يتم تشغيل كل ماسترنود (خارج %d المعروفة) على إصدار برنامج أحدث. يرجى التحقق من أحدث الإصدارات ، من المحتمل جدًا أنك فاتتك تحديثًا رئيسيًا / هامًا.</translation>
     </message>
     <message>
         <source>Warning: Wallet file corrupt, data salvaged! Original %s saved as %s in %s; if your balance or transactions are incorrect you should restore from a backup.</source>
@@ -5026,12 +5062,8 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>الاحتفاظ بـ N داش مجهولة المصدر (%u-%u ، القيمة الافتراضية: %u)</translation>
     </message>
     <message>
-        <source>Loading P2P addresses...</source>
-        <translation>تحميل عناوين P2P...</translation>
-    </message>
-    <message>
         <source>Print this help message and exit</source>
-        <translation>اطبع رسالة مساعدة هذه واخرج منها</translation>
+        <translation>اطبع رسالة المساعدة هذه واخرج منها</translation>
     </message>
     <message>
         <source>Receive and display P2P network alerts (default: %u)</source>
@@ -5078,6 +5110,10 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>تعيين الحد الأقصى لحجم الفدرة بالبايت (الافتراضي: %d)</translation>
     </message>
     <message>
+        <source>Set the masternode private key</source>
+        <translation>تعيين مفتاح خاص ماسترنود</translation>
+    </message>
+    <message>
         <source>Show all debugging options (usage: --help -help-debug)</source>
         <translation>عرض جميع خيارات التصحيح (الاستخدام: - مساعدة - تصحيح الأخطاء - تصحيح الأخطاء)</translation>
     </message>
@@ -5107,15 +5143,19 @@ https://www.transifex.com/projects/p/ctp/</translation>
     </message>
     <message>
         <source>Synchronization pending...</source>
-        <translation>التزامن في طور الإنجاز...</translation>
+        <translation>التزامن في انتظار ...</translation>
     </message>
     <message>
         <source>Synchronizing governance objects...</source>
         <translation>مزامنة كائنات الحوكمة ...</translation>
     </message>
     <message>
+        <source>Synchronizing masternode payments...</source>
+        <translation>تزامن المدفوعات ماسترنود ...</translation>
+    </message>
+    <message>
         <source>The source code is available from %s.</source>
-        <translation>شفرة المصدر متاح من %s.</translation>
+        <translation>شفرة المصدر متاحة من %s.</translation>
     </message>
     <message>
         <source>The transaction amount is too small to pay the fee</source>

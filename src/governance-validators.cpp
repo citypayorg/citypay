@@ -14,10 +14,9 @@
 const size_t MAX_DATA_SIZE = 512;
 const size_t MAX_NAME_SIZE = 40;
 
-CProposalValidator::CProposalValidator(const std::string& strHexData, bool fAllowLegacyFormat) :
+CProposalValidator::CProposalValidator(const std::string& strHexData) :
     objJSON(UniValue::VOBJ),
     fJSONValid(false),
-    fAllowLegacyFormat(fAllowLegacyFormat),
     strErrorMessages()
 {
     if (!strHexData.empty()) {
@@ -208,13 +207,9 @@ void CProposalValidator::ParseJSONData(const std::string& strJSONData)
         if (obj.isObject()) {
             objJSON = obj;
         } else {
-            if (fAllowLegacyFormat) {
-                std::vector<UniValue> arr1 = obj.getValues();
-                std::vector<UniValue> arr2 = arr1.at(0).getValues();
-                objJSON = arr2.at(1);
-            } else {
-                throw std::runtime_error("Legacy proposal serialization format not allowed");
-            }
+            std::vector<UniValue> arr1 = obj.getValues();
+            std::vector<UniValue> arr2 = arr1.at(0).getValues();
+            objJSON = arr2.at(1);
         }
 
         fJSONValid = true;

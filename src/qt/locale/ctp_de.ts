@@ -22,14 +22,6 @@
         <translation>&amp;Kopieren</translation>
     </message>
     <message>
-        <source>Show QR code for the currently selected address</source>
-        <translation>QR Code für selektierte Adresse anzeigen</translation>
-    </message>
-    <message>
-        <source>&amp;Show QR code</source>
-        <translation>&amp;QR Code anzeigen</translation>
-    </message>
-    <message>
         <source>Delete the currently selected address from the list</source>
         <translation>Ausgewählte Adresse aus der Liste entfernen</translation>
     </message>
@@ -88,14 +80,6 @@
     <message>
         <source>&amp;Edit</source>
         <translation>&amp;Editieren</translation>
-    </message>
-    <message>
-        <source>&amp;Show address QR code</source>
-        <translation>&amp;QR Code für Adresse anzeigen</translation>
-    </message>
-    <message>
-        <source>QR code</source>
-        <translation>QR Code</translation>
     </message>
     <message>
         <source>Export Address List</source>
@@ -454,6 +438,14 @@
         <translation>Konfigurationsdatei öffnen</translation>
     </message>
     <message>
+        <source>Open &amp;Masternode Configuration File</source>
+        <translation>&amp;Masternode Konfigurationsdatei öffnen</translation>
+    </message>
+    <message>
+        <source>Open Masternode configuration file</source>
+        <translation>Masternode Konfigurationsdatei öffnen</translation>
+    </message>
+    <message>
         <source>Show Automatic &amp;Backups</source>
         <translation>Automatische &amp;Sicherheitskopien anzeigen</translation>
     </message>
@@ -659,6 +651,10 @@
 <context>
     <name>ClientModel</name>
     <message>
+        <source>Total: %1 (PS compatible: %2 / Enabled: %3)</source>
+        <translation>Gesamt: %1 (DS kompatibel: %2 / Aktiviert: %3)</translation>
+    </message>
+    <message>
         <source>Network Alert</source>
         <translation>Netzwerkalarm</translation>
     </message>
@@ -796,10 +792,6 @@
     <message>
         <source>Please switch to "List mode" to use this function.</source>
         <translation>Wechseln Sie bitte zum "Listenmodus" um die Funktion zu benutzen.</translation>
-    </message>
-    <message>
-        <source>Non-anonymized input selected. &lt;b&gt;PrivateSend will be disabled.&lt;/b&gt;&lt;br&gt;&lt;br&gt;If you still want to use PrivateSend, please deselect all non-anonymized inputs first and then check the PrivateSend checkbox again.</source>
-        <translation>Nicht-anonymisierter Input ausgewählt. &lt;b&gt;PrivateSend wird deaktiviert.&lt;/b&gt;&lt;br&gt;&lt;br&gt;Sollten Sie trotzdem PrivateSend verwenden wollen, müssen Sie zuerst alle nicht-anonymisierten Inputs entmarkieren und das Ankreuzfeld "PrivateSend" erneut auswählen.</translation>
     </message>
     <message>
         <source>(%1 locked)</source>
@@ -974,12 +966,7 @@
         <source>PrivateSend information</source>
         <translation>PrivateSend Informationen</translation>
     </message>
-    <message>
-        <source>&lt;h3&gt;PrivateSend Basics&lt;/h3&gt; PrivateSend gives you true financial privacy by obscuring the origins of your funds. All the Ctp in your wallet is comprised of different "inputs" which you can think of as separate, discrete coins.&lt;br&gt; PrivateSend uses an innovative process to mix your inputs with the inputs of two other people, without having your coins ever leave your wallet. You retain control of your money at all times.&lt;hr&gt; &lt;b&gt;The PrivateSend process works like this:&lt;/b&gt;&lt;ol type="1"&gt; &lt;li&gt;PrivateSend begins by breaking your transaction inputs down into standard denominations. These denominations are 0.001 CTP, 0.01 CTP, 0.1 CTP, 1 CTP and 10 CTP -- sort of like the paper money you use every day.&lt;/li&gt; &lt;li&gt;Your wallet then sends requests to specially configured software nodes on the network, called "masternodes." These masternodes are informed then that you are interested in mixing a certain denomination. No identifiable information is sent to the masternodes, so they never know "who" you are.&lt;/li&gt; &lt;li&gt;When two other people send similar messages, indicating that they wish to mix the same denomination, a mixing session begins. The masternode mixes up the inputs and instructs all three users' wallets to pay the now-transformed input back to themselves. Your wallet pays that denomination directly to itself, but in a different address (called a change address).&lt;/li&gt; &lt;li&gt;In order to fully obscure your funds, your wallet must repeat this process a number of times with each denomination. Each time the process is completed, it's called a "round." Each round of PrivateSend makes it exponentially more difficult to determine where your funds originated.&lt;/li&gt; &lt;li&gt;This mixing process happens in the background without any intervention on your part. When you wish to make a transaction, your funds will already be anonymized. No additional waiting is required.&lt;/li&gt; &lt;/ol&gt; &lt;hr&gt;&lt;b&gt;IMPORTANT:&lt;/b&gt; Your wallet only contains 1000 of these "change addresses." Every time a mixing event happens, up to 9 of your addresses are used up. This means those 1000 addresses last for about 100 mixing events. When 900 of them are used, your wallet must create more addresses. It can only do this, however, if you have automatic backups enabled.&lt;br&gt; Consequently, users who have backups disabled will also have PrivateSend disabled. &lt;hr&gt;For more information, see the &lt;a href="https://docs.citypay.org/en/latest/wallets/ctpcore/privatesend-instantsend.html"&gt;PrivateSend documentation&lt;/a&gt;.</source>
-        <translation>&lt;h3&gt;Basisinformation zu PrivateSend&lt;/h3&gt; PrivateSend bietet finanziellen Datenschutz durch geschickte Verschleierung der Herkunft Ihres Geldes. Die Ctp in Ihrer Geldbörse setzen sich aus völlig unterschiedlichen eigenständigen "Inputs" zusammen.&lt;br&gt; PrivateSend benutzt einen innovativen Prozeß, um Ihre "Inputs" mit denen von 2 anderen Personen zu mischen, ohne das Ihr Geld jemals Ihre Geldbörse verlassen muß, d.h. Sie haben während dieses Prozesses immer die Kontrolle über Ihr Geld.&lt;hr&gt;&lt;b&gt;Der PrivateSend-Prozess funktioniert folgendermaßen:&lt;/b&gt;&lt;ol type="1"&gt;&lt;li&gt;PrivateSend stückelt Ihre "Inputs" in kleinere Teile. Diese sind 0,001 CTP, 0,01 CTP, 0,1 CTP, 1 CTP und 10 CTP -- im Prinzip wie Münzen oder Scheine, wie wir sie jeden Tag benutzen.&lt;/li&gt; &lt;li&gt;Ihre Geldbörse sendet dann eine entsprechende Mixing Anforderungen an spezielle Ctp-Server im Internet, die sogenannten "Masternodes". Damit werden diese Masternodes darüber informiert, daß Sie Ihre gestückelten CTP gerne mixen würden. Dabei wird keinerlei Information über Sie versendet, d.h. die Masternodes wissen nie, wer genau mixen möchte.&lt;/li&gt; &lt;li&gt; Sobald zwei andere Personen eine gleiche Mixing-Anforderung mit der gleichen Stückelung senden beginnt der Mixing-Prozeß. Der Masternode vermischt (daher das Wort "Mixing") die gestückelten Inputs und weist das Ergebnis wieder den Geldbörsen zu, allerdings mit neuen Empfängeradressen (die natürlich zu Ihrer Wallet gehören), so daß man sie nicht mehr den ursprünglichen Adressen zuordnen kann.. Man kann sich das so vorstellen wie wenn 3 Personen jeweils 100 Euro in der gleichen Anzahl von 10 Euro Scheinen, 5 Euro Scheinen, 2- und 1-Euro Münzen auf einen Tisch legen, alles einmal gut durchmischen, und sich anschießend ohne hinzusehen wieder 100 Euro vom Tischen nehmen. Jeder hat genau so viele Euro wie vorher, aber keiner weiß, wessen Scheine oder Münzen er letztendlich in seiner Geldbörse hat, oder wo sie herkommen. Und das Gute dabei ist, im Ctp Mixing Prozeß verlassen die Scheine oder Münzen niemals die Geldbörse ihres Besitzers, daher kann kein Betrug stattfinden.&lt;/li&gt; &lt;li&gt;Um die Herkunft Ihres Guthabens vollständig zu verschleiern muß dieser Prozeß mehrmals wiederholt werden, d.h. es gibt mehrere "Runden" des Mixing-Prozesses. Die Anzahl der Runden ist einstellbar, je mehr, desto besser ist die Herkunft Ihres Guthabens verschleiert, aber um so länger dauert der Prozeß.&lt;/li&gt; &lt;li&gt;
-Der Mixing-Prozeß läuft nach dem Start vollständig im Hintergrund, d.h. es ist keine Benutzerinteraktion mehr erforderlich. Das Wallet informiert Sie über den Fortschrittsbalken über den aktuellen Status des Prozesses.&lt;/li&gt; &lt;/ol&gt; &lt;hr&gt;&lt;b&gt;WICHTIG:&lt;/b&gt; beim Mischen der Inputs werden die einzelnen Stückelungen einer NEUEN Empfängeradresse zugeordnet (siehe Oben). Ihre Geldbörse hat bereits beim ersten Start 1000 dieser "Wechseladressen" auf Vorrat erzeugt. Bei jedem Mischen werden 9 dieser Wechseladressen verbraucht, d.h. nach ungefähr 100 Mischvorgänge sind diese 1000 Wechseladressen aufgebraucht. Die Geldbörse ist so eingestellt, daß sie bei Erreichen von 900 benutzen Wechseladressen wieder genug neue Wechseladressen erzeugt, damit man auch in der Zukunft wieder mischen kann. Die neuen Wechseladressen werden aber nur dann erzeugt, wenn man in den Einstellungen "Automatische Datensicherungen" aktiviert hat.&lt;br&gt; Daher ist bei Benutzern, die "Automatische Datensicherungen" deaktiviert haben, automatisch auch PrivateSend dekativiert.&lt;hr&gt; Weitere Information hierzu finden Sie in der &lt;a href="https://docs.citypay.org/en/latest/wallets/ctpcore/privatesend-instantsend.html"&gt;PrivateSend-Dokumentation&lt;/a&gt;.</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>Intro</name>
     <message>
@@ -995,16 +982,8 @@ Der Mixing-Prozeß läuft nach dem Start vollständig im Hintergrund, d.h. es is
         <translation>Da Sie das Programm gerade zum ersten Mal starten, können Sie nun auswählen wo %1 seine Daten ablegen wird.</translation>
     </message>
     <message>
-        <source>When you click OK, %1 will begin to download and process the full %4 block chain (%2GB) starting with the earliest transactions in %3 when %4 initially launched.</source>
-        <translation>Wenn Sie OK klicken, wird der Download %1 angestoßen und die volle %4 Blockchain (%2GB) verarbeitet. Die Verarbeitung beginnt mit den frühesten Transaktionen in %3 , wenn %4 gestartet sind.</translation>
-    </message>
-    <message>
-        <source>This initial synchronisation is very demanding, and may expose hardware problems with your computer that had previously gone unnoticed. Each time you run %1, it will continue downloading where it left off.</source>
-        <translation>Diese initiale Synchronisation führt zur hohen Last und kann Hardwareprobleme, die bisher nicht aufgetreten sind, mit ihrem Computer verursachen. Jedes Mal, wenn Sie %1 ausführen, wird der Download zum letzten Synchronisationspunkt fortgesetzt.</translation>
-    </message>
-    <message>
-        <source>If you have chosen to limit block chain storage (pruning), the historical data must still be downloaded and processed, but will be deleted afterward to keep your disk usage low.</source>
-        <translation>Wenn Sie bewusst den Blockchainspeicher begrenzen (pruning), müssen die historischen Daten dennoch heruntergeladen und verarbeitet werden. Diese Daten werden aber zum späteren Zeitpunkt gelöscht, um die Festplattennutzung niedrig zu halten.</translation>
+        <source>%1 will download and store a copy of the Ctp block chain. At least %2GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>%1 wird jetzt die Blockchain laden und lokal speichern. Dafür sind mindestens %2GB freier Speicherplatz erforderlich. Der Speicherbedarf wird mit der Zeit anwachsen. Das Wallet wird ebenfalls in diesem Verzeichnis gespeichert. </translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1013,22 +992,6 @@ Der Mixing-Prozeß läuft nach dem Start vollständig im Hintergrund, d.h. es is
     <message>
         <source>Use a custom data directory:</source>
         <translation>Ein benutzerdefiniertes Datenverzeichnis verwenden:</translation>
-    </message>
-    <message>
-        <source>At least %1 GB of data will be stored in this directory, and it will grow over time.</source>
-        <translation>Es werden mindestens %1 GB Daten in diesem Verzeichnis gespeichert, wobei dies mit der Zeit stetig mehr wird.</translation>
-    </message>
-    <message>
-        <source>Approximately %1 GB of data will be stored in this directory.</source>
-        <translation>Etwa %1 GB Daten werden in diesem Verzeichnis gespeichert.</translation>
-    </message>
-    <message>
-        <source>%1 will download and store a copy of the Ctp block chain.</source>
-        <translation>%1 wird eine Kopie der Ctp Blockchain herunterladen und speichern.</translation>
-    </message>
-    <message>
-        <source>The wallet will also be stored in this directory.</source>
-        <translation>Die Wallet wird ebenso in diesem Verzeichnis gespeichert werden.</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1054,20 +1017,76 @@ Der Mixing-Prozeß läuft nach dem Start vollständig im Hintergrund, d.h. es is
         <translation>Formular</translation>
     </message>
     <message>
+        <source>My Masternodes</source>
+        <translation>Meine Masternodes</translation>
+    </message>
+    <message>
+        <source>Note: Status of your masternodes in local wallet can potentially be slightly incorrect.&lt;br /&gt;Always wait for wallet to sync additional data and then double check from another node&lt;br /&gt;if your masternode should be running but you still do not see "ENABLED" in "Status" field.</source>
+        <translation>Achtung: der Status Ihrer Masternodes kann während des Synchronisationsvorgangs zeitweilig falsch angezeigt werden&lt;br /&gt; Daher sollten Sie immer das Ende des Synchronisationsvorgangs abwarten, und falls Ihr Masternode nicht den Status "ENABLED" hat &lt;br /&gt; im Zweifelsfalle den Status von einer anderen Geldbörse aus überprüfen.</translation>
+    </message>
+    <message>
+        <source>Alias</source>
+        <translation>Alias-Name</translation>
+    </message>
+    <message>
         <source>Address</source>
         <translation>Adresse</translation>
+    </message>
+    <message>
+        <source>Protocol</source>
+        <translation>Protokoll</translation>
     </message>
     <message>
         <source>Status</source>
         <translation>Status</translation>
     </message>
     <message>
+        <source>Active</source>
+        <translation>Aktiv</translation>
+    </message>
+    <message>
+        <source>Last Seen</source>
+        <translation>Zuletzt gesehen</translation>
+    </message>
+    <message>
         <source>Payee</source>
         <translation>Empfänger</translation>
     </message>
     <message>
+        <source>S&amp;tart alias</source>
+        <translation>Alias-Namen s&amp;tarten</translation>
+    </message>
+    <message>
+        <source>Start &amp;all</source>
+        <translation>Alle st&amp;arten</translation>
+    </message>
+    <message>
+        <source>Start &amp;MISSING</source>
+        <translation>&amp;Fehlende starten</translation>
+    </message>
+    <message>
+        <source>&amp;Update status</source>
+        <translation>Stat&amp;us aktualisieren</translation>
+    </message>
+    <message>
+        <source>Show additional Masternode information</source>
+        <translation>Zusätzliche Masternode-Informationen anzeigen</translation>
+    </message>
+    <message>
+        <source>Show &amp;Info...</source>
+        <translation>Zeige &amp;Info...</translation>
+    </message>
+    <message>
+        <source>Status will be updated automatically in (sec):</source>
+        <translation>Status wird automatisch aktualisiert in (Sek.):</translation>
+    </message>
+    <message>
         <source>0</source>
         <translation>0</translation>
+    </message>
+    <message>
+        <source>All Masternodes</source>
+        <translation>Alle Masternodes</translation>
     </message>
     <message>
         <source>Filter List:</source>
@@ -1082,76 +1101,72 @@ Der Mixing-Prozeß läuft nach dem Start vollständig im Hintergrund, d.h. es is
         <translation>Anzahl Knoten</translation>
     </message>
     <message>
-        <source>DIP3 Masternodes</source>
-        <translation>DIP3 Masternodes</translation>
+        <source>Start alias</source>
+        <translation>Alias-Namen starten</translation>
     </message>
     <message>
-        <source>Show only masternodes this wallet has keys for.</source>
-        <translation>Nur Masternodes anzeigen für welche diese Wallet die Schlüssel hat.</translation>
+        <source>Confirm masternode start</source>
+        <translation>Masternode-Start bestätigen</translation>
     </message>
     <message>
-        <source>My masternodes only</source>
-        <translation>Nur meine Masternodes</translation>
+        <source>Are you sure you want to start masternode %1?</source>
+        <translation>Sind Sie sicher, daß Sie Masternode %1 starten möchten?</translation>
     </message>
     <message>
-        <source>PoSe Score</source>
-        <translation>PoSe Wertung</translation>
+        <source>Confirm all masternodes start</source>
+        <translation>Start aller Masternodes bestätigen</translation>
     </message>
     <message>
-        <source>Registered</source>
-        <translation>Registriert</translation>
+        <source>Are you sure you want to start ALL masternodes?</source>
+        <translation>Sind Sie sicher, daß Sie ALLE Masternodes starten möchten?</translation>
     </message>
     <message>
-        <source>Last Paid</source>
-        <translation>Zuletzt ausbezahlt</translation>
+        <source>Command is not available right now</source>
+        <translation>Kommando zur Zeit nicht verfügbar</translation>
     </message>
     <message>
-        <source>Next Payment</source>
-        <translation>Nächste Auszahlung</translation>
+        <source>You can't use this command until masternode list is synced</source>
+        <translation>Solange die Liste der Masternodes nicht synchronisiert ist können Sie dieses Kommando nicht benutzen.</translation>
     </message>
     <message>
-        <source>Operator Reward</source>
-        <translation>Betreibervergütung</translation>
+        <source>Confirm missing masternodes start</source>
+        <translation>Start aller fehlenden Masternodes bestätigen</translation>
     </message>
     <message>
-        <source>Copy ProTx Hash</source>
-        <translation>ProTx Hash kopieren</translation>
+        <source>Are you sure you want to start MISSING masternodes?</source>
+        <translation>Sind Sie sicher, daß Sie alle fehlenden Masternodes starten möchten?</translation>
     </message>
     <message>
-        <source>Copy Collateral Outpoint</source>
-        <translation>Collateral Outpoint kopieren</translation>
+        <source>Additional information for Masternode %1</source>
+        <translation>Weitere Informationen zu Masternode %1</translation>
     </message>
     <message>
-        <source>ENABLED</source>
-        <translation>AKTIVIERT</translation>
+        <source>Masternode Private Key</source>
+        <translation>Masternode Private Key</translation>
     </message>
     <message>
-        <source>POSE_BANNED</source>
-        <translation>POSE_BANNED</translation>
+        <source>Private Key</source>
+        <translation>Private Key</translation>
     </message>
     <message>
-        <source>UNKNOWN</source>
-        <translation>UNBEKANNT</translation>
+        <source>Collateral</source>
+        <translation>Sicherheitszahlung</translation>
     </message>
     <message>
-        <source>to %1</source>
-        <translation>an %1</translation>
+        <source>IP</source>
+        <translation>IP</translation>
     </message>
     <message>
-        <source>to UNKNOWN</source>
-        <translation>an UNBEKANNT</translation>
+        <source>Version</source>
+        <translation>Version</translation>
     </message>
     <message>
-        <source>but not claimed</source>
-        <translation>aber nicht beansprucht</translation>
+        <source>Unknown</source>
+        <translation>Unbekannt</translation>
     </message>
     <message>
-        <source>NONE</source>
-        <translation>KEINE</translation>
-    </message>
-    <message>
-        <source>Additional information for DIP3 Masternode %1</source>
-        <translation>Zusätzliche Informationen für DIP3 Masternode %1</translation>
+        <source>Sentinel</source>
+        <translation>Sentinel</translation>
     </message>
 </context>
 <context>
@@ -1357,14 +1372,6 @@ Der Mixing-Prozeß läuft nach dem Start vollständig im Hintergrund, d.h. es is
     <message>
         <source>Enable coin &amp;control features</source>
         <translation>"&amp;Coin Control"-Funktionen aktivieren</translation>
-    </message>
-    <message>
-        <source>Show system popups for PrivateSend mixing transactions&lt;br/&gt;just like for all other transaction types.</source>
-        <translation>Systembenachrichtigungen für PrivateSend-Mischtransaktionen&lt;br/&gt;genauso wie andere Transaktionen anzeigen.</translation>
-    </message>
-    <message>
-        <source>Show popups for PrivateSend transactions</source>
-        <translation>Benachrichtigungen für PrivateSend-Transaktionen anzeigen</translation>
     </message>
     <message>
         <source>&amp;Spend unconfirmed change</source>
@@ -1748,10 +1755,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Datensicherungen werden automatisch gemacht, aber &lt;span style='color:red;'&gt; Sie sollten zusätzlich immer noch Datensicherungen an einem sicheren Ort haben&lt;/span&gt;!</translation>
     </message>
     <message>
-        <source>Note: You can turn this message off in options.</source>
-        <translation>Hinweis: Diese Nachricht kann unter "Einstellungen" deaktiviert werden.</translation>
-    </message>
-    <message>
         <source>WARNING! Something went wrong on automatic backup</source>
         <translation>Warnung! Die automatische Datensicherung ist nicht in Ordnung</translation>
     </message>
@@ -1781,6 +1784,10 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Letzter PrivateSend Status:
 
 </translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>k.A.</translation>
     </message>
     <message>
         <source>PrivateSend was successfully reset.</source>
@@ -1912,8 +1919,16 @@ https://www.transifex.com/projects/p/ctp/</translation>
 <context>
     <name>QObject</name>
     <message>
+        <source>Ctp Core</source>
+        <translation>Ctp Core</translation>
+    </message>
+    <message>
         <source>%1 didn't yet exit safely...</source>
         <translation>%1 wurde noch nicht sicher beendet...</translation>
+    </message>
+    <message>
+        <source>Error reading masternode configuration file: %1</source>
+        <translation>Fehler beim Lesen der Masternode Konfigurationsdatei: %1</translation>
     </message>
     <message>
         <source>Amount</source>
@@ -2377,10 +2392,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
     <message>
         <source>Network activity disabled</source>
         <translation>Netzwerk-Aktivität deaktiviert</translation>
-    </message>
-    <message>
-        <source>Total: %1 (Enabled: %2)</source>
-        <translation>Insgesamt: %1 (Aktiv: %2)</translation>
     </message>
     <message>
         <source>%1 B</source>
@@ -3232,14 +3243,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>%1 Bestätigungen</translation>
     </message>
     <message>
-        <source>locked via LLMQ based ChainLocks</source>
-        <translation>durch LLMQ basierte ChainLocks bestätigt</translation>
-    </message>
-    <message>
-        <source>verified via LLMQ based InstantSend</source>
-        <translation>durch LLMQ basiertes InstantSend verifiziert</translation>
-    </message>
-    <message>
         <source>verified via InstantSend</source>
         <translation>überprüft durch InstantSend</translation>
     </message>
@@ -3526,10 +3529,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Zeigt ob eine beobachtete Adresse in dieser Transaktion beteiligt ist.</translation>
     </message>
     <message>
-        <source>Whether or not this transaction was locked by InstantSend.</source>
-        <translation>Ob diese Transaktion mit InstantSend gesichert wurde.</translation>
-    </message>
-    <message>
         <source>User-defined intent/purpose of the transaction.</source>
         <translation>Benutzerdefinierter Verwendungszweck der Transaktion</translation>
     </message>
@@ -3543,14 +3542,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
     <message>
         <source>All</source>
         <translation>Alle</translation>
-    </message>
-    <message>
-        <source>Locked by InstantSend</source>
-        <translation>Mit InstantSend gesichert</translation>
-    </message>
-    <message>
-        <source>Not locked by InstantSend</source>
-        <translation>Nicht mit InstantSend gesichert</translation>
     </message>
     <message>
         <source>Today</source>
@@ -3665,10 +3656,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Transaktionsdetails anzeigen</translation>
     </message>
     <message>
-        <source>Show address QR code</source>
-        <translation>QR Code für Adresse anzeigen</translation>
-    </message>
-    <message>
         <source>Export Transaction History</source>
         <translation>Transaktionsverlauf exportieren</translation>
     </message>
@@ -3719,10 +3706,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
     <message>
         <source>The transaction history was successfully saved to %1.</source>
         <translation>Speichern des Transaktionsverlaufs nach %1 war erfolgreich.</translation>
-    </message>
-    <message>
-        <source>QR code</source>
-        <translation>QR Code</translation>
     </message>
     <message>
         <source>Range:</source>
@@ -3848,6 +3831,10 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Warnung: Wir scheinen nicht vollständig mit unseren Gegenstellen übereinzustimmen! Sie oder die anderen Knoten müssen unter Umständen ihre Client-Software aktualisieren.</translation>
     </message>
     <message>
+        <source>You must specify a masternodeprivkey in the configuration. Please see documentation for help.</source>
+        <translation>Es muss ein Masternode-Geheimschlüssel (masternodeprivkey) in der Konfiguration angegeben werden. Für weitere Informationen siehe Dokumentation.</translation>
+    </message>
+    <message>
         <source>Accept command line and JSON-RPC commands</source>
         <translation>Kommandozeilen- und JSON-RPC-Befehle annehmen</translation>
     </message>
@@ -3968,20 +3955,16 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>An die angegebene Adresse binden und Gegenstellen in die Liste der erlaubten Gegenstellen aufnehmen. Für IPv6 "[Host]:Port"-Schreibweise verwenden</translation>
     </message>
     <message>
+        <source>Bind to given address to listen for JSON-RPC connections. Use [host]:port notation for IPv6. This option can be specified multiple times (default: bind to all interfaces)</source>
+        <translation>Für JSON-RPC Verbindugen an die angegebene Adresse binden. Für IPv6 "[Host]:Port"-Schreibweise verwenden. Diese Option kann mehrmals eingetragen werden. (Standard: an alle verbinden)</translation>
+    </message>
+    <message>
         <source>Create new files with system default permissions, instead of umask 077 (only effective with disabled wallet functionality)</source>
         <translation>Neue Dateien mit den System-Standardberechtigungen (anstatt 077) erzeugen (nur bei deaktiviertem Wallet möglich)</translation>
     </message>
     <message>
         <source>Delete all wallet transactions and only recover those parts of the blockchain through -rescan on startup</source>
         <translation>Lösche alle Wallet-Transaktionen stelle nur diese mittels -rescan beim nächsten Start des Wallets wieder her.</translation>
-    </message>
-    <message>
-        <source>Enable publish raw transactions of attempted InstantSend double spend in &lt;address&gt;</source>
-        <translation>Veröffentlichung der Transaktionsdaten eines versuchten InstantSend-DoubleSpends aktivieren &lt;address&gt;</translation>
-    </message>
-    <message>
-        <source>Enable publish transaction hashes of attempted InstantSend double spend in &lt;address&gt;</source>
-        <translation>Veröffentlichung des öffentlichen Transaktionshashes eines versuchten InstantSend-DoubleSpends aktivieren &lt;address&gt;</translation>
     </message>
     <message>
         <source>Error loading %s: You can't enable HD on a already existing non-HD wallet</source>
@@ -4028,14 +4011,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Debugging-Informationen ausgeben (Standard: %u, &lt;category&gt; anzugeben ist optional)</translation>
     </message>
     <message>
-        <source>Overrides minimum spork signers to change spork value. Only useful for regtest and devnet. Using this on mainnet or testnet will ban you.</source>
-        <translation>Spork-Wert durch ein Minimum an Spork-Unterzeichnern überschreiben. Nur für regtest und devnet verwendbar. Die Verwendung im Mainnet oder Testnet führt zum Bann.</translation>
-    </message>
-    <message>
-        <source>Use N separate masternodes in parallel to mix funds (%u-%u, default: %u)</source>
-        <translation>N verschiedene Masternodes verwenden, um Guthaben parallel zu mischen (%u-%u, Standard: %u)</translation>
-    </message>
-    <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
         <translation>Separaten SOCKS5-Proxy verwenden, um Gegenstellen über versteckte Tor-Dienste zu erreichen (Standard: %s)</translation>
     </message>
@@ -4056,16 +4031,8 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Sie müssen die Datenbank mit Hilfe von -reindex-chainstate neu aufbauen, um -txindex zu verändern</translation>
     </message>
     <message>
-        <source>You should specify a masternodeblsprivkey in the configuration. Please see documentation for help.</source>
-        <translation>Den masternodeblsprivkey in den Konfigurationseinstellungen spezifizieren. Hilfe hierzu kann in der Dokumentation gefunden werden.</translation>
-    </message>
-    <message>
         <source>(default: %s)</source>
         <translation>(Standard: %s)</translation>
-    </message>
-    <message>
-        <source>-wallet parameter must only specify a filename (not a path)</source>
-        <translation>-wallet parameter darf nur den Dateinamen angeben (nicht den Pfad)</translation>
     </message>
     <message>
         <source>Accept public REST requests (default: %u)</source>
@@ -4116,6 +4083,10 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Cache für Masternodes konnte nicht geladen werden aus</translation>
     </message>
     <message>
+        <source>Failed to load masternode payments cache from</source>
+        <translation>Cache für Masternode Zahlungen konnte nicht geladen werden aus</translation>
+    </message>
+    <message>
         <source>Found enough users, signing ( waiting %s )</source>
         <translation>Genug Partner gefunden, signiere ( warte %s )</translation>
     </message>
@@ -4160,16 +4131,16 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Unzureichender Kontostand.</translation>
     </message>
     <message>
+        <source>Invalid -onion address: '%s'</source>
+        <translation>Ungültige "-onion"-Adresse: '%s'</translation>
+    </message>
+    <message>
+        <source>Invalid -proxy address: '%s'</source>
+        <translation>Ungültige Adresse in -proxy: '%s'</translation>
+    </message>
+    <message>
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s' (must be at least %s)</source>
         <translation>Ungültiger Betrag für -paytxfee=&lt;amount&gt;: '%s' (Betrag muss mindestens %s sein)</translation>
-    </message>
-    <message>
-        <source>Invalid masternodeblsprivkey. Please see documenation.</source>
-        <translation>Ungültiger masternodeblsprivkey. Weitere Informationen befinden sich in der Dokumentation.</translation>
-    </message>
-    <message>
-        <source>Invalid minimum number of spork signers specified with -minsporkkeys</source>
-        <translation>Ungültige minimale Anzahl an Spork-Unterzeichnern durch -minsporkkeys spezifiziert</translation>
     </message>
     <message>
         <source>Keypool ran out, please call keypoolrefill first</source>
@@ -4196,8 +4167,16 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Lade Masternode-Cache...</translation>
     </message>
     <message>
+        <source>Loading masternode payment cache...</source>
+        <translation>Lade Masternode Zahlungs-Cache...</translation>
+    </message>
+    <message>
         <source>Lock is already in place.</source>
         <translation>Schon gesperrt.</translation>
+    </message>
+    <message>
+        <source>Lock masternodes from masternode configuration file (default: %u)</source>
+        <translation>Masternodes über Masternode-Konfiguration sperren (Standard: %u)</translation>
     </message>
     <message>
         <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: %u)</source>
@@ -4236,6 +4215,10 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Verbinde nur zu Knoten des Netztyps &lt;net&gt; (ipv4, ipv6 oder onion)</translation>
     </message>
     <message>
+        <source>Port: %d</source>
+        <translation>Port: %d</translation>
+    </message>
+    <message>
         <source>Prepend debug output with timestamp (default: %u)</source>
         <translation>Debugausgaben einen Zeitstempel voranstellen (Standard: %u)</translation>
     </message>
@@ -4260,10 +4243,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Größe des Schlüsselpools festlegen auf &lt;n&gt; (Standard: %u)</translation>
     </message>
     <message>
-        <source>Set the masternode BLS private key</source>
-        <translation>Masternode BLS PrivateKey setzen</translation>
-    </message>
-    <message>
         <source>Set the number of threads to service RPC calls (default: %d)</source>
         <translation>Maximale Anzahl an Threads zur Verarbeitung von RPC-Anfragen festlegen (Standard: %d)</translation>
     </message>
@@ -4276,6 +4255,10 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Verbindungzeitüberschreitung in Millisekunden festlegen (Minimum: 1, Standard: %d)</translation>
     </message>
     <message>
+        <source>Specify masternode configuration file (default: %s)</source>
+        <translation>Konfigurationsdatei der Masternode-Einstellungen angeben (Standard: %s)</translation>
+    </message>
+    <message>
         <source>Specify pid file (default: %s)</source>
         <translation>pid-Datei angeben (Standard: %s)</translation>
     </message>
@@ -4284,8 +4267,20 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Unbestätigtes Wechselgeld beim Senden von Transaktionen ausgeben (Standard: %u)</translation>
     </message>
     <message>
+        <source>Submitted following entries to masternode: %u / %d</source>
+        <translation>Folgende Einträge wurden an Masternode gesendet: %u / %d</translation>
+    </message>
+    <message>
+        <source>Submitted to masternode, waiting for more entries ( %u / %d ) %s</source>
+        <translation>An Masternode gesendet, warte auf weitere Einträge ( %u / %d ) %s</translation>
+    </message>
+    <message>
         <source>Submitted to masternode, waiting in queue %s</source>
         <translation>An Masternode übermittelt, wartet in Warteschlange %s</translation>
+    </message>
+    <message>
+        <source>Synchroning blockchain...</source>
+        <translation>Synchronisiere Blockchain...</translation>
     </message>
     <message>
         <source>Synchronization failed</source>
@@ -4294,6 +4289,10 @@ https://www.transifex.com/projects/p/ctp/</translation>
     <message>
         <source>Synchronization finished</source>
         <translation>Synchronisation beendet</translation>
+    </message>
+    <message>
+        <source>Synchronizing masternodes...</source>
+        <translation>Synchronisiere Masternodes...</translation>
     </message>
     <message>
         <source>This is not a Masternode.</source>
@@ -4306,10 +4305,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
     <message>
         <source>Too many %f denominations, removing.</source>
         <translation>Zu viele %f Stückelungen, wird entfernt.</translation>
-    </message>
-    <message>
-        <source>Too many %f denominations, skipping.</source>
-        <translation>Zu viele %f Denominationen, überspringen.</translation>
     </message>
     <message>
         <source>Tor control port password (default: empty)</source>
@@ -4364,6 +4359,10 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Versuche erneut...</translation>
     </message>
     <message>
+        <source>Invalid masternodeprivkey. Please see documenation.</source>
+        <translation>Masternode-Geheimschlüssel (masternodeprivkey) ist ungültig. Siehe Dokumentation. </translation>
+    </message>
+    <message>
         <source>Can't find random Masternode.</source>
         <translation>Kann keinen zufällig ausgewählten Masternode finden</translation>
     </message>
@@ -4372,8 +4371,16 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Währen der Synchronisierung kann nicht gemixt werden.</translation>
     </message>
     <message>
+        <source>Could not parse masternode.conf</source>
+        <translation>masternode.conf konnte nicht analysiert werden</translation>
+    </message>
+    <message>
         <source>Invalid netmask specified in -whitelist: '%s'</source>
         <translation>Ungültige Netzmaske für -whitelist angegeben: '%s'</translation>
+    </message>
+    <message>
+        <source>Invalid port detected in masternode.conf</source>
+        <translation>Ungültige Portnummer in masternode.conf</translation>
     </message>
     <message>
         <source>Invalid script detected.</source>
@@ -4394,14 +4401,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
     <message>
         <source>Disable all Ctp specific functionality (Masternodes, PrivateSend, InstantSend, Governance) (0-1, default: %u)</source>
         <translation>Deaktiviere all Ctp-spezifischen Funktionen (Masternodes, PrivateSend, InstantSend, Governance) (0-1, Standard: %u)</translation>
-    </message>
-    <message>
-        <source>%s file contains all private keys from this wallet. Do not share it with anyone!</source>
-        <translation>Die Datei %s beinhaltet alle privaten Schlüssel der Wallet. Diese sollten niemals weitergegeben werden!</translation>
-    </message>
-    <message>
-        <source>Bind to given address to listen for JSON-RPC connections. This option is ignored unless -rpcallowip is also passed. Port is optional and overrides -rpcport. Use [host]:port notation for IPv6. This option can be specified multiple times (default: 127.0.0.1 and ::1 i.e., localhost, or if -rpcallowip has been specified, 0.0.0.0 and :: i.e., all addresses)</source>
-        <translation>An angegebene Adresse für JSON-RPC Verbindungen binden. Diese Option wird ignoriert, außer wenn -rpcallowip gesetzt ist. Der Port ist optional und überschreibt -rpcport. Up IPv6 zu nutzen, kann die [host]:port Notation genutzt werden. Diese Option kann mehrere male angegeben werden (Standard: 127.0.0.1, ::1 und localhost oder wenn -rpcallowip angegeben wurde, 0.0.0.0 und ::, also alle Adressen)</translation>
     </message>
     <message>
         <source>Discover own IP addresses (default: 1 when listening and no -externalip or -proxy)</source>
@@ -4426,10 +4425,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
     <message>
         <source>Execute command when a wallet InstantSend transaction is successfully locked (%s in cmd is replaced by TxID)</source>
         <translation>Befehl ausführen wenn eine Wallet-Transaktion erfolgreich gesperrt wurde (%s im Befehl wird durch die TxID ersetzt)</translation>
-    </message>
-    <message>
-        <source>Extra transactions to keep in memory for compact block reconstructions (default: %u)</source>
-        <translation>Zusätzliche Transaktionen, die im Speicher bleiben, damit kompakte Blöcke ermöglicht werden können (Standard: %u)</translation>
     </message>
     <message>
         <source>Failed to create backup, file already exists! This could happen if you restarted wallet in less than 60 seconds. You can continue if you are ok with this.</source>
@@ -4512,10 +4507,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Die Gesamtlänge des Versions-Namens (%i) überschreitet die erlaubte Maximallänge (%i). Bitte verringern Sie Anzahl oder Größe der Eingaben für die Kommandozeilenoption -uacomments.</translation>
     </message>
     <message>
-        <source>Transaction index can't be disabled in full mode. Either start with -litemode command line switch or enable transaction index.</source>
-        <translation>Der Transaktionsindex kann bei einer Fullnode nicht deaktiviert werden. Der Transaktionsindex muss entweder aktiviert sein oder die Node muss mit dem Befehl -litemode gestartet werden.</translation>
-    </message>
-    <message>
         <source>Tries to keep outbound traffic under the given target (in MiB per 24h), 0 = no limit (default: %d)</source>
         <translation>Versucht die Menge des Ausgehenden Datenverkehrs unterhalb der angegebenen Maximalmenge (in MiB pro Tag) zu halten, 0 = keine Maximalmenge (Standard: %d)</translation>
     </message>
@@ -4548,16 +4539,20 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Warning: es wird eine unbekannt Block-Version gemined. Es werden unbekannte/ungültige Blockregeln angewandt.</translation>
     </message>
     <message>
-        <source>You are starting in lite mode, all Ctp-specific functionality is disabled.</source>
-        <translation>Der Start findet im Lite-Modus statt, weswegen alle Ctp-spezifischen Funktionen deaktiviert wurden.</translation>
-    </message>
-    <message>
         <source>You need to rebuild the database using -reindex to go back to unpruned mode.  This will redownload the entire blockchain</source>
         <translation>Sie müssen die Datenbank mit Hilfe von -reindex neu aufbauen, um zurück in den nicht abgeschnittenen/pruned Modus zu gehen. Dies wird die gesamte Blockchain downloaden</translation>
     </message>
     <message>
+        <source>(%d could be used only on mainnet)</source>
+        <translation>(%d kann nur im Standardnetz benutzt werden)</translation>
+    </message>
+    <message>
         <source>(default: %u)</source>
         <translation>(Standard: %u)</translation>
+    </message>
+    <message>
+        <source>(must be %d for mainnet)</source>
+        <translation>(muß für Standardnetz %d sein)</translation>
     </message>
     <message>
         <source>-maxmempool must be at least %d MB</source>
@@ -4588,14 +4583,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Veröffentlichung des Blockhash in &lt;Adresse&gt; ermöglichen </translation>
     </message>
     <message>
-        <source>Enable publish hash of governance objects (like proposals) in &lt;address&gt;</source>
-        <translation>Veröffentlichung des Hash eines Governance Objects (z.B. ein Proposal) in &lt;address&gt; ermöglichen </translation>
-    </message>
-    <message>
-        <source>Enable publish hash of governance votes in &lt;address&gt;</source>
-        <translation>Veröffentlichung des Hash einer Governance Stimme in &lt;address&gt; ermöglichen </translation>
-    </message>
-    <message>
         <source>Enable publish hash transaction (locked via InstantSend) in &lt;address&gt;</source>
         <translation>Veröffentlichung des Transaktionshash (blockiert via InstantSend) in &lt;Adresse&gt; ermöglichen </translation>
     </message>
@@ -4616,6 +4603,10 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Veröffentlichung des Originaltransaktion in &lt;Adresse&gt; ermöglichen </translation>
     </message>
     <message>
+        <source>Enable transaction replacement in the memory pool (default: %u)</source>
+        <translation>Transaktions-Ersetzung im "Mempool" aktivieren (Standard: %u)</translation>
+    </message>
+    <message>
         <source>Error: A fatal internal error occurred, see debug.log for details</source>
         <translation>Fehler: ein nicht-behebbarer interner Fehler ist aufgetreten, Details sind in der Datei debug.log</translation>
     </message>
@@ -4632,12 +4623,8 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Löschen einer alten Datensicherung ist fehlgeschlagen, Fehler: %s</translation>
     </message>
     <message>
-        <source>Failed to load InstantSend data cache from</source>
-        <translation>Data Cache für InstantSend konnte nicht geladen werden aus</translation>
-    </message>
-    <message>
-        <source>Failed to load sporks cache from</source>
-        <translation>Sporks Cache konnte nicht geladen werden aus</translation>
+        <source>Failed to parse host:port string</source>
+        <translation>Die Eingabe für Rechnername:Port wird nicht verstanden</translation>
     </message>
     <message>
         <source>Fee (in %s/kB) to add to transactions you send (default: %s)</source>
@@ -4668,8 +4655,12 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Die letzte erfolgreiche PrivateSend-Transaktion ist noch zu neu.</translation>
     </message>
     <message>
-        <source>Loading InstantSend data cache...</source>
-        <translation>Lade InstantSend Data Cache...</translation>
+        <source>Line: %d</source>
+        <translation>Zeile: %d</translation>
+    </message>
+    <message>
+        <source>Loading addresses...</source>
+        <translation>Lade Adressen...</translation>
     </message>
     <message>
         <source>Loading block index...</source>
@@ -4678,10 +4669,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
     <message>
         <source>Loading governance cache...</source>
         <translation>Lade Governance-Cache...</translation>
-    </message>
-    <message>
-        <source>Loading sporks cache...</source>
-        <translation>Lade Sporks Cache...</translation>
     </message>
     <message>
         <source>Loading wallet... (%3.2f %%)</source>
@@ -4698,6 +4685,10 @@ https://www.transifex.com/projects/p/ctp/</translation>
     <message>
         <source>Make the wallet broadcast transactions</source>
         <translation>Aktiviere die Übertragung von Transaktionen</translation>
+    </message>
+    <message>
+        <source>Masternode cache is empty, skipping payments and governance cache...</source>
+        <translation>Der Masternode-Cache ist leer, Lesen des Cache für Zahlungen und Governance wird übersprungen...</translation>
     </message>
     <message>
         <source>Masternode options:</source>
@@ -4796,18 +4787,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Blockkette erneut nach fehlenden Wallet-Transaktionen durchsuchen</translation>
     </message>
     <message>
-        <source>Submitted following entries to masternode: %u</source>
-        <translation>Folgende Einträge wurden an Masternode gesendet: %u</translation>
-    </message>
-    <message>
-        <source>Submitted to masternode, waiting for more entries ( %u ) %s</source>
-        <translation>An Masternode gesendet, warte auf weitere Einträge ( %u ) %s</translation>
-    </message>
-    <message>
-        <source>Synchronizing blockchain...</source>
-        <translation>Synchronisiere Blockchain...</translation>
-    </message>
-    <message>
         <source>The wallet will avoid paying less than the minimum relay fee.</source>
         <translation>Das Wallet verhindert Zahlungen, die die Mindesttransaktionsgebühr nicht berücksichtigen.</translation>
     </message>
@@ -4832,10 +4811,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Die Transaktion muss mindestens einen Empfänger enthalten.</translation>
     </message>
     <message>
-        <source>Transaction too large</source>
-        <translation>Transaktion zu groß</translation>
-    </message>
-    <message>
         <source>Trying to connect...</source>
         <translation>Verbindungsaufbau...</translation>
     </message>
@@ -4856,10 +4831,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Wallet Debugging-/Testoptionen:</translation>
     </message>
     <message>
-        <source>Wallet is not initialized</source>
-        <translation>Wallet wurde nicht initialisiert</translation>
-    </message>
-    <message>
         <source>Wallet needed to be rewritten: restart %s to complete</source>
         <translation>Wallet musste neu geschrieben werden: starten Sie %s zur Fertigstellung neu</translation>
     </message>
@@ -4874,10 +4845,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
     <message>
         <source>Whether to operate in a blocks only mode (default: %u)</source>
         <translation>Arbeite im Block-Only-Modus (Standard: %u)</translation>
-    </message>
-    <message>
-        <source>You can not start a masternode in lite mode.</source>
-        <translation>Eine Masternode kann nicht im Lite-Modus gestartet werden,</translation>
     </message>
     <message>
         <source>ZeroMQ notification options:</source>
@@ -5000,6 +4967,14 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Das Wallet erzeugt keine Transaktionen, die das Mempool Chain Limit überschreiten (Standardeinstellung: %u)</translation>
     </message>
     <message>
+        <source>Warning: At least %d of %d masternodes are running on a newer software version. Please check latest releases, you might need to update too.</source>
+        <translation>Warnung: Mindestens %d von %d Masternodes verwenden eine neuere Version. Sieh dir die letzten Veröffentlichungen an und überprüfe, ob du ebenfalls updaten musst</translation>
+    </message>
+    <message>
+        <source>Warning: Every masternode (out of %d known ones) is running on a newer software version. Please check latest releases, it's very likely that you missed a major/critical update.</source>
+        <translation>Warnung: Alle Masternodes (von %d bekannten) verwenden eine neuere Version. Überprüfe bitte die letzten Veröffentlichungen, da du wahrscheinlich ein kritische Update übersehen hast.</translation>
+    </message>
+    <message>
         <source>Warning: Wallet file corrupt, data salvaged! Original %s saved as %s in %s; if your balance or transactions are incorrect you should restore from a backup.</source>
         <translation>Warnung: wallet beschädigt, Datenrettung erfolgreich! Original %s wurde als %s in %s gespeichert. Falls Ihr Kontostand oder Transaktionen nicht korrekt sind, sollten Sie von einer Datensicherung wiederherstellen.</translation>
     </message>
@@ -5084,20 +5059,8 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Initialisierungsplausibilitätsprüfung fehlgeschlagen. %s wird beendet.</translation>
     </message>
     <message>
-        <source>Invalid -onion address or hostname: '%s'</source>
-        <translation>Ungültige -onion Adresse oder ungültiger Hostname: '%s'</translation>
-    </message>
-    <message>
-        <source>Invalid -proxy address or hostname: '%s'</source>
-        <translation>Ungültige -proxy Adresse oder ungültiger Hostname: '%s'</translation>
-    </message>
-    <message>
         <source>Invalid amount for -%s=&lt;amount&gt;: '%s'</source>
         <translation>Ungültiger Betrag für -%s=&lt;amount&gt;: '%s'</translation>
-    </message>
-    <message>
-        <source>Invalid characters in -wallet filename</source>
-        <translation>Ungültige Zeichen in -wallet Dateinamen</translation>
     </message>
     <message>
         <source>Invalid spork address specified with -sporkaddr</source>
@@ -5106,10 +5069,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
     <message>
         <source>Keep N CTP anonymized (%u-%u, default: %u)</source>
         <translation>Betrag welcher anonymisiert vorgehalten wird. (%u-%u, Voreinstellung: %u) </translation>
-    </message>
-    <message>
-        <source>Loading P2P addresses...</source>
-        <translation>Lade P2P-Adressen...</translation>
     </message>
     <message>
         <source>Print this help message and exit</source>
@@ -5160,6 +5119,10 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Maximale Blockgröße in Byte festlegen (Standard: %d)</translation>
     </message>
     <message>
+        <source>Set the masternode private key</source>
+        <translation>Privaten Masternode-Schlüssel setzen</translation>
+    </message>
+    <message>
         <source>Show all debugging options (usage: --help -help-debug)</source>
         <translation>Zeige alle Debuggingoptionen (Benutzung: --help -help-debug)</translation>
     </message>
@@ -5194,6 +5157,10 @@ https://www.transifex.com/projects/p/ctp/</translation>
     <message>
         <source>Synchronizing governance objects...</source>
         <translation>Synchronisiere Governance Objekte...</translation>
+    </message>
+    <message>
+        <source>Synchronizing masternode payments...</source>
+        <translation>Synchronisiere Masternode-Zahlungen...</translation>
     </message>
     <message>
         <source>The source code is available from %s.</source>

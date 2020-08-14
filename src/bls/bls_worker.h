@@ -53,7 +53,6 @@ public:
     CBLSWorker();
     ~CBLSWorker();
 
-    void Start();
     void Stop();
 
     bool GenerateContributions(int threshold, const BLSIdVector& ids, BLSVerificationVectorPtr& vvecRet, BLSSecretKeyVector& skShares);

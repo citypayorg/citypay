@@ -22,14 +22,6 @@
         <translation>&amp;Копирай</translation>
     </message>
     <message>
-        <source>Show QR code for the currently selected address</source>
-        <translation>Покажи QR код за избраният адрес</translation>
-    </message>
-    <message>
-        <source>&amp;Show QR code</source>
-        <translation>&amp;Покажи QR код</translation>
-    </message>
-    <message>
         <source>Delete the currently selected address from the list</source>
         <translation>Изтрийте избрания адрес от списъка</translation>
     </message>
@@ -88,14 +80,6 @@
     <message>
         <source>&amp;Edit</source>
         <translation>&amp;Редактирай</translation>
-    </message>
-    <message>
-        <source>&amp;Show address QR code</source>
-        <translation>&amp;Покажи QR код на адреса</translation>
-    </message>
-    <message>
-        <source>QR code</source>
-        <translation>QR код</translation>
     </message>
     <message>
         <source>Export Address List</source>
@@ -454,6 +438,14 @@
         <translation>Отвори конфигурационния файл</translation>
     </message>
     <message>
+        <source>Open &amp;Masternode Configuration File</source>
+        <translation>Отвори &amp;Masternode конфигурационен файл</translation>
+    </message>
+    <message>
+        <source>Open Masternode configuration file</source>
+        <translation>Отвори Masternode конфигурационен файл</translation>
+    </message>
+    <message>
         <source>Show Automatic &amp;Backups</source>
         <translation>Покажи автоматичните &amp;Резервни копия</translation>
     </message>
@@ -658,6 +650,10 @@
 </context>
 <context>
     <name>ClientModel</name>
+    <message>
+        <source>Total: %1 (PS compatible: %2 / Enabled: %3)</source>
+        <translation>Общо: %1 (PS съвместими: %2 / Включени: %3)</translation>
+    </message>
     <message>
         <source>Network Alert</source>
         <translation>Предупреждение от мрежата</translation>
@@ -975,8 +971,8 @@
         <translation>PrivateSend информация</translation>
     </message>
     <message>
-        <source>&lt;h3&gt;PrivateSend Basics&lt;/h3&gt; PrivateSend gives you true financial privacy by obscuring the origins of your funds. All the Ctp in your wallet is comprised of different "inputs" which you can think of as separate, discrete coins.&lt;br&gt; PrivateSend uses an innovative process to mix your inputs with the inputs of two other people, without having your coins ever leave your wallet. You retain control of your money at all times.&lt;hr&gt; &lt;b&gt;The PrivateSend process works like this:&lt;/b&gt;&lt;ol type="1"&gt; &lt;li&gt;PrivateSend begins by breaking your transaction inputs down into standard denominations. These denominations are 0.001 CTP, 0.01 CTP, 0.1 CTP, 1 CTP and 10 CTP -- sort of like the paper money you use every day.&lt;/li&gt; &lt;li&gt;Your wallet then sends requests to specially configured software nodes on the network, called "masternodes." These masternodes are informed then that you are interested in mixing a certain denomination. No identifiable information is sent to the masternodes, so they never know "who" you are.&lt;/li&gt; &lt;li&gt;When two other people send similar messages, indicating that they wish to mix the same denomination, a mixing session begins. The masternode mixes up the inputs and instructs all three users' wallets to pay the now-transformed input back to themselves. Your wallet pays that denomination directly to itself, but in a different address (called a change address).&lt;/li&gt; &lt;li&gt;In order to fully obscure your funds, your wallet must repeat this process a number of times with each denomination. Each time the process is completed, it's called a "round." Each round of PrivateSend makes it exponentially more difficult to determine where your funds originated.&lt;/li&gt; &lt;li&gt;This mixing process happens in the background without any intervention on your part. When you wish to make a transaction, your funds will already be anonymized. No additional waiting is required.&lt;/li&gt; &lt;/ol&gt; &lt;hr&gt;&lt;b&gt;IMPORTANT:&lt;/b&gt; Your wallet only contains 1000 of these "change addresses." Every time a mixing event happens, up to 9 of your addresses are used up. This means those 1000 addresses last for about 100 mixing events. When 900 of them are used, your wallet must create more addresses. It can only do this, however, if you have automatic backups enabled.&lt;br&gt; Consequently, users who have backups disabled will also have PrivateSend disabled. &lt;hr&gt;For more information, see the &lt;a href="https://docs.citypay.org/en/latest/wallets/ctpcore/privatesend-instantsend.html"&gt;PrivateSend documentation&lt;/a&gt;.</source>
-        <translation>&lt;h3&gt;PrivateSend основни понятия&lt;/h3&gt; PrivateSend ви дава истинска финансова независимост чрез скриване произхода на средствата ви. Всички Ctp монети в портфейла ви са съставени от различни "входове" които можете да приемете като отделни дискретни монети&lt;br&gt; PrivateSend използва иновативен процес като смесва вашите входове с входовете на други двама души без монетите да напускат изобщо портфейла ви. Имате пълен контрол върху парите си през цялото време. &lt;hr&gt; &lt;b&gt; PrivateSend процесът работи по следния начин:&lt;/b&gt;&lt;ol type="1"&gt; &lt;li&gt;PrivateSend започва чрез разделяне на транзакцията ви до стандартни деноминации. Тези деноминации са 0.001 CTP, 0.01 CTP, 0.1 CTP, 1 CTP и 10 CTP --подобно на стандартните пари, които ползваме ежедневно.&lt;/li&gt; &lt;li&gt;Вашия портфейл изпраща запитване към специално конфигурираните софтуерни възли в мрежата, наречени "masternodes." Тези masternodes са информирани, че се интересувате от смесване на определена деноминация. Никаква идентификационна информация не се изпраща към   masternodes, така, че те никога не знаят "кой" сте.&lt;/li&gt; &lt;li&gt;Когато други двама души изпратят подобни съобщения, обозначаващи, че искат да смесят същата деноминация, смесващата сесия започва. Masternode смесват входовете и инструктират портфейлите на тримата потребители да платят новотрансформираните входове обратно към притежателите им. Вашият портфейл плаща деноминацията директно на себе си, но с различен адрес (наричан сменен адрес).  &lt;/li&gt; &lt;li&gt;С цел напълно скриване на доходите ви, вашият портфейл трябва да повтори този процес няколко пъти във всяка деноминация.  Всеки път завършеният процес се нарича "цикъл." Всеки цикъл на PrivateSend прави откриването на първоначалния източник на вашите средства напълно непроследим.&lt;/li&gt; &lt;li&gt;Този смесващ процес се случва като процес на заден фон без никаква намеса от ваша страна. Когато искате да направите транзакция, вашите средства са винаги анонимни. Не е необходимо допълнително изчакване. &lt;/li&gt; &lt;/ol&gt; &lt;hr&gt;&lt;b&gt;ВАЖНО:&lt;/b&gt; Вашият портфейл съдържа само 1000 от тези "сменяеми адреси". Всеки път когато се случва смесването до 9 от вашите адреси се ползват.  Това означава, че тези 1000 адреси се миксират в около 100 смесващи събития. Когато 900 се използват, вашия портфейл трябва да създаде повече адреси. Това може да стане само ако имате автоматично архивиране.&lt;br&gt; Следователно, потребителите, на които е изключено автоматичното архивиране, нямат и  PrivateSend включено. &lt;hr&gt;За повече информация вижте &lt;a href="https://docs.citypay.org/en/latest/wallets/ctpcore/privatesend-instantsend.html"&gt;документацията за PrivateSend&lt;/a&gt;.</translation>
+        <source>&lt;h3&gt;PrivateSend Basics&lt;/h3&gt; PrivateSend gives you true financial privacy by obscuring the origins of your funds. All the Ctp in your wallet is comprised of different "inputs" which you can think of as separate, discrete coins.&lt;br&gt; PrivateSend uses an innovative process to mix your inputs with the inputs of two other people, without having your coins ever leave your wallet. You retain control of your money at all times.&lt;hr&gt; &lt;b&gt;The PrivateSend process works like this:&lt;/b&gt;&lt;ol type="1"&gt; &lt;li&gt;PrivateSend begins by breaking your transaction inputs down into standard denominations. These denominations are 0.01 CTP, 0.1 CTP, 1 CTP and 10 CTP -- sort of like the paper money you use every day.&lt;/li&gt; &lt;li&gt;Your wallet then sends requests to specially configured software nodes on the network, called "masternodes." These masternodes are informed then that you are interested in mixing a certain denomination. No identifiable information is sent to the masternodes, so they never know "who" you are.&lt;/li&gt; &lt;li&gt;When two other people send similar messages, indicating that they wish to mix the same denomination, a mixing session begins. The masternode mixes up the inputs and instructs all three users' wallets to pay the now-transformed input back to themselves. Your wallet pays that denomination directly to itself, but in a different address (called a change address).&lt;/li&gt; &lt;li&gt;In order to fully obscure your funds, your wallet must repeat this process a number of times with each denomination. Each time the process is completed, it's called a "round." Each round of PrivateSend makes it exponentially more difficult to determine where your funds originated.&lt;/li&gt; &lt;li&gt;This mixing process happens in the background without any intervention on your part. When you wish to make a transaction, your funds will already be anonymized. No additional waiting is required.&lt;/li&gt; &lt;/ol&gt; &lt;hr&gt;&lt;b&gt;IMPORTANT:&lt;/b&gt; Your wallet only contains 1000 of these "change addresses." Every time a mixing event happens, up to 9 of your addresses are used up. This means those 1000 addresses last for about 100 mixing events. When 900 of them are used, your wallet must create more addresses. It can only do this, however, if you have automatic backups enabled.&lt;br&gt; Consequently, users who have backups disabled will also have PrivateSend disabled. &lt;hr&gt;For more information, see the &lt;a href="https://docs.citypay.org/en/latest/wallets/ctpcore/privatesend-instantsend.html"&gt;PrivateSend documentation&lt;/a&gt;.         </source>
+        <translation>&lt;h3&gt;PrivateSend основни понятия&lt;/h3&gt; PrivateSend ви дава истинска финансова независимост чрез скриване произхода на средствата ви. Всички Ctp монети в портфейла ви са съставени от различни "входове" които можете да приемете като отделни дискретни монети&lt;br&gt; PrivateSend използва иновативен процес като смесва вашите входове с входовете на други двама души без монетите да напускат изобщо портфейла ви. Имате пълен контрол върху парите си през цялото време. &lt;hr&gt; &lt;b&gt; PrivateSend процесът работи по следния начин:&lt;/b&gt;&lt;ol type="1"&gt; &lt;li&gt;PrivateSend започва чрез разделяне на транзакцията ви до стандартни деноминации. Тези деноминации са 0.01 CTP, 0.1 CTP, 1 CTP и 10 CTP --подобно на стандартните пари, които ползваме ежедневно.&lt;/li&gt; &lt;li&gt;Вашия портфейл изпраща запитване към специално конфигурираните софтуерни възли в мрежата, наречени "masternodes." Тези masternodes са информирани, че се интересувате от смесване на определена деноминация. Никаква идентификационна информация не се изпраща към   masternodes, така, че те никога не знаят "кой" сте.&lt;/li&gt; &lt;li&gt;Когато други двама души изпратят подобни съобщения, обозначаващи, че искат да смесят същата деноминация, смесващата сесия започва. Masternode смесват входовете и инструктират портфейлите на тримата потребители да платят новотрансформираните входове обратно към притежателите им. Вашият портфейл плаща деноминацията директно на себе си, но с различен адрес (наричан сменен адрес).  &lt;/li&gt; &lt;li&gt;С цел напълно скриване на доходите ви, вашият портфейл трябва да повтори този процес няколко пъти във всяка деноминация.  Всеки път завършеният процес се нарича "цикъл." Всеки цикъл на PrivateSend прави откриването на първоначалния източник на вашите средства напълно непроследим.&lt;/li&gt; &lt;li&gt;Този смесващ процес се случва като процес на заден фон без никаква намеса от ваша страна. Когато искате да направите транзакция, вашите средства са винаги анонимни. Не е необходимо допълнително изчакване. &lt;/li&gt; &lt;/ol&gt; &lt;hr&gt;&lt;b&gt;ВАЖНО:&lt;/b&gt; Вашият портфейл съдържа само 1000 от тези "сменяеми адреси". Всеки път когато се случва смесването до 9 от вашите адреси се ползват.  Това означава, че тези 1000 адреси се миксират в около 100 смесващи събития. Когато 900 се използват, вашия портфейл трябва да създаде повече адреси. Това може да стане само ако имате автоматично архивиране.&lt;br&gt; Следователно, потребителите, на които е изключено автоматичното архивиране, нямат и  PrivateSend включено. &lt;hr&gt;За повече информация вижте &lt;a href="https://docs.citypay.org/en/latest/wallets/ctpcore/privatesend-instantsend.html"&gt;документацията за PrivateSend&lt;/a&gt;.</translation>
     </message>
 </context>
 <context>
@@ -994,16 +990,8 @@
         <translation>Тъй като това е първият път, когато програмата се стартира, можете да изберете къде %1 да съхранява данните си.</translation>
     </message>
     <message>
-        <source>When you click OK, %1 will begin to download and process the full %4 block chain (%2GB) starting with the earliest transactions in %3 when %4 initially launched.</source>
-        <translation>Когато изберете OK, %1 ще започне да изтегля и обработва %4 блок верига (%2GB) стартирайки с първите транзакции в %3 когато %4 е  пуснат първоначално.</translation>
-    </message>
-    <message>
-        <source>This initial synchronisation is very demanding, and may expose hardware problems with your computer that had previously gone unnoticed. Each time you run %1, it will continue downloading where it left off.</source>
-        <translation>Тази първоначална синхронизация изисква много ресурси и може да покаже хардуерните проблеми с компютъра, които преди това не сте забелязали. Всеки път, когато стартирате %1, той ще продължи да се изтегля там, където е спрял.</translation>
-    </message>
-    <message>
-        <source>If you have chosen to limit block chain storage (pruning), the historical data must still be downloaded and processed, but will be deleted afterward to keep your disk usage low.</source>
-        <translation>Ако сте избрали да ограничите пространството за съхранение на блок веригата(съкращаване), историческите данни ще трябва да се изтеглят и обработят, но след това ще бъдат изтрити, за да се запази използването на по-малко пространство на диска.</translation>
+        <source>%1 will download and store a copy of the Ctp block chain. At least %2GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>%1 ще свали и съхрани копие на Ctp регистъра на блокове. Най-малко %2GB от информацията ще се съхрани в тази директория и ще нараства с времето.  Портфейлът също ще бъде съхранен в тази директория. </translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1012,22 +1000,6 @@
     <message>
         <source>Use a custom data directory:</source>
         <translation>Определете папка по ваш избор:</translation>
-    </message>
-    <message>
-        <source>At least %1 GB of data will be stored in this directory, and it will grow over time.</source>
-        <translation>Най малко %1 GB данни ще бъдат запаметени в тази директория, и ще нарастват през времето.</translation>
-    </message>
-    <message>
-        <source>Approximately %1 GB of data will be stored in this directory.</source>
-        <translation>Около %1 GB данни ще бъдат запаметени в тази директория.</translation>
-    </message>
-    <message>
-        <source>%1 will download and store a copy of the Ctp block chain.</source>
-        <translation>%1 ще изтегли и съхрани копие на  Ctp блок веригата.</translation>
-    </message>
-    <message>
-        <source>The wallet will also be stored in this directory.</source>
-        <translation>Портфейлът също ще бъде съхранен в тази директория.</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1053,20 +1025,76 @@
         <translation>От</translation>
     </message>
     <message>
+        <source>My Masternodes</source>
+        <translation>Моите Masternodes</translation>
+    </message>
+    <message>
+        <source>Note: Status of your masternodes in local wallet can potentially be slightly incorrect.&lt;br /&gt;Always wait for wallet to sync additional data and then double check from another node&lt;br /&gt;if your masternode should be running but you still do not see "ENABLED" in "Status" field.</source>
+        <translation>Бележка: Статуса на вашите masternodes в портфейла ви може потенциално да бъде леко некоректен.&lt;br /&gt;Винаги изчаквайте портфейлът да синхронизира допълнителната информация и тогава направете двойна проверка от друг възел&lt;br /&gt;ако вашият masternode би трябвало да работи, но все още не виждате надпис "ENABLED" в полето "Статус".</translation>
+    </message>
+    <message>
+        <source>Alias</source>
+        <translation>Псевдоним</translation>
+    </message>
+    <message>
         <source>Address</source>
         <translation>Адрес</translation>
+    </message>
+    <message>
+        <source>Protocol</source>
+        <translation>Протокол</translation>
     </message>
     <message>
         <source>Status</source>
         <translation>Статус</translation>
     </message>
     <message>
+        <source>Active</source>
+        <translation>Активен</translation>
+    </message>
+    <message>
+        <source>Last Seen</source>
+        <translation>Последно видян</translation>
+    </message>
+    <message>
         <source>Payee</source>
         <translation>Получател</translation>
     </message>
     <message>
+        <source>S&amp;tart alias</source>
+        <translation>Стартирай &amp;псевдоним</translation>
+    </message>
+    <message>
+        <source>Start &amp;all</source>
+        <translation>Стартирай &amp;всички</translation>
+    </message>
+    <message>
+        <source>Start &amp;MISSING</source>
+        <translation>Стартирай &amp;ЛИПСВАЩ</translation>
+    </message>
+    <message>
+        <source>&amp;Update status</source>
+        <translation>&amp;Обнови статус</translation>
+    </message>
+    <message>
+        <source>Show additional Masternode information</source>
+        <translation>Покажи допълнителна Masternode информация</translation>
+    </message>
+    <message>
+        <source>Show &amp;Info...</source>
+        <translation>Показва &amp;информация...</translation>
+    </message>
+    <message>
+        <source>Status will be updated automatically in (sec):</source>
+        <translation>Статуса ще бъде обновен автоматично след (сек):</translation>
+    </message>
+    <message>
         <source>0</source>
         <translation>0</translation>
+    </message>
+    <message>
+        <source>All Masternodes</source>
+        <translation>Всички Masternodes</translation>
     </message>
     <message>
         <source>Filter List:</source>
@@ -1081,76 +1109,72 @@
         <translation>Брой възли:</translation>
     </message>
     <message>
-        <source>DIP3 Masternodes</source>
-        <translation>DIP3 Masternodes</translation>
+        <source>Start alias</source>
+        <translation>Стартиране псевдоним</translation>
     </message>
     <message>
-        <source>Show only masternodes this wallet has keys for.</source>
-        <translation>Показване само на masternodes, чиито ключове притежава този портфейл.</translation>
+        <source>Confirm masternode start</source>
+        <translation>Потвърден старт на masternode</translation>
     </message>
     <message>
-        <source>My masternodes only</source>
-        <translation>Само моите masternodes</translation>
+        <source>Are you sure you want to start masternode %1?</source>
+        <translation>Сигурен ли сте, че искате да стартирате masternode %1?</translation>
     </message>
     <message>
-        <source>PoSe Score</source>
-        <translation>PoSe резултат</translation>
+        <source>Confirm all masternodes start</source>
+        <translation>Потвърдено стартиране на всички masternodes</translation>
     </message>
     <message>
-        <source>Registered</source>
-        <translation>Регистриран</translation>
+        <source>Are you sure you want to start ALL masternodes?</source>
+        <translation>Сигурен ли сте, че искате стартирането на  ВСИЧКИ masternodes?</translation>
     </message>
     <message>
-        <source>Last Paid</source>
-        <translation>Последно плащане</translation>
+        <source>Command is not available right now</source>
+        <translation>Командата не е налична в момента</translation>
     </message>
     <message>
-        <source>Next Payment</source>
-        <translation>Следващо плащане</translation>
+        <source>You can't use this command until masternode list is synced</source>
+        <translation>Не можете да използвате тази команда преди синхронизирането на masternode списъка</translation>
     </message>
     <message>
-        <source>Operator Reward</source>
-        <translation>Награда на оператора</translation>
+        <source>Confirm missing masternodes start</source>
+        <translation>Потвърдено стартиране на липсващите masternodes</translation>
     </message>
     <message>
-        <source>Copy ProTx Hash</source>
-        <translation>Копирай ProTx Hash</translation>
+        <source>Are you sure you want to start MISSING masternodes?</source>
+        <translation>Сигурен ли сте, че искате стартирането на ЛИПСВАЩИТЕ masternodes? </translation>
     </message>
     <message>
-        <source>Copy Collateral Outpoint</source>
-        <translation>Копирай Collateral Outpoint</translation>
+        <source>Additional information for Masternode %1</source>
+        <translation>Допълнителна информация за Masternode %1</translation>
     </message>
     <message>
-        <source>ENABLED</source>
-        <translation>ВКЛЮЧЕН</translation>
+        <source>Masternode Private Key</source>
+        <translation>Masternode Личен ключ</translation>
     </message>
     <message>
-        <source>POSE_BANNED</source>
-        <translation>POSE_BANNED</translation>
+        <source>Private Key</source>
+        <translation>Частен ключ</translation>
     </message>
     <message>
-        <source>UNKNOWN</source>
-        <translation>НЕИЗВЕСТЕН</translation>
+        <source>Collateral</source>
+        <translation>Обезпечаване</translation>
     </message>
     <message>
-        <source>to %1</source>
-        <translation>до %1</translation>
+        <source>IP</source>
+        <translation>IP</translation>
     </message>
     <message>
-        <source>to UNKNOWN</source>
-        <translation>към НЕИЗВЕСТЕН</translation>
+        <source>Version</source>
+        <translation>Версия</translation>
     </message>
     <message>
-        <source>but not claimed</source>
-        <translation>но неизискан</translation>
+        <source>Unknown</source>
+        <translation>Неизвестен</translation>
     </message>
     <message>
-        <source>NONE</source>
-        <translation>НИЩО</translation>
-    </message>
-    <message>
-        <source>Additional information for DIP3 Masternode %1</source>
-        <translation>Допълнителна информация за DIP3 Masternode %1</translation>
+        <source>Sentinel</source>
+        <translation>Sentinel</translation>
     </message>
 </context>
 <context>
@@ -1356,14 +1380,6 @@
     <message>
         <source>Enable coin &amp;control features</source>
         <translation>Активиране &amp;контролните функции на монетата</translation>
-    </message>
-    <message>
-        <source>Show system popups for PrivateSend mixing transactions&lt;br/&gt;just like for all other transaction types.</source>
-        <translation>Показване на изскачащи системни прозорци при PrivateSend миксирани транзакции&lt;br/&gt;както за всички други видове транзакции.</translation>
-    </message>
-    <message>
-        <source>Show popups for PrivateSend transactions</source>
-        <translation>Показване на изскачащи прозорци за PrivateSend транзакции</translation>
     </message>
     <message>
         <source>&amp;Spend unconfirmed change</source>
@@ -1781,6 +1797,10 @@ https://www.transifex.com/projects/p/ctp/</translation>
 </translation>
     </message>
     <message>
+        <source>N/A</source>
+        <translation>N/A</translation>
+    </message>
+    <message>
         <source>PrivateSend was successfully reset.</source>
         <translation>PrivateSend беше успешно нулиран.</translation>
     </message>
@@ -1910,8 +1930,16 @@ https://www.transifex.com/projects/p/ctp/</translation>
 <context>
     <name>QObject</name>
     <message>
+        <source>Ctp Core</source>
+        <translation>Ctp Core</translation>
+    </message>
+    <message>
         <source>%1 didn't yet exit safely...</source>
         <translation>%1 все още не е излязъл безопастно...</translation>
+    </message>
+    <message>
+        <source>Error reading masternode configuration file: %1</source>
+        <translation>Грешка при четене конфигурационният файл на masternode : %1</translation>
     </message>
     <message>
         <source>Amount</source>
@@ -2375,10 +2403,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
     <message>
         <source>Network activity disabled</source>
         <translation>Мрежова активност изключена</translation>
-    </message>
-    <message>
-        <source>Total: %1 (Enabled: %2)</source>
-        <translation>Общо: %1 (Включено: %2)</translation>
     </message>
     <message>
         <source>%1 B</source>
@@ -3230,14 +3254,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>включена в %1 блока</translation>
     </message>
     <message>
-        <source>locked via LLMQ based ChainLocks</source>
-        <translation>заключена чрез LLMQ базирани ChainLocks</translation>
-    </message>
-    <message>
-        <source>verified via LLMQ based InstantSend</source>
-        <translation>потвърдена чрез LLMQ базиран InstantSend</translation>
-    </message>
-    <message>
         <source>verified via InstantSend</source>
         <translation>потвърдено чрез InstantSend</translation>
     </message>
@@ -3524,10 +3540,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Дали има или не наблюдаван/watch-only адрес участващ в тази транзакция.</translation>
     </message>
     <message>
-        <source>Whether or not this transaction was locked by InstantSend.</source>
-        <translation>Дали тази транзакция е била заключена чрез InstantSend.</translation>
-    </message>
-    <message>
         <source>User-defined intent/purpose of the transaction.</source>
         <translation>Дефинирани от потребителя намерение/цели на сделката.</translation>
     </message>
@@ -3541,14 +3553,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
     <message>
         <source>All</source>
         <translation>Всички</translation>
-    </message>
-    <message>
-        <source>Locked by InstantSend</source>
-        <translation>Заключена чрез InstantSend</translation>
-    </message>
-    <message>
-        <source>Not locked by InstantSend</source>
-        <translation>Не е заключена чрез InstantSend</translation>
     </message>
     <message>
         <source>Today</source>
@@ -3663,10 +3667,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Подробности за транзакцията</translation>
     </message>
     <message>
-        <source>Show address QR code</source>
-        <translation>Покажи QR код</translation>
-    </message>
-    <message>
         <source>Export Transaction History</source>
         <translation>Изнасяне историята на транзакциите</translation>
     </message>
@@ -3717,10 +3717,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
     <message>
         <source>The transaction history was successfully saved to %1.</source>
         <translation>Направените транзакции са запазени до %1.</translation>
-    </message>
-    <message>
-        <source>QR code</source>
-        <translation>QR код</translation>
     </message>
     <message>
         <source>Range:</source>
@@ -3846,6 +3842,10 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Внимание: Не е намерена пълна съвместимост с останалите в мрежата ! Може би се нуждаете от обновяване , или някой от другите нодове се нуждае от обновяване .</translation>
     </message>
     <message>
+        <source>You must specify a masternodeprivkey in the configuration. Please see documentation for help.</source>
+        <translation>Трябва да посочите masternodeprivkey в конфигурацията. Моля прочетете документацията за помощ.</translation>
+    </message>
+    <message>
         <source>Accept command line and JSON-RPC commands</source>
         <translation>Приемай команден ред и JSON-RPC команди</translation>
     </message>
@@ -3966,20 +3966,16 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Свързва се с посочения адрес и добави в whitelist свързаните към него пиъри. Използвайте [хост]:порт за изписване при IPv6</translation>
     </message>
     <message>
+        <source>Bind to given address to listen for JSON-RPC connections. Use [host]:port notation for IPv6. This option can be specified multiple times (default: bind to all interfaces)</source>
+        <translation>Свързват с даден адрес, за да слушат за JSON-RPC връзки. Използвайте [host]: port нотация за IPv6. Тази опция може да бъде променяна многократно (по подразбиране: свързват с всички интерфейси)</translation>
+    </message>
+    <message>
         <source>Create new files with system default permissions, instead of umask 077 (only effective with disabled wallet functionality)</source>
         <translation>Създаване на нови файлове с достъп по подразбиране , вместо umask 077 (в сила само при изключена функционалност на портфейла)</translation>
     </message>
     <message>
         <source>Delete all wallet transactions and only recover those parts of the blockchain through -rescan on startup</source>
         <translation>Изтриване на всички транзакции на портфейла и  възстановява само тези части на блок веригата чрез -rescan при стартиране</translation>
-    </message>
-    <message>
-        <source>Enable publish raw transactions of attempted InstantSend double spend in &lt;address&gt;</source>
-        <translation>Включване публикуване на сурови транзакции при опит за двойно похарчване с InstantSend в &lt;address&gt;</translation>
-    </message>
-    <message>
-        <source>Enable publish transaction hashes of attempted InstantSend double spend in &lt;address&gt;</source>
-        <translation>Включване публикуването хеша на транзакция при опит за двойно похарчване с InstantSend в &lt;address&gt;</translation>
     </message>
     <message>
         <source>Error loading %s: You can't enable HD on a already existing non-HD wallet</source>
@@ -4026,14 +4022,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Изходяща информация за грешки (по подразбиране: %u, задаването на &lt;category&gt; е опция)</translation>
     </message>
     <message>
-        <source>Overrides minimum spork signers to change spork value. Only useful for regtest and devnet. Using this on mainnet or testnet will ban you.</source>
-        <translation>Отменя се минималният брой ауторизатори на spork за промяна на стойността на spork. Полезно само за regtest и devnet. Използването на това в mainnet или testnet ще ви изхвърли от мрежата.</translation>
-    </message>
-    <message>
-        <source>Use N separate masternodes in parallel to mix funds (%u-%u, default: %u)</source>
-        <translation>Използвай N броя различни masternodes в паралел за миксиране на средства (%u-%u, по подразбиране: %u)</translation>
-    </message>
-    <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
         <translation>Използва отделен SOCKS5 прокси, за достигне на пиъри чрез Tor скрити услуги (по подразбиране: %s)</translation>
     </message>
@@ -4054,16 +4042,8 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Нужно е възстановяване на базата данни, използвайте -reindex-chainstate за промяна  на -txindex</translation>
     </message>
     <message>
-        <source>You should specify a masternodeblsprivkey in the configuration. Please see documentation for help.</source>
-        <translation>Трябва да укажете masternodeblsprivkey в конфигурацията. Моля вижте документацията за помощ.</translation>
-    </message>
-    <message>
         <source>(default: %s)</source>
         <translation>(по подразбиране: %s)</translation>
-    </message>
-    <message>
-        <source>-wallet parameter must only specify a filename (not a path)</source>
-        <translation>-wallet трябва да показва само името на файла (не пътят)</translation>
     </message>
     <message>
         <source>Accept public REST requests (default: %u)</source>
@@ -4114,6 +4094,10 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Неуспешно зареждане на masternode кеша от</translation>
     </message>
     <message>
+        <source>Failed to load masternode payments cache from</source>
+        <translation>Неуспешно зареждане на кеша за masternode плащанията от</translation>
+    </message>
+    <message>
         <source>Found enough users, signing ( waiting %s )</source>
         <translation>Открити са достатъчно потребители, подписване ( изчаква %s )</translation>
     </message>
@@ -4158,16 +4142,16 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Недостатъчно средства.</translation>
     </message>
     <message>
+        <source>Invalid -onion address: '%s'</source>
+        <translation>Невалиден -onion адрес: '%s'</translation>
+    </message>
+    <message>
+        <source>Invalid -proxy address: '%s'</source>
+        <translation>Невалиден -proxy address: '%s'</translation>
+    </message>
+    <message>
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s' (must be at least %s)</source>
         <translation>Невалидна сума за -paytxfee=&lt;amount&gt;: '%s' (трябва да бъде най-малко %s)</translation>
-    </message>
-    <message>
-        <source>Invalid masternodeblsprivkey. Please see documenation.</source>
-        <translation>Невалиден masternodeblsprivkey. Моля вижте документацията.</translation>
-    </message>
-    <message>
-        <source>Invalid minimum number of spork signers specified with -minsporkkeys</source>
-        <translation>Невалиден минимален брой ауторизатори на spork определен с -minsporkkeys</translation>
     </message>
     <message>
         <source>Keypool ran out, please call keypoolrefill first</source>
@@ -4194,8 +4178,16 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Зареждане на masternode кеш...</translation>
     </message>
     <message>
+        <source>Loading masternode payment cache...</source>
+        <translation>Зараждане на masternode кеш за плащане</translation>
+    </message>
+    <message>
         <source>Lock is already in place.</source>
         <translation>Заключването е вече налично.</translation>
+    </message>
+    <message>
+        <source>Lock masternodes from masternode configuration file (default: %u)</source>
+        <translation>Заключване на masternodes от конфигурационния файл(по подразбиране: %u)</translation>
     </message>
     <message>
         <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: %u)</source>
@@ -4234,6 +4226,10 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Свързване само към точки от мрежата &lt;net&gt; (IPv4, IPv6 или onion)</translation>
     </message>
     <message>
+        <source>Port: %d</source>
+        <translation>Порт: %d</translation>
+    </message>
+    <message>
         <source>Prepend debug output with timestamp (default: %u)</source>
         <translation>Прикрепва справката за грешки към времевия запис(по подразбиране:  %u)</translation>
     </message>
@@ -4258,10 +4254,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Задайте максимален брой на генерираните ключове до &lt;n&gt; (по подразбиране: %u)</translation>
     </message>
     <message>
-        <source>Set the masternode BLS private key</source>
-        <translation>Задаване на masternode BLS частен ключ</translation>
-    </message>
-    <message>
         <source>Set the number of threads to service RPC calls (default: %d)</source>
         <translation>Задай брой заявки обслужващи процеса RPC повикванията (по подразбиране:  %d)</translation>
     </message>
@@ -4274,6 +4266,10 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Определете таймаут за свързване в милисекунди (минимум: 1, подразбиране: %d)</translation>
     </message>
     <message>
+        <source>Specify masternode configuration file (default: %s)</source>
+        <translation>Посочете конфигурационен файл (по подразбиране: %s)</translation>
+    </message>
+    <message>
         <source>Specify pid file (default: %s)</source>
         <translation>Посочете pid-файла (по подразбиране:  %s)</translation>
     </message>
@@ -4282,8 +4278,20 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Изхарчете непотвърденото ресто при изпращане на транзакциите (по подразбиране: %u)</translation>
     </message>
     <message>
+        <source>Submitted following entries to masternode: %u / %d</source>
+        <translation>Изпратени са следните записи към masternode: %u / %d</translation>
+    </message>
+    <message>
+        <source>Submitted to masternode, waiting for more entries ( %u / %d ) %s</source>
+        <translation>Изпратено към masternode, чака за още записи ( %u / %d ) %s</translation>
+    </message>
+    <message>
         <source>Submitted to masternode, waiting in queue %s</source>
         <translation>Изпратено към Мастернода, чака в опашката %s</translation>
+    </message>
+    <message>
+        <source>Synchroning blockchain...</source>
+        <translation>Синхронизиране на блок-веригата...</translation>
     </message>
     <message>
         <source>Synchronization failed</source>
@@ -4292,6 +4300,10 @@ https://www.transifex.com/projects/p/ctp/</translation>
     <message>
         <source>Synchronization finished</source>
         <translation>Синхронизацията е завършена</translation>
+    </message>
+    <message>
+        <source>Synchronizing masternodes...</source>
+        <translation>Синхронизиране на masternodes ...</translation>
     </message>
     <message>
         <source>This is not a Masternode.</source>
@@ -4304,10 +4316,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
     <message>
         <source>Too many %f denominations, removing.</source>
         <translation>Твърде много %f деноминации, премахване.</translation>
-    </message>
-    <message>
-        <source>Too many %f denominations, skipping.</source>
-        <translation>Твърде много %f деноминации, прескочи.</translation>
     </message>
     <message>
         <source>Tor control port password (default: empty)</source>
@@ -4362,6 +4370,10 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Ще опита отново...</translation>
     </message>
     <message>
+        <source>Invalid masternodeprivkey. Please see documenation.</source>
+        <translation>Невалиден частен ключ на Masternode. Моля вижте документацията.</translation>
+    </message>
+    <message>
         <source>Can't find random Masternode.</source>
         <translation>Не можете да намери случаен Masternode.</translation>
     </message>
@@ -4370,8 +4382,16 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Не може да се смесват, докато се синхронизира.</translation>
     </message>
     <message>
+        <source>Could not parse masternode.conf</source>
+        <translation>Несъвместимост в masternode.conf</translation>
+    </message>
+    <message>
         <source>Invalid netmask specified in -whitelist: '%s'</source>
         <translation>Невалидна мрежова маска в -whitelist: '%s'</translation>
+    </message>
+    <message>
+        <source>Invalid port detected in masternode.conf</source>
+        <translation>Открит е невалиден порт в masternode.conf</translation>
     </message>
     <message>
         <source>Invalid script detected.</source>
@@ -4396,10 +4416,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
     <message>
         <source>%s file contains all private keys from this wallet. Do not share it with anyone!</source>
         <translation>Файл %s  съдържа всички частни ключове от този портфейл. Не го споделяйте с никого!</translation>
-    </message>
-    <message>
-        <source>Bind to given address to listen for JSON-RPC connections. This option is ignored unless -rpcallowip is also passed. Port is optional and overrides -rpcport. Use [host]:port notation for IPv6. This option can be specified multiple times (default: 127.0.0.1 and ::1 i.e., localhost, or if -rpcallowip has been specified, 0.0.0.0 and :: i.e., all addresses)</source>
-        <translation>Свържете с даден адрес за да слушате за JSON-RPC връзки. Тази опция се игнорира освен ако -rpcallowip също е преминал. Порта е опция и замества -rpcport. Използвай [host]:port нотация за IPv6. Тази опция може да бъде задавана многократно (по подразбиране: 127.0.0.1 и ::1 i.e., localhost, или ако -rpcallowip е посочен, 0.0.0.0 и:: т.е всички адреси)</translation>
     </message>
     <message>
         <source>Discover own IP addresses (default: 1 when listening and no -externalip or -proxy)</source>
@@ -4554,8 +4570,16 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Необходимо е повторно изграждане на базата данни използвайки -reindex за да се върнете в неизчистен режим.Това ще изтегли отново съществуващата блок-верига</translation>
     </message>
     <message>
+        <source>(%d could be used only on mainnet)</source>
+        <translation>(%d може да бъде използвано само в основната мрежа)</translation>
+    </message>
+    <message>
         <source>(default: %u)</source>
         <translation>(по подразбиране: %u)</translation>
+    </message>
+    <message>
+        <source>(must be %d for mainnet)</source>
+        <translation>(трябва да бъде %d за основната мрежа)</translation>
     </message>
     <message>
         <source>-maxmempool must be at least %d MB</source>
@@ -4614,6 +4638,10 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Включва публикуване на необранотена транзакция  в &lt;address&gt;</translation>
     </message>
     <message>
+        <source>Enable transaction replacement in the memory pool (default: %u)</source>
+        <translation>Включва подмяна на транзакциите в  memory pool (по подразниране: %u)</translation>
+    </message>
+    <message>
         <source>Error: A fatal internal error occurred, see debug.log for details</source>
         <translation>Грешка: Възникна сериозна вътрешна грешка, виж debug.log за подробности</translation>
     </message>
@@ -4638,6 +4666,10 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Неуспешно зареждане на кеша за sporks от</translation>
     </message>
     <message>
+        <source>Failed to parse host:port string</source>
+        <translation>Неуспешен разбор на host:port стринг</translation>
+    </message>
+    <message>
         <source>Fee (in %s/kB) to add to transactions you send (default: %s)</source>
         <translation>Такса (в %s/kB) за добавяне към транзакцията,която изпращате (default: %s)</translation>
     </message>
@@ -4654,6 +4686,10 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Невалидно количество за -fallbackfee=&lt;amount&gt;: '%s'</translation>
     </message>
     <message>
+        <source>Invalid input count.</source>
+        <translation>Невалиден брой входове.</translation>
+    </message>
+    <message>
         <source>Keep the transaction memory pool below &lt;n&gt; megabytes (default: %u)</source>
         <translation>Дръж мемпула за транзакциите под &lt;n&gt; мегабайта (по подразбиране: %u)</translation>
     </message>
@@ -4666,8 +4702,16 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Последното успешно PrivateSend действие бе твърде скоро.</translation>
     </message>
     <message>
+        <source>Line: %d</source>
+        <translation>Линия: %d</translation>
+    </message>
+    <message>
         <source>Loading InstantSend data cache...</source>
         <translation>Зареждане на InstantSend кеш данни...</translation>
+    </message>
+    <message>
+        <source>Loading addresses...</source>
+        <translation>Зареждане на адреси...</translation>
     </message>
     <message>
         <source>Loading block index...</source>
@@ -4696,6 +4740,10 @@ https://www.transifex.com/projects/p/ctp/</translation>
     <message>
         <source>Make the wallet broadcast transactions</source>
         <translation>Прави излъчващи транзакции от портфейла</translation>
+    </message>
+    <message>
+        <source>Masternode cache is empty, skipping payments and governance cache...</source>
+        <translation>Masternode кеш е празен, пропускане на payments и governance кеш...</translation>
     </message>
     <message>
         <source>Masternode options:</source>
@@ -4792,18 +4840,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
     <message>
         <source>Rescan the block chain for missing wallet transactions on startup</source>
         <translation>Повторно сканиране на регистъра на блокове за липсващи в портфейла транзакции  при стартиране</translation>
-    </message>
-    <message>
-        <source>Submitted following entries to masternode: %u</source>
-        <translation>Изпратени за следните записи към masternode: %u</translation>
-    </message>
-    <message>
-        <source>Submitted to masternode, waiting for more entries ( %u ) %s</source>
-        <translation>Изпратени към masternode, изчакване за още записи ( %u ) %s</translation>
-    </message>
-    <message>
-        <source>Synchronizing blockchain...</source>
-        <translation>Синхронизиране на блок веригата...</translation>
     </message>
     <message>
         <source>The wallet will avoid paying less than the minimum relay fee.</source>
@@ -4998,6 +5034,14 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Портфейла няма да създава транзакции, които нарушават ограниченията на веригата на mempool (по подразбиране:%u)</translation>
     </message>
     <message>
+        <source>Warning: At least %d of %d masternodes are running on a newer software version. Please check latest releases, you might need to update too.</source>
+        <translation>Внимание: Най-малко%d от %d masternodes работят на по-нова версия на софтуера. Моля, проверете последните версии, може да се наложи Вие също да актуализирате .</translation>
+    </message>
+    <message>
+        <source>Warning: Every masternode (out of %d known ones) is running on a newer software version. Please check latest releases, it's very likely that you missed a major/critical update.</source>
+        <translation>Внимание: Всеки masternode (извън %d познатите ни) работи на по-нова версия на софтуера. Моля проверете последните версии, напълно е възможно да сте пропуснали важен/критичен ъпдейт. </translation>
+    </message>
+    <message>
         <source>Warning: Wallet file corrupt, data salvaged! Original %s saved as %s in %s; if your balance or transactions are incorrect you should restore from a backup.</source>
         <translation>Внимание: Файла на портфейла  е повреден, данните са спасени! Оригиналния  %s е запазен като %s в %s; ако вашият баланс или транзакции са неверни трябва да възстановите от резервното копие/архив.</translation>
     </message>
@@ -5082,20 +5126,8 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Инициализирането на проверката за състоянието е неуспешно. %s се изключва.</translation>
     </message>
     <message>
-        <source>Invalid -onion address or hostname: '%s'</source>
-        <translation>Невалиден -onion адрес или хост: '%s'</translation>
-    </message>
-    <message>
-        <source>Invalid -proxy address or hostname: '%s'</source>
-        <translation>Невалиден -proxy адрес или хост: '%s'</translation>
-    </message>
-    <message>
         <source>Invalid amount for -%s=&lt;amount&gt;: '%s'</source>
         <translation>Невалидно количество за -%s=&lt;amount&gt;: '%s'</translation>
-    </message>
-    <message>
-        <source>Invalid characters in -wallet filename</source>
-        <translation>Невалиден символ в името на файла -wallet </translation>
     </message>
     <message>
         <source>Invalid spork address specified with -sporkaddr</source>
@@ -5104,10 +5136,6 @@ https://www.transifex.com/projects/p/ctp/</translation>
     <message>
         <source>Keep N CTP anonymized (%u-%u, default: %u)</source>
         <translation>Поддържай N CTP анонимизирани (%u-%u, по подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>Loading P2P addresses...</source>
-        <translation>Зареждане на P2P адреси...</translation>
     </message>
     <message>
         <source>Print this help message and exit</source>
@@ -5158,6 +5186,10 @@ https://www.transifex.com/projects/p/ctp/</translation>
         <translation>Определи максималния размер на блока в байтове (по подразбиране: %d)</translation>
     </message>
     <message>
+        <source>Set the masternode private key</source>
+        <translation>Задаване на личен ключ на Masternode</translation>
+    </message>
+    <message>
         <source>Show all debugging options (usage: --help -help-debug)</source>
         <translation>Покажи всички опции за откриване на грешки  (синтаксис: --help -help-debug)</translation>
     </message>
@@ -5192,6 +5224,10 @@ https://www.transifex.com/projects/p/ctp/</translation>
     <message>
         <source>Synchronizing governance objects...</source>
         <translation>Синхронизиране на governance обектите...</translation>
+    </message>
+    <message>
+        <source>Synchronizing masternode payments...</source>
+        <translation>Синхронизиране на masternodes плащанията...</translation>
     </message>
     <message>
         <source>The source code is available from %s.</source>
